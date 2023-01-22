@@ -13,7 +13,8 @@ timeout = 3000
   1. Functional data analysis, espeically with dependence
   2. Time series analysis
   3. Dependence modeling (both spatial and temporal)
-  4. Optimal design of experimental"""
+  4. Optimal design of experiment
+  """
   cv_name= "CV_YCK_Jan22_2023.pdf"
   blog="https://uwaterloo.ca/scholar/c26yeh/home"
 
@@ -38,13 +39,15 @@ timeout = 3000
   url = "https://www.researchgate.net/profile/Chi_Kuang_Yeh"
 
 [[params.introduction.paragraph]]
-  text = """**New**: I am actively looking for a postdoc and research position now! Feel free to contact me :)."""
+  text = """**New**: Hello. I am actively looking for a postdoc and research position now! Feel free to contact me :)."""
 
 
 [[params.introduction.paragraph]]
   text = """**Note**: I am currently the co-organizer of the departmental 
   [student seminar series](https://uwaterloo.ca/statistics-and-actuarial-science/events/student-seminar-series)
-  along with [Minzee Kim](https://www.linkedin.com/in/minzee-kim-14555a130/?originalSubdomain=ca)."""
+  along with [Minzee Kim](https://www.linkedin.com/in/minzee-kim-14555a130/?originalSubdomain=ca). 
+  Feel free to send us an email if you want to join, even if you are not a student in the department but 
+  from other institutions in Ontario!"""
 
 [[params.introduction.paragraph]]
   text = """**About me**: I am a final year PhD student at the 
