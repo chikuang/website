@@ -78,7 +78,7 @@ timeout = 3000
 year = "Preprint"
 
 [[params.publications.paper]]
-name = """Factor Copula Models for Spatially Correlated Functional Data"""
+name = """Factor copula model for spatially correlated functional data"""
  authors  = "**Chi-Kuang Yeh**, Yan Shi & Peijun Sang"
  dest  = "Ready to submit, manuscript available upon request"
  # link = "https://arxiv.org/abs/2207.05806"
