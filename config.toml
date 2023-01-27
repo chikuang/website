@@ -88,15 +88,17 @@ name = """Factor copula model for spatially correlated functional data"""
  code_link = ""
  blog_link = ""
 
+[[params.publications]]
+year = "2023"
 [[params.publications.paper]]
 name = """Functional spherical autocorrelation: a robust estimate 
   of the autocorrelation of a functional time series"""
  authors  = "**Chi-Kuang Yeh**, Gregory Rice & Joel A. Dubin"
- dest  = "Under minor revision in Electronic Journal of Statistics; arXiv:2207.05806"
+ dest  = "Accepted by the Electronic Journal of Statistics"
  link = "https://arxiv.org/abs/2207.05806"
  code_link = ""
- blog_link = ""
-
+ blog_link = "" 
+ 
 [[params.publications]]
 year = "2022"
 [[params.publications.paper]]
