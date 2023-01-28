@@ -15,7 +15,7 @@ timeout = 3000
   3. Dependence modeling (both spatial and temporal)
   4. Optimal design of experiment
   """
-  cv_name= "CV_YCK_Jan22_2023.pdf"
+  cv_name= "CV_YCK_Jan27_2023.pdf"
   blog="https://uwaterloo.ca/scholar/c26yeh/home"
 
 [[params.affilation]]
@@ -39,15 +39,16 @@ timeout = 3000
   url = "https://www.researchgate.net/profile/Chi_Kuang_Yeh"
 
 [[params.introduction.paragraph]]
-  text = """**New**: Hello. I am actively looking for a postdoc and research position now! Feel free to contact me :)."""
+  text = """**New**: Hello. I am actively looking for a postdoc and research position! Please
+    feel free to contact me :)."""
 
 
-[[params.introduction.paragraph]]
-  text = """**Note**: I am currently the co-organizer of the departmental 
-  [student seminar series](https://uwaterloo.ca/statistics-and-actuarial-science/events/student-seminar-series)
-  along with [Minzee Kim](https://www.linkedin.com/in/minzee-kim-14555a130/?originalSubdomain=ca). 
-  Feel free to send us an email if you want to join, even if you are not a student in the department but 
-  from other institutions in Ontario!"""
+# [[params.introduction.paragraph]]
+#  text = """**Note**: I am currently the co-organizer of the departmental 
+#  [student seminar series](https://uwaterloo.ca/statistics-and-actuarial-science/events/student-seminar-series)
+#  along with [Minzee Kim](https://www.linkedin.com/in/minzee-kim-14555a130/?originalSubdomain=ca). 
+#  Feel free to send us an email if you want to join, even if you are not a student in the department but 
+#  from other institutions in Ontario!"""
 
 [[params.introduction.paragraph]]
   text = """**About me**: I am a final year PhD student at the 
@@ -77,16 +78,15 @@ timeout = 3000
 #	code_link = ""
 #	blog_link = ""
 
-[[params.publications]]
-year = "Preprint"
+# [[params.publications]]
+# year = "Preprint"
 
-[[params.publications.paper]]
-name = """Factor copula model for spatially correlated functional data"""
- authors  = "**Chi-Kuang Yeh**, Yan Shi & Peijun Sang"
- dest  = "Ready to submit, manuscript available upon request"
- # link = "https://arxiv.org/abs/2207.05806"
- code_link = ""
- blog_link = ""
+#[[params.publications.paper]]
+# name = """Factor copula model for spatially correlated functional data"""
+# authors  = "**Chi-Kuang Yeh**, Yan Shi & Peijun Sang"
+# dest  = "Ready to submit, manuscript available upon request"
+# code_link = ""
+# blog_link = ""
 
 [[params.publications]]
 year = "2023"
