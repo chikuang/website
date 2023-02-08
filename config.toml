@@ -91,7 +91,7 @@ timeout = 3000
 [[params.publications]]
 year = "Submitted"
 [[params.publications.paper]]
-name = """Variable Selection in Multivariate Functional Linear Regression"""
+name = """Variable selection in multivariate functional linear regression"""
 authors  = "**Chi-Kuang Yeh** & Peijun Sang"
 dest  = "Preprint available upon request"
 code_link = ""
