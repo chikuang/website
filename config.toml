@@ -89,6 +89,15 @@ timeout = 3000
 # blog_link = ""
 
 [[params.publications]]
+year = "Submitted"
+[[params.publications.paper]]
+name = """Variable Selection in Multivariate Functional Linear Regression"""
+authors  = "**Chi-Kuang Yeh** & Peijun Sang"
+dest  = "Preprint available upon request"
+code_link = ""
+blog_link = ""
+
+[[params.publications]]
 year = "2023"
 [[params.publications.paper]]
 name = """Functional spherical autocorrelation: A robust estimate 
@@ -96,7 +105,7 @@ name = """Functional spherical autocorrelation: A robust estimate
  authors  = "**Chi-Kuang Yeh**, Gregory Rice & Joel A. Dubin"
  dest  = "Electronic Journal of Statistics, 17, 650--687"
  link = "https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-17/issue-1/Functional-spherical-autocorrelation--A-robust-estimate-of-the-autocorrelation/10.1214/23-EJS2112.full"
- code_link = ""
+ code_link = "https://github.com/chikuang/fSACF"
  blog_link = "" 
  
 [[params.publications]]
