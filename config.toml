@@ -40,8 +40,8 @@ timeout = 3000
 
 [[params.introduction.paragraph]]
   text = """**News**: I will be a 
-  [CANSSI Distinugished Postdoctral Fellow](https://canssi.ca/news/2023-cdpf-recipients/) s
-  hortly after the defence."""
+  [CANSSI Distinugished Postdoctral Fellow](https://canssi.ca/news/2023-cdpf-recipients/)
+  shortly after the defence."""
 
 
 # [[params.introduction.paragraph]]
