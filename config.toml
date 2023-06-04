@@ -8,7 +8,7 @@ timeout = 3000
 
 [params]
   subtitle= "PhD Candidate"
-  interests = """I am interested in a lot of areas, but for now, my research 
+  interests = """I possess a wide range of interests, but for now, my research 
   is centred around: 
   1. Functional data analysis, espeically with dependence
   2. Time series analysis
@@ -55,10 +55,12 @@ timeout = 3000
   text = """**About me**: I am a final year PhD student at the 
   [University of Waterloo](https://uwaterloo.ca) working with Profs. 
   [Gregory Rice](https://uwaterloo.ca/statistics-and-actuarial-science/about/people/grice) and 
-  [Joel A. Dubin](https://uwaterloo.ca/statistics-and-actuarial-science/people-profiles/joel-dubin).
+  [Joel A. Dubin](https://uwaterloo.ca/statistics-and-actuarial-science/people-profiles/joel-dubin). 
+  I am (somehow) affliated with the [Health Data Science Lab](https://uwaterloo.ca/health-data-science-lab/).
   I also work closely with Prof. [Peijun Sang](https://uwaterloo.ca/scholar/psang).
-  Previously, I received BSc and MSc degrees from the [University of Victoria](https://www.uvic.ca/) under 
-  the supervision of Prof. [Julie Zhou](https://www.uvic.ca/science/math-statistics/people/home/faculty/zhou_julie.php). 
+  Previously, I received BSc and MSc degrees from the [University of Victoria](https://www.uvic.ca/) working with
+  Prof. [Julie Zhou](https://www.uvic.ca/science/math-statistics/people/home/faculty/zhou_julie.php).
+  I was originally from Hsinchu and Taipei, Taiwan. 
   """
 
 #[[params.projects]] 
@@ -97,7 +99,8 @@ year = "2023"
 [[params.publications.paper]]
 name = """Variable selection in multivariate functional linear regression"""
 authors  = "**Chi-Kuang Yeh** & Peijun Sang"
-dest  = "Statistics in Bioscience, to appear"
+dest  = "Statistics in Bioscience"
+link = "https://link.springer.com/article/10.1007/s12561-023-09373-x"
 code_link = ""
 blog_link = ""
 ####
