@@ -19,7 +19,7 @@ timeout = 3000
   blog="https://uwaterloo.ca/scholar/c26yeh/home"
 
 [[params.affilation]]
-  name = "University of Waterloo"
+  name = "University of Waterloo & McGill University"
   position = "Postdoctoral Fellow"
   contact = "chi-kuang.yeh@uwaterloo.ca"
 
