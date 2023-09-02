@@ -7,7 +7,7 @@ googleAnalytics = "UA-1234-6"
 timeout = 3000
 
 [params]
-  subtitle= "PhD Candidate"
+  subtitle= "PhD"
   interests = """I possess a wide range of interests, but for now, my research 
   is centred around: 
   1. Functional data analysis, espeically with dependence
@@ -20,7 +20,7 @@ timeout = 3000
 
 [[params.affilation]]
   name = "University of Waterloo"
-  position = "PhD(c) in Statistics"
+  position = "Postdoctoral Fellow"
   contact = "chi-kuang.yeh@uwaterloo.ca"
 
 [[params.social]]
@@ -38,28 +38,24 @@ timeout = 3000
   icon = "book-open"
   url = "https://www.researchgate.net/profile/Chi_Kuang_Yeh"
 
-[[params.introduction.paragraph]]
-  text = """**News**: I will be a 
-  [CANSSI Distinugished Postdoctral Fellow](https://canssi.ca/news/2023-cdpf-recipients/)
-  shortly after the defence."""
-
-
 # [[params.introduction.paragraph]]
-#  text = """**Note**: I am currently the co-organizer of the departmental 
-#  [student seminar series](https://uwaterloo.ca/statistics-and-actuarial-science/events/student-seminar-series)
-#  along with [Minzee Kim](https://www.linkedin.com/in/minzee-kim-14555a130/?originalSubdomain=ca). 
-#  Feel free to send us an email if you want to join, even if you are not a student in the department but 
-#  from other institutions in Ontario!"""
+#  text = """**News**: I will be a 
+#  [CANSSI Distinugished Postdoctral Fellow](https://canssi.ca/news/2023-cdpf-recipients/)
+#  shortly after the defence."""
 
 [[params.introduction.paragraph]]
-  text = """**About me**: I am a final year PhD student at the 
-  [University of Waterloo](https://uwaterloo.ca) working with Profs. 
-  [Gregory Rice](https://uwaterloo.ca/statistics-and-actuarial-science/about/people/grice) and 
-  [Joel A. Dubin](https://uwaterloo.ca/statistics-and-actuarial-science/people-profiles/joel-dubin). 
-  I am (somehow) affliated with the [Health Data Science Lab](https://uwaterloo.ca/health-data-science-lab/).
-  I also work closely with Prof. [Peijun Sang](https://uwaterloo.ca/scholar/psang).
-  Previously, I received BSc and MSc degrees from the [University of Victoria](https://www.uvic.ca/) working with
-  Prof. [Julie Zhou](https://www.uvic.ca/science/math-statistics/people/home/faculty/zhou_julie.php).
+  text = """**About me**: 
+  Hello. I am currently a CANSSI distinguish postdoctoral fellow 
+  at [University of Waterloo](https://uwaterloo.ca) & [McGill University](https://www.mcgill.ca/).
+  
+  I completed my Ph.D. at UWaterloo under the guidance of Professors 
+  [Gregory Rice](https://uwaterloo.ca/statistics-and-actuarial-science/about/people/grice) 
+  and [Joel A. Dubin](https://uwaterloo.ca/statistics-and-actuarial-science/people-profiles/joel-dubin).
+  During this time, I was affiliated with the [Health Data Science Lab](https://uwaterloo.ca/health-data-science-lab/) and 
+  also had privilege of working closely with Professor [Peijun Sang](https://uwaterloo.ca/scholar/psang).
+  Prior to that, I obtained my BSc and MSc degrees from the [University of Victoria](https://www.uvic.ca/) 
+  where I was fortunate to work with Professor [Julie Zhou](https://www.uvic.ca/science/math-statistics/people/home/faculty/zhou_julie.php).
+  
   I was originally from Hsinchu and Taipei, Taiwan. 
   """
 
