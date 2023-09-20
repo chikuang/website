@@ -15,7 +15,7 @@ timeout = 3000
   3. Dependence modeling (both spatial and temporal)
   4. Optimal design of experiment
   """
-  cv_name= "CV_YCK_Feb08_2023.pdf"
+  cv_name= "CV_YCK_Sep20_2023.pdf"
   blog="https://uwaterloo.ca/scholar/c26yeh/home"
 
 [[params.affilation]]
@@ -48,7 +48,7 @@ timeout = 3000
   Hello. I am currently a CANSSI distinguish postdoctoral fellow 
   at [University of Waterloo](https://uwaterloo.ca) & [McGill University](https://www.mcgill.ca/).
   
-  I completed my Ph.D. at UWaterloo under the guidance of Professors 
+  I completed Ph.D. at UWaterloo under the guidance of Professors 
   [Gregory Rice](https://uwaterloo.ca/statistics-and-actuarial-science/about/people/grice) 
   and [Joel A. Dubin](https://uwaterloo.ca/statistics-and-actuarial-science/people-profiles/joel-dubin).
   During this time, I was affiliated with the [Health Data Science Lab](https://uwaterloo.ca/health-data-science-lab/) and 
@@ -56,7 +56,7 @@ timeout = 3000
   Prior to that, I obtained my BSc and MSc degrees from the [University of Victoria](https://www.uvic.ca/) 
   where I was fortunate to work with Professor [Julie Zhou](https://www.uvic.ca/science/math-statistics/people/home/faculty/zhou_julie.php).
   
-  I was originally from Hsinchu and Taipei, Taiwan. 
+  I was originally from Hsinchu and Taipei, Taiwan, and I lived in BC, Canada, for 12 years.
   """
 
 #[[params.projects]] 
