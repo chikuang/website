@@ -21,7 +21,7 @@ timeout = 3000
 [[params.affilation]]
   name = "University of Waterloo & McGill University"
   position = "Postdoctoral Fellow"
-  contact = "chi-kuang.yeh@uwaterloo.ca"
+  contact = "chi-kuang.yeh@uwaterloo.ca, chi-kuang.yeh@mila.quebec"
 
 [[params.social]]
   name = "GitHub"
