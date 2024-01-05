@@ -15,7 +15,7 @@ timeout = 3000
   3. Dependence modeling (both spatial and temporal)
   4. Optimal design of experiment
   """
-  cv_name= "CV_YCK_Sep20_2023.pdf"
+  cv_name= "CV_YCK_Jan5_2024.pdf"
   blog="https://uwaterloo.ca/scholar/c26yeh/home"
 
 [[params.affilation]]
@@ -46,7 +46,7 @@ timeout = 3000
 [[params.introduction.paragraph]]
   text = """**About me**: 
   Hello. I am currently a CANSSI distinguish postdoctoral fellow 
-  at [University of Waterloo](https://uwaterloo.ca) & [McGill University](https://www.mcgill.ca/).
+  at [University of Waterloo](https://uwaterloo.ca).
   
   I completed Ph.D. at UWaterloo under the guidance of Professors 
   [Gregory Rice](https://uwaterloo.ca/statistics-and-actuarial-science/about/people/grice) 
@@ -59,11 +59,9 @@ timeout = 3000
   I was originally from Hsinchu and Taipei, Taiwan, and I lived in BC, Canada, for 12 years.
  
   
-  **Teaching**: I am teaching Stat 230, Introduction to Probability, in Winter 2024: 
+  **Teaching**: This term, I am teaching Stat 230, Introduction to Probability.  
   + [Page](post/stat230.html)
-  + Office: M3--3102 Desk 10. I will hold office hour in another location which is TBA as of now. 
-    I will make an annoucement once it is determined.
-  + Office Hour: TBA
+  + Office hour: M3--2101, Desk 1
   """
 
 #[[params.projects]] 
@@ -139,6 +137,14 @@ log_link = ""
 	
 [[params.publications]]
   year="Thesis"
+[[params.publications.paper]]
+	name = """Methods in functional data analysis: forecast evaluation, 
+	  robust serial dependence measures, and a spatial factor copula model"""
+  authors = "**Chi-Kuang Yeh**"
+	dest  = "PhD's Thesis, University of Waterloo"
+	link = "https://uwspace.uwaterloo.ca/handle/10012/19839"
+	code_link = ""
+	blog_link = ""
 [[params.publications.paper]]
 	name = "Optimal regression design under second-order least squares estimator: theory, algorithm and applications"
 	authors = "**Chi-Kuang Yeh**"
