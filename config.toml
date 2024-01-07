@@ -15,7 +15,7 @@ timeout = 3000
   3. Dependence modeling (both spatial and temporal)
   4. Optimal design of experiment
   """
-  cv_name= "CV_YCK_Jan5_2024.pdf"
+  cv_name= "CV_YCK_Jan6_2024.pdf"
   blog="https://uwaterloo.ca/scholar/c26yeh/home"
 
 [[params.affilation]]
