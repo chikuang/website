@@ -46,7 +46,8 @@ timeout = 3000
 [[params.introduction.paragraph]]
   text = """**About me**: 
   Hello. I am currently a CANSSI distinguish postdoctoral fellow 
-  at [University of Waterloo](https://uwaterloo.ca).
+  at [University of Waterloo](https://uwaterloo.ca), kindly sponsored by
+  the [Canada Statistical Science Institute](https://canssi.ca/).
   
   I completed Ph.D. at UWaterloo under the guidance of Professors 
   [Gregory Rice](https://uwaterloo.ca/statistics-and-actuarial-science/about/people/grice) 
@@ -59,8 +60,10 @@ timeout = 3000
   I was originally from Hsinchu and Taipei, Taiwan, and I lived in BC, Canada, for 12 years.
  
   
-  **Teaching**: This term, I am teaching Stat 230, Introduction to Probability.  
-  + [Page](post/stat230.html)
+  **Teaching**: This term, I am teaching Stat 230, Introduction to Probability, along with 
+  [Erik Hintz](https://uwaterloo.ca/scholar/ehintz), [Jeffery Negrea](https://utstat.toronto.edu/~negrea/) and
+  [Justin Ko](https://www.math.toronto.edu/jko/). My section is **002**.
+  + [Page](post/stat230.html) 
   + Office hour: Tuesday 9:30 am -- 10:30 am @ M3--2101, Desk 1
   """
 
