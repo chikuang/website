@@ -46,7 +46,13 @@ timeout = 3000
 #  shortly after the defence."""
 
 [[params.introduction.paragraph]]
-  text = """**About me**: 
+  text = """Greeting. I am happy to discuss research either virtually or in person. 
+  If you are in Kitchener-Waterloo area, we may grab coffee/tea together. 
+  If you are a grad student in the Department of Statistics and Actuarial Science, 
+  feel free to find me in my office, Desk 10 at M3-3102 and we may share some common research interests.
+  Outsite academic, I also organize a basketball group, and let's have fun!
+  
+  **About me**: 
   Hello. I am currently a CANSSI distinguish postdoctoral fellow 
   at [University of Waterloo](https://uwaterloo.ca), kindly sponsored by
   the [Canada Statistical Science Institute](https://canssi.ca/).
