@@ -14,6 +14,8 @@ timeout = 3000
   2. Time series analysis
   3. Dependence modeling (both spatial and temporal)
   4. Optimal design of experiment
+  5. Machine learning
+  6. High-dimensional data analysis
   """
   cv_name= "CV_YCK_Jan6_2024.pdf"
   blog="https://uwaterloo.ca/scholar/c26yeh/home"
@@ -49,7 +51,7 @@ timeout = 3000
   at [University of Waterloo](https://uwaterloo.ca), kindly sponsored by
   the [Canada Statistical Science Institute](https://canssi.ca/).
   
-  I completed Ph.D. at UWaterloo under the guidance of Professors 
+  I obtain my Ph.D. at UWaterloo under the guidance of Professors 
   [Gregory Rice](https://uwaterloo.ca/statistics-and-actuarial-science/about/people/grice) 
   and [Joel A. Dubin](https://uwaterloo.ca/statistics-and-actuarial-science/people-profiles/joel-dubin).
   During this time, I was affiliated with the [Health Data Science Lab](https://uwaterloo.ca/health-data-science-lab/) and 
@@ -60,12 +62,11 @@ timeout = 3000
   I was originally from Hsinchu and Taipei, Taiwan, and I lived in BC, Canada, for 12 years.
  
   
-  **Teaching**: This term, I am teaching Stat 230, Introduction to Probability, along with 
-  [Erik Hintz](https://uwaterloo.ca/scholar/ehintz), [Jeffery Negrea](https://utstat.toronto.edu/~negrea/) and
-  [Justin Ko](https://www.math.toronto.edu/jko/). My section is **002**.
-  + [**Personal Course Note**](https://chikuang.github.io/course/stat230). Note, most of the contents in this page 
-  are obtain from the lecture slides, and is nowhere closed to complete. It only serves as for a reference!!!
-  + **Office hour**: Tuesday 9:30 am -- 10:30 am @ M3--2101, Desk 1
+  **Teaching**: 
+  + 2024 Spring: Not teaching this term!
+  + 2024 Winter: [STAT 230 -- Introduction to Probability](https://chikuang.github.io/course/stat230),
+  along with [Erik Hintz](https://uwaterloo.ca/scholar/ehintz), [Jeffery Negrea](https://utstat.toronto.edu/~negrea/) and
+  [Justin Ko](https://www.math.toronto.edu/jko/). 
   """
 
 #[[params.projects]] 
