@@ -14,8 +14,8 @@ timeout = 3000
   2. Time series analysis
   3. Dependence modeling (both spatial and temporal)
   4. Optimal design of experiment
-  5. Machine learning
-  6. High-dimensional data analysis
+  5. Machine learning and high-dimensional data analysis
+  6. Applications include biomedical, drug development and neuroscience
   """
   cv_name= "CV_YCK_Jan6_2024.pdf"
   blog="https://uwaterloo.ca/scholar/c26yeh/home"
@@ -46,18 +46,21 @@ timeout = 3000
 #  shortly after the defence."""
 
 [[params.introduction.paragraph]]
-  text = """Greeting. I am happy to discuss research either virtually or in person. 
+  text = """Greeting! I am currently a CANSSI distinguish postdoctoral fellow 
+  at [University of Waterloo](https://uwaterloo.ca), kindly sponsored by
+  the [Canada Statistical Science Institute](https://canssi.ca/).
+  
+  I am currently many different projects as I am seeking new interesting questions
+  in broaden my research scope during the postdoc position.
+  Thus, if you are interested in my research, or  have any interesting thoughts. 
+  I am also happy to chat either virtually or in person. 
   If you are in Kitchener-Waterloo area, we may grab coffee/tea together. 
   If you are a grad student in the Department of Statistics and Actuarial Science, 
   feel free to find me in my office, Desk 10 at M3-3102 and we may share some common research interests.
   Outsite academic, I also organize a basketball group, and let's have fun!
   
-  **About me**: 
-  Hello. I am currently a CANSSI distinguish postdoctoral fellow 
-  at [University of Waterloo](https://uwaterloo.ca), kindly sponsored by
-  the [Canada Statistical Science Institute](https://canssi.ca/).
   
-  I obtain my Ph.D. at UWaterloo under the guidance of Professors 
+  I previous obtained my Ph.D. at UWaterloo under the guidance of Professors 
   [Gregory Rice](https://uwaterloo.ca/statistics-and-actuarial-science/about/people/grice) 
   and [Joel A. Dubin](https://uwaterloo.ca/statistics-and-actuarial-science/people-profiles/joel-dubin).
   During this time, I was affiliated with the [Health Data Science Lab](https://uwaterloo.ca/health-data-science-lab/) and 
@@ -69,7 +72,7 @@ timeout = 3000
  
   
   **Teaching**: 
-  + 2024 Spring: Not teaching this term!
+  + 2024 Spring: NOT teaching this term.
   + 2024 Winter: [STAT 230 -- Introduction to Probability](https://chikuang.github.io/course/stat230),
   along with [Erik Hintz](https://uwaterloo.ca/scholar/ehintz), [Jeffery Negrea](https://utstat.toronto.edu/~negrea/) and
   [Justin Ko](https://www.math.toronto.edu/jko/). 
@@ -93,18 +96,14 @@ timeout = 3000
 #	code_link = ""
 #	blog_link = ""
 
-# [[params.publications]]
-# year = "Preprint"
-
-#[[params.publications.paper]]
-# name = """Factor copula model for spatially correlated functional data"""
-# authors  = "**Chi-Kuang Yeh**, Yan Shi & Peijun Sang"
-# dest  = "Ready to submit, manuscript available upon request"
-# code_link = ""
-# blog_link = ""
-
-# [[params.publications]]
-# year = "Submitted"
+[[params.publications]]
+year = "2024"
+[[params.publications.paper]]
+name = """CVXSADes: a stochastic algorithm for constructing optimal exact 
+   regression designs with single or multiple objectives"""
+authors  = "**Chi-Kuang Yeh** & Julie Zhou"
+dest  = "arXiv preprint"
+link = "https://www.researchgate.net/publication/380295508_CVXSADes_a_stochastic_algorithm_for_constructing_optimal_exact_regression_designs_with_single_or_multiple_objectives"
 
 [[params.publications]]
 year = "2023"
