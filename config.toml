@@ -103,6 +103,7 @@ name = """CVXSADes: a stochastic algorithm for constructing optimal exact
 authors  = "**Chi-Kuang Yeh** & Julie Zhou"
 dest  = "arXiv preprint"
 link = "https://arxiv.org/abs/2405.02983"
+code_link = "https://github.com/chikuang/CVXSADes"
 
 [[params.publications]]
 year = "2023"
