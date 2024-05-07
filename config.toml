@@ -17,7 +17,7 @@ timeout = 3000
   5. Machine learning and high-dimensional data analysis
   6. Applications include biomedical, drug development and neuroscience
   """
-  cv_name= "CV_YCK_Jan6_2024.pdf"
+  cv_name= "CV_YCK_May6_2024.pdf"
   blog="https://uwaterloo.ca/scholar/c26yeh/home"
 
 [[params.affilation]]
@@ -102,7 +102,7 @@ name = """CVXSADes: a stochastic algorithm for constructing optimal exact
    regression designs with single or multiple objectives"""
 authors  = "**Chi-Kuang Yeh** & Julie Zhou"
 dest  = "arXiv preprint"
-link = "https://www.researchgate.net/publication/380295508_CVXSADes_a_stochastic_algorithm_for_constructing_optimal_exact_regression_designs_with_single_or_multiple_objectives"
+link = "https://arxiv.org/abs/2405.02983"
 
 [[params.publications]]
 year = "2023"
