@@ -21,10 +21,14 @@
 				{{- range $index, $key := .Site.Params.Social -}}
 				<a href="{{ $key.url }}" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
 				{{- end -}}
-				{{ if or (.Site.Params.blog) (.Site.Params.cv_name) }}
+				{{ if or (.Site.Params.blog) (.Site.Params.site) (.Site.Params.cv_name) }}
 				|
 				{{- with .Site.Params.blog -}}
-				<a href="{{ . }}" class="blog_cv">[blog]</a>
+				<a href="{{ . }}" class="blog_cv">[waterloo]</a>
+				{{- end -}}
+				
+				{{- with .Site.Params.site -}}
+				<a href="{{ . }}" class="blog_cv">[site]</a>
 				{{- end -}}
 
 				{{ with .Site.Params.cv_name }}
