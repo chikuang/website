@@ -1,0 +1,47 @@
+<div class="introduction">
+	{{ with .Site.Params.theses }}
+	<h4>Theses</h4>
+
+	{{- range $index, $theses := $.Site.Params.theses -}}
+	<div class="year">{{ $theses.year }}</div>
+
+	<ul>
+		{{ range $elem_index, $thesis := $theses.paper }}
+		<li>
+			{{ if $theses.link }}
+			<a href="{{ $thesis.link }}" class="theses"> {{ $thesis.name }}, </a>
+			{{ else }}
+			<p class="theses"> {{ $thesis.name }}, </p>
+			{{ end }} <br>
+			{{ $thesis.dest | markdownify }}.
+
+			{{ if or ($thesis.code_link) ($thesis.pdf_link) ($thesis.just_link) ($thesis.software_link)}}
+			<span class="code_blog">
+				{{ with $thesis.code_link }}
+				[<a href="{{ $thesis.code_link }}">code</a>]
+				{{ end }}
+				
+				{{ with $thesis.pdf_link }}
+				[<a href="{{ $thesis.pdf_link }}">pdf</a>]
+				{{ end }}
+				
+				{{ with $thesis.software_link }}
+				[<a href="{{ $thesis.software_link }}">software</a>]
+				{{ end }}
+				
+				{{ with $thesis.just_link }}
+				[<a href="{{ $thesis.just_link }}">link</a>]
+				{{ end }}
+
+			</span>
+			{{ end }}
+
+			<span class="collaborators">
+				{{ $thesis.authors | markdownify }}
+			</span>
+		</li>
+		{{ end }}
+	</ul>
+	{{- end -}}
+	{{- end -}}
+</div>
