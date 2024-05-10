@@ -44,7 +44,7 @@ timeout = 3000
 [[params.social]]
   name = "googleScholar"
   icon = "aperture"
-  url = "https://www.researchgate.net/profile/Chi_Kuang_Yeh"
+  url = "https://scholar.google.ca/citations?user=_v_Vy1sAAAAJ&hl=en"
 
 [[params.introduction.paragraph]]
   text = """ Greeting! I am currently a CANSSI distinguish postdoctoral fellow 
