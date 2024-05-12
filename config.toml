@@ -198,7 +198,7 @@ code_link = "https://github.com/chikuang/OptimalDesigns-SLSE"
 	github_link = ""
 [[params.softwares.software]]
 	name = "yehUtil"
-	authors = "**Chi-Kuang Yeh** & Julie Zhou"
+	authors = "**Chi-Kuang Yeh**"
 	description  = """A R package for knitting some RMarkdown reports and other usages"""
 	software_page = "https://github.com/chikuang/yehUtil"
 	link = ""
