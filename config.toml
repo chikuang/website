@@ -187,7 +187,24 @@ code_link = "https://github.com/chikuang/OptimalDesigns-SLSE"
 	just_link = ""
 	code_link = ""
 	github_link = ""
-
+[[params.softwares.software]]
+	name = "SLSEdesign"
+	authors = "**Chi-Kuang Yeh** & Julie Zhou"
+	description  = """A R package for computing optimal regression designs under the second-order least-squares estimator"""
+	software_page = "https://github.com/chikuang/SLSEdesign"
+	link = ""
+	just_link = ""
+	code_link = ""
+	github_link = ""
+[[params.softwares.software]]
+	name = "yehUtil"
+	authors = "**Chi-Kuang Yeh** & Julie Zhou"
+	description  = """A R package for knitting some RMarkdown reports and other usages"""
+	software_page = "https://github.com/chikuang/yehUtil"
+	link = ""
+	just_link = ""
+	code_link = ""
+	github_link = ""
 	
 
 # [[params.projects.project]]
