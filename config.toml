@@ -75,6 +75,7 @@ timeout = 3000
   + 2024 Winter: [STAT 230 -- Introduction to Probability](https://chikuang.github.io/course/stat230),
   along with [Erik Hintz](https://uwaterloo.ca/scholar/ehintz), [Jeffery Negrea](https://utstat.toronto.edu/~negrea/) and
   [Justin Ko](https://www.math.toronto.edu/jko/). 
+
   """
 
 #[[params.projects]] 
@@ -153,15 +154,15 @@ code_link = "https://github.com/chikuang/OptimalDesigns-SLSE"
 [[params.theses.paper]]
 	name = """Methods in functional data analysis: forecast evaluation, 
 	  robust serial dependence measures, and a spatial factor copula model"""
-  authors = "**Chi-Kuang Yeh**"
-	dest  = "PhD's Thesis, University of Waterloo"
+  # authors = "**Chi-Kuang Yeh**"
+	dest  = "Ph.D. Thesis, University of Waterloo"
 	just_link = "https://uwspace.uwaterloo.ca/handle/10012/19839"
 	code_link = ""
 [[params.theses]]
   year="2018"
 [[params.theses.paper]]
 	name = "Optimal regression design under second-order least squares estimator: theory, algorithm and applications"
-	authors = "**Chi-Kuang Yeh**"
+	# authors = "**Chi-Kuang Yeh**"
 	dest  = "Master's Thesis, University of Victoria"
 	just_link = "https://dspace.library.uvic.ca/handle/1828/9765"
 	code_link = ""
@@ -189,7 +190,7 @@ code_link = "https://github.com/chikuang/OptimalDesigns-SLSE"
 	github_link = ""
 [[params.softwares.software]]
 	name = "SLSEdesign"
-	authors = "**Chi-Kuang Yeh** & Julie Zhou"
+	authors = "**Chi-Kuang Yeh** & Julie Zhou" 
 	description  = """A R package for computing optimal regression designs under the second-order least-squares estimator"""
 	software_page = "https://github.com/chikuang/SLSEdesign"
 	link = ""
