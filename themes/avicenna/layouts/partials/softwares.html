@@ -6,9 +6,15 @@
 
 		{{ range $elem_index, $software := $softwares_map.software }}
 		<li>
+		  
+			{{ if $software.link }}
 			<a href="{{ $software.software_page }}" class="software"> {{ $software.name }}</a>
-
-			{{ if or ($software.code_link) ($software.github_link)  
+			{{ else }}
+			<p class="software"> {{ $software.name }} </p>
+			{{ end }} <br>
+			{{ $software.description | markdownify }}.  
+			
+		  {{ if or ($software.code_link) ($software.github_link)  
 			($software.paper)  ($software.just_link) ($software.cran)}}
 			<span class="code_blog">
 				{{ with $software.code_link }}
@@ -36,12 +42,6 @@
       <span class="collaborators">
 				{{ $software.authors | markdownify }}
 			</span>
-			{{ with $software.description }}
-			<span class="software_description">
-				{{ . | markdownify}}
-			</span>
-			{{ end }}
-
 		</li>
 		{{ end }}
 
