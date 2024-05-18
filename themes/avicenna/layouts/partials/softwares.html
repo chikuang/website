@@ -9,7 +9,7 @@
 			<a href="{{ $software.software_page }}" class="software"> {{ $software.name }}</a>
 
 			{{ if or ($software.code_link) ($software.github_link)  
-			($software.paper)  ($software.just_link)}}
+			($software.paper)  ($software.just_link) ($software.cran)}}
 			<span class="code_blog">
 				{{ with $software.code_link }}
 				[<a href="{{ . }}">code</a>]
@@ -24,6 +24,10 @@
 
 				{{ with $software.github_link }}
 				[<a href="{{ . }}">GitHub</a>]
+				{{ end }}
+				
+				{{ with $software.cran }}
+				[<a href="{{ . }}">CRAN</a>]
 				{{ end }}
 			</span>
 			{{ end }}
