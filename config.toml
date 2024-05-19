@@ -47,35 +47,19 @@ timeout = 3000
   url = "https://scholar.google.ca/citations?user=_v_Vy1sAAAAJ&hl=en"
 
 [[params.introduction.paragraph]]
-  text = """ Greeting! I am currently a CANSSI distinguish postdoctoral fellow 
-  at [University of Waterloo](https://uwaterloo.ca), kindly sponsored by
-  the [Canada Statistical Science Institute](https://canssi.ca/)."""
-[[params.introduction.paragraph]]
- text= """I am curious about many things, and so always happy to talk about things I either know or complete have no ideas abouts.
-  Hence, if you are interested in my research, or  have any interesting thoughts. 
-  I am also happy to chat either virtually or in person. 
-  If you are in Kitchener-Waterloo area, we may grab coffee/tea together. 
-  If you are a grad student in the Department of Statistics and Actuarial Science, 
-  feel free to find me in my office, Desk 10 at M3-3102 and we may share some common research interests.
-  Outsite academic, I also organize a basketball group, and let's have fun!"""
-[[params.introduction.paragraph]]
-  text= """I previous obtained my Ph.D. at UWaterloo under the guidance of Professors 
-  [Gregory Rice](https://uwaterloo.ca/statistics-and-actuarial-science/about/people/grice) 
-  and [Joel A. Dubin](https://uwaterloo.ca/statistics-and-actuarial-science/people-profiles/joel-dubin).
-  During this time, I was affiliated with the [Health Data Science Lab](https://uwaterloo.ca/health-data-science-lab/) and 
-  also had privilege of working closely with Professor [Peijun Sang](https://uwaterloo.ca/scholar/psang).
-  Prior to that, I obtained my BSc and MSc degrees from the [University of Victoria](https://www.uvic.ca/) 
-  where I was fortunate to work with Professor [Julie Zhou](https://www.uvic.ca/science/math-statistics/people/home/faculty/zhou_julie.php).
-  
+  text = """ Greeting! I am currently a postdoctoral fellow at the 
+  [University of Waterloo](https://uwaterloo.ca). I also did my PhD at UWaterloo.
   I was originally from Hsinchu and Taipei, Taiwan, and I lived in BC, Canada, for 12 years.
- 
-  
+"""
+[[params.introduction.paragraph]]
+ text= """My office is: M3-3102, Desk 10. Outsite academic, I also organize a basketball group, and let's have fun!"""
+[[params.introduction.paragraph]]
+  text= """
   **Teaching**: 
   + 2024 Spring: NOT teaching this term.
   + 2024 Winter: [STAT 230 -- Introduction to Probability](https://chikuang.github.io/course/stat230),
   along with [Erik Hintz](https://uwaterloo.ca/scholar/ehintz), [Jeffery Negrea](https://utstat.toronto.edu/~negrea/) and
   [Justin Ko](https://www.math.toronto.edu/jko/). 
-
   """
 
 #[[params.projects]] 
