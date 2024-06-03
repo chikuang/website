@@ -174,7 +174,7 @@ code_link = "https://github.com/chikuang/OptimalDesigns-SLSE"
 	github_link = "https://github.com/chikuang/optDesign"
 [[params.softwares.software]]
 	name = "SLSEdesign"
-	authors = "**Chi-Kuang Yeh** & Julie Zhou" 
+	authors = "**Chi-Kuang Yeh**, Julie Zhou, Jason Hou-Liu" 
 	description  = """A R package for computing optimal regression designs under the second-order least-squares estimator"""
 	software_page = ""
 	cran = "https://cran.rstudio.com/web/packages/SLSEdesign/index.html"
