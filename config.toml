@@ -1,7 +1,7 @@
 baseurl = "https://chikuang.github.io/"
 publishDir = "../chikuang.github.io"
 languageCode = "en-us"
-title = "Chi-Kuang Yeh"
+title = "Chi-Kuang Yeh/葉啓光"
 theme = "avicenna"
 googleAnalytics = "UA-1234-6"
 timeout = 3000
@@ -10,14 +10,14 @@ timeout = 3000
   subtitle= "PhD"
   interests = """I possess a wide range of interests, but for now, my research 
   is centred around: 
-  1. Functional data analysis, espeically with dependence
-  2. Time series analysis
-  3. Dependence modeling (both spatial and temporal)
-  4. Optimal design of experiment
-  5. Machine learning and high-dimensional data analysis
-  6. Applications include biomedical, drug development and neuroscience
+  1. Functional data analysis, espeically with dependence.
+  2. Time series analysis.
+  3. Dependence modeling (both spatial and temporal).
+  4. Optimal design of experiment.
+  5. Machine learning and high-dimensional data analysis.
+  6. Applications include drug development, toxicology, neuroscience, to only name a few.
   """
-  cv_name= "CV_YCK_May6_2024.pdf"
+  cv_name= "CV_YCK_Jul15_2024.pdf"
   # blog="https://uwaterloo.ca/scholar/c26yeh/home"
   site="https://uwaterloo.ca/scholar/c26yeh/home"
 
@@ -47,9 +47,10 @@ timeout = 3000
   url = "https://scholar.google.ca/citations?user=_v_Vy1sAAAAJ&hl=en"
 
 [[params.introduction.paragraph]]
-  text = """ Greeting! I am currently a postdoctoral fellow at the 
-  [University of Waterloo](https://uwaterloo.ca). I also did my PhD at UWaterloo.
-  I was originally from Hsinchu and Taipei, Taiwan, and I lived in BC, Canada, for 12 years.
+  text = """Hello/你好! I am currently a postdoctoral fellow at the 
+  [University of Waterloo](https://uwaterloo.ca).
+  I was originally from Hsinchu (新竹) and Taipei (台北), Taiwan, 
+  and I lived in BC, Canada, for 12 years.
 """
 [[params.introduction.paragraph]]
  text= """My office is: M3-3102, Desk 10. Outsite academic, I also organize a basketball group, and let's have fun!"""
@@ -59,7 +60,7 @@ timeout = 3000
   + 2024 Spring: NOT teaching this term.
   + 2024 Winter: [STAT 230 -- Introduction to Probability](https://chikuang.github.io/course/stat230),
   along with [Erik Hintz](https://uwaterloo.ca/scholar/ehintz), [Jeffery Negrea](https://utstat.toronto.edu/~negrea/) and
-  [Justin Ko](https://www.math.toronto.edu/jko/). 
+  [Justin Ko](https://justinpko.github.io/). 
   """
 
 #[[params.projects]] 
@@ -83,16 +84,27 @@ timeout = 3000
 [[params.publications]]
 year = "2024"
 [[params.publications.paper]]
+name = """Positive and unlabeled Data: model, estimation, 
+   inference, and classification"""
+authors  = "Siyan Liu, **Chi-Kuang Yeh**, Xin Zhang, Qinglong Tian & Pengfei Li"
+dest  = "Preprint"
+link = ""
+arxiv_link = "https://arxiv.org/abs/2407.09735"
+pdf_link = ""
+package_link = ""
+
+[[params.publications.paper]]
 name = """CVXSADes: a stochastic algorithm for constructing optimal exact 
    regression designs with single or multiple objectives"""
 authors  = "**Chi-Kuang Yeh** & Julie Zhou"
-dest  = "arXiv preprint"
+dest  = "Preprint"
 link = ""
 code_link = "https://github.com/chikuang/CVXSADes"
 arxiv_link = "https://arxiv.org/abs/2405.02983"
 pdf_link = ""
 package_link = ""
 RG_link = "https://www.researchgate.net/publication/380295508_CVXSADes_a_stochastic_algorithm_for_constructing_optimal_exact_regression_designs_with_single_or_multiple_objectives"
+
 [[params.publications]]
 year = "2023"
 [[params.publications.paper]]
@@ -103,7 +115,7 @@ just_link = "https://link.springer.com/article/10.1007/s12561-023-09373-x"
 code_link = ""
 ####
 [[params.publications.paper]]
-name = """Functional spherical autocorrelation: A robust estimate 
+name = """Functional spherical autocorrelation: a robust estimate 
   of the autocorrelation of a functional time series"""
  authors  = "**Chi-Kuang Yeh**, Gregory Rice & Joel A. Dubin"
  dest  = "Electronic Journal of Statistics, 17, 650--687"
