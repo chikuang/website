@@ -84,7 +84,7 @@ timeout = 3000
 [[params.publications]]
 year = "2024"
 [[params.publications.paper]]
-name = """Positive and unlabeled Data: model, estimation, 
+name = """Positive and unlabeled data: model, estimation, 
    inference, and classification"""
 authors  = "Siyan Liu, **Chi-Kuang Yeh**, Xin Zhang, Qinglong Tian & Pengfei Li"
 dest  = "Preprint"
