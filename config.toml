@@ -22,8 +22,8 @@ timeout = 3000
   site="https://uwaterloo.ca/scholar/c26yeh/home"
 
 [[params.affilation]]
-  name = "University of Waterloo & McGill University"
-  position = "Postdoctoral Fellow"
+  name = "McGill University & University of Waterloo"
+  position = "Postdoctoral Scholar"
   contact = "chi-kuang.yeh@uwaterloo.ca, chi-kuang.yeh@mila.quebec"
 
 [[params.social]]
@@ -47,8 +47,11 @@ timeout = 3000
   url = "https://scholar.google.ca/citations?user=_v_Vy1sAAAAJ&hl=en"
 
 [[params.introduction.paragraph]]
-  text = """Hello/你好! I am currently a postdoctoral fellow at the 
-  [University of Waterloo](https://uwaterloo.ca).
+  text = """Hello/你好! I am currently a postdoctoral scholar in the 
+  [Deparmtent of Matheamtcis and Statistics](https://www.mcgill.ca/mathstat/) at 
+  [McGill University](https://www.mcgill.ca/) jointly with the 
+  [Deparmtent of Statisitcs and Actuarial Science](https://uwaterloo.ca/statistics-and-actuarial-science/)
+  at the [University of Waterloo](https://uwaterloo.ca).
   I was originally from Hsinchu (新竹) and Taipei (台北), Taiwan, 
   and I lived in BC, Canada, for 12 years.
 """
