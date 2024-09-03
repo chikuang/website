@@ -53,11 +53,11 @@ timeout = 3000
   and I lived in BC, Canada, for 12 years.
 """
 [[params.introduction.paragraph]]
- text= """My office is: M3-3102, Desk 10. Outsite academic, I also organize a basketball group, and let's have fun!"""
+ text= """My office is: Room 1216 on the top floor in Burnside Hall."""
 [[params.introduction.paragraph]]
   text= """
   **Teaching**: 
-  + 2024 Spring: NOT teaching this term.
+  + 2024 Fall: NOT teaching this term.
   + 2024 Winter: [STAT 230 -- Introduction to Probability](https://chikuang.github.io/course/stat230),
   along with [Erik Hintz](https://uwaterloo.ca/scholar/ehintz), [Jeffery Negrea](https://utstat.toronto.edu/~negrea/) and
   [Justin Ko](https://justinpko.github.io/). 
