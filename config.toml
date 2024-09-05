@@ -24,7 +24,7 @@ timeout = 3000
 [[params.affilation]]
   name = "McGill University & University of Waterloo"
   position = "Postdoctoral Scholar"
-  contact = "chi-kuang.yeh@uwaterloo.ca, chi-kuang.yeh@mila.quebec"
+  contact = "chi-kuang.yeh@mcgill.ca, chi-kuang.yeh@uwaterloo.ca"
 
 [[params.social]]
   name = "GitHub"
@@ -56,7 +56,7 @@ timeout = 3000
   and I lived in BC, Canada, for 12 years.
 """
 [[params.introduction.paragraph]]
- text= """My office is: Room 1216 on the top floor in Burnside Hall."""
+ text= """My office is: Room 1216 on the top floor in [Burnside Hall](https://en.wikipedia.org/wiki/Burnside_Hall)."""
 [[params.introduction.paragraph]]
   text= """
   **Teaching**: 
