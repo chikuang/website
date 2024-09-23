@@ -57,6 +57,10 @@ timeout = 3000
 """
 [[params.introduction.paragraph]]
  text= """My office is: Room 1216 on the top floor in [Burnside Hall](https://en.wikipedia.org/wiki/Burnside_Hall)."""
+ 
+ [[params.introduction.paragraph]]
+ text= """**Note**: I am on the 2024-2025 academic job market! Besides, feel free to shoot me an email if you are interested in my work! 
+     Happy to chat about them. :) """
 [[params.introduction.paragraph]]
   text= """
   **Teaching**: 
