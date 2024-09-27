@@ -181,6 +181,16 @@ code_link = "https://github.com/chikuang/OptimalDesigns-SLSE"
 
 [[params.softwares]] 
 [[params.softwares.software]]
+	name = "FTSgof"
+	authors = "Mihyun Kim, **Chi-Kuang Yeh**, Yuqian Zhao & Gregory Rice"
+	description  = """A R package for white noise and goodness-of-fit tests for functional time series"""
+	software_page = ""
+	paper = ""
+	link = ""
+	just_link = ""
+	code_link = ""
+	github_link = "https://github.com/veritasmih/FTSgof"
+[[params.softwares.software]]
 	name = "evalRTPF"
 	authors = "**Chi-Kuang Yeh**, Gregory Rice & Joel Dubin"
 	description  = """A R package to  Evaluating the probabilistic 
