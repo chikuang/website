@@ -91,6 +91,15 @@ timeout = 3000
 [[params.publications]]
 year = "2024"
 [[params.publications.paper]]
+name = """FTSgof: White noise and goodness-of-fit tests for functional time series in R"""
+authors  = "Mihyun Kim, Gregory Rice, Yuqian Zhao & **Chi-Kuang Yeh**"
+dest  = "Preprint"
+link = ""
+arxiv_link = ""
+pdf_link = ""
+package_link = ""
+
+[[params.publications.paper]]
 name = """Positive and unlabeled data: model, estimation, 
    inference, and classification"""
 authors  = "Siyan Liu, **Chi-Kuang Yeh**, Xin Zhang, Qinglong Tian & Pengfei Li"
