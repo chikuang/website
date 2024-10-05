@@ -10,9 +10,9 @@ timeout = 3000
   subtitle= "PhD"
   interests = """I possess a wide range of interests, but for now, my research 
   is centred around: 
-  1. Functional data analysis, espeically with dependence.
+  1. Functional data analysis.
   2. Statistical machine learning and high-dimensional statistical inference.
-  3. Dependence modeling (both spatial and temporal).
+  3. Dependence modeling.
   4. Optimal design of experiment.
   5. Applications include drug development, toxicology, neuroscience, to only name a few.
   """
