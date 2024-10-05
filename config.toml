@@ -11,11 +11,10 @@ timeout = 3000
   interests = """I possess a wide range of interests, but for now, my research 
   is centred around: 
   1. Functional data analysis, espeically with dependence.
-  2. Time series analysis.
+  2. Statistical machine learning and high-dimensional statistical inference.
   3. Dependence modeling (both spatial and temporal).
   4. Optimal design of experiment.
-  5. Machine learning and high-dimensional data analysis.
-  6. Applications include drug development, toxicology, neuroscience, to only name a few.
+  5. Applications include drug development, toxicology, neuroscience, to only name a few.
   """
   cv_name= "CV_YCK_Jul15_2024.pdf"
   # blog="https://uwaterloo.ca/scholar/c26yeh/home"
