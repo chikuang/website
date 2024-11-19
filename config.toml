@@ -63,6 +63,7 @@ timeout = 3000
 [[params.introduction.paragraph]]
   text= """
   **Teaching**: 
+  + [Direct study course](https://chikuang.github.io/course/directstudy.html)
   + 2024 Fall: NOT teaching this term.
   + 2024 Winter: [STAT 230 -- Introduction to Probability](https://chikuang.github.io/course/stat230),
   along with [Erik Hintz](https://uwaterloo.ca/scholar/ehintz), [Jeffery Negrea](https://utstat.toronto.edu/~negrea/) and
