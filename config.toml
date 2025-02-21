@@ -69,6 +69,13 @@ timeout = 3000
   along with [Erik Hintz](https://uwaterloo.ca/scholar/ehintz), [Jeffery Negrea](https://utstat.toronto.edu/~negrea/) and
   [Justin Ko](https://justinpko.github.io/). 
   """
+[[params.introduction.paragraph]]
+text= """
+  **Computing**:
+  For those who want to use the MFCF server at UWaterloo, you may find the guidiance below useful. Feel free to contact me if you have any questions.
+  + [Guideline to run R on MFCF server](https://chikuang.github.io/post/computing). """
+
+
 
 #[[params.projects]] 
 #[[params.projects.project]]
