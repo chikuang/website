@@ -96,6 +96,19 @@ text= """
 #	blog_link = ""
 
 [[params.publications]]
+year = "2025"
+[[params.publications.paper]]
+name = """Positive and unlabeled data: model, estimation, 
+   inference, and classification"""
+authors  = "Siyan Liu, **Chi-Kuang Yeh**, Xin Zhang, Qinglong Tian & Pengfei Li"
+dest  = "Journal of American Statsitical Association (to appear)"
+link = ""
+arxiv_link = "https://arxiv.org/abs/2407.09735"
+pdf_link = ""
+package_link = ""
+
+
+[[params.publications]]
 year = "2024"
 [[params.publications.paper]]
 name = """FTSgof: White noise and goodness-of-fit tests for functional time series in R"""
@@ -106,15 +119,7 @@ arxiv_link = ""
 pdf_link = ""
 package_link = ""
 
-[[params.publications.paper]]
-name = """Positive and unlabeled data: model, estimation, 
-   inference, and classification"""
-authors  = "Siyan Liu, **Chi-Kuang Yeh**, Xin Zhang, Qinglong Tian & Pengfei Li"
-dest  = "Preprint"
-link = ""
-arxiv_link = "https://arxiv.org/abs/2407.09735"
-pdf_link = ""
-package_link = ""
+
 
 [[params.publications.paper]]
 name = """CVXSADes: a stochastic algorithm for constructing optimal exact 
