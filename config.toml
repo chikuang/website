@@ -104,6 +104,7 @@ authors  = "Siyan Liu, **Chi-Kuang Yeh**, Xin Zhang, Qinglong Tian & Pengfei Li"
 dest  = "Journal of American Statsitical Association (to appear)"
 link = ""
 arxiv_link = "https://arxiv.org/abs/2407.09735"
+RG_link = "https://www.researchgate.net/publication/382271969_Positive_and_Unlabeled_Data_Model_Estimation_Inference_and_Classification"
 pdf_link = ""
 package_link = ""
 
