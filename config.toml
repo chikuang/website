@@ -102,9 +102,10 @@ name = """Positive and unlabeled data: model, estimation,
    inference, and classification"""
 authors  = "Siyan Liu, **Chi-Kuang Yeh**, Xin Zhang, Qinglong Tian & Pengfei Li"
 dest  = "Journal of the American Statistical Association"
-link = "https://www.tandfonline.com/doi/full/10.1080/01621459.2025.2474266"
+just_link = "https://www.tandfonline.com/doi/full/10.1080/01621459.2025.2474266"
 arxiv_link = "https://arxiv.org/abs/2407.09735"
 RG_link = "https://www.researchgate.net/publication/382271969_Positive_and_Unlabeled_Data_Model_Estimation_Inference_and_Classification"
+code_link = "https://github.com/chikuang/PUEM"
 pdf_link = ""
 package_link = ""
 
