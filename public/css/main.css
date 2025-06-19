@@ -344,7 +344,7 @@ ul {
 }
 
 .introduction .introduction-header {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .introduction .introduction-header .title {
@@ -414,4 +414,8 @@ ul {
   body {
     font-size: 14px;
   }
+}
+
+.introduction p {
+  margin-bottom: 0.3rem;
 }

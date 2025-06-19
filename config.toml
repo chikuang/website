@@ -5,6 +5,24 @@ title = "Chi-Kuang Yeh/葉啓光"
 theme = "avicenna"
 googleAnalytics = "UA-1234-6"
 timeout = 3000
+enableGitInfo = true
+lastmod = 2025-06-19
+[menu]
+
+  [[menu.main]]
+    name = "Publication"
+    url = "/publications/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Software"
+    url = "/softwares/"
+    weight = 2
+  [[menu.main]]
+    name = "Teaching"
+    url = "/teaching/"
+    weight = 3
+
 
 [params]
   subtitle= "PhD"
@@ -18,7 +36,7 @@ timeout = 3000
   """
   cv_name= "CV_YCK_Nov3_24.pdf"
   # blog="https://uwaterloo.ca/scholar/c26yeh/home"
-  site="https://uwaterloo.ca/scholar/c26yeh/home"
+  # site="https://uwaterloo.ca/scholar/c26yeh/home"
 
 [[params.affilation]]
   name = "McGill University & University of Waterloo"
@@ -37,12 +55,12 @@ timeout = 3000
 
 [[params.social]]
   name = "Researchgate"
-  icon = "file"
+  icon = "user"
   url = "https://www.researchgate.net/profile/Chi_Kuang_Yeh"
 
 [[params.social]]
   name = "googleScholar"
-  icon = "aperture"
+  icon = "book"
   url = "https://scholar.google.ca/citations?user=_v_Vy1sAAAAJ&hl=en"
 
 [[params.introduction.paragraph]]
@@ -57,18 +75,6 @@ timeout = 3000
 [[params.introduction.paragraph]]
  text= """My office is: Room 1216 on the top floor in [Burnside Hall](https://en.wikipedia.org/wiki/Burnside_Hall)."""
  
- [[params.introduction.paragraph]]
- text= """**Note**: I am on the 2024-2025 academic job market! Besides, feel free to shoot me an email if you are interested in my work! 
-     Happy to chat about them. :) """
-[[params.introduction.paragraph]]
-  text= """
-  **Teaching**: 
-  + [Direct study course](https://chikuang.github.io/course/directstudy)
-  + 2024 Fall: NOT teaching this term.
-  + 2024 Winter: [STAT 230 -- Introduction to Probability](https://chikuang.github.io/course/stat230),
-  along with [Erik Hintz](https://uwaterloo.ca/scholar/ehintz), [Jeffery Negrea](https://utstat.toronto.edu/~negrea/) and
-  [Justin Ko](https://justinpko.github.io/). 
-  """
 [[params.introduction.paragraph]]
 text= """
   **Computing**:
@@ -98,6 +104,10 @@ text= """
 [[params.publications]]
 year = "2025"
 [[params.publications.paper]]
+name = """Single and multi-objective optimal designs for group testing experiments"""
+authors  = "**Chi-Kuang Yeh**, Weng Kee Wong & Julie Zhou"
+dest  = "Preprint"
+[[params.publications.paper]]
 name = """Positive and unlabeled data: model, estimation, 
    inference, and classification"""
 authors  = "Siyan Liu, **Chi-Kuang Yeh**, Xin Zhang, Qinglong Tian & Pengfei Li"
@@ -108,6 +118,13 @@ RG_link = "https://www.researchgate.net/publication/382271969_Positive_and_Unlab
 code_link = "https://github.com/chikuang/PUEM"
 pdf_link = ""
 package_link = ""
+
+[[params.publications.paper]]
+name = """Variable selection in multivariate functional linear regression"""
+authors  = "**Chi-Kuang Yeh** & Peijun Sang"
+dest  = "Statistics in Bioscience, 17, 17--34"
+just_link = "https://link.springer.com/article/10.1007/s12561-023-09373-x"
+code_link = ""
 
 
 [[params.publications]]
@@ -137,13 +154,6 @@ RG_link = "https://www.researchgate.net/publication/380295508_CVXSADes_a_stochas
 
 [[params.publications]]
 year = "2023"
-[[params.publications.paper]]
-name = """Variable selection in multivariate functional linear regression"""
-authors  = "**Chi-Kuang Yeh** & Peijun Sang"
-dest  = "Statistics in Bioscience"
-just_link = "https://link.springer.com/article/10.1007/s12561-023-09373-x"
-code_link = ""
-####
 [[params.publications.paper]]
 name = """Functional spherical autocorrelation: a robust estimate 
   of the autocorrelation of a functional time series"""
@@ -175,76 +185,87 @@ dest  = "Statistical Papers, 62, 75--92"
 just_link = "https://link.springer.com/article/10.1007%2Fs00362-018-01076-6"
 code_link = "https://github.com/chikuang/OptimalDesigns-SLSE"
 	
-[[params.theses]]
-  year="2023"
-[[params.theses.paper]]
-	name = """Methods in functional data analysis: forecast evaluation, 
-	  robust serial dependence measures, and a spatial factor copula model"""
-  # authors = "**Chi-Kuang Yeh**"
-	dest  = "Ph.D. Thesis, University of Waterloo"
-	just_link = "https://uwspace.uwaterloo.ca/handle/10012/19839"
-	code_link = ""
-[[params.theses]]
-  year="2018"
-[[params.theses.paper]]
-	name = "Optimal regression design under second-order least squares estimator: theory, algorithm and applications"
-	# authors = "**Chi-Kuang Yeh**"
-	dest  = "Master's Thesis, University of Victoria"
-	just_link = "https://dspace.library.uvic.ca/handle/1828/9765"
-	code_link = ""
+[[params.publications]]
+year = "Thesis"
+[[params.publications.paper]]
+name = "Methods in functional data analysis: forecast evaluation, robust serial dependence measures, and a spatial factor copula model"
+authors = "Chi-Kuang Yeh"
+dest = "Ph.D. Thesis, University of Waterloo"
+just_link = "https://uwspace.uwaterloo.ca/handle/10012/19839"
+code_link = ""
 
-[[params.softwares]] 
-[[params.softwares.software]]
-	name = "FTSgof"
-	authors = "Mihyun Kim, **Chi-Kuang Yeh**, Yuqian Zhao & Gregory Rice"
-	description  = """A R package for white noise and goodness-of-fit tests for functional time series"""
-	software_page = ""
-	paper = ""
-	cran = "https://cran.r-project.org/web/packages/FTSgof/index.html"
-	link = ""
-	just_link = ""
-	code_link = ""
-	github_link = "https://github.com/veritasmih/FTSgof"
-[[params.softwares.software]]
-	name = "evalRTPF"
-	authors = "**Chi-Kuang Yeh**, Gregory Rice & Joel Dubin"
-	description  = """A R package to  Evaluating the probabilistic 
-	  forecasts between competitive forecasters """
-	software_page = ""
-	paper = ""
-	link = ""
-	just_link = ""
-	code_link = ""
-	github_link = "https://github.com/chikuang/evalRTPF"
-[[params.softwares.software]]
-	name = "optDesign"
-	authors = "**Chi-Kuang Yeh** & Julie Zhou"
-	description  = """A MATLAB toolbox to compute optimal regression design """
-	software_page = ""
-	link = ""
-	just_link = ""
-	code_link = ""
-	github_link = "https://github.com/chikuang/optDesign"
-[[params.softwares.software]]
-	name = "SLSEdesign"
-	authors = "**Chi-Kuang Yeh**, Julie Zhou & Jason Hou-Liu" 
-	description  = """A R package for computing optimal regression designs under the second-order least-squares estimator"""
-	software_page = ""
-	cran = "https://cran.rstudio.com/web/packages/SLSEdesign/index.html"
-	link = ""
-	just_link = ""
-	code_link = ""
-	github_link = "https://github.com/chikuang/SLSEdesign"
-[[params.softwares.software]]
-	name = "yehUtil"
-	authors = "**Chi-Kuang Yeh**"
-	description  = """A R package for knitting some RMarkdown reports and other usages"""
-	software_page = ""
-	link = ""
-	just_link = ""
-	code_link = ""
-	github_link = "https://github.com/chikuang/yehUtil"
-	
+[[params.publications.paper]]
+name = "Optimal regression design under second-order least squares estimator: theory, algorithm and applications"
+authors = "Chi-Kuang Yeh"
+dest = "Master's Thesis, University of Victoria"
+just_link = "https://dspace.library.uvic.ca/handle/1828/9765"
+code_link = ""
+
+[[params.softwares]]
+  year = "2024"
+  [[params.softwares.software]]
+    name = "FTSgof"
+    authors = "Mihyun Kim, **Chi-Kuang Yeh**, Yuqian Zhao & Gregory Rice"
+    desc  = "A R package for white noise and goodness-of-fit tests for functional time series"
+    link = ""
+    github_link = "https://github.com/veritasmih/FTSgof"
+    just_link = ""
+    pdf_link = ""
+    cran = "https://cran.r-project.org/web/packages/FTSgof/index.html"
+
+  [[params.softwares.software]]
+    name = "evalRTPF"
+    authors = "**Chi-Kuang Yeh**, Gregory Rice & Joel Dubin"
+    desc  = "A R package to Evaluating the probabilistic forecasts between competitive forecasters"
+    link = ""
+    github_link = "https://github.com/chikuang/evalRTPF"
+    just_link = ""
+    pdf_link = ""
+
+  [[params.softwares.software]]
+    name = "optDesign"
+    authors = "**Chi-Kuang Yeh** & Julie Zhou"
+    desc  = "A MATLAB toolbox to compute optimal regression design"
+    link = ""
+    github_link = "https://github.com/chikuang/optDesign"
+    just_link = ""
+    pdf_link = ""
+
+  [[params.softwares.software]]
+    name = "SLSEdesign"
+    authors = "**Chi-Kuang Yeh**, Julie Zhou & Jason Hou-Liu"
+    desc  = "A R package for computing optimal regression designs under the second-order least-squares estimator"
+    link = ""
+    github_link = "https://github.com/chikuang/SLSEdesign"
+    just_link = ""
+    pdf_link = ""
+    cran = "https://cran.rstudio.com/web/packages/SLSEdesign/index.html"
+
+  [[params.softwares.software]]
+    name = "yehUtil"
+    authors = "**Chi-Kuang Yeh**"
+    desc  = "A R package for knitting some RMarkdown reports and other usages"
+    link = ""
+    github_link = "https://github.com/chikuang/yehUtil"
+    just_link = ""
+    pdf_link = ""
+
+[[params.teaching]]
+year = "Direct Study"
+[[params.teaching.course]]
+name = "Introduction to Cross-Validation"
+link = "https://chikuang.github.io/course/directstudy"
+
+[[params.teaching]]
+year = "2025 Fall"
+[[params.teaching.course]]
+name = "Computational Methods in Statistics"
+[[params.teaching]]
+year = "2024"
+[[params.teaching.course]]
+name = "STAT 230 – Introduction to Probability"
+# description = "Co-taught with [Erik Hintz](https://uwaterloo.ca/scholar/ehintz), [Jeffery Negrea](https://utstat.toronto.edu/~negrea/) and [Justin Ko](https://justinpko.github.io/). ."
+link = "https://chikuang.github.io/course/stat230"
 
 # [[params.projects.project]]
 #		name = "Integer eget aliquet nibh praesent tristique magna"
