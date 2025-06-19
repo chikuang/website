@@ -3,10 +3,11 @@
     {{- partial "header.html" . -}}
     <body>
         <div class="container wrapper">
-            {{ partial "head.html" . }}
+            {{ partial "resource-head.html" . }}
             <div class="content" style="max-width: 800px; margin: 0 auto; padding: 20px;">
                 <a href="/resources/" style="font-size:1.1em; display: block; margin-bottom: 2em;">&larr; Back to Resources</a>
                 <article class="resource-post" style="width: 100%; margin: 0 auto;">
+                    <h1 style="margin-bottom: 1em; color: #333;">{{ .Title }}</h1>
                     <div class="post-content" style="line-height: 1.6;">
                         <style>
                             /* Code block styling */

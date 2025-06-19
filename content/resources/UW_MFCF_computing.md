@@ -57,7 +57,7 @@ If you have questions or wonders. Feel free to contact me
 
   1. chi-kuang.yeh@uwaterloo.ca or chi-kuang.yeh@mail.mcgill.ca
 
-  2. I am currently a CANSSI Distinugish Postdoctoral Fellow at McGill University
+  2. I am currently a CANSSI Distinguish Postdoctoral Fellow at McGill University
 
   3. My website is https://chikuang.github.io/
 
