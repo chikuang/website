@@ -1,0 +1,34 @@
+{{ partial "header.html" . }}
+
+<div class="container wrapper">
+  <div style="margin-left: 2em; margin-top: 1em; display: flex; gap: 2em; align-items: center;">
+    <a href="/" style="font-size:1.3em; color:#d00; text-decoration:none;">Home</a>
+    <a href="/publications/" style="font-size:1.3em; color:#d00; text-decoration:none;">Publication</a>
+    <a href="/softwares/" style="font-size:1.3em; color:#d00; text-decoration:none;">Software</a>
+    <span style="font-size:1.3em; color:#d00; font-weight:bold;">Teaching</span>
+  </div>
+
+  <div class="introduction" id="teaching" style="margin-left: 2em;">
+    <h4>Teaching</h4>
+    {{ with .Site.Params.teaching }}
+      {{- range $index, $teaching := . -}}
+        <div class="year">{{ $teaching.year }}</div>
+        <ul>
+          {{- range $i, $course := $teaching.course -}}
+          <li>
+            <p class="teaching-course">{{ $course.name }}</p>
+            {{ $course.description | markdownify }}
+            {{ if or ($course.link) ($course.syllabus) ($course.materials) }}
+            <span class="code_blog">
+              {{ with $course.link }}[<a href="{{ . }}">site</a>]{{ end }}
+              {{ with $course.syllabus }}[<a href="{{ . }}">syllabus</a>]{{ end }}
+              {{ with $course.materials }}[<a href="{{ . }}">materials</a>]{{ end }}
+            </span>
+            {{ end }}
+          </li>
+          {{- end }}
+        </ul>
+      {{- end }}
+    {{ end }}
+  </div>
+</div> 

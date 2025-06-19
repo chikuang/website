@@ -1,0 +1,83 @@
+[[params.publications]]
+year = "2025"
+[[params.publications.paper]]
+name = """Single and multi-objective optimal designs for group testing experiments"""
+authors  = "**Chi-Kuang Yeh**, Weng Kee Wong & Julie Zhou"
+dest  = "Preprint"
+[[params.publications.paper]]
+name = """Positive and unlabeled data: model, estimation, 
+   inference, and classification"""
+authors  = "Siyan Liu, **Chi-Kuang Yeh**, Xin Zhang, Qinglong Tian & Pengfei Li"
+dest  = "Journal of the American Statistical Association"
+just_link = "https://www.tandfonline.com/doi/full/10.1080/01621459.2025.2474266"
+arxiv_link = "https://arxiv.org/abs/2407.09735"
+RG_link = "https://www.researchgate.net/publication/382271969_Positive_and_Unlabeled_Data_Model_Estimation_Inference_and_Classification"
+code_link = "https://github.com/chikuang/PUEM"
+pdf_link = ""
+package_link = ""
+
+[[params.publications.paper]]
+name = """Variable selection in multivariate functional linear regression"""
+authors  = "**Chi-Kuang Yeh** & Peijun Sang"
+dest  = "Statistics in Bioscience, 17, 17--34"
+just_link = "https://link.springer.com/article/10.1007/s12561-023-09373-x"
+code_link = ""
+
+
+[[params.publications]]
+year = "2024"
+[[params.publications.paper]]
+name = """FTSgof: White noise and goodness-of-fit tests for functional time series in R"""
+authors  = "Mihyun Kim, Gregory Rice, Yuqian Zhao & **Chi-Kuang Yeh**"
+dest  = "Preprint"
+link = ""
+arxiv_link = ""
+pdf_link = ""
+package_link = ""
+
+
+
+[[params.publications.paper]]
+name = """CVXSADes: a stochastic algorithm for constructing optimal exact 
+   regression designs with single or multiple objectives"""
+authors  = "**Chi-Kuang Yeh** & Julie Zhou"
+dest  = "Preprint"
+link = ""
+code_link = "https://github.com/chikuang/CVXSADes"
+arxiv_link = "https://arxiv.org/abs/2405.02983"
+pdf_link = ""
+package_link = ""
+RG_link = "https://www.researchgate.net/publication/380295508_CVXSADes_a_stochastic_algorithm_for_constructing_optimal_exact_regression_designs_with_single_or_multiple_objectives"
+
+[[params.publications]]
+year = "2023"
+[[params.publications.paper]]
+name = """Functional spherical autocorrelation: a robust estimate 
+  of the autocorrelation of a functional time series"""
+authors  = "**Chi-Kuang Yeh**, Gregory Rice & Joel A. Dubin"
+dest  = "Electronic Journal of Statistics, 17, 650--687"
+just_link = "https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-17/issue-1/Functional-spherical-autocorrelation--A-robust-estimate-of-the-autocorrelation/10.1214/23-EJS2112.full"
+code_link = "https://github.com/chikuang/fSACF"
+arxiv_link = "https://arxiv.org/abs/2207.05806"
+RG_link = "https://www.researchgate.net/publication/361976736_Functional_Spherical_Autocorrelation_A_Robust_Estimate_of_the_Autocorrelation_of_a_Functional_Time_Series"
+####
+[[params.publications]]
+year = "2022"
+[[params.publications.paper]]
+name = """Evaluating real-time probabilistic forecasts with application to 
+ 	  National Basketball Association outcome prediction"""
+authors  = "**Chi-Kuang Yeh**, Gregory Rice & Joel A. Dubin"
+dest  = "The American Statistician, 76, 214--223"
+just_link = "https://www.tandfonline.com/doi/abs/10.1080/00031305.2021.1967781?journalCode=utas20"
+code_link = "https://github.com/chikuang/evalRTPF"
+arxiv_link = "https://arxiv.org/abs/2010.00781"
+RG_link = "https://www.researchgate.net/publication/344448875_Evaluating_real-time_probabilistic_forecasts_with_application_to_National_Basketball_Association_outcome_prediction"
+####
+[[params.publications]]
+year = "2021"
+[[params.publications.paper]]
+name = "Properties of optimal regression designs under the second-order least squares estimator"
+authors = "**Chi-Kuang Yeh** & Julie Zhou"
+dest  = "Statistical Papers, 62, 75--92"
+just_link = "https://link.springer.com/article/10.1007%2Fs00362-018-01076-6"
+code_link = "https://github.com/chikuang/OptimalDesigns-SLSE"

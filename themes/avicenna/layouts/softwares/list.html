@@ -1,0 +1,52 @@
+{{ partial "header.html" . }}
+
+<div class="container wrapper">
+	<div style="margin-left: 2em; margin-top: 1em; display: flex; gap: 2em; align-items: center;">
+		<a href="/" style="font-size:1.3em; color:#d00; text-decoration:none;">Home</a>
+		<a href="/publications/" style="font-size:1.3em; color:#d00; text-decoration:none;">Publication</a>
+		<span style="font-size:1.3em; color:#d00; font-weight:bold;">Software</span>
+		<a href="/teaching/" style="font-size:1.3em; color:#d00; text-decoration:none;">Teaching</a>
+	</div>
+
+	<div class="introduction" id="software" style="margin-left: 2em;">
+		{{ with .Site.Params.softwares }}
+		<h4>Softwares</h4>
+
+		{{- range $index, $softwares := $.Site.Params.softwares -}}
+		<div>
+			{{ range $elem_index, $software := $softwares.software }}
+			<div style="margin-bottom: 1.5em;">
+				<!-- Title as a link if available -->
+				<div>
+					{{ if $software.link }}
+					<a href="{{ $software.link }}" class="softwares"><strong>{{ $software.name }}</strong></a>
+					{{ else }}
+					<span class="softwares"><strong>{{ $software.name }}</strong></span>
+					{{ end }}
+				</div>
+				<!-- Description (no year) -->
+				<div style="margin-top: 0.2em;">
+					<em>{{ $software.desc | markdownify }}</em>
+				</div>
+				<!-- Links -->
+				<div style="margin-top: 0.2em;">
+					{{ if or ($software.github_link) ($software.pdf_link) ($software.just_link) ($software.cran) }}
+					<span class="code_blog">
+						{{ with $software.github_link }}[<a href="{{ . }}">GitHub</a>]{{ end }}
+						{{ with $software.pdf_link }} [<a href="{{ . }}">pdf</a>]{{ end }}
+						{{ with $software.just_link }} [<a href="{{ . }}">link</a>]{{ end }}
+						{{ with $software.cran }} [<a href="{{ . }}">CRAN</a>]{{ end }}
+					</span>
+					{{ end }}
+				</div>
+				<!-- Authors -->
+				<div style="margin-top: 0.2em;">
+					<span class="collaborators">{{ $software.authors | markdownify }}</span>
+				</div>
+			</div>
+			{{ end }}
+		</div>
+		{{- end -}}
+		{{- end -}}
+	</div>
+</div> 

@@ -1,0 +1,14 @@
+[[main]]
+name = "Publication"
+url = "#publication"
+weight = 1
+
+[[main]]
+name = "Software"
+url = "#software"
+weight = 2
+
+[[main]]
+name = "Teaching"
+url = "#teaching"
+weight = 3

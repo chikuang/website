@@ -1,0 +1,44 @@
+<a href="/" style="font-size:1.1em;">&larr; Back to Home</a>
+
+<div class="introduction" id="software">
+	{{ with .Site.Params.softwares }}
+	<h4>Softwares</h4>
+
+	{{- range $index, $softwares := $.Site.Params.softwares -}}
+	<div class="year">{{ $softwares.year }}</div>
+
+	<ul>
+		{{ range $elem_index, $software := $softwares.item }}
+		<li style="margin-bottom: 1.5em;">
+			<!-- Title as a link if available -->
+			<div>
+				{{ if $software.link }}
+				<a href="{{ $software.link }}" class="softwares"><strong>{{ $software.name }}</strong></a>
+				{{ else }}
+				<span class="softwares"><strong>{{ $software.name }}</strong></span>
+				{{ end }}
+			</div>
+			<!-- Description and Year -->
+			<div style="margin-top: 0.2em;">
+				<em>{{ $software.desc | markdownify }}</em>{{ with $software.year }}, {{ . }}{{ end }}
+			</div>
+			<!-- Authors -->
+			<div style="margin-top: 0.2em;">
+				<span class="collaborators">{{ $software.authors | markdownify }}</span>
+			</div>
+			<!-- Links -->
+			<div style="margin-top: 0.2em;">
+				{{ if or ($software.code_link) ($software.pdf_link) ($software.just_link) }}
+				<span class="code_blog">
+					{{ with $software.code_link }}[<a href="{{ . }}">code</a>]{{ end }}
+					{{ with $software.pdf_link }} [<a href="{{ . }}">pdf</a>]{{ end }}
+					{{ with $software.just_link }} [<a href="{{ . }}">link</a>]{{ end }}
+				</span>
+				{{ end }}
+			</div>
+		</li>
+		{{ end }}
+	</ul>
+	{{- end -}}
+	{{- end -}}
+</div> 

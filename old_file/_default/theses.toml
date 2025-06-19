@@ -1,0 +1,17 @@
+[[params.theses]]
+year="2023"
+[[params.theses.paper]]
+name = """Methods in functional data analysis: forecast evaluation, 
+	  robust serial dependence measures, and a spatial factor copula model"""
+# authors = "**Chi-Kuang Yeh**"
+dest  = "Ph.D. Thesis, University of Waterloo"
+just_link = "https://uwspace.uwaterloo.ca/handle/10012/19839"
+code_link = ""
+[[params.theses]]
+year="2018"
+[[params.theses.paper]]
+name = "Optimal regression design under second-order least squares estimator: theory, algorithm and applications"
+# authors = "**Chi-Kuang Yeh**"
+dest  = "Master's Thesis, University of Victoria"
+just_link = "https://dspace.library.uvic.ca/handle/1828/9765"
+code_link = ""

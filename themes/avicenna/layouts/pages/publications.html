@@ -1,0 +1,54 @@
+<div class="introduction" id="publication">
+	{{ with .Site.Params.publications }}
+	<h4>Publications</h4>
+
+	{{- range $index, $publications := $.Site.Params.publications -}}
+	<div class="year">{{ $publications.year }}</div>
+
+	<ul>
+		{{ range $elem_index, $publication := $publications.paper }}
+		<li>
+			{{ if $publication.link }}
+			<a href="{{ $publication.link }}" class="publications"> {{ $publication.name }}, </a>
+			{{ else }}
+			<p class="publications"> {{ $publication.name }}, </p>
+			{{ end }} <br>
+			{{ $publication.dest | markdownify }}.
+
+			{{ if or ($publication.code_link) ($publication.arxiv_link) ($publication.pdf_link) ($publication.RG_link) ($publication.just_link) ($publication.software_link)}}
+			<span class="code_blog">
+				{{ with $publication.code_link }}
+				[<a href="{{ $publication.code_link }}">code</a>]
+				{{ end }}
+				
+				{{ with $publication.pdf_link }}
+				[<a href="{{ $publication.pdf_link }}">pdf</a>]
+				{{ end }}
+				
+				{{ with $publication.software_link }}
+				[<a href="{{ $publication.software_link }}">software</a>]
+				{{ end }}
+				
+				{{ with $publication.just_link }}
+				[<a href="{{ $publication.just_link }}">link</a>]
+				{{ end }}
+
+				{{ with $publication.arxiv_link }}
+				[<a href="{{ $publication.arxiv_link }}">arXiv</a>]
+				{{ end }}
+				
+				{{ with $publication.RG_link }}
+				[<a href="{{ $publication.RG_link }}">ResearchGate</a>]
+				{{ end }}
+			</span>
+			{{ end }}
+
+			<span class="collaborators">
+				{{ $publication.authors | markdownify }}
+			</span>
+		</li>
+		{{ end }}
+	</ul>
+	{{- end -}}
+	{{- end -}}
+</div>
