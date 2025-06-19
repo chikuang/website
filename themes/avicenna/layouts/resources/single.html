@@ -1,0 +1,14 @@
+{{ define "main" }}
+<a href="/resources/" style="font-size:1.1em;">&larr; Back to Resources</a>
+<article class="resource-post">
+  <h1>{{ .Title }}</h1>
+  <div style="color: #666; margin-bottom: 1em;">
+    {{ with .Date }}<span>{{ .Format "2006-01-02" }}</span>{{ end }}
+    {{ with .Params.tags }} | Tags: {{ delimit . ", " }}{{ end }}
+  </div>
+  {{ with .Params.description }}<p><em>{{ . }}</em></p>{{ end }}
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }} 

@@ -1,0 +1,22 @@
+<a href="/" style="font-size:1.1em;">&larr; Back to Home</a>
+
+<div class="introduction" id="resources">
+  <h4>Resources</h4>
+  <ul>
+    {{ range .Pages }}
+      <li style="margin-bottom: 1.5em;">
+        <div>
+          <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
+        </div>
+        <div style="margin-top: 0.2em;">
+          {{ with .Params.description }}<em>{{ . }}</em>{{ end }}
+          {{ with .Date }}, {{ .Format "2006-01-02" }}{{ end }}
+        </div>
+        <div style="margin-top: 0.2em;">
+          {{ with .Params.tags }}<span>Tags: {{ delimit . ", " }}</span>{{ end }}
+        </div>
+      </li>
+    {{ end }}
+  </ul>
+</div>
+

@@ -1,0 +1,46 @@
+<div class="introduction" id="resources">
+	{{ with .Site.Params.resources }}
+	<h4>Resources</h4>
+
+	{{- range $index, $resources := $.Site.Params.resources -}}
+	<div class="year">{{ $resources.year }}</div>
+
+	<ul>
+		{{ range $elem_index, $resource := $resources.resource }}
+		<li>
+			{{ if $resource.link }}
+			<a href="{{ $resource.link }}" class="resources"> {{ $resource.name }}, </a>
+			{{ else }}
+			<p class="resources"> {{ $resource.name }}, </p>
+			{{ end }} <br>
+			{{ $resource.description | markdownify }}.
+
+			{{ if or ($resource.code_link) ($resource.pdf_link) ($resource.external_link) ($resource.download_link)}}
+			<span class="code_blog">
+				{{ with $resource.code_link }}
+				[<a href="{{ $resource.code_link }}">code</a>]
+				{{ end }}
+				
+				{{ with $resource.pdf_link }}
+				[<a href="{{ $resource.pdf_link }}">pdf</a>]
+				{{ end }}
+				
+				{{ with $resource.external_link }}
+				[<a href="{{ $resource.external_link }}">external</a>]
+				{{ end }}
+
+				{{ with $resource.download_link }}
+				[<a href="{{ $resource.download_link }}">download</a>]
+				{{ end }}
+			</span>
+			{{ end }}
+
+			<span class="description">
+				{{ $resource.description | markdownify }}
+			</span>
+		</li>
+		{{ end }}
+	</ul>
+	{{- end -}}
+	{{- end -}}
+</div> 
