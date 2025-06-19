@@ -1,14 +1,56 @@
-{{ define "main" }}
-<a href="/resources/" style="font-size:1.1em;">&larr; Back to Resources</a>
-<article class="resource-post">
-  <h1>{{ .Title }}</h1>
-  <div style="color: #666; margin-bottom: 1em;">
-    {{ with .Date }}<span>{{ .Format "2006-01-02" }}</span>{{ end }}
-    {{ with .Params.tags }} | Tags: {{ delimit . ", " }}{{ end }}
-  </div>
-  {{ with .Params.description }}<p><em>{{ . }}</em></p>{{ end }}
-  <div class="post-content">
-    {{ .Content }}
-  </div>
-</article>
-{{ end }} 
+<!DOCTYPE html>
+<html>
+    {{- partial "header.html" . -}}
+    <body>
+        <div class="container wrapper">
+            {{ partial "head.html" . }}
+            <div class="content" style="max-width: 800px; margin: 0 auto; padding: 20px;">
+                <a href="/resources/" style="font-size:1.1em; display: block; margin-bottom: 2em;">&larr; Back to Resources</a>
+                <article class="resource-post" style="width: 100%; margin: 0 auto;">
+                    <div class="post-content" style="line-height: 1.6;">
+                        <style>
+                            /* Code block styling */
+                            pre {
+                                background-color: #f8f8f8;
+                                border: 1px solid #ddd;
+                                border-radius: 4px;
+                                padding: 16px;
+                                margin: 20px 0;
+                                overflow-x: auto;
+                                white-space: pre;
+                                word-wrap: normal;
+                                font-size: 14px;
+                                line-height: 1.5;
+                            }
+                            pre code {
+                                display: block;
+                                color: #333;
+                                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                                white-space: pre;
+                                word-spacing: normal;
+                                word-break: normal;
+                            }
+                            /* R specific syntax highlighting */
+                            .language-r .hljs-comment { color: #998; font-style: italic; }
+                            .language-r .hljs-string { color: #d14; }
+                            .language-r .hljs-keyword { color: #0086b3; }
+                            .language-r .hljs-number { color: #099; }
+                            .language-r .hljs-literal { color: #458; font-weight: bold; }
+                            .language-r .hljs-built_in { color: #0086b3; }
+                            /* Inline code */
+                            p code {
+                                background-color: #f8f8f8;
+                                padding: 2px 4px;
+                                border-radius: 3px;
+                                color: #333;
+                                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+                            }
+                        </style>
+                        {{ .Content }}
+                    </div>
+                </article>
+            </div>
+        </div>
+        {{- partial "footer.html" . -}}
+    </body>
+</html> 
