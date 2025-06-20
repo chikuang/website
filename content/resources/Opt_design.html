@@ -1,5 +1,5 @@
 ---
-title: "Optiaml Regression Design"
+title: "Optimal Regression Design"
 date: "2025-06-20"
 description: "A short tutorial to optimal regression design"
 tags: ["R", "Optimal_design", "tutorial"]
@@ -23,10 +23,12 @@ math: true
 <p><span class="math display">\[
 Y_i = \mathbf{f}(x_i)^\top \boldsymbol{\beta} + \varepsilon_i,\quad \varepsilon_i \sim \mathcal{N}(0, \sigma^2)
 \]</span>
-where:
-- Note <span class="math inline">\(\boldsymbol{\beta} \in \mathbb{R}^p\)</span> are the parameters to estimate,
-- <span class="math inline">\(\mathbf{f}(x) \in \mathbb{R}^p\)</span> is the regression basis (e.g., <span class="math inline">\(\mathbf{f}(x) = [1, x]^\top\)</span>),
-- <span class="math inline">\(x_i \in \mathcal{X}\)</span> are the design points in a compact design space.</p>
+where:</p>
+<ul>
+<li>Note <span class="math inline">\(\boldsymbol{\beta} \in \mathbb{R}^p\)</span> are the parameters to estimate,</li>
+<li><span class="math inline">\(\mathbf{f}(x) \in \mathbb{R}^p\)</span> is the regression basis (e.g., <span class="math inline">\(\mathbf{f}(x) = [1, x]^\top\)</span>),</li>
+<li><span class="math inline">\(x_i \in \mathcal{X}\)</span> are the design points in a compact design space.</li>
+</ul>
 <p>The <strong>Fisher Information Matrix</strong> for a weighted design <span class="math inline">\(\xi = \{(x_i, w_i)\}\)</span> is:</p>
 <p><span class="math display">\[
 M(\xi) = \sum_{i=1}^n w_i\, \mathbf{f}(x_i)\, \mathbf{f}(x_i)^\top
