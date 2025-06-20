@@ -8,12 +8,10 @@ timeout = 3000
 enableGitInfo = true
 lastmod = 2025-06-19
 [menu]
-
   [[menu.main]]
     name = "Publication"
     url = "/publications/"
     weight = 1
-
   [[menu.main]]
     name = "Software"
     url = "/softwares/"
@@ -22,12 +20,10 @@ lastmod = 2025-06-19
     name = "Teaching"
     url = "/teaching/"
     weight = 3
-
   [[menu.main]]
     name = "Resource"
     url = "/resources/"
     weight = 4
-
 
 [params]
   subtitle= "PhD"
@@ -86,11 +82,7 @@ lastmod = 2025-06-19
  
 [[params.introduction.paragraph]]
 text= """
-  **Computing**:
-  For those who want to use the MFCF server at UWaterloo, you may find the guidiance below useful. Feel free to contact me if you have any questions.
-  + [Guideline to run R on MFCF server](https://chikuang.github.io/post/computing). """
-
-
+  **UWaterloo Researcher Map**: I create a [researcher map](https://chikuang.shinyapps.io/UWaterloo_SAS_Researcher_Map/) to visualize the researcher's location from the Department of Statistics and Actuarial Science at the University of Waterloo."""
 
 #[[params.projects]] 
 #[[params.projects.project]]
