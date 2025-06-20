@@ -14,6 +14,12 @@
                     </nav>
                     {{ end }}
                     <div class="post-content" style="line-height: 1.6; flex: 1 1 0; min-width: 0;">
+                        <h1>{{ .Title }}</h1>
+                        {{ with .Date }}
+                        <div style="margin-bottom: 1em; color: #666; font-size: 0.9em;">
+                            {{ .Format "2006-01-02" }}
+                        </div>
+                        {{ end }}
                         <style>
                             /* Code block styling */
                             pre {
