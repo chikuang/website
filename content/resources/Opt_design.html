@@ -71,10 +71,21 @@ M(\xi) = \int_\mathcal{X}\frac{\partial g}{\partial \boldsymbol{\beta}}\frac{\pa
 </tr>
 </tbody>
 </table>
-<p>Each criterion reflects a different goal:
-- <strong><span class="math inline">\(D\)</span>-opt</strong> aims for overall information efficiency.
-- <strong><span class="math inline">\(A\)</span>-opt</strong> targets average estimation precision.
-- <strong><span class="math inline">\(E\)</span>-opt</strong> guards against poorly estimated directions.</p>
+<p>Each criterion reflects a different goal:</p>
+<ul>
+<li><strong><span class="math inline">\(D\)</span>-opt</strong> aims for overall information efficiency.</li>
+<li><strong><span class="math inline">\(A\)</span>-opt</strong> targets average estimation precision.</li>
+<li><strong><span class="math inline">\(E\)</span>-opt</strong> guards against poorly estimated directions.</li>
+</ul>
+<p>There are other criteria that are more complex, for example, the minimax criterion. If the model is mis-specified, then the OLSE would be biased. In this case, we would have <span class="math inline">\(bias(\hat{\boldsymbol{\beta}})=E[\hat{\boldsymbol{\beta}}]-\boldsymbol{\beta}\)</span>. Then the minimax D- and A-optimality are
+<span class="math display">\[
+  \min_{w \in \mathbb{R}^n} \max_{\boldsymbol{\beta}\in \mathbb{R}^p} \log\det\{MSE(\hat{\boldsymbol{\beta}})\}
+\]</span>
+and
+<span class="math display">\[
+\min_{w \in \mathbb{R}^n} \max_{\boldsymbol{\beta}\in \mathbb{R}^p} \operatorname{tr}\{MSE(\hat{\boldsymbol{\beta}})\}.
+\]</span></p>
+<p>There are other criteria, such as <strong><span class="math inline">\(c\)</span>-optimality</strong> (minimizing the variance of a linear combination of parameters), <strong><span class="math inline">\(G\)</span>-optimality</strong> (minimizing the maximum variance across all parameter estimates), Bayesian optimal design, <span class="math inline">\(K\)</span>-optimality (minimizing the condition number), and others.</p>
 <hr />
 </div>
 <div id="problem-statement" class="section level1">
