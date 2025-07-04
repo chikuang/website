@@ -260,12 +260,13 @@ link = "https://chikuang.github.io/course/directstudy"
 [[params.teaching]]
 year = "2025 Fall"
 [[params.teaching.course]]
-name = "Computational Methods in Statistics"
+name = "Stat 8670 - Computational Methods in Statistics"
+link = "https://chikuang.github.io/course/stat8670"
+
 [[params.teaching]]
 year = "2024"
 [[params.teaching.course]]
 name = "STAT 230 – Introduction to Probability"
-# description = "Co-taught with [Erik Hintz](https://uwaterloo.ca/scholar/ehintz), [Jeffery Negrea](https://utstat.toronto.edu/~negrea/) and [Justin Ko](https://justinpko.github.io/). ."
 link = "https://chikuang.github.io/course/stat230"
 
 # [[params.projects.project]]
