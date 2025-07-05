@@ -260,13 +260,13 @@ link = "https://chikuang.github.io/course/directstudy"
 [[params.teaching]]
 year = "2025 Fall"
 [[params.teaching.course]]
-name = "Stat 8670 - Computational Methods in Statistics"
+name = "STAT 8670 -- Computational Methods in Statistics"
 link = "https://chikuang.github.io/course/stat8670"
 
 [[params.teaching]]
 year = "2024"
 [[params.teaching.course]]
-name = "STAT 230 – Introduction to Probability"
+name = "STAT 230 -- Introduction to Probability"
 link = "https://chikuang.github.io/course/stat230"
 
 # [[params.projects.project]]
