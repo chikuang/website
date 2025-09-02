@@ -6,7 +6,7 @@ theme = "avicenna"
 googleAnalytics = "UA-1234-6"
 timeout = 3000
 enableGitInfo = true
-lastmod = 2025-06-19
+lastmod = 2025-09-02
 [menu]
   [[menu.main]]
     name = "Publication"
@@ -35,7 +35,7 @@ lastmod = 2025-06-19
   4. Optimal design of experiment.
   5. Applications include drug development, toxicology, neuroscience, to only name a few.
   """
-  cv_name= "CV_YCK_Nov3_24.pdf"
+  cv_name= "CV_YCK_Sep2_25.pdf"
   # blog="https://uwaterloo.ca/scholar/c26yeh/home"
   # site="https://uwaterloo.ca/scholar/c26yeh/home"
 
