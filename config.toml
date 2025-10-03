@@ -255,6 +255,10 @@ year = "Direct Study"
 name = "Introduction to Cross-Validation"
 link = "https://chikuang.github.io/course/directstudy"
 
+[[params.teaching.course]]
+name = "Statistical Inference"
+link = "https://chikuang.github.io/course/stat_inference"
+
 [[params.teaching]]
 year = "2026 Spring (Tentative)"
 [[params.teaching.course]]
