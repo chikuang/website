@@ -265,6 +265,10 @@ year = "2026 Spring (Tentative)"
 name = "STAT 8310 -- Applied Bayesian Statistics"
 link = "https://chikuang.github.io/course/stat8310"
 
+[[params.teaching.course]]
+name = "STAT 8678 -- SAS Programming & Data Analysis"
+link = "https://chikuang.github.io/course/stat8678"
+
 [[params.teaching]]
 year = "2025 Fall"
 [[params.teaching.course]]
