@@ -6,7 +6,7 @@ theme = "avicenna"
 googleAnalytics = "UA-1234-6"
 timeout = 3000
 enableGitInfo = true
-lastmod = 2025-11-20
+lastmod = 2025-12-07
 [menu]
   [[menu.main]]
     name = "Publication"
@@ -21,9 +21,13 @@ lastmod = 2025-11-20
     url = "/teaching/"
     weight = 3
   [[menu.main]]
+    name = "Group"
+    url = "/group/"
+    weight = 4
+  [[menu.main]]
     name = "Resource"
     url = "/resources/"
-    weight = 4
+    weight = 5
 
 [params]
   subtitle= "PhD"
@@ -285,6 +289,25 @@ year = "2024"
 [[params.teaching.course]]
 name = "STAT 230 -- Introduction to Probability"
 link = "https://chikuang.github.io/course/stat230"
+
+
+
+[[params.group]]
+year = "PhD Students"
+[[params.group.member]]
+name = "Wenpu Ma"
+position = "Biostatistics"
+description = "Co-supervisor: [Gengsheng Qin](https://cas.gsu.edu/profile/gengsheng-qin/) (GSU)"
+email = ""
+link = "https://www.linkedin.com/in/wenpu-ma"
+github_link = "https://github.com/wenpu1222"
+[[params.group.member]]
+name = "Zilong Zhang"
+position = "Machine Learning and Data Science"
+description = ""
+email = ""
+link = "https://zilong7832.github.io/"
+github_link = "https://github.com/zilong7832"
 
 # [[params.projects.project]]
 #		name = "Integer eget aliquet nibh praesent tristique magna"
