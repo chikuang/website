@@ -6,7 +6,7 @@ theme = "avicenna"
 googleAnalytics = "UA-1234-6"
 timeout = 3000
 enableGitInfo = true
-lastmod = 2025-12-17
+lastmod = 2025-12-25
 [menu]
   [[menu.main]]
     name = "Publication"
@@ -309,6 +309,13 @@ email = ""
 link = "https://zilong7832.github.io/"
 github_link = "https://github.com/zilong7832"
 
+[[params.group]]
+year = "Research Associate"
+[[params.group.member]]
+name = "Yi Xing Hu"
+position = ""
+description = "MS.c. from McGill University"
+link = "https://www.linkedin.com/in/yixing-simon-hu-0b373b327/?originalSubdomain=ca"
 # [[params.projects.project]]
 #		name = "Integer eget aliquet nibh praesent tristique magna"
 #		description  = ""
