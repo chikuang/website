@@ -6,7 +6,7 @@ theme = "avicenna"
 googleAnalytics = "UA-1234-6"
 timeout = 3000
 enableGitInfo = true
-lastmod = 2025-12-25
+lastmod = 2026-01-01
 [menu]
   [[menu.main]]
     name = "Publication"
