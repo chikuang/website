@@ -82,7 +82,7 @@ lastmod = 2026-01-01
  text= """My office is: Room 1407, [25 Park Place](https://en.wikipedia.org/wiki/25_Park_Place)."""
 
 [[params.introduction.paragraph]]
-text="""**Note:** For reference letter, please do not contact me unless (1) you get at least an **A/95%** or (2) I know you personally. If so, please use the subject line "Reference Letter Request - Your Full Name" in your email."""
+text="""**Note:** For reference letter, please do not contact me unless (1) you get at least an **A/95%** or (2) I know you well personally. If so, please use the subject line "Reference Letter Request - Your Full Name" in your email."""
  
 [[params.introduction.paragraph]]
 text= """
