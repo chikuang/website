@@ -310,6 +310,27 @@ link = "https://zilong7832.github.io/"
 github_link = "https://github.com/zilong7832"
 
 [[params.group]]
+year = "Research Master Student"
+[[params.group.member]]
+name = "Kalen Jinnah"
+position = "Applied Statistics"
+description = ""
+link = ""
+github_link = "https://github.com/KalenJinnah?tab=repositories"
+[[params.group.member]]
+name = "Muhammad Aimal Rehman"
+position = "Applied Statistics"
+description = ""
+link = "https://www.linkedin.com/in/aimalrehman/"
+github_link = "https://github.com/aimalrehman92/"
+[[params.group.member]]
+name = "Zhili Lu"
+position = "Applied Statistics"
+description = ""
+link = "https://www.linkedin.com/in/zhili-lu-233a98351/"
+
+
+[[params.group]]
 year = "Research Associate"
 [[params.group.member]]
 name = "Yi Xing Hu"
