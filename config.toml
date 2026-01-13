@@ -37,7 +37,7 @@ lastmod = 2026-01-01
   2. Statistical machine learning and high-dimensional statistical inference.
   3. Dependence modeling.
   4. Optimal design of experiment.
-  5. Applications include drug development, toxicology, neuroscience, to only name a few.
+  5. Applications include drug development, toxicology, neuroscience, cosmic ray, to only name a few.
   """
   cv_name= "CV_YCK_Sep2_25.pdf"
   # blog="https://uwaterloo.ca/scholar/c26yeh/home"
