@@ -6,7 +6,7 @@ theme = "avicenna"
 googleAnalytics = "UA-1234-6"
 timeout = 3000
 enableGitInfo = true
-lastmod = 2026-01-01
+lastmod = 2026-01-13
 [menu]
   [[menu.main]]
     name = "Publication"
@@ -75,8 +75,6 @@ lastmod = 2026-01-01
 [[params.introduction.paragraph]]
   text = """Hello/你好! I am an Assistant Professor in Statsitics at [Georgia State University](https://www.gsu.edu/). I was a postdoctoral scholar at 
   [McGill University](https://www.mcgill.ca/) jointly with the [University of Waterloo](https://uwaterloo.ca), kindly sponsored by the [Canadian Statistical Sciences Institute](https://canssi.ca/) (CANSSI). I am also affiliated with [Mila - Quebec AI Institute](https://mila.quebec/en/directory/chi-kuang-yeh) and UW's [Health Data Science Lab](https://uwaterloo.ca/health-data-science-lab/).
-  I was originally from Hsinchu (新竹) and Taipei (台北), Taiwan, 
-  and I lived in BC, Canada, for 12 years.
 """
 [[params.introduction.paragraph]]
  text= """My office is: Room 1407, [25 Park Place](https://en.wikipedia.org/wiki/25_Park_Place)."""
