@@ -1,10 +1,23 @@
-# Source code for my Personal website
+# Source code for Chi-Kuang Yeh’s Personal website
 
-January 2, 2026
+February 14, 2026
 
 **Chi-Kuang Yeh**  
+*Department of Mathematics and Statistics*  
 *Georgia State University*
 
 ## Description
 
-This is the repo for the source code of my personal website.
+This is the repo for the source code of Chi-Kuang Yeh’s personal
+website.
+
+For my professional webpage, see [my GSU
+page](https://cas.gsu.edu/profile/chi-kuang-yeh/). My main appointment
+is in the Department of Mathematics and Statistics, and I am also
+affiliated with the Neuroscience Institute, and the cosmic group in the
+Department of Physics and Astronomy.
+
+My research interests include functional data analysis, optimal design
+of experiment, statistical machine learning and high-dimensional
+statistics, with applications span on neuroscience, drug development and
+toxicology.
