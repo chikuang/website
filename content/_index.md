@@ -1,4 +1,4 @@
 ---
 title: "Home"
-lastmod: "2026-01-30"
+lastmod: "2026-02-25"
 ---

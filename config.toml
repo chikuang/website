@@ -6,7 +6,7 @@ theme = "avicenna"
 googleAnalytics = "UA-1234-6"
 timeout = 3000
 enableGitInfo = true
-lastmod = 2026-01-30
+lastmod = 2026-02-25
 [menu]
   [[menu.main]]
     name = "Publication"
@@ -294,15 +294,15 @@ link = "https://chikuang.github.io/course/stat230"
 year = "PhD Students"
 [[params.group.member]]
 name = "Wenpu Ma"
-position = "Biostatistics"
-description = "Co-supervisor: [Gengsheng Qin](https://cas.gsu.edu/profile/gengsheng-qin/) (GSU)"
+position = "Biostatistics, Co-supervisor: [Gengsheng Qin](https://cas.gsu.edu/profile/gengsheng-qin/)"
+description = "Wenpu is working on cost-effectiveness analysis related problems"
 email = ""
 link = "https://www.linkedin.com/in/wenpu-ma"
 github_link = "https://github.com/wenpu1222"
 [[params.group.member]]
 name = "Zilong Zhang"
 position = "Machine Learning and Data Science"
-description = ""
+description = "Zilong is working on LLM auditing problems and GNN on biomedical inspired problems"
 email = ""
 link = "https://zilong7832.github.io/"
 github_link = "https://github.com/zilong7832"
@@ -312,19 +312,19 @@ year = "Research Master Student"
 [[params.group.member]]
 name = "Kalen Jinnah"
 position = "Applied Statistics"
-description = ""
-link = ""
+description = "Kalen is working on optimal design problems"
+link = "https://www.linkedin.com/in/kalen-jinnah-9b0b50b2/?trk=public_profile_browsemap"
 github_link = "https://github.com/KalenJinnah?tab=repositories"
 [[params.group.member]]
 name = "Muhammad Aimal Rehman"
 position = "Applied Statistics"
-description = ""
+description = "Aimal is working on Retrieval-Augmented Generation (RAG) problems"
 link = "https://www.linkedin.com/in/aimalrehman/"
 github_link = "https://github.com/aimalrehman92/"
 [[params.group.member]]
 name = "Zhili Lu"
 position = "Applied Statistics"
-description = ""
+description = "Zhili is working on Retrieval-Augmented Generation (RAG) problems"
 link = "https://www.linkedin.com/in/zhili-lu-233a98351/"
 
 
@@ -332,8 +332,8 @@ link = "https://www.linkedin.com/in/zhili-lu-233a98351/"
 year = "Research Associate"
 [[params.group.member]]
 name = "Yi Xing Hu"
-position = ""
-description = "MS.c. from McGill University"
+position = "MS.c. from McGill University"
+description = "Yi Xing is working on gene/cell regulation problems using Reinforcement Learning"
 link = "https://www.linkedin.com/in/yixing-simon-hu-0b373b327/?originalSubdomain=ca"
 # [[params.projects.project]]
 #		name = "Integer eget aliquet nibh praesent tristique magna"
