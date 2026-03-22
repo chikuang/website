@@ -267,6 +267,13 @@ name = "Statistical Inference"
 link = "https://chikuang.github.io/course/stat_inference"
 
 [[params.teaching]]
+year = "2026 Fall (Tentative)"
+[[params.teaching.course]]
+name = "STAT 8561 -- Linear Statistical Analysis I"
+[[params.teaching.course]]
+name = "STAT 8670 -- Computational Methods in Statistics"
+
+[[params.teaching]]
 year = "2026 Spring"
 [[params.teaching.course]]
 name = "STAT 8310 -- Bayesian Data Analysis"
