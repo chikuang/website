@@ -116,6 +116,8 @@ name = """Single and multi-objective optimal designs for group testing experimen
 authors  = "**Chi-Kuang Yeh**, Weng Kee Wong & Julie Zhou"
 dest  = "Preprint"
 arxiv_link = "https://arxiv.org/abs/2508.08445"
+code_link = "https://github.com/chikuang/gtDesign"
+
 [[params.publications.paper]]
 name = """Positive and unlabeled data: model, estimation, 
    inference, and classification"""
@@ -211,8 +213,17 @@ just_link = "https://dspace.library.uvic.ca/handle/1828/9765"
 code_link = ""
 
 [[params.softwares]]
-  year = "2024"
-  [[params.softwares.software]]
+[[params.softwares.software]]
+name = "gtDesign"
+authors = "**Chi-Kuang Yeh**, Weng Kee Wong & Julie Zhou"
+desc  = "A R package for computing optimal regression designs for group testing experiments"
+github_link = "https://github.com/chikuang/gtDesign"
+[[params.softwares.software]]
+name = "cvxDesign"
+authors = "**Chi-Kuang Yeh** & Julie Zhou"
+desc  = "A R package for computing optimal regression designs with single or multiple objectives through convex optimization"
+github_link = "https://github.com/chikuang/cvxDesign"
+[[params.softwares.software]]
     name = "FTSgof"
     authors = "Mihyun Kim, **Chi-Kuang Yeh**, Yuqian Zhao & Gregory Rice"
     desc  = "A R package for white noise and goodness-of-fit tests for functional time series"
@@ -221,8 +232,7 @@ code_link = ""
     just_link = ""
     pdf_link = ""
     cran = "https://cran.r-project.org/web/packages/FTSgof/index.html"
-
-  [[params.softwares.software]]
+[[params.softwares.software]]
     name = "evalRTPF"
     authors = "**Chi-Kuang Yeh**, Gregory Rice & Joel Dubin"
     desc  = "A R package to Evaluating the probabilistic forecasts between competitive forecasters"
@@ -230,8 +240,7 @@ code_link = ""
     github_link = "https://github.com/chikuang/evalRTPF"
     just_link = ""
     pdf_link = ""
-
-  [[params.softwares.software]]
+[[params.softwares.software]]
     name = "optDesign"
     authors = "**Chi-Kuang Yeh** & Julie Zhou"
     desc  = "A MATLAB toolbox to compute optimal regression design"
@@ -239,8 +248,7 @@ code_link = ""
     github_link = "https://github.com/chikuang/optDesign"
     just_link = ""
     pdf_link = ""
-
-  [[params.softwares.software]]
+[[params.softwares.software]]
     name = "SLSEdesign"
     authors = "**Chi-Kuang Yeh**, Julie Zhou & Jason Hou-Liu"
     desc  = "A R package for computing optimal regression designs under the second-order least-squares estimator"
@@ -250,7 +258,7 @@ code_link = ""
     pdf_link = ""
     cran = "https://cran.rstudio.com/web/packages/SLSEdesign/index.html"
 
-  [[params.softwares.software]]
+[[params.softwares.software]]
     name = "yehUtil"
     authors = "**Chi-Kuang Yeh**"
     desc  = "A R package for knitting some RMarkdown reports and other usages"
