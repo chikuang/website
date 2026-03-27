@@ -281,6 +281,7 @@ link = "https://chikuang.github.io/course/stat_inference"
 year = "2026 Fall (Tentative)"
 [[params.teaching.course]]
 name = "STAT 8561 -- Linear Statistical Analysis I"
+link = "https://chikuang.github.io/course/stat8561"
 [[params.teaching.course]]
 name = "STAT 8670 -- Computational Methods in Statistics"
 
