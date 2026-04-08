@@ -6,7 +6,7 @@ theme = "avicenna"
 googleAnalytics = "UA-1234-6"
 timeout = 3000
 enableGitInfo = true
-lastmod = 2026-02-25
+lastmod = 2026-04-08
 [menu]
   [[menu.main]]
     name = "Publication"
@@ -267,6 +267,9 @@ github_link = "https://github.com/chikuang/cvxDesign"
     just_link = ""
     pdf_link = ""
 
+
+
+
 [[params.teaching]]
 year = "Direct Study"
 [[params.teaching.course]]
@@ -309,6 +312,9 @@ link = "https://chikuang.github.io/course/stat230"
 
 
 
+
+
+
 [[params.group]]
 year = "PhD Students"
 [[params.group.member]]
@@ -325,6 +331,7 @@ description = "Zilong is working on LLM auditing problems and GNN on biomedical 
 email = ""
 link = "https://zilong7832.github.io/"
 github_link = "https://github.com/zilong7832"
+
 
 [[params.group]]
 year = "Research Master Student"
@@ -348,10 +355,20 @@ link = "https://www.linkedin.com/in/zhili-lu-233a98351/"
 
 
 [[params.group]]
-year = "Research Associate"
+year = "Extenal Student Collaborator"
+[[params.group.member]]
+name = "Shaohui Wang"
+position = "Ph.D. Candidate at the Georgia State University"
+description = ""
+link = "https://drusagi.github.io/"
+[[params.group.member]]
+name = "Chang Qu"
+position = "Ph.D. Candidate at the University of Ottawa"
+description = ""
+link = ""
 [[params.group.member]]
 name = "Yi Xing Hu"
-position = "MS.c. from McGill University"
+position = "MS.c. at McGill University"
 description = "Yi Xing is working on gene/cell regulation problems using Reinforcement Learning"
 link = "https://www.linkedin.com/in/yixing-simon-hu-0b373b327/?originalSubdomain=ca"
 # [[params.projects.project]]
