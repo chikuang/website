@@ -183,7 +183,7 @@ name = """Evaluating real-time probabilistic forecasts with application to
  authors  = "**Chi-Kuang Yeh**, Gregory Rice & Joel A. Dubin"
  dest  = "The American Statistician, 76, 214--223"
  just_link = "https://www.tandfonline.com/doi/abs/10.1080/00031305.2021.1967781?journalCode=utas20"
- code_link = "https://github.com/chikuang/evalRTPF"
+ code_link = "https://github.com/chikuang/rtForecastEval"
  arxiv_link = "https://arxiv.org/abs/2010.00781"
  RG_link = "https://www.researchgate.net/publication/344448875_Evaluating_real-time_probabilistic_forecasts_with_application_to_National_Basketball_Association_outcome_prediction"
 ####
@@ -234,11 +234,11 @@ github_link = "https://github.com/chikuang/cvxDesign"
     pdf_link = ""
     cran = "https://cran.r-project.org/web/packages/FTSgof"
 [[params.softwares.software]]
-    name = "evalRTPF"
+    name = "rtForecastEval"
     authors = "**Chi-Kuang Yeh**, Gregory Rice & Joel Dubin"
     desc  = "A R package to Evaluating the probabilistic forecasts between competitive forecasters"
     link = ""
-    github_link = "https://github.com/chikuang/evalRTPF"
+    github_link = "https://github.com/chikuang/rtForecastEval"
     just_link = ""
     pdf_link = ""
 [[params.softwares.software]]
