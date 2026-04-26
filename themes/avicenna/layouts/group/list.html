@@ -18,29 +18,15 @@
           {{- range $i, $member := $group.member -}}
           <li style="margin-bottom: 1.5em;">
             <div>
-              {{ if $member.link }}
-                <a href="{{ $member.link }}" class="group-member"><strong>{{ $member.name }}</strong></a>
-              {{ else }}
-                <span class="group-member"><strong>{{ $member.name }}</strong></span>
-              {{ end }}
-            </div>
-            {{ if $member.position }}
-            <div style="margin-top: 0.2em;">
-              <em>{{ $member.position }}</em>
-            </div>
-            {{ end }}
-            {{ if $member.description }}
-            <div style="margin-top: 0.2em;">
-              {{ $member.description | markdownify }}
-            </div>
-            {{ end }}
-            {{ if or ($member.email) ($member.link) ($member.github_link) }}
-            <div style="margin-top: 0.2em;">
-              <span class="code_blog">
+              <span class="group-member"><strong>{{ $member.name }}</strong></span>{{ if $member.position }}, <em>{{ $member.position }}</em>{{ end }}{{ if or ($member.email) ($member.link) ($member.github_link) }} <span class="code_blog">
                 {{ with $member.email }}[<a href="mailto:{{ . }}">email</a>]{{ end }}
                 {{ with $member.link }}[<a href="{{ . }}">website</a>]{{ end }}
                 {{ with $member.github_link }}[<a href="{{ . }}">GitHub</a>]{{ end }}
-              </span>
+              </span>{{ end }}
+            </div>
+            {{ if $member.description }}
+            <div style="margin-top: 0.2em;">
+              {{ $member.description | markdownify }}
             </div>
             {{ end }}
           </li>
