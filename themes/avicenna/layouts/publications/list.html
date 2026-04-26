@@ -12,6 +12,7 @@
 	<div class="introduction" id="publication" style="margin-left: 2em;">
 		{{ with .Site.Params.publications }}
 		<h4>Publications</h4>
+		<p style="margin-bottom: 0.8em;"><em>* indicates students or postdocs.</em></p>
 
 		{{- range $index, $publications := $.Site.Params.publications -}}
 		<div class="year">{{ $publications.year }}</div>

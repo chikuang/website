@@ -1,6 +1,6 @@
 <div class="footer wrapper">
   <nav class="nav">
-    Last modified: {{ .Site.LastChange.Format "2006-01-02" }}
+    Last modified: {{ with .Site.Lastmod }}{{ .Format "2006-01-02" }}{{ else }}{{ now.Format "2006-01-02" }}{{ end }}
     <div>
       <a href="https://chikuang.github.io/">Chi-Kuang Yeh 2016-2026</a> |
       <a href="https://github.com/hadisinaee/avicenna">Avicenna Theme</a> |

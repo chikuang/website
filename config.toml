@@ -31,6 +31,7 @@ lastmod = 2026-04-08
 
 [params]
   subtitle= "PhD"
+  publications_note = "* indicates students or postdocs."
   interests = """I possess a wide range of interests, but for now, my research 
   is centred around: 
   1. Functional data analysis.
@@ -108,6 +109,13 @@ text= """
 #	project_page = ""
 #	code_link = ""
 #	blog_link = ""
+
+[[params.publications]]
+year = "2026"
+[[params.publications.paper]]
+name = """ragR: Retrieval-Augmented Generation and RAG Assessment in R"""
+authors  = "*Muhammad Aimal Rehman, *Zhili Lu & **Chi-Kuang Yeh**"
+dest  = "Preprint"
 
 [[params.publications]]
 year = "2025"
