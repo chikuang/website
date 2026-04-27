@@ -62,12 +62,12 @@ ignoreLogs = ['warning-deprecated-site-allpages', 'warning-goldmark-raw-html']
 
 [[params.social]]
   name = "Researchgate"
-  icon = "user"
+  icon = "researchgate"
   url = "https://www.researchgate.net/profile/Chi_Kuang_Yeh"
 
 [[params.social]]
   name = "googleScholar"
-  icon = "book"
+  icon = "googlescholar"
   url = "https://scholar.google.ca/citations?user=_v_Vy1sAAAAJ&hl=en"
 [[params.social]]
   name = "Twitter"

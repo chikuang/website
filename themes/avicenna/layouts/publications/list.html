@@ -18,7 +18,7 @@
 
 		<ul>
 			{{ range $elem_index, $publication := $publications.paper }}
-			<li style="margin-bottom: 1.5em;">
+			<li style="margin-bottom: 1.0em;">
 				{{ if $publication.link }}
 					<a href="{{ $publication.link }}" class="publications"><strong>{{ $publication.name }}</strong></a>
 				{{ else }}
