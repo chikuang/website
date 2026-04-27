@@ -2,6 +2,6 @@
 {{- with $cran -}}
 {{- $pkg := replaceRE `(?s).*/packages/([^/?#]+).*` "$1" . -}}
 {{- if and $pkg (ne $pkg .) -}}
-<span class="cran-badges" style="display:inline-flex;flex-direction:row;align-items:center;gap:4px;margin-left:4px;vertical-align:middle;line-height:0;width:auto;max-width:none;"><img class="cran-badge-img" src="https://cranlogs.r-pkg.org/badges/last-month/{{ $pkg }}" alt="" width="100" height="16" style="height:16px;width:auto;max-width:100px;max-height:16px;object-fit:contain;vertical-align:middle;display:inline-block;" loading="lazy" decoding="async" /><img class="cran-badge-img" src="https://cranlogs.r-pkg.org/badges/grand-total/{{ $pkg }}" alt="" width="100" height="16" style="height:16px;width:auto;max-width:100px;max-height:16px;object-fit:contain;vertical-align:middle;display:inline-block;" loading="lazy" decoding="async" /></span>
+<span class="cran-badges" style="display:inline-flex;flex-direction:row;align-items:center;gap:4px;margin-left:4px;width:auto;max-width:none;"><img class="cran-badge-img" src="https://cranlogs.r-pkg.org/badges/last-month/{{ $pkg }}" alt="" width="100" height="15" style="height:15px;width:auto;max-width:100px;max-height:15px;object-fit:contain;display:block;" loading="lazy" decoding="async" /><img class="cran-badge-img" src="https://cranlogs.r-pkg.org/badges/grand-total/{{ $pkg }}" alt="" width="100" height="15" style="height:15px;width:auto;max-width:100px;max-height:15px;object-fit:contain;display:block;" loading="lazy" decoding="async" /></span>
 {{- end -}}
 {{- end -}}

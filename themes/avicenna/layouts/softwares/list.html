@@ -31,14 +31,9 @@
 				</div>
 				<!-- Links -->
 				<div style="margin-top: 0.2em;">
-					{{ if or ($software.github_link) ($software.pdf_link) ($software.just_link) ($software.cran) }}
-					<span class="code_blog">
-						{{ with $software.github_link }}[<a href="{{ . }}">GitHub</a>]{{ end }}
-						{{ with $software.pdf_link }} [<a href="{{ . }}">pdf</a>]{{ end }}
-						{{ with $software.just_link }} [<a href="{{ . }}">link</a>]{{ end }}
-						{{ with $software.cran }} [<a href="{{ . }}">CRAN</a>]{{ partial "software-cran-badges.html" . }}{{ end }}
-					</span>
-					{{ end }}
+					{{ if or ($software.github_link) ($software.pdf_link) ($software.just_link) ($software.cran) -}}
+					<span class="code_blog">{{- if $software.github_link -}}[<a href="{{ $software.github_link }}">GitHub</a>]{{- end -}}{{- if $software.pdf_link }} [<a href="{{ $software.pdf_link }}">pdf</a>]{{- end -}}{{- if $software.just_link }} [<a href="{{ $software.just_link }}">link</a>]{{- end -}}{{- if $software.cran }} [<a href="{{ $software.cran }}">CRAN</a>]{{- partial "software-cran-badges.html" $software.cran -}}{{- end -}}</span>
+					{{- end }}
 				</div>
 				<!-- Authors -->
 				<div style="margin-top: 0.2em;">
