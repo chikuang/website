@@ -334,7 +334,7 @@ link = "https://chikuang.github.io/course/stat230"
 
 
 [[params.group]]
-year = "PhD Students"
+year = "PhD Student"
 [[params.group.member]]
 name = "Wenpu Ma"
 position = "Biostatistics"
@@ -376,13 +376,13 @@ link = "https://www.linkedin.com/in/zhili-lu-233a98351/"
 year = "Extenal Student Collaborator"
 [[params.group.member]]
 name = "Shaohui Wang"
-position = "Ph.D. Candidate at the Georgia State University"
+position = "Ph.D. Candidate at J. Mack Robinson College of Business, GSU"
 description = ""
 link = "https://drusagi.github.io/"
 [[params.group.member]]
 name = "Chang Qu"
 position = "Ph.D. Candidate at the University of Ottawa"
-description = ""
+description = "Chang is working on Privacy-Awared Optimal Design Problem"
 link = ""
 [[params.group.member]]
 name = "Yi Xing Hu"
