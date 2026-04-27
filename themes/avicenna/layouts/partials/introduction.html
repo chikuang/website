@@ -1,9 +1,8 @@
-<div class="introduction">
+<div class="introduction home-intro">
 	{{- range $index, $key := .Site.Params.Introduction.paragraph -}}
 	<span>
 		{{ $key.text  | markdownify }}
 	</span>
-	<br>
 	{{- end -}}
 	<span>
 		<b>Reserach Interests: </b> {{ $.Site.Params.interests | markdownify }}
