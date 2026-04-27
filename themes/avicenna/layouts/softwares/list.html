@@ -36,7 +36,7 @@
 						{{ with $software.github_link }}[<a href="{{ . }}">GitHub</a>]{{ end }}
 						{{ with $software.pdf_link }} [<a href="{{ . }}">pdf</a>]{{ end }}
 						{{ with $software.just_link }} [<a href="{{ . }}">link</a>]{{ end }}
-						{{ with $software.cran }} [<a href="{{ . }}">CRAN</a>]{{ end }}
+						{{ with $software.cran }} [<a href="{{ . }}">CRAN</a>]{{ partial "software-cran-badges.html" . }}{{ end }}
 					</span>
 					{{ end }}
 				</div>
