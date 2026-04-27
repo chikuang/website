@@ -18,22 +18,19 @@
 			{{ range $elem_index, $software := $softwares.software }}
 			<div style="margin-bottom: 1.5em;">
 				<!-- Title as a link if available -->
-				<div>
+				<div class="software-title-row">
 					{{ if $software.link }}
 					<a href="{{ $software.link }}" class="softwares"><strong>{{ $software.name }}</strong></a>
 					{{ else }}
 					<span class="softwares"><strong>{{ $software.name }}</strong></span>
 					{{ end }}
+					{{ if or ($software.github_link) ($software.pdf_link) ($software.just_link) ($software.cran) -}}
+					<span class="code_blog"> {{- if $software.github_link -}}[<a href="{{ $software.github_link }}">GitHub</a>]{{- end -}}{{- if $software.pdf_link }} [<a href="{{ $software.pdf_link }}">pdf</a>]{{- end -}}{{- if $software.just_link }} [<a href="{{ $software.just_link }}">link</a>]{{- end -}}{{- if $software.cran }} [<a href="{{ $software.cran }}">CRAN</a>]{{- partial "software-cran-badges.html" $software.cran -}}{{- end -}}</span>
+					{{- end }}
 				</div>
 				<!-- Description (no year) -->
 				<div style="margin-top: 0.2em;">
 					<em>{{ $software.desc | markdownify }}</em>
-				</div>
-				<!-- Links -->
-				<div style="margin-top: 0.2em;">
-					{{ if or ($software.github_link) ($software.pdf_link) ($software.just_link) ($software.cran) -}}
-					<span class="code_blog">{{- if $software.github_link -}}[<a href="{{ $software.github_link }}">GitHub</a>]{{- end -}}{{- if $software.pdf_link }} [<a href="{{ $software.pdf_link }}">pdf</a>]{{- end -}}{{- if $software.just_link }} [<a href="{{ $software.just_link }}">link</a>]{{- end -}}{{- if $software.cran }} [<a href="{{ $software.cran }}">CRAN</a>]{{- partial "software-cran-badges.html" $software.cran -}}{{- end -}}</span>
-					{{- end }}
 				</div>
 				<!-- Authors -->
 				<div style="margin-top: 0.2em;">
