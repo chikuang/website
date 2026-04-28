@@ -14,9 +14,13 @@
 		<p style="margin-bottom: 0.8em;"><em>* indicates students or postdocs.</em></p>
 
 		{{- range $index, $softwares := $.Site.Params.softwares -}}
+		{{ $softwareCategory := or $softwares.software_category $softwares.year }}
+		{{ with $softwareCategory }}
+		<div class="year">{{ . }}</div>
+		{{ end }}
 		<div>
 			{{ range $elem_index, $software := $softwares.software }}
-			<div style="margin-bottom: 1.5em;">
+			<div style="margin-bottom: 0.7em;">
 				<!-- Title as a link if available -->
 				<div class="software-title-row">
 					{{ if $software.link }}
@@ -29,7 +33,7 @@
 					{{- end }}
 				</div>
 				<!-- Description (no year) -->
-				<div style="margin-top: 0.2em;">
+				<div style="margin-top: 0;">
 					<em>{{ $software.desc | markdownify }}</em>
 				</div>
 				<!-- Authors -->

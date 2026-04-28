@@ -222,7 +222,12 @@ dest = "Master's Thesis, University of Victoria"
 just_link = "https://dspace.library.uvic.ca/handle/1828/9765"
 code_link = ""
 
+
+
+
 [[params.softwares]]
+software_category = "Optimal Design of Experiment"
+
 [[params.softwares.software]]
     name = "SLSEdesign"
     authors = "**Chi-Kuang Yeh**, Julie Zhou & Jason Hou-Liu"
@@ -232,12 +237,33 @@ code_link = ""
     just_link = ""
     pdf_link = ""
     cran = "https://cran.rstudio.com/web/packages/SLSEdesign"
+
 [[params.softwares.software]]
 name = "gtDesign"
 authors = "**Chi-Kuang Yeh**, Weng Kee Wong & Julie Zhou"
 desc  = "A R package for computing optimal regression designs for group testing experiments"
 github_link = "https://github.com/chikuang/gtDesign"
-cran = "https://cran.r-project.org/web/packages/gtDesign"
+cran = "https://cran.r-project.org/web/packages/gtDesign"    
+
+[[params.softwares.software]]
+name = "cvxDesign"
+authors = "**Chi-Kuang Yeh** & Julie Zhou"
+desc  = "A R package for computing optimal regression designs with single or multiple objectives through convex optimization"
+github_link = "https://github.com/chikuang/cvxDesign"
+
+[[params.softwares.software]]
+    name = "optDesign"
+    authors = "**Chi-Kuang Yeh** & Julie Zhou"
+    desc  = "A MATLAB toolbox to compute optimal regression design"
+    link = ""
+    github_link = "https://github.com/chikuang/optDesign"
+    just_link = ""
+    pdf_link = ""
+
+
+[[params.softwares]]
+software_category = "Functional Data Analysis"
+
 [[params.softwares.software]]
     name = "FTSgof"
     authors = "Mihyun Kim, **Chi-Kuang Yeh**, Yuqian Zhao & Gregory Rice"
@@ -248,11 +274,6 @@ cran = "https://cran.r-project.org/web/packages/gtDesign"
     pdf_link = ""
     cran = "https://cran.r-project.org/web/packages/FTSgof"
 [[params.softwares.software]]
-name = "cvxDesign"
-authors = "**Chi-Kuang Yeh** & Julie Zhou"
-desc  = "A R package for computing optimal regression designs with single or multiple objectives through convex optimization"
-github_link = "https://github.com/chikuang/cvxDesign"
-[[params.softwares.software]]
     name = "rtForecastEval"
     authors = "**Chi-Kuang Yeh**, Gregory Rice & Joel Dubin"
     desc  = "A R package to Evaluating the probabilistic forecasts between competitive forecasters"
@@ -260,6 +281,10 @@ github_link = "https://github.com/chikuang/cvxDesign"
     github_link = "https://github.com/chikuang/rtForecastEval"
     just_link = ""
     pdf_link = ""
+    cran = "https://cran.r-project.org/web/packages/rtForecastEval/"
+
+[[params.softwares]]
+software_category = "AI and Machine Learning" 
 [[params.softwares.software]]
     name = "ragR"
     authors = "*Muhammad Aimal Rehman, *Zhili Lu & **Chi-Kuang Yeh**"
@@ -269,14 +294,10 @@ github_link = "https://github.com/chikuang/cvxDesign"
     just_link = ""
     pdf_link = ""
     cran = ""
-[[params.softwares.software]]
-    name = "optDesign"
-    authors = "**Chi-Kuang Yeh** & Julie Zhou"
-    desc  = "A MATLAB toolbox to compute optimal regression design"
-    link = ""
-    github_link = "https://github.com/chikuang/optDesign"
-    just_link = ""
-    pdf_link = ""
+
+
+[[params.softwares]]
+software_category = "Personal"    
 [[params.softwares.software]]
     name = "yehUtil"
     authors = "**Chi-Kuang Yeh**"
