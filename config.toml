@@ -117,6 +117,7 @@ name = """ragR: Retrieval-Augmented Generation and RAG Assessment in R"""
 authors  = "*Muhammad Aimal Rehman, *Zhili Lu & **Chi-Kuang Yeh**"
 dest  = "Preprint"
 code_link = "https://github.com/aimalrehman92/ragR"
+arxiv_link = "https://arxiv.org/abs/2604.23515"
 
 [[params.publications]]
 year = "2025"
@@ -362,13 +363,13 @@ github_link = "https://github.com/KalenJinnah?tab=repositories"
 [[params.group.member]]
 name = "Muhammad Aimal Rehman"
 position = "Applied Statistics"
-description = "Aimal is working on Retrieval-Augmented Generation (RAG) problems"
+description = "Aimal is working on Retrieval-Augmented Generation (RAG) problems, see [[P1]](https://arxiv.org/abs/2604.23515)"
 link = "https://www.linkedin.com/in/aimalrehman/"
 github_link = "https://github.com/aimalrehman92/"
 [[params.group.member]]
 name = "Zhili Lu"
 position = "Applied Statistics"
-description = "Zhili is working on Retrieval-Augmented Generation (RAG) problems"
+description = "Zhili is working on Retrieval-Augmented Generation (RAG) problems, see [[P1]](https://arxiv.org/abs/2604.23515)"
 link = "https://www.linkedin.com/in/zhili-lu-233a98351/"
 
 
