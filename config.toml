@@ -122,7 +122,7 @@ arxiv_link = "https://arxiv.org/abs/2604.23515"
 [[params.publications]]
 year = "2025"
 [[params.publications.paper]]
-name = """Single and multi-objective optimal designs for group testing experiments"""
+name = """Single and multi-objective optimal designs for group testing experiments with a focus on screening for an infectious disease"""
 authors  = "**Chi-Kuang Yeh**, Weng Kee Wong & Julie Zhou"
 dest  = "Preprint"
 arxiv_link = "https://arxiv.org/abs/2508.08445"
