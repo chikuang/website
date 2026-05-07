@@ -314,17 +314,17 @@ software_category = "Personal"
 year = "Direct Study"
 [[params.teaching.course]]
 name = "Introduction to Cross-Validation"
-link = "https://chikuang.github.io/course/directstudy"
+link = "https://chikuang.github.io/teaching/directstudy"
 
 [[params.teaching.course]]
 name = "Statistical Inference"
-link = "https://chikuang.github.io/course/stat_inference"
+link = "https://chikuang.github.io/teaching/stat_inference"
 
 [[params.teaching]]
 year = "2026 Fall (Tentative)"
 [[params.teaching.course]]
 name = "STAT 8561 -- Linear Statistical Analysis I"
-link = "https://chikuang.github.io/course/stat8561"
+link = "https://chikuang.github.io/teaching/2026F_stat8561"
 [[params.teaching.course]]
 name = "STAT 8670 -- Computational Methods in Statistics"
 
@@ -332,23 +332,23 @@ name = "STAT 8670 -- Computational Methods in Statistics"
 year = "2026 Spring"
 [[params.teaching.course]]
 name = "STAT 8310 -- Bayesian Data Analysis"
-link = "https://chikuang.github.io/course/stat8310"
+link = "https://chikuang.github.io/teaching/2026S_stat8310"
 
 [[params.teaching.course]]
 name = "STAT 8678 -- SAS Programming & Data Analysis"
-link = "https://chikuang.github.io/course/stat8678"
+link = "https://chikuang.github.io/teaching/2026S_stat8678"
 
 [[params.teaching]]
 year = "2025 Fall"
 [[params.teaching.course]]
 name = "STAT 8670 -- Computational Methods in Statistics"
-link = "https://chikuang.github.io/course/stat8670"
+link = "https://chikuang.github.io/teaching/2025F_stat8670"
 
 [[params.teaching]]
 year = "2024"
 [[params.teaching.course]]
 name = "STAT 230 -- Introduction to Probability"
-link = "https://chikuang.github.io/course/stat230"
+link = "https://chikuang.github.io/teaching/stat230"
 
 
 
