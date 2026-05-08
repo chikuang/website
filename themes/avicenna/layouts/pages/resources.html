@@ -11,22 +11,43 @@
 	</div>
 
 	<div class="introduction" id="resources" style="margin-left: 2em;">
-		<ul style="margin-top: 0;">
-			{{ range .Pages }}
-			<li style="margin-bottom: 0.65em;">
-				<div>
-					<a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
-				</div>
-				<div style="margin-top: 0.1em;">
-					{{ with .Params.description }}<em>{{ . }}</em>{{ end }}
-					{{ with .Date }}, {{ .Format "2006-01-02" }}{{ end }}
-				</div>
-				<div style="margin-top: 0.1em;">
-					{{ with .Params.tags }}<span>Tags: {{ delimit . ", " }}</span>{{ end }}
-				</div>
-			</li>
-			{{ end }}
-		</ul>
+		{{- $grp := newScratch -}}
+		{{- $keys := slice -}}
+		{{- range .Pages -}}
+			{{- $g := partial "resource-category-label.html" . | strings.TrimSpace -}}
+			{{- if $g -}}
+				{{- $prev := $grp.Get $g | default slice -}}
+				{{- $grp.Set $g ($prev | append .) -}}
+				{{- if not (in $keys $g) -}}
+					{{- $keys = $keys | append $g -}}
+				{{- end -}}
+			{{- else -}}
+				{{- $prev := $grp.Get "_resource_uncat" | default slice -}}
+				{{- $grp.Set "_resource_uncat" ($prev | append .) -}}
+			{{- end -}}
+		{{- end -}}
+
+		{{- $uncat := $grp.Get "_resource_uncat" | default slice -}}
+		{{- if gt (len $uncat) 0 -}}
+			<ul class="resource-list-by-category">
+				{{- range $uncat -}}
+					{{ partial "resource-list-item.html" . }}
+				{{- end -}}
+			</ul>
+		{{- end -}}
+
+		{{- range sort $keys -}}
+			{{- $cat := . -}}
+			{{- $pg := $grp.Get $cat | default slice -}}
+			{{- if gt (len $pg) 0 -}}
+			<div class="year software-category-title">{{ $cat }}</div>
+			<ul class="resource-list-by-category">
+				{{- range $pg -}}
+					{{ partial "resource-list-item.html" . }}
+				{{- end -}}
+			</ul>
+			{{- end -}}
+		{{- end -}}
 	</div>
 </div>
 

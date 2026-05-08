@@ -7,6 +7,11 @@ googleAnalytics = "UA-1234-6"
 timeout = 3000
 enableGitInfo = true
 ignoreLogs = ['warning-deprecated-site-allpages', 'warning-goldmark-raw-html']
+
+[markup.tableOfContents]
+startLevel = 1
+endLevel = 4
+
 [frontmatter]
 lastmod = [':git', 'lastmod', 'date', 'publishDate']
 [menu]
