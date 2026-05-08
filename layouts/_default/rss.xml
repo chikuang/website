@@ -14,7 +14,7 @@
       {{- $authorName = . }}
     {{- end }}
   {{- else }}
-    {{- $authorName  = . }}
+    {{- $authorName = . }}
   {{- end }}
 {{- end }}
 
@@ -30,15 +30,6 @@
 {{- if ge $limit 1 }}
   {{- $pages = $pages | first $limit }}
 {{- end }}
-{{- /* Include section list pages (Publications, Software, Teaching, Group, Resources) in home RSS */ -}}
-{{- if .IsHome }}
-  {{- $sectionPaths := slice "publications" "softwares" "teaching" "group" "resources" }}
-  {{- range $sectionPaths }}
-    {{- with $.Site.GetPage . }}
-      {{- $pages = $pages | append . }}
-    {{- end }}
-  {{- end }}
-{{- end }}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -47,7 +38,7 @@
     <description>Recent content {{ if ne .Title .Site.Title }}{{ with .Title }}in {{ . }} {{ end }}{{ end }}on {{ .Site.Title }}</description>
     <generator>Hugo</generator>
     <language>{{ site.Language.LanguageCode }}</language>{{ with $authorEmail }}
-    <managingEditor>{{.}}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorEmail }}
+    <managingEditor>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</managingEditor>{{ end }}{{ with $authorEmail }}
     <webMaster>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</webMaster>{{ end }}{{ with .Site.Copyright }}
     <copyright>{{ . }}</copyright>{{ end }}
     {{- with .OutputFormats.Get "RSS" }}
