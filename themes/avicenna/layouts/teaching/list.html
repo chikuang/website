@@ -7,19 +7,19 @@
     <a href="/softwares/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Software</a>
     <span style="font-size:1.3em; color:#0039A6; font-weight:bold;">Teaching</span>
     <a href="/group/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Group</a>
+    <a href="/resources/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Resource</a>
   </div>
 
   <div class="introduction" id="teaching" style="margin-left: 2em;">
     {{ with .Site.Params.teaching }}
       {{- range $index, $teaching := . -}}
-        <div class="year">{{ $teaching.year }}</div>
+        <div class="year software-category-title">{{ $teaching.year }}</div>
         <ul>
           {{- range $i, $course := $teaching.course -}}
           <li>
             <p class="teaching-course">{{ $course.name }}</p>
             {{ $course.description | markdownify }}
-            {{ if or ($course.link) ($course.syllabus) ($course.materials) }}
-            <span class="code_blog">
+            {{ if or ($course.link) ($course.syllabus) ($course.materials) }}<span class="code_blog">
               {{ with $course.link }}[<a href="{{ . }}">site</a>]{{ end }}
               {{ with $course.syllabus }}[<a href="{{ . }}">syllabus</a>]{{ end }}
               {{ with $course.materials }}[<a href="{{ . }}">materials</a>]{{ end }}

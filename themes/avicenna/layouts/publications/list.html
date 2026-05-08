@@ -7,6 +7,7 @@
 		<a href="/softwares/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Software</a>
 		<a href="/teaching/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Teaching</a>
 		<a href="/group/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Group</a>
+		<a href="/resources/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Resource</a>
 	</div>
 
 	<div class="introduction" id="publication" style="margin-left: 2em;">
@@ -14,7 +15,7 @@
 		<p style="margin-bottom: 0.8em;"><em>* indicates students or postdocs.</em></p>
 
 		{{- range $index, $publications := $.Site.Params.publications -}}
-		<div class="year">{{ $publications.year }}</div>
+		<div class="year software-category-title">{{ $publications.year }}</div>
 
 		<ul>
 			{{ range $elem_index, $publication := $publications.paper }}
@@ -26,7 +27,7 @@
 				{{ end }}
 				<!-- Journal/Preprint, year, and links (same line after dest) -->
 				<div style="margin-top: 0.2em;">
-					<em>{{ $publication.dest }}</em>{{ with $publication.year }}, {{ . }}{{ end }}{{ if or ($publication.code_link) ($publication.arxiv_link) ($publication.pdf_link) ($publication.RG_link) ($publication.just_link) ($publication.software_link) }} <span class="code_blog">{{ with $publication.code_link }}[<a href="{{ . }}">code</a>]{{ end }}{{ with $publication.pdf_link }} [<a href="{{ . }}">pdf</a>]{{ end }}{{ with $publication.software_link }} [<a href="{{ . }}">software</a>]{{ end }}{{ with $publication.just_link }} [<a href="{{ . }}">link</a>]{{ end }}{{ with $publication.arxiv_link }} [<a href="{{ . }}">arXiv</a>]{{ end }}{{ with $publication.RG_link }} [<a href="{{ . }}">ResearchGate</a>]{{ end }}</span>{{ end }}
+					<em>{{ $publication.dest }}</em>{{ with $publication.year }}, {{ . }}{{ end }}{{ if or ($publication.code_link) ($publication.arxiv_link) ($publication.pdf_link) ($publication.RG_link) ($publication.just_link) ($publication.software_link) }}<span class="code_blog">{{ with $publication.code_link }}[<a href="{{ . }}">code</a>]{{ end }}{{ with $publication.pdf_link }} [<a href="{{ . }}">pdf</a>]{{ end }}{{ with $publication.software_link }} [<a href="{{ . }}">software</a>]{{ end }}{{ with $publication.just_link }} [<a href="{{ . }}">link</a>]{{ end }}{{ with $publication.arxiv_link }} [<a href="{{ . }}">arXiv</a>]{{ end }}{{ with $publication.RG_link }} [<a href="{{ . }}">ResearchGate</a>]{{ end }}</span>{{ end }}
 				</div>
 				<!-- Authors -->
 				<div style="margin-top: 0.2em;">

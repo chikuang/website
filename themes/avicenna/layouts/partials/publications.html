@@ -4,7 +4,7 @@
 	<p><em>* indicates students or postdocs.</em></p>
 
 	{{- range $index, $publications := $.Site.Params.publications -}}
-	<div class="year">{{ $publications.year }}</div>
+	<div class="year software-category-title">{{ $publications.year }}</div>
 
 	<ul>
 		{{ range $elem_index, $publication := $publications.paper }}

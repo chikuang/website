@@ -1,73 +1,73 @@
-<!DOCTYPE html>
-<html>
-    {{- partial "header.html" . -}}
-    <body>
-        <div class="container wrapper">
-            {{ partial "resource-head.html" . }}
-            <div class="content" style="max-width: 800px; margin: 0 auto; padding: 20px; position: relative;">
-                <a href="/resources/" style="font-size:1.1em; display: block; margin-bottom: 2em;">&larr; Back to Resources</a>
-                <article class="resource-post" style="width: 100%; margin: 0 auto; display: flex; flex-direction: row; align-items: flex-start;">
-                    {{ if .TableOfContents }}
-                    <nav class="toc-float" style="flex: 0 0 150px; margin-right: 32px; position: sticky; top: 40px; align-self: flex-start; background: #fafbfc; border: 1px solid #eee; border-radius: 8px; padding: 18px 16px; font-size: 0.98em; max-height: 80vh; overflow-y: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-                        <h2 style="font-size: 1.1em; margin-top: 0; margin-bottom: 1em; color: #444;">Table of Contents</h2>
-                        {{ .TableOfContents }}
-                    </nav>
-                    {{ end }}
-                    <div class="post-content" style="line-height: 1.6; flex: 1 1 0; min-width: 0;">
-                        <h1>{{ .Title }}</h1>
-                        {{ with .Date }}
-                        <div style="margin-bottom: 1em; color: #666; font-size: 0.9em;">
-                            {{ .Format "2006-01-02" }}
-                        </div>
-                        {{ end }}
-                        <style>
-                            /* Code block styling */
-                            pre {
-                                background-color: #f8f8f8;
-                                border: 1px solid #ddd;
-                                border-radius: 4px;
-                                padding: 16px;
-                                margin: 20px 0;
-                                overflow-x: auto;
-                                white-space: pre;
-                                word-wrap: normal;
-                                font-size: 14px;
-                                line-height: 1.5;
-                            }
-                            pre code {
-                                display: block;
-                                color: #333;
-                                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
-                                white-space: pre;
-                                word-spacing: normal;
-                                word-break: normal;
-                            }
-                            /* R specific syntax highlighting */
-                            .language-r .hljs-comment { color: #998; font-style: italic; }
-                            .language-r .hljs-string { color: #d14; }
-                            .language-r .hljs-keyword { color: #0086b3; }
-                            .language-r .hljs-number { color: #099; }
-                            .language-r .hljs-literal { color: #458; font-weight: bold; }
-                            .language-r .hljs-built_in { color: #0086b3; }
-                            /* Inline code */
-                            p code {
-                                background-color: #f8f8f8;
-                                padding: 2px 4px;
-                                border-radius: 3px;
-                                color: #333;
-                                font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
-                            }
-                            /* Responsive: hide TOC on small screens */
-                            @media (max-width: 900px) {
-                                .resource-post { flex-direction: column !important; }
-                                .toc-float { display: none !important; }
-                            }
-                        </style>
-                        {{ .Content }}
-                    </div>
-                </article>
-            </div>
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
-</html> 
+{{ partial "header.html" . }}
+
+<div class="container wrapper">
+	<div class="section-nav-row">
+		<a href="/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Home</a>
+		<a href="/publications/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Publication</a>
+		<a href="/softwares/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Software</a>
+		<a href="/teaching/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Teaching</a>
+		<a href="/group/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Group</a>
+		<a href="/resources/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Resource</a>
+	</div>
+
+	<div class="introduction" id="resources" style="margin-left: 2em;">
+		<article class="resource-post" style="width: 100%; max-width: 960px; margin: 0 auto; display: flex; flex-direction: row; align-items: flex-start;">
+			{{ if .TableOfContents }}
+			<nav class="toc-float" style="flex: 0 0 150px; margin-right: 32px; position: sticky; top: 40px; align-self: flex-start; background: #fafbfc; border: 1px solid #eee; border-radius: 8px; padding: 18px 16px; font-size: 0.98em; max-height: 80vh; overflow-y: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
+				<h2 style="font-size: 1.1em; margin-top: 0; margin-bottom: 1em; color: #444;">Table of Contents</h2>
+				{{ .TableOfContents }}
+			</nav>
+			{{ end }}
+			<div class="post-content" style="line-height: 1.6; flex: 1 1 0; min-width: 0;">
+				<h1>{{ .Title }}</h1>
+				{{ with .Date }}
+				<div style="margin-bottom: 1em; color: #666; font-size: 0.9em;">
+					{{ .Format "2006-01-02" }}
+				</div>
+				{{ end }}
+				<style>
+					pre {
+						background-color: #f8f8f8;
+						border: 1px solid #ddd;
+						border-radius: 4px;
+						padding: 16px;
+						margin: 20px 0;
+						overflow-x: auto;
+						white-space: pre;
+						word-wrap: normal;
+						font-size: 14px;
+						line-height: 1.5;
+					}
+					pre code {
+						display: block;
+						color: #333;
+						font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+						white-space: pre;
+						word-spacing: normal;
+						word-break: normal;
+					}
+					.language-r .hljs-comment { color: #998; font-style: italic; }
+					.language-r .hljs-string { color: #d14; }
+					.language-r .hljs-keyword { color: #0086b3; }
+					.language-r .hljs-number { color: #099; }
+					.language-r .hljs-literal { color: #458; font-weight: bold; }
+					.language-r .hljs-built_in { color: #0086b3; }
+					p code {
+						background-color: #f8f8f8;
+						padding: 2px 4px;
+						border-radius: 3px;
+						color: #333;
+						font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+					}
+					@media (max-width: 900px) {
+						.resource-post { flex-direction: column !important; }
+						.toc-float { display: none !important; }
+					}
+				</style>
+				{{ .Content }}
+			</div>
+		</article>
+	</div>
+</div>
+
+{{ partial "footer.html" . }}

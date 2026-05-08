@@ -7,6 +7,8 @@ googleAnalytics = "UA-1234-6"
 timeout = 3000
 enableGitInfo = true
 ignoreLogs = ['warning-deprecated-site-allpages', 'warning-goldmark-raw-html']
+[frontmatter]
+lastmod = [':git', 'lastmod', 'date', 'publishDate']
 [menu]
   [[menu.main]]
     name = "Publication"

@@ -1,34 +1,35 @@
-<!DOCTYPE html>
-<html>
-	{{- partial "header.html" . -}}
-	<body>
-		<div class="container wrapper">
-			{{ partial "resource-head.html" . }}
-			<div class="content" style="max-width: 800px; margin: 0 auto; padding: 20px;">
-				<a href="/" style="font-size:1.1em; display: block; margin-bottom: 2em;">&larr; Back to Home</a>
-				<article class="resource-post" style="width: 100%; margin: 0 auto;">
-					<h1 style="margin-bottom: 1em; color: #333;">Resources</h1>
-					<div class="post-content" style="line-height: 1.6;">
-						{{ range .Pages }}
-						<div style="margin-bottom: 1.5em;">
-							<div>
-								<a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
-							</div>
-							{{ with .Date }}
-							<div style="color: #888; font-size: 0.95em; margin-bottom: 0.3em;">{{ .Format "2006-01-02" }}</div>
-							{{ end }}
-							<div style="margin-top: 0.2em;">
-								{{ with .Params.description }}<em>{{ . }}</em>{{ end }}
-							</div>
-							<div style="margin-top: 0.2em;">
-								{{ with .Params.tags }}<span>Tags: {{ delimit . ", " }}</span>{{ end }}
-							</div>
-						</div>
-						{{ end }}
-					</div>
-				</article>
-			</div>
-		</div>
-		{{- partial "footer.html" . -}}
-	</body>
-</html> 
+{{ partial "header.html" . }}
+
+<div class="container wrapper">
+	<div class="section-nav-row">
+		<a href="/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Home</a>
+		<a href="/publications/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Publication</a>
+		<a href="/softwares/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Software</a>
+		<a href="/teaching/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Teaching</a>
+		<a href="/group/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Group</a>
+		<span style="font-size:1.3em; color:#0039A6; font-weight:bold;">Resource</span>
+	</div>
+
+	<div class="introduction" id="resources" style="margin-left: 2em;">
+		<ul>
+			{{ range .Pages }}
+			<li style="margin-bottom: 0.65em;">
+				<div>
+					<a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
+				</div>
+				{{ with .Date }}
+				<div style="color: #888; font-size: 0.95em; margin-bottom: 0.15em; margin-top: 0.05em;">{{ .Format "2006-01-02" }}</div>
+				{{ end }}
+				<div style="margin-top: 0.1em;">
+					{{ with .Params.description }}<em>{{ . }}</em>{{ end }}
+				</div>
+				<div style="margin-top: 0.1em;">
+					{{ with .Params.tags }}<span>Tags: {{ delimit . ", " }}</span>{{ end }}
+				</div>
+			</li>
+			{{ end }}
+		</ul>
+	</div>
+</div>
+
+{{ partial "footer.html" . }}
