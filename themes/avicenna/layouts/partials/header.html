@@ -18,6 +18,9 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+	(function(){try{var K='ck-site-theme';var t=localStorage.getItem(K);if(t!=='light'&&t!=='dark'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();
+	</script>
 	{{ with .OutputFormats.Get "rss" -}}
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 	{{ end -}}

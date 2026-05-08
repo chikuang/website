@@ -1,10 +1,18 @@
 <div class="footer wrapper">
   <nav class="nav">
-    Last modified: <span>{{ now.Format "2006-01-02" }}</span>
-    <div>
-      <a href="https://chikuang.github.io/">Chi-Kuang Yeh 2016-{{ now.Format "2006" }}</a> |
-      <a href="https://github.com/hadisinaee/avicenna">Avicenna Theme</a> |
-      Built with <a href="https://gohugo.io">Hugo</a>
+    <div class="footer-content">
+      <div class="footer-content__lines">
+        Last modified: <span>{{ now.Format "2006-01-02" }}</span>
+        <div>
+          <a href="https://chikuang.github.io/">Chi-Kuang Yeh 2016-{{ now.Format "2006" }}</a> |
+          <a href="https://github.com/hadisinaee/avicenna">Avicenna Theme</a> |
+          Built with <a href="https://gohugo.io">Hugo</a>
+        </div>
+      </div>
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="切換為深色模式" title="深色模式">
+        <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">☾</span>
+        <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀</span>
+      </button>
     </div>
   </nav>
 </div>
