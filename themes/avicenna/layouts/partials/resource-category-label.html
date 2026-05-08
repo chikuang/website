@@ -1,0 +1,12 @@
+{{- $g := "" -}}
+{{- with .Params.categories -}}
+	{{- $len := len . -}}
+	{{- if ge $len 2 -}}
+		{{- $g = index . 1 -}}
+	{{- else if eq $len 1 -}}
+		{{- if ne (index . 0) "resources" -}}
+			{{- $g = index . 0 -}}
+		{{- end -}}
+	{{- end -}}
+{{- end -}}
+{{- $g -}}
