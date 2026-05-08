@@ -468,23 +468,3 @@ link = ""
 #		code_link = ""
 #		blog_link = ""
 
-[[params.resources]]
-year = "2025"
-[[params.resources.resource]]
-name = "Statistical Computing Resources"
-description = "A collection of useful resources for statistical computing and data analysis"
-external_link = "https://github.com/chikuang"
-code_link = "https://github.com/chikuang/example-repo"
-
-[[params.resources.resource]]
-name = "R Programming Tutorial"
-description = "Comprehensive tutorial on R programming for statistical analysis"
-pdf_link = "/static/tutorials/r-tutorial.pdf"
-download_link = "/static/tutorials/r-tutorial.zip"
-
-[[params.resources]]
-year = "2024"
-[[params.resources.resource]]
-name = "Functional Data Analysis Notes"
-description = "Lecture notes and materials on functional data analysis"
-external_link = "https://example.com/fda-notes"
