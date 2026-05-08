@@ -1,14 +1,9 @@
-<li style="margin-bottom: 0.65em;">
+<li class="resource-list-item">
 	<div>
 		<a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
+		{{ with .Date }}<span class="resource-list-date">{{ .Format "2006-01-02" }}</span>{{ end }}
 	</div>
-	{{ with .Date }}
-	<div style="color: #888; font-size: 0.95em; margin-bottom: 0.15em; margin-top: 0.05em;">{{ .Format "2006-01-02" }}</div>
-	{{ end }}
 	<div style="margin-top: 0.1em;">
 		{{ with .Params.description }}<em>{{ . }}</em>{{ end }}
-	</div>
-	<div style="margin-top: 0.1em;">
-		{{ with .Params.tags }}<span>Tags: {{ delimit . ", " }}</span>{{ end }}
 	</div>
 </li>
