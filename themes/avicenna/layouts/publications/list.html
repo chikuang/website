@@ -26,7 +26,12 @@
 					<span class="publications">{{ $publication.name }}</span>
 				{{ end }}
 				<div style="margin-top: 0.2em;">
-					<em>{{ $publication.dest }}</em>{{ with $publication.year }}, {{ . }}{{ end }}{{ if or ($publication.code_link) ($publication.arxiv_link) ($publication.pdf_link) ($publication.RG_link) ($publication.just_link) ($publication.software_link) }}<span class="code_blog">{{ with $publication.code_link }}[<a href="{{ . }}">code</a>]{{ end }}{{ with $publication.pdf_link }} [<a href="{{ . }}">pdf</a>]{{ end }}{{ with $publication.software_link }} [<a href="{{ . }}">software</a>]{{ end }}{{ with $publication.just_link }} [<a href="{{ . }}">link</a>]{{ end }}{{ with $publication.arxiv_link }} [<a href="{{ . }}">arXiv</a>]{{ end }}{{ with $publication.RG_link }} [<a href="{{ . }}">ResearchGate</a>]{{ end }}</span>{{ end }}
+					{{- if ne $publications.year "Preprint" -}}
+					<em>{{ $publication.dest }}</em>{{ with $publication.year }}, {{ . }}{{ end }}
+					{{- end -}}
+					{{- if or ($publication.code_link) ($publication.arxiv_link) ($publication.pdf_link) ($publication.RG_link) ($publication.just_link) ($publication.software_link) -}}
+					<span class="code_blog">{{ with $publication.code_link }}[<a href="{{ . }}">code</a>]{{ end }}{{ with $publication.pdf_link }} [<a href="{{ . }}">pdf</a>]{{ end }}{{ with $publication.software_link }} [<a href="{{ . }}">software</a>]{{ end }}{{ with $publication.just_link }} [<a href="{{ . }}">link</a>]{{ end }}{{ with $publication.arxiv_link }} [<a href="{{ . }}">arXiv</a>]{{ end }}{{ with $publication.RG_link }} [<a href="{{ . }}">ResearchGate</a>]{{ end }}</span>
+					{{- end -}}
 				</div>
 				<div style="margin-top: 0.2em;">
 					<span class="collaborators">{{ $publication.authors | markdownify }}</span>
