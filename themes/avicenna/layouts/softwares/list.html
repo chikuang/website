@@ -25,9 +25,9 @@
 				<!-- Title as a link if available -->
 				<div class="software-title-row">
 					{{ if $software.link }}
-					<a href="{{ $software.link }}" class="softwares"><strong>{{ $software.name }}</strong></a>
+					<a href="{{ $software.link }}" class="softwares">{{ $software.name }}</a>
 					{{ else }}
-					<span class="softwares"><strong>{{ $software.name }}</strong></span>
+					<span class="softwares">{{ $software.name }}</span>
 					{{ end }}
 					{{ if or ($software.github_link) ($software.pdf_link) ($software.just_link) ($software.cran) -}}
 					<span class="code_blog"> {{- if $software.github_link -}}[<a href="{{ $software.github_link }}">GitHub</a>]{{- end -}}{{- if $software.pdf_link }} [<a href="{{ $software.pdf_link }}">pdf</a>]{{- end -}}{{- if $software.just_link }} [<a href="{{ $software.just_link }}">link</a>]{{- end -}}{{- if $software.cran }} [<a href="{{ $software.cran }}">CRAN</a>]{{- partial "software-cran-badges.html" $software.cran -}}{{- end -}}</span>

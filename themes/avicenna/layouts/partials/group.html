@@ -6,7 +6,7 @@
       <ul>
         {{- range $i, $member := $group.member -}}
         <li style="margin-bottom: 0.8em;">
-          <div class="group-member-line"><strong class="group-member">{{ $member.name }}</strong>{{ if $member.position }}, <em>{{ $member.position }}</em>{{ end }}{{ if or ($member.email) ($member.link) ($member.github_link) }}<small class="code_blog">{{ with $member.email }}[<a href="mailto:{{ . }}">email</a>]{{ end }}{{ with $member.link }}[<a href="{{ . }}">website</a>]{{ end }}{{ with $member.github_link }}[<a href="{{ . }}">GitHub</a>]{{ end }}</small>{{ end }}</div>
+          <div class="group-member-line"><span class="group-member">{{ $member.name }}</span>{{ if $member.position }}, <em>{{ $member.position }}</em>{{ end }}{{ if or ($member.email) ($member.link) ($member.github_link) }}<small class="code_blog">{{ with $member.email }}[<a href="mailto:{{ . }}">email</a>]{{ end }}{{ with $member.link }}[<a href="{{ . }}">website</a>]{{ end }}{{ with $member.github_link }}[<a href="{{ . }}">GitHub</a>]{{ end }}</small>{{ end }}</div>
           {{ if $member.description }}
           <br>{{ $member.description | markdownify }}
           {{ end }}

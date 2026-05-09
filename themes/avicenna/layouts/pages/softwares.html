@@ -13,9 +13,9 @@
 			<!-- Title as a link if available -->
 			<div>
 				{{ if $software.link }}
-				<a href="{{ $software.link }}" class="softwares"><strong>{{ $software.name }}</strong></a>
+				<a href="{{ $software.link }}" class="softwares">{{ $software.name }}</a>
 				{{ else }}
-				<span class="softwares"><strong>{{ $software.name }}</strong></span>
+				<span class="softwares">{{ $software.name }}</span>
 				{{ end }}
 			</div>
 			<!-- Description and Year -->

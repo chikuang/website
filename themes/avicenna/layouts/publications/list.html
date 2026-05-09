@@ -21,9 +21,9 @@
 			{{ range $elem_index, $publication := $publications.paper }}
 			<li>
 				{{ if $publication.link }}
-					<a href="{{ $publication.link }}" class="publications"><strong>{{ $publication.name }}</strong></a>
+					<a href="{{ $publication.link }}" class="publications">{{ $publication.name }}</a>
 				{{ else }}
-					<span class="publications"><strong>{{ $publication.name }}</strong></span>
+					<span class="publications">{{ $publication.name }}</span>
 				{{ end }}
 				<!-- Journal/Preprint, year, and links (same line after dest) -->
 				<div style="margin-top: 0.2em;">
