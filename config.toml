@@ -96,26 +96,6 @@ text="""**Note:** For reference letter, please do not contact me unless (1) you 
 [[params.introduction.paragraph]]
 text= """
   **UWaterloo Researcher Map**: I create a [researcher map](https://chikuang.shinyapps.io/UWaterloo_SAS_Researcher_Map/) to visualize the researcher's location from the Department of Statistics and Actuarial Science at the University of Waterloo."""
-  
-
-
-#[[params.projects]] 
-#[[params.projects.project]]
-#	name = "Statistical inference on functonal times series"
-#	description  = """Ongoing joint work with my supervisors:"""
-#	project_page = ""
-#	code_link = "dsfs;lfsdlk;fs"
-#	blog_link = ""
-	
-
-#[[params.projects.project]]
-#  name = "Capture-recapture modeling in Bayesian paradigm"
-#	description  = """Ongoing joint work with Prof. 
-#	[Laura L.E. Cowen](https://www.uvic.ca/science/math-statistics/people/home/faculty/cowen_laura.php) 
-#	 at the University of Victoria."""
-#	project_page = ""
-#	code_link = ""
-#	blog_link = ""
 
 [[params.publications]]
 year = "2026"
@@ -191,7 +171,7 @@ name = """Functional spherical autocorrelation: a robust estimate
  code_link = "https://github.com/chikuang/fSACF"
  arxiv_link = "https://arxiv.org/abs/2207.05806"
  RG_link = "https://www.researchgate.net/publication/361976736_Functional_Spherical_Autocorrelation_A_Robust_Estimate_of_the_Autocorrelation_of_a_Functional_Time_Series"
- ####
+
 [[params.publications]]
 year = "2022"
 [[params.publications.paper]]
@@ -203,7 +183,7 @@ name = """Evaluating real-time probabilistic forecasts with application to
  code_link = "https://github.com/chikuang/rtForecastEval"
  arxiv_link = "https://arxiv.org/abs/2010.00781"
  RG_link = "https://www.researchgate.net/publication/344448875_Evaluating_real-time_probabilistic_forecasts_with_application_to_National_Basketball_Association_outcome_prediction"
-####
+
 [[params.publications]]
 year = "2021"
 [[params.publications.paper]]
@@ -398,7 +378,6 @@ position = "Applied Statistics"
 description = "Zhili is working on Retrieval-Augmented Generation (RAG) problems, see [[P1]](https://arxiv.org/abs/2604.23515)"
 link = "https://www.linkedin.com/in/zhili-lu-233a98351/"
 
-
 [[params.group]]
 year = "Extenal Student Collaborator"
 [[params.group.member]]
@@ -416,55 +395,3 @@ name = "Yi Xing Hu"
 position = "MS.c. at McGill University"
 description = "Yi Xing is working on gene/cell regulation problems using Reinforcement Learning"
 link = ""
-# [[params.projects.project]]
-#		name = "Integer eget aliquet nibh praesent tristique magna"
-#		description  = ""
-#		project_page = "https://myprojecthomepage.com"
-#		code_link = ""
-#		blog_link = "https://ablogpost.com"
-
-#[[params.publications]]
-#  year="Preprint"
-
-#  [[params.publications.paper]]
-#    name = "Enim nunc faucibus a pellentesque sit amet porttitor"
-#    authors = "Ana Alvardo, William Worthley, __Hadi Sinaee__"
-#    dest  = "Helga Zita Journal"
-#    link = "https://mypaperishere.com"
-#    code_link = "https://thecoderepo.com"
-#    blog_link = "https://myblogaboutit.com"
-
-#  [[params.publications.paper]]
-#    name = "In cursus turpis massa tincidunt dui ut ornare lectus sit"
-#    authors = "__Hadi Sinaee__,Les Larkins, Edra Ethier"
-#    dest  = "Meklit Katlego Conference"
-#    link = "https://mypaperishere.com"
-#    code_link = "https://thecoderepo.com"
-#    blog_link = "https://myblogaboutit.com"
-
-
-
-#  [[params.publications.paper]]
-#		name = "Venenatis urna cursus eget nunc. Nam aliquam sem et tortor consequat id porta nibh venenatis"
-#		authors = "Les Larkins, Ana Alvardo, __Hadi Sinaee__ "
-#		dest  = "Zorka Vita Conference"
-#		link = "https://mypaperishere.com"
-#		code_link = ""
-#		blog_link = "https://myblogaboutit.com"
-
-#  [[params.publications.paper]]
-#		name = "Aliquet eget sit amet tellus cras adipiscing enim eu turpis"
-#		authors = "Les Larkins, __Hadi Sinaee__, Ana Alvardo"
-#		dest  = "Lena Randa Conference"
-#		link = "https://mypaperishere.com"
-#		code_link = ""
-#		blog_link = ""
-
-#  [[params.publications.paper]]
-#		name = "Orci eu lobortis elementum nibh tellus molestie nunc non blandit"
-#		authors = "__Hadi Sinaee__, Caroll Comes"
-#		dest  = "Thandeka Radhika Conference"
-#		link = ""
-#		code_link = ""
-#		blog_link = ""
-

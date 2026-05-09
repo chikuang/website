@@ -1,0 +1,84 @@
+---
+title: "GSU Resource"
+date: "2026-05-08"
+description: "List of many useful resources in Georgia State University"
+tags: ["tutorial", "computing"]
+categories: ["resources", "Georgia State University"]
+output:
+  rmarkdown::html_document:
+    theme: readable
+    code_folding: hide
+    toc: true
+    toc_float: true
+    number_sections: true
+---
+
+```{r resource-heading-indent, echo=FALSE, results='asis'}
+input <- knitr::current_input()
+src <- if (is.null(input) || input == "") getwd() else dirname(normalizePath(input, winslash = "/", mustWork = FALSE))
+fp <- normalizePath(file.path(src, "..", "..", "static", "css", "resource-section-indent.css"), mustWork = FALSE)
+if (!is.na(fp) && file.exists(fp)) {
+  cat("<style type=\"text/css\">\n",
+      paste(readLines(fp, warn = FALSE), collapse = "\n"),
+      "\n</style>\n", sep = "")
+}
+```
+
+Here are list of the available resources in [Georgia State University](https://www.gsu.edu/) (GSU).
+
+# Research
+
++ [GSU Databases](https://research.library.gsu.edu/az/databases?s=26072)
+
+## Computing
+
++ [Advanced Research Computing Technology, Innovation & Collaboration](https://arctic.gsu.edu/) (ARCTIC): Computing Cluster managed by GSU.
+
++ [Hydra](https://hydra.gsu.edu/): Where you submit the Tickets for issues related to computing.
+
++ [SASonDemand](https://welcome.oda.sas.com/): Online SAS computing platform
+
++ [sites@gsu](https://sites.gsu.edu/): Get the school server hosted webpage.
+    + E.g., [my page](https://sites.gsu.edu/cyeh/) 
+    
++ [HPC at GSU](https://hemera.rs.gsu.edu/pun/sys/dashboard/)
+
+# Conference and Seminar
+
+## Seminar 
+
++ [Atlanta Combinatorics Colloquium](https://tomkelly.math.gatech.edu/acc/index.html)
+
++ [Monte Carlo Methods](https://sites.google.com/view/monte-carlo-seminar)
+
++ [Online Causal Inference Seminar](https://sites.google.com/view/ocis/home)
+
+## Conferences
+
+### 2026
+
++ [SLDS 2026](https://asa-slds.github.io/slds2026/): Inference and Intelligence, November 1-3, 2026
+    + Location: Marriott at the Brooklyn Bridge, New York City, NY
+
++ [IMS/ASA Spring Research Conference](https://sites.google.com/view/src2026) (SRC) in Engineering, Science and Technology, South Carolina from May 26-28, 2026, at Clemson University. 
+
++ 
+
+# Grant
+
++ [Grant list](https://gsu.infoready4.com/)
+
++ [Seed Grant](https://neuroscience.gsu.edu/brains-behavior/seed-grants/#1656892967043-eb55784d-9d18)
+
++ [NVidia Education Research](https://www.nvidia.com/en-us/industries/higher-education-research/academic-grant-program/)
+
+# Faculty
+
++ [New Faculty Checklist](https://www.dropbox.com/scl/fi/oebuk3vsxoe4633glza1e/New_Employee_Checklist_-_rev_1.9.2024.pdf?rlkey=zsnx6amb6jwq30c3er78vhr2k&e=2&dl=0)
+
++ [A&S Tenure Track Guide](https://cas.gsu.edu/faculty-review-services/tenure-track-faculty/#pre-tenure-review)
+
++ [Promotion, Tenure, and Review Manuals](https://faculty.gsu.edu/ptr/): Login required
+
+# TBA
+
