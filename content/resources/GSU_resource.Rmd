@@ -108,12 +108,12 @@ Here are list of the available resources in [Georgia State University](https://w
 
 + [Canadian Statistical Society (SSC) Job Board](https://ssc.ca/en/employment)
 
-+ TBA, such as UF stat forum, Mathjobs, Academicjobs etc.
++ TBA, such as UF stat forum, Mathjobs, Academicjobs, interfolio etc.
 
 
 # Canadian Machine Learning Centres 
 
-Each of those ML instutite hires postdoc
+Each of those ML institute hires postdoc
 
 + [Vector Institute](https://vectorinstitute.ai/)
 
@@ -128,9 +128,9 @@ Will be moved to another post
 
 ## Machine Learning 
 
-1. [Mathematics for Machine Learning](https://mml-book.github.io/)
++ [Mathematics for Machine Learning](https://mml-book.github.io/)
 
-2. 
++ 
 
 
 # TBA
