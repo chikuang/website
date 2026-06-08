@@ -368,10 +368,12 @@ description = "Aimal is working on Retrieval-Augmented Generation (RAG) problems
 link = "https://www.linkedin.com/in/aimalrehman/"
 github_link = "https://github.com/aimalrehman92/"
 [[params.group.member]]
-name = "Zhili Lu"
+name = "Sierra Doherty"
 position = "Applied Statistics"
-description = "Zhili is working on Retrieval-Augmented Generation (RAG) problems, see [[P1]](https://arxiv.org/abs/2604.23515)"
-link = "https://www.linkedin.com/in/zhili-lu-233a98351/"
+description = "Sierra is working on classification problem"
+link = "https://www.linkedin.com/in/sierra-nicole-doherty/"
+github_link = "https://github.com/ndoherty93"
+
 
 [[params.group]]
 year = "Extenal Student Collaborator"
@@ -390,3 +392,11 @@ name = "Yi Xing Hu"
 position = "MS.c. at McGill University"
 description = "Yi Xing is working on gene/cell regulation problems using Reinforcement Learning"
 link = ""
+
+[[params.group]]
+year = "Past Member"
+[[params.group.member]]
+name = "Zhili Lu  (2026)"
+position = "Applied Statistics"
+description = "Zhili worked on Retrieval-Augmented Generation (RAG) problems, see [[P1]](https://arxiv.org/abs/2604.23515)"
+link = "https://www.linkedin.com/in/zhili-lu-233a98351/"
