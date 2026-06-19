@@ -104,6 +104,19 @@ text= """
 [[params.publications]]
 year = "Preprint"
 [[params.publications.paper]]
+name = """AURA: Adaptive Uncertainty-aware Refinement for LLM-as-a-Judge Auditing: """
+authors  = "*Zilong Zhang, Yi-Ting Hung, Weiyi He, Junxi Zhang, Lei Ding, **Chi-Kuang Yeh**"
+dest  = "Preprint"
+code_link = ""
+arxiv_link = "https://arxiv.org/abs/2606.19714"
+[[params.publications.paper]]
+name = """Quantifying and Auditing LLM Evaluation via Positive--Unlabeled Learning """
+authors  = "*Zilong Zhang, Yi-Ting Hung, Weiyi He, Junxi Zhang, Lei Ding, **Chi-Kuang Yeh**"
+dest  = "Preprint"
+code_link = ""
+arxiv_link = "https://arxiv.org/abs/2606.19057"
+
+[[params.publications.paper]]
 name = """ragR: Retrieval-Augmented Generation and RAG Assessment in R"""
 authors  = "*Muhammad Aimal Rehman, *Zhili Lu & **Chi-Kuang Yeh**"
 dest  = "Preprint"
