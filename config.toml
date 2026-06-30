@@ -48,7 +48,7 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
   4. Optimal design of experiment.
   5. Applications include drug development, toxicology, neuroscience, cosmic ray, to only name a few.
   """
-  cv_name= "CV_YCK_May7_26.pdf"
+  cv_name= "CV_YCK_Jun30_26.pdf"
   # blog="https://uwaterloo.ca/scholar/c26yeh/home"
   # site="https://uwaterloo.ca/scholar/c26yeh/home"
 
@@ -360,7 +360,7 @@ github_link = "https://github.com/wenpu1222"
 [[params.group.member]]
 name = "Zilong Zhang"
 position = "Machine Learning and Data Science"
-description = "Zilong is working on LLM auditing problems and GNN on biomedical inspired problems"
+description = "Zilong is working on LLM auditing problems and GNN on biomedical inspired problems, see [[P1]](https://arxiv.org/abs/2606.19057), [[P2]](https://arxiv.org/abs/2606.19714)"
 email = ""
 link = "https://zilong7832.github.io/"
 github_link = "https://github.com/zilong7832"
