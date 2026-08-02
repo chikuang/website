@@ -288,7 +288,7 @@ software_category = "AI and Machine Learning"
     github_link = "https://github.com/aimalrehman92/ragR"
     just_link = ""
     pdf_link = ""
-    cran = ""
+    cran = "https://cran.r-project.org/web/packages/ragR/"
 
 
 [[params.softwares]]
@@ -377,7 +377,7 @@ github_link = "https://github.com/KalenJinnah?tab=repositories"
 [[params.group.member]]
 name = "Muhammad Aimal Rehman"
 position = "Applied Statistics"
-description = "Aimal is working on Retrieval-Augmented Generation (RAG) problems, see [[P1]](https://arxiv.org/abs/2604.23515)"
+description = "Aimal is working on Retrieval-Augmented Generation (RAG) problems, see [[P1]](https://arxiv.org/abs/2604.23515), [[S1]](https://cran.r-project.org/web/packages/ragR/index.html)"
 link = "https://www.linkedin.com/in/aimalrehman/"
 github_link = "https://github.com/aimalrehman92/"
 [[params.group.member]]
@@ -411,5 +411,5 @@ year = "Past Member"
 [[params.group.member]]
 name = "Zhili Lu  (2026)"
 position = "Applied Statistics"
-description = "Zhili worked on Retrieval-Augmented Generation (RAG) problems, see [[P1]](https://arxiv.org/abs/2604.23515)"
+description = "Zhili worked on Retrieval-Augmented Generation (RAG) problems, see [[P1]](https://arxiv.org/abs/2604.23515), [[S1]](https://cran.r-project.org/web/packages/ragR/index.html)"
 link = "https://www.linkedin.com/in/zhili-lu-233a98351/"
