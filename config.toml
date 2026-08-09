@@ -380,12 +380,6 @@ position = "Applied Statistics"
 description = "Aimal is working on Retrieval-Augmented Generation (RAG) problems, see [[P1]](https://arxiv.org/abs/2604.23515), [[S1]](https://cran.r-project.org/web/packages/ragR/index.html)"
 link = "https://www.linkedin.com/in/aimalrehman/"
 github_link = "https://github.com/aimalrehman92/"
-[[params.group.member]]
-name = "Sierra Doherty"
-position = "Applied Statistics"
-description = "Sierra is working on classification problem"
-link = "https://www.linkedin.com/in/sierra-nicole-doherty/"
-github_link = "https://github.com/ndoherty93"
 
 
 [[params.group]]
@@ -400,16 +394,26 @@ name = "Chang Qu"
 position = "Ph.D. Candidate at the University of Ottawa"
 description = "Chang is working on Privacy-Awared Optimal Design Problem"
 link = ""
-[[params.group.member]]
-name = "Yi Xing Hu"
-position = "MS.c. at McGill University"
-description = "Yi Xing is working on gene/cell regulation problems using Reinforcement Learning"
-link = ""
+
 
 [[params.group]]
 year = "Past Member"
+
 [[params.group.member]]
 name = "Zhili Lu  (2026)"
 position = "Applied Statistics"
 description = "Zhili worked on Retrieval-Augmented Generation (RAG) problems, see [[P1]](https://arxiv.org/abs/2604.23515), [[S1]](https://cran.r-project.org/web/packages/ragR/index.html)"
 link = "https://www.linkedin.com/in/zhili-lu-233a98351/"
+
+[[params.group.member]]
+name = "Sierra Doherty (2026)"
+position = "Applied Statistics"
+description = "Sierra worked on classification problem on GSU Pitchers in baseball games"
+link = "https://www.linkedin.com/in/sierra-nicole-doherty/"
+github_link = "https://github.com/ndoherty93"
+
+[[params.group.member]]
+name = "Yi Xing Hu (2026)"
+position = "MS.c. at McGill University"
+description = "Yi Xing worked on gene/cell regulation problems using Reinforcement Learning"
+link = ""
