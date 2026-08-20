@@ -103,15 +103,23 @@ text= """
 
 [[params.publications]]
 year = "Preprint"
+
 [[params.publications.paper]]
-name = """AURA: Adaptive Uncertainty-aware Refinement for LLM-as-a-Judge Auditing: """
+name = """Patients-like-me: A Variational LM--GNN Framework for Explainable Clinical Prediction """
+authors  = "Xinyu Wang, Yixuan Li, Hanwei Wu, Qincheng Lu, **Chi-Kuang Yeh**, Xiao-Wen Chang, Ziyang Song"
+dest  = "Preprint"
+code_link = ""
+arxiv_link = "https://arxiv.org/abs/2608.04193"
+
+[[params.publications.paper]]
+name = """AURA: Adaptive Uncertainty-aware Refinement for LLM-as-a-Judge Auditing"""
 authors  = "*Zilong Zhang, Yi-Ting Hung, Weiyi He, Junxi Zhang, Lei Ding, **Chi-Kuang Yeh**"
 dest  = "Preprint"
 code_link = ""
 arxiv_link = "https://arxiv.org/abs/2606.19714"
 [[params.publications.paper]]
-name = """Quantifying and Auditing LLM Evaluation via Positive--Unlabeled Learning """
-authors  = "*Zilong Zhang, Yi-Ting Hung, Weiyi He, Junxi Zhang, Lei Ding, **Chi-Kuang Yeh**"
+name = """Quantifying and Auditing LLM Evaluation via Positive--Unlabeled Learning"""
+authors  = "*Zilong Zhang, Yi-Ting Hung, Lei Ding, **Chi-Kuang Yeh**"
 dest  = "Preprint"
 code_link = ""
 arxiv_link = "https://arxiv.org/abs/2606.19057"
@@ -316,7 +324,13 @@ name = "Statistical Inference"
 link = "https://chikuang.github.io/teaching/stat_inference"
 
 [[params.teaching]]
-year = "2026 Fall (Tentative)"
+year = "2027 Spring (Tentative)"
+[[params.teaching.course]]
+name = "STAT 8310 Bayesian Data Analysis"
+link = ""
+
+[[params.teaching]]
+year = "2026 Fall"
 [[params.teaching.course]]
 name = "STAT 8561 Linear Statistical Analysis I"
 link = "https://chikuang.github.io/teaching/2026F_stat8561"
@@ -342,7 +356,7 @@ name = "STAT 8670 Computational Methods in Statistics"
 link = "https://chikuang.github.io/teaching/2025F_stat8670"
 
 [[params.teaching]]
-year = "2024"
+year = "2024 Winter"
 [[params.teaching.course]]
 name = "STAT 230 Introduction to Probability"
 link = "https://chikuang.github.io/teaching/2024W_stat230"
