@@ -1,0 +1,18 @@
+{{- $html := .page.RenderString (dict "display" "block") .text -}}
+{{- range hugo.Data.inline_institutions -}}
+  {{- $institution := . -}}
+  {{- $mark := printf `<img class="inline-institution-logo%s" src="%s" alt="" aria-hidden="true" width="%d" height="%d" decoding="async">` (cond (isset . "logo_dark") " inline-institution-logo--light" "") (.logo | relURL) (int .width) (int .height) -}}
+  {{- with .logo_dark -}}
+    {{- $mark = printf `%s<img class="inline-institution-logo inline-institution-logo--dark" src="%s" alt="" aria-hidden="true" width="%d" height="%d" decoding="async">` $mark (. | relURL) (int $institution.width) (int $institution.height) -}}
+  {{- end -}}
+  {{- range .urls -}}
+    {{- /* Only decorate explicit institution links in introduction prose. */ -}}
+    {{- $url := . -}}
+    {{- range findRE (printf `<a href="\Q%s\E">([^[:space:]<]+)` $url) $html -}}
+      {{- $firstWord := replaceRE `^.*>` "" . -}}
+      {{- $replacement := printf `<a class="institution-mention" href="%s"><span class="institution-mention-lead">%s&#160;%s</span>` $url $mark $firstWord -}}
+      {{- $html = replace $html . $replacement -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return ($html | safeHTML) -}}

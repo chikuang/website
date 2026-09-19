@@ -7,10 +7,10 @@
           <li>
             <p class="teaching-course">{{ $course.name }}</p>
 {{ $course.description | markdownify }}
-{{ if or ($course.link) ($course.syllabus) ($course.materials) }}<span class="code_blog">
-{{ with $course.link }}[<a href="{{ . }}">site</a>]{{ end }}
-{{ with $course.syllabus }}[<a href="{{ . }}">syllabus</a>]{{ end }}
-{{ with $course.materials }}[<a href="{{ . }}">materials</a>]{{ end }}
+{{ if or ($course.link) ($course.syllabus) ($course.materials) }}<span class="entry-links">
+{{ with $course.link }}{{ partial "icon-link.html" (dict "url" . "kind" "website" "label" "Course website" "context" $course.name) }}{{ end }}
+{{ with $course.syllabus }}{{ partial "icon-link.html" (dict "url" . "kind" "pdf" "label" "Syllabus" "context" $course.name) }}{{ end }}
+{{ with $course.materials }}{{ partial "icon-link.html" (dict "url" . "kind" "materials" "label" "Course materials" "context" $course.name) }}{{ end }}
             </span>
 {{ end }}
           </li>

@@ -8,9 +8,9 @@
         <h2 class="section-category">{{ $group.year }}</h2>
 {{- end }}
         <ul class="entry-list">
-{{- range $i, $member := $group.member -}}
+{{- range $i, $member := sort $group.member "last_name" -}}
           <li>
-            <div class="group-member-line"><span class="group-member">{{ $member.name }}</span>{{ if $member.position }}, <em>{{ $member.position }}</em>{{ end }}{{ if or ($member.email) ($member.link) ($member.github_link) }}<small class="code_blog">{{ with $member.email }}[<a href="mailto:{{ . }}">email</a>]{{ end }}{{ with $member.link }}[<a href="{{ . }}">website</a>]{{ end }}{{ with $member.github_link }}[<a href="{{ . }}">GitHub</a>]{{ end }}</small>{{ end }}</div>
+            <div class="group-member-line"><span class="group-member">{{ $member.name }}</span>{{ if $member.position }}, <em>{{ $member.position }}</em>{{ end }}{{ if or ($member.email) ($member.link) ($member.github_link) ($member.scholar_link) }}<span class="entry-links">{{ with $member.email }}{{ partial "icon-link.html" (dict "url" (printf "mailto:%s" .) "kind" "email" "label" "Email" "context" $member.name) }}{{ end }}{{ with $member.link }}{{ partial "icon-link.html" (dict "url" . "kind" "website" "label" "Website" "context" $member.name) }}{{ end }}{{ with $member.github_link }}{{ partial "icon-link.html" (dict "url" . "kind" "github" "label" "GitHub" "context" $member.name) }}{{ end }}{{ with $member.scholar_link }}{{ partial "icon-link.html" (dict "url" . "kind" "scholar" "label" "Google Scholar" "context" $member.name) }}{{ end }}</span>{{ end }}</div>
 {{- if $member.description }}
             <div class="group-member-description">
 {{ $member.description | markdownify }}

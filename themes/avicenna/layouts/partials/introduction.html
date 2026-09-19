@@ -1,7 +1,7 @@
 <div class="introduction home-intro">
 	{{- range $index, $key := .Site.Params.Introduction.paragraph -}}
 	<div class="intro-block">
-		{{ $.RenderString (dict "display" "block") $key.text }}
+		{{ partial "institution-text.html" (dict "page" $ "text" $key.text) }}
 	</div>
 	{{- end -}}
 	<section class="research-interests" aria-labelledby="research-interests-title">

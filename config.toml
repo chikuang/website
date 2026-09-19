@@ -125,7 +125,7 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
   url = "https://x.com/chikuang_y"
 
 [[params.introduction.paragraph]]
-  text = """Hello/你好! I am an Assistant Professor in Statistics at [Georgia State University](https://www.gsu.edu/). I am also a faculty member of [Brains & Behavior (B&B)](https://neuroscience.gsu.edu/brains-behavior/) in its Neuroscience Institute and affiliated with the [Center for Cosmic Ray Studies](https://cosmic.gsu.edu/).
+  text = """Hello/你好! I am an Assistant Professor in Statistics at [Georgia State University](https://www.gsu.edu/). I am also a faculty member of [Brains & Behavior (B&B)](https://neuroscience.gsu.edu/brains-behavior/) in its [Neuroscience Institute](https://neuroscience.gsu.edu/) and affiliated with the [Center for Cosmic Ray Studies](https://cosmic.gsu.edu/).
 
   I was a postdoctoral scholar at
   [McGill University](https://www.mcgill.ca/) jointly with the [University of Waterloo](https://uwaterloo.ca), kindly sponsored by the [Canadian Statistical Sciences Institute](https://canssi.ca/) (CANSSI). I am also affiliated with [Mila - Quebec AI Institute](https://mila.quebec/en/directory/chi-kuang-yeh) and UW's [Health Data Science Lab](https://uwaterloo.ca/health-data-science-lab/).
@@ -144,7 +144,7 @@ text= """
  
 [[params.introduction.paragraph]]
 text= """
-  **UWaterloo Researcher Map**: I create a [researcher map](https://chikuang.shinyapps.io/UWaterloo_SAS_Researcher_Map/) to visualize the researcher's location from the Department of Statistics and Actuarial Science at the University of Waterloo."""
+  **UWaterloo Researcher Map**: I create a [researcher map](https://chikuang.shinyapps.io/UWaterloo_SAS_Researcher_Map/) to visualize the researcher's location from the Department of Statistics and Actuarial Science at the [University of Waterloo](https://uwaterloo.ca/)."""
 
 [[params.publications]]
 year = "Preprint"
@@ -408,6 +408,7 @@ link = "https://chikuang.github.io/teaching/2024W_stat230"
 year = "PhD Student"
 [[params.group.member]]
 name = "Wenpu Ma"
+last_name = "Ma"
 position = "Biostatistics"
 description = "Wenpu is working on cost-effectiveness analysis related problems and is co-supervised with Professor [Gengsheng Qin](https://cas.gsu.edu/profile/gengsheng-qin/)"
 email = ""
@@ -415,6 +416,8 @@ link = "https://www.linkedin.com/in/wenpu-ma"
 github_link = "https://github.com/wenpu1222"
 [[params.group.member]]
 name = "Zilong Zhang"
+scholar_link = "https://scholar.google.com/citations?user=f4NVbcUAAAAJ&hl=en"
+last_name = "Zhang"
 position = "Machine Learning and Data Science"
 description = "Zilong is working on LLM auditing problems and GNN on biomedical inspired problems, see [[P1]](https://arxiv.org/abs/2606.19057), [[P2]](https://arxiv.org/abs/2606.19714)"
 email = ""
@@ -426,12 +429,15 @@ github_link = "https://github.com/zilong7832"
 year = "Research Master Student"
 [[params.group.member]]
 name = "Kalen Jinnah"
+last_name = "Jinnah"
 position = "Applied Statistics"
 description = "Kalen is working on optimal design problems"
 link = "https://www.linkedin.com/in/kalen-jinnah-9b0b50b2/?trk=public_profile_browsemap"
 github_link = "https://github.com/KalenJinnah?tab=repositories"
 [[params.group.member]]
 name = "Muhammad Aimal Rehman"
+scholar_link = "https://scholar.google.com/citations?hl=en&user=dCnZvNkAAAAJ"
+last_name = "Rehman"
 position = "Applied Statistics"
 description = "Aimal is working on Retrieval-Augmented Generation (RAG) problems, see [[P1]](https://arxiv.org/abs/2604.23515), [[S1]](https://cran.r-project.org/web/packages/ragR/index.html)"
 link = "https://www.linkedin.com/in/aimalrehman/"
@@ -439,23 +445,27 @@ github_link = "https://github.com/aimalrehman92/"
 
 [[params.group.member]]
 name = "Seoyoung Kim"
+last_name = "Kim"
 position = "Applied Statistics"
 description = "Seoyoung is working on human annotation and retrieval-augmented generation (RAG) problems."
 link = "https://www.linkedin.com/in/seoyoung-kim-1711ba409/"
 
 
 [[params.group]]
-year = "Extenal Student Collaborator"
-[[params.group.member]]
-name = "Shaohui Wang"
-position = "Ph.D. Candidate at J. Mack Robinson College of Business, GSU"
-description = ""
-link = "https://drusagi.github.io/"
+year = "External Student Collaborator"
 [[params.group.member]]
 name = "Chang Qu"
+last_name = "Qu"
 position = "Ph.D. Candidate at the University of Ottawa"
 description = "Chang is working on Privacy-Awared Optimal Design Problem"
 link = ""
+
+
+[[params.group.member]]
+name = "Yixing Zhao"
+last_name = "Zhao"
+position = "PhD Candidate at the University of Waterloo"
+link = "https://hg-kaibai.github.io/"
 
 
 [[params.group]]
@@ -464,12 +474,14 @@ collapsible = true
 
 [[params.group.member]]
 name = "Zhili Lu  (2026)"
+last_name = "Lu"
 position = "Applied Statistics"
 description = "Zhili worked on Retrieval-Augmented Generation (RAG) problems, see [[P1]](https://arxiv.org/abs/2604.23515), [[S1]](https://cran.r-project.org/web/packages/ragR/index.html)"
 link = "https://www.linkedin.com/in/zhili-lu-233a98351/"
 
 [[params.group.member]]
 name = "Sierra Doherty (2026)"
+last_name = "Doherty"
 position = "Applied Statistics"
 description = "Sierra worked on classification problem on GSU Pitchers in baseball games"
 link = "https://www.linkedin.com/in/sierra-nicole-doherty/"
@@ -477,6 +489,7 @@ github_link = "https://github.com/ndoherty93"
 
 [[params.group.member]]
 name = "Yi Xing Hu (2026)"
+last_name = "Hu"
 position = "MS.c. at McGill University"
 description = "Yi Xing worked on gene/cell regulation problems using Reinforcement Learning"
 link = ""

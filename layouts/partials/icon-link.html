@@ -1,0 +1,16 @@
+{{- $kind := .kind | default "website" -}}
+{{- $label := .label | default "Website" -}}
+{{- if and (eq $kind "code") (in .url "github.com/") -}}
+  {{- $kind = "github" -}}
+  {{- $label = "GitHub" -}}
+{{- end -}}
+{{- $name := $label -}}
+{{- with .context -}}
+  {{- $context := replaceRE `[[:space:]]+` " " . | strings.TrimSpace -}}
+  {{- $name = printf "%s — %s" $context $label -}}
+{{- end -}}
+{{- with resources.Get (printf "icons/%s.svg" $kind) -}}
+<a class="icon-link" href="{{ $.url }}" aria-label="{{ $name }}" title="{{ $name }}">{{ .Content | strings.TrimSpace | safeHTML }}</a>
+{{- else -}}
+  {{- errorf "Missing link icon: %s" $kind -}}
+{{- end -}}

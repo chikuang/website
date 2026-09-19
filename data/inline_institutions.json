@@ -1,0 +1,50 @@
+[
+  {
+    "urls": [
+      "https://www.gsu.edu/",
+      "https://neuroscience.gsu.edu/",
+      "https://neuroscience.gsu.edu/brains-behavior/",
+      "https://cosmic.gsu.edu/"
+    ],
+    "logo": "images/institutions/georgia-state-mark.svg",
+    "logo_dark": "images/institutions/georgia-state-mark-dark.svg",
+    "width": 19,
+    "height": 20
+  },
+  {
+    "urls": [
+      "https://www.mcgill.ca/"
+    ],
+    "logo": "images/institutions/mcgill-mark.svg",
+    "width": 15,
+    "height": 20
+  },
+  {
+    "urls": [
+      "https://uwaterloo.ca",
+      "https://uwaterloo.ca/",
+      "https://uwaterloo.ca/health-data-science-lab/"
+    ],
+    "logo": "images/institutions/waterloo-mark.svg",
+    "width": 17,
+    "height": 20
+  },
+  {
+    "urls": [
+      "https://canssi.ca/"
+    ],
+    "logo": "images/institutions/canssi.svg",
+    "width": 19,
+    "height": 20
+  },
+  {
+    "urls": [
+      "https://mila.quebec/en",
+      "https://mila.quebec/en/directory/chi-kuang-yeh"
+    ],
+    "logo": "images/institutions/mila-mark.svg",
+    "logo_dark": "images/institutions/mila-mark-dark.svg",
+    "width": 20,
+    "height": 20
+  }
+]

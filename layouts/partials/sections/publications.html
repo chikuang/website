@@ -17,7 +17,7 @@
 					<em>{{ $publication.dest }}</em>{{ with $publication.year }}, {{ . }}{{ end }}
 {{- end -}}
 {{- if or ($publication.code_link) ($publication.arxiv_link) ($publication.pdf_link) ($publication.RG_link) ($publication.just_link) ($publication.software_link) -}}
-					<span class="code_blog">{{ with $publication.code_link }}[<a href="{{ . }}">code</a>]{{ end }}{{ with $publication.pdf_link }} [<a href="{{ . }}">pdf</a>]{{ end }}{{ with $publication.software_link }} [<a href="{{ . }}">software</a>]{{ end }}{{ with $publication.just_link }} [<a href="{{ . }}">link</a>]{{ end }}{{ with $publication.arxiv_link }} [<a href="{{ . }}">arXiv</a>]{{ end }}{{ with $publication.RG_link }} [<a href="{{ . }}">ResearchGate</a>]{{ end }}</span>
+					<span class="entry-links">{{ with $publication.code_link }}{{ partial "icon-link.html" (dict "url" . "kind" "code" "label" "Code" "context" $publication.name) }}{{ end }}{{ with $publication.pdf_link }}{{ partial "icon-link.html" (dict "url" . "kind" "pdf" "label" "PDF" "context" $publication.name) }}{{ end }}{{ with $publication.software_link }}{{ partial "icon-link.html" (dict "url" . "kind" "software" "label" "Software" "context" $publication.name) }}{{ end }}{{ with $publication.just_link }}{{ partial "icon-link.html" (dict "url" . "kind" "website" "label" "Paper website" "context" $publication.name) }}{{ end }}{{ with $publication.arxiv_link }}{{ partial "icon-link.html" (dict "url" . "kind" "arxiv" "label" "arXiv" "context" $publication.name) }}{{ end }}{{ with $publication.RG_link }}{{ partial "icon-link.html" (dict "url" . "kind" "researchgate" "label" "ResearchGate" "context" $publication.name) }}{{ end }}</span>
 {{- end -}}
 				</div>
 				<div class="entry-meta publication-authors">

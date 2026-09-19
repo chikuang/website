@@ -24,3 +24,19 @@ site’s existing theme control.
 
 The marks belong to their respective institutions and identify the author’s
 education and affiliations.
+
+## Inline marks
+
+Home introduction links use compact marks next to the institution name. The
+Waterloo and McGill shields and GSU flame reuse the vector paths above, with
+tight view boxes for legibility at text size. Mila uses the network symbol from
+its existing light/dark logo variants. CANSSI uses its transparent green [official symbol](https://canssi.ca/wp-content/uploads/Primary-Logo.svg),
+retrieved from the institution's homepage on September 19, 2026.
+
+GSU's Brains & Behavior program, Neuroscience Institute, and Center for Cosmic
+Ray Studies use their parent university's flame; Waterloo's Health Data Science
+Lab uses the Waterloo shield. These indicate the parent institution rather
+than claiming to be separate program logos. Original destination links remain.
+The adjacent text supplies the accessible name, so inline images are decorative.
+Mappings are in `data/inline_institutions.json`; paragraph rendering is handled
+by `layouts/partials/institution-text.html` without client-side JavaScript.
