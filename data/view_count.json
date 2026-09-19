@@ -1,5 +1,6 @@
 {
   "host": "chikuang.github.io",
-  "total": 42,
-  "updated": "2026-09-19T13:21:22Z"
+  "endpoint": "https://chikuang-site-views.chikuang-site-views.workers.dev/views",
+  "legacy_total": 42,
+  "legacy_updated": "2026-09-19T13:21:22Z"
 }

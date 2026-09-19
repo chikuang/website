@@ -1,0 +1,16 @@
+name = "chikuang-site-views"
+main = "worker.js"
+compatibility_date = "2026-09-19"
+workers_dev = true
+
+[vars]
+SITE_ORIGIN = "https://chikuang.github.io"
+INITIAL_TOTAL = "42"
+
+[exports.ViewCounter]
+type = "durable-object"
+storage = "sqlite"
+
+[[durable_objects.bindings]]
+name = "COUNTER"
+class_name = "ViewCounter"

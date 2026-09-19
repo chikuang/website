@@ -1,10 +1,13 @@
-{{- $snapshot := hugo.Data.view_count -}}
+{{- $config := hugo.Data.view_count -}}
 {{- $host := (urls.Parse .Site.BaseURL).Hostname -}}
-{{- if ne $snapshot.host $host -}}
-  {{- errorf "The saved view count belongs to %s, not %s" $snapshot.host $host -}}
+{{- if ne $config.host $host -}}
+  {{- errorf "The view counter belongs to %s, not %s" $config.host $host -}}
 {{- end -}}
-<div class="visitor-count" id="site-visitor-count" data-counter-host="{{ $host }}" data-counter-total="{{ $snapshot.total }}" data-counter-updated="{{ $snapshot.updated }}" title="Last confirmed cumulative total, saved {{ $snapshot.updated }}. Live counting may be blocked or unavailable.">
-  Total views: <span id="site-view-count" aria-live="polite">{{ lang.FormatNumber 0 $snapshot.total }}</span><span id="site-view-status"> (saved {{ time.Format "2006-01-02" $snapshot.updated }})</span>
-  <noscript> (JavaScript is required for live updates.)</noscript>
+{{- if not $config.endpoint -}}
+  {{- errorf "Set data/view_count.json endpoint to the deployed Cloudflare counter URL" -}}
+{{- end -}}
+<div class="visitor-count" id="site-visitor-count" data-counter-host="{{ $host }}" data-counter-endpoint="{{ $config.endpoint }}">
+  Total views: <span id="site-view-count" aria-live="polite">—</span><span id="site-view-status"></span>
+  <noscript> (JavaScript is required for live counting.)</noscript>
 </div>
 <script defer src="{{ "js/visitor-counter.js" | relURL }}?v={{ readFile "static/js/visitor-counter.js" | md5 }}"></script>
