@@ -1,0 +1,8 @@
+<nav class="site-navigation" aria-label="Main sections">
+  <div class="site-tabs" data-site-tabs>
+    {{- range partial "site-sections.html" .page }}
+    <a id="tab-{{ .key }}" class="site-tab{{ if eq $.active .key }} is-active{{ end }}"
+       href="{{ .url }}" data-panel-link="{{ .key }}"{{ if eq $.active .key }} aria-current="page"{{ end }}>{{ .name }}</a>
+    {{- end }}
+  </div>
+</nav>

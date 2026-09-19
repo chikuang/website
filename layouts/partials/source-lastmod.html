@@ -1,0 +1,21 @@
+{{- /* The latest saved source file, excluding generated output and hidden files. */ -}}
+{{- $latest := time.AsTime "2016-01-01" -}}
+{{- range . -}}
+  {{- $sourcePath := . -}}
+  {{- with os.Stat $sourcePath -}}
+    {{- $modified := .ModTime -}}
+    {{- if .IsDir -}}
+      {{- $children := slice -}}
+      {{- range os.ReadDir $sourcePath -}}
+        {{- if not (hasPrefix .Name ".") -}}
+          {{- $children = $children | append (path.Join $sourcePath .Name) -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $modified = partial "source-lastmod.html" $children -}}
+    {{- end -}}
+    {{- if $modified.After $latest -}}
+      {{- $latest = $modified -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $latest -}}

@@ -2,12 +2,14 @@
   <nav class="nav">
     <div class="footer-content">
       <div class="footer-content__lines">
-        Last modified: <span>{{ now.Format "2006-01-02" }}</span>
+        {{- $lastModified := partialCached "source-lastmod.html" (slice "config.toml" "content" "layouts" "static" "themes/avicenna/layouts" "themes/avicenna/static") -}}
+        Last modified: <time datetime="{{ $lastModified.Format "2006-01-02" }}">{{ $lastModified.Format "2006-01-02" }}</time>
         <div>
-          <a href="https://chikuang.github.io/">Chi-Kuang Yeh 2016-{{ now.Format "2006" }}</a> |
+          <a href="https://chikuang.github.io/">Chi-Kuang Yeh 2016-{{ now.Format "06" }}</a> |
           <a href="https://github.com/hadisinaee/avicenna">Avicenna Theme</a> |
           Built with <a href="https://gohugo.io">Hugo</a>
         </div>
+{{ partial "visitor-counter.html" . }}
       </div>
       <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Theme">
         <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">☾</span>

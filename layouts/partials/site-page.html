@@ -1,0 +1,35 @@
+{{- $page := .page -}}
+{{- $active := .active -}}
+<!DOCTYPE html>
+<html lang="{{ $page.Site.Language.Lang }}">
+{{ partial "header.html" $page }}
+<body>
+  <div class="container wrapper site-shell">
+{{ partial "head.html" $page }}
+{{ partial "site-navigation.html" (dict "page" $page "active" $active) }}
+    <main class="site-content" data-site-panels data-default-panel="{{ $active }}"
+          data-home-url="{{ $page.Site.Home.RelPermalink }}" data-site-title="{{ $page.Site.Title }}"
+          data-home-title="{{ $page.Site.Title }} - {{ $page.Site.Params.subtitle }}">
+{{- range partial "site-sections.html" $page }}
+      <section id="panel-{{ .key }}" class="site-panel" data-panel-key="{{ .key }}" data-panel-title="{{ .name }}"
+               aria-labelledby="tab-{{ .key }}"{{ if ne $active .key }} hidden{{ end }}>
+{{- if eq .key "home" }}
+{{ partial "introduction.html" $page }}
+{{ partial "institutions.html" $page }}
+{{- else }}
+{{- if in (slice "publications" "softwares") .key }}
+{{ partial "contributor-note.html" $page }}
+{{- end }}
+{{- if eq .key "resources" }}
+{{- with $page.Site.GetPage "/resources" }}{{ partial "resource-list-body.html" . }}{{ end }}
+{{- else }}
+{{ partial (printf "sections/%s.html" .key) $page }}
+{{- end }}
+{{- end }}
+      </section>
+{{- end }}
+    </main>
+  </div>
+{{ partial "footer.html" $page }}
+</body>
+</html>

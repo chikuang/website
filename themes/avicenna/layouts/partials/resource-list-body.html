@@ -1,5 +1,5 @@
 {{- /* Expects section list context (e.g. Resources) with .Pages */ -}}
-<div class="introduction" id="resources" style="margin-left: 2em;">
+<div class="section-body" id="resources">
 	{{- $grp := newScratch -}}
 	{{- $keys := slice -}}
 	{{- range .Pages -}}
@@ -18,7 +18,7 @@
 
 	{{- $uncat := $grp.Get "_resource_uncat" | default slice -}}
 	{{- if gt (len $uncat) 0 -}}
-		<ul class="resource-list-by-category">
+		<ul class="entry-list resource-list-by-category">
 			{{- range $uncat -}}
 				{{ partial "resource-list-item.html" . }}
 			{{- end -}}
@@ -29,8 +29,8 @@
 		{{- $cat := . -}}
 		{{- $pg := $grp.Get $cat | default slice -}}
 		{{- if gt (len $pg) 0 -}}
-		<div class="year software-category-title">{{ $cat }}</div>
-		<ul class="resource-list-by-category">
+		<h2 class="section-category">{{ $cat }}</h2>
+		<ul class="entry-list resource-list-by-category">
 			{{- range $pg -}}
 				{{ partial "resource-list-item.html" . }}
 			{{- end -}}

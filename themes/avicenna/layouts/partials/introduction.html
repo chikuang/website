@@ -1,10 +1,11 @@
 <div class="introduction home-intro">
 	{{- range $index, $key := .Site.Params.Introduction.paragraph -}}
-	<span>
-		{{ $key.text  | markdownify }}
-	</span>
+	<div class="intro-block">
+		{{ $.RenderString (dict "display" "block") $key.text }}
+	</div>
 	{{- end -}}
-	<span>
-		<b>Reserach Interests: </b> {{ $.Site.Params.interests | markdownify }}
-	</span>
+	<section class="research-interests" aria-labelledby="research-interests-title">
+		<h2 class="section-category" id="research-interests-title">Research Interests</h2>
+		{{ .RenderString (dict "display" "block") .Site.Params.interests }}
+	</section>
 </div>

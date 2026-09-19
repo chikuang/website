@@ -1,0 +1,4 @@
+<div class="visitor-count" id="site-visitor-count" data-counter-host="{{ (urls.Parse .Site.BaseURL).Hostname }}" title="Estimated unique visitors reported by Busuanzi">
+  Visitors: <span id="busuanzi_value_site_uv" aria-live="polite">—</span>
+</div>
+<script defer src="{{ "js/visitor-counter.js" | relURL }}?v={{ readFile "static/js/visitor-counter.js" | md5 }}"></script>

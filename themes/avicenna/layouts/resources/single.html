@@ -1,17 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
 {{ partial "header.html" . }}
-<link rel="stylesheet" href="{{ "css/resource-section-indent.css" | relURL }}">
-
-<div class="container wrapper">
-	<div class="section-nav-row">
-		<a href="/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Home</a>
-		<a href="/publications/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Publication</a>
-		<a href="/softwares/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Software</a>
-		<a href="/teaching/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Teaching</a>
-		<a href="/group/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Group</a>
-		<a href="/resources/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Resource</a>
-	</div>
-
-	<div class="introduction" id="resources" style="margin-left: 2em;">
+<body>
+<div class="container wrapper site-shell">
+  {{ partial "head.html" . }}
+  {{ partial "site-navigation.html" (dict "page" . "active" "resources") }}
+  <main class="site-content">
+    <a class="resource-back" href="{{ .Site.Home.RelPermalink }}#resources">← All resources</a>
+	<div class="introduction resource-article" id="resources">
 		{{- $showToc := default true .Params.show_toc -}}
 		<article class="resource-post">
 			<div class="post-content resource-post-content">
@@ -139,6 +135,8 @@
 			</div>
 		</article>
 	</div>
+  </main>
 </div>
-
 {{ partial "footer.html" . }}
+</body>
+</html>

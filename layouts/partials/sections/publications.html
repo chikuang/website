@@ -1,0 +1,31 @@
+<div class="section-body" id="publication">
+{{ with .Site.Params.publications }}
+
+{{- range $index, $publications := $.Site.Params.publications -}}
+		<h2 class="section-category">{{ $publications.year }}</h2>
+
+		<ul class="entry-list">
+{{ range $elem_index, $publication := $publications.paper }}
+			<li>
+{{ if $publication.link }}
+					<a href="{{ $publication.link }}" class="publications">{{ $publication.name | replaceRE `[[:space:]]+` " " }}</a>
+{{ else }}
+					<span class="publications">{{ $publication.name | replaceRE `[[:space:]]+` " " }}</span>
+{{ end }}
+				<div class="entry-meta">
+{{- if ne $publications.year "Preprint" -}}
+					<em>{{ $publication.dest }}</em>{{ with $publication.year }}, {{ . }}{{ end }}
+{{- end -}}
+{{- if or ($publication.code_link) ($publication.arxiv_link) ($publication.pdf_link) ($publication.RG_link) ($publication.just_link) ($publication.software_link) -}}
+					<span class="code_blog">{{ with $publication.code_link }}[<a href="{{ . }}">code</a>]{{ end }}{{ with $publication.pdf_link }} [<a href="{{ . }}">pdf</a>]{{ end }}{{ with $publication.software_link }} [<a href="{{ . }}">software</a>]{{ end }}{{ with $publication.just_link }} [<a href="{{ . }}">link</a>]{{ end }}{{ with $publication.arxiv_link }} [<a href="{{ . }}">arXiv</a>]{{ end }}{{ with $publication.RG_link }} [<a href="{{ . }}">ResearchGate</a>]{{ end }}</span>
+{{- end -}}
+				</div>
+				<div class="entry-meta publication-authors">
+					<span class="collaborators">{{ $publication.authors | markdownify }}</span>
+				</div>
+			</li>
+{{ end }}
+		</ul>
+{{- end -}}
+{{- end -}}
+	</div>

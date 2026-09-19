@@ -1,0 +1,21 @@
+<div class="section-body" id="teaching">
+{{ with .Site.Params.teaching }}
+{{- range $index, $teaching := . -}}
+        <h2 class="section-category">{{ $teaching.year }}</h2>
+        <ul class="entry-list">
+{{- range $i, $course := $teaching.course -}}
+          <li>
+            <p class="teaching-course">{{ $course.name }}</p>
+{{ $course.description | markdownify }}
+{{ if or ($course.link) ($course.syllabus) ($course.materials) }}<span class="code_blog">
+{{ with $course.link }}[<a href="{{ . }}">site</a>]{{ end }}
+{{ with $course.syllabus }}[<a href="{{ . }}">syllabus</a>]{{ end }}
+{{ with $course.materials }}[<a href="{{ . }}">materials</a>]{{ end }}
+            </span>
+{{ end }}
+          </li>
+{{- end }}
+        </ul>
+{{- end }}
+{{ end }}
+  </div>

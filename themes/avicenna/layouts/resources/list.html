@@ -1,16 +1,1 @@
-{{ partial "header.html" . }}
-
-<div class="container wrapper">
-	<div class="section-nav-row">
-		<a href="/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Home</a>
-		<a href="/publications/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Publication</a>
-		<a href="/softwares/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Software</a>
-		<a href="/teaching/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Teaching</a>
-		<a href="/group/" style="font-size:1.3em; color:#0039A6; text-decoration:none;">Group</a>
-		<span style="font-size:1.3em; color:#0039A6; font-weight:bold;">Resource</span>
-	</div>
-
-	{{ partial "resource-list-body.html" . }}
-</div>
-
-{{ partial "footer.html" . }}
+{{- partial "site-page.html" (dict "page" . "active" "resources") -}}

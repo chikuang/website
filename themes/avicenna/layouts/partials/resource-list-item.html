@@ -3,7 +3,7 @@
 		<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 		{{ with .Date }}<span class="resource-list-date">{{ .Format "2006-01-02" }}</span>{{ end }}
 	</div>
-	<div style="margin-top: 0.1em;">
-		{{ with .Params.description }}<em>{{ . }}</em>{{ end }}
+	<div class="entry-description">
+		{{ with .Params.description }}{{ . }}{{ end }}
 	</div>
 </li>

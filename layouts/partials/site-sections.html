@@ -1,0 +1,5 @@
+{{- $sections := slice (dict "key" "home" "name" "Home" "url" .Site.Home.RelPermalink) -}}
+{{- range .Site.Menus.main -}}
+  {{- $sections = $sections | append (dict "key" (strings.Trim .URL "/") "name" .Name "url" (.URL | relURL)) -}}
+{{- end -}}
+{{- return $sections -}}

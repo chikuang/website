@@ -9,11 +9,10 @@
 	<title>{{ $title }} - {{ $siteTitle }}</title>
 	{{- end -}}
 
-	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	<link rel="manifest" href="site.webmanifest">
-	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="apple-touch-icon" sizes="192x192" href="{{ "favicon-192x192.png" | relURL }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
+	<link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 
@@ -27,17 +26,22 @@
 
 	{{- partial "opengraph-date-only.html" . -}}
 	{{- template "_internal/twitter_cards.html" . -}}
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic,400italic,700italic&amp;display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="{{ "css/normalize.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+    {{- $styleVersion := readFile "themes/avicenna/static/css/main.css" | md5 -}}
+    <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?v={{ $styleVersion }}">
+    <link rel="stylesheet" href="{{ "css/sections.css" | relURL }}?v={{ readFile "static/css/sections.css" | md5 }}">
+{{ if and (eq .Section "resources") .IsPage }}
+    <link rel="stylesheet" href="{{ "css/resource-section-indent.css" | relURL }}">
+{{ end }}
 
     {{- if and (isset .Site.Params "social") (isset .Site.Params "feathericonscdn") (eq .Site.Params.featherIconsCDN true) -}}
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     {{- else if (isset .Site.Params "social") -}}
     <script src="{{ "js/feather.min.js" | relURL }}"></script>
     {{- end -}}
-    <script src="{{ "js/main.js" | relURL }}"></script>
+    <script src="{{ "js/main.js" | relURL }}?v={{ readFile "themes/avicenna/static/js/main.js" | md5 }}"></script>
 
     <!-- MathJax 3: delimiters → inline `\(...\)`, `$...$`; display `\[...\]`, `$$...$$` -->
     <script id="tex-config">
@@ -51,4 +55,4 @@
 	};
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</head> 
+</head>

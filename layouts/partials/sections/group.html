@@ -1,0 +1,25 @@
+<div class="section-body" id="group">
+{{- with .Site.Params.group }}
+{{- range $index, $group := . -}}
+{{- if $group.collapsible }}
+        <details class="past-members">
+          <summary>{{ $group.year }} <span class="member-count">({{ len $group.member }})</span></summary>
+{{- else }}
+        <h2 class="section-category">{{ $group.year }}</h2>
+{{- end }}
+        <ul class="entry-list">
+{{- range $i, $member := $group.member -}}
+          <li>
+            <div class="group-member-line"><span class="group-member">{{ $member.name }}</span>{{ if $member.position }}, <em>{{ $member.position }}</em>{{ end }}{{ if or ($member.email) ($member.link) ($member.github_link) }}<small class="code_blog">{{ with $member.email }}[<a href="mailto:{{ . }}">email</a>]{{ end }}{{ with $member.link }}[<a href="{{ . }}">website</a>]{{ end }}{{ with $member.github_link }}[<a href="{{ . }}">GitHub</a>]{{ end }}</small>{{ end }}</div>
+{{- if $member.description }}
+            <div class="group-member-description">
+{{ $member.description | markdownify }}
+            </div>
+{{- end }}
+          </li>
+{{- end }}
+        </ul>
+{{- if $group.collapsible }}</details>{{ end }}
+{{- end }}
+{{ end }}
+  </div>

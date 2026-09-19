@@ -1,0 +1,19 @@
+{{ with .Site.Params.institutions }}
+<section class="institutions" aria-label="Education and appointments">
+  <ul class="institution-logos">
+    {{- range $institution := . }}
+    <li>
+      <a class="institution-link" href="{{ .url }}">
+        <span class="institution-logo-frame">
+          <img class="institution-logo{{ with .logo_dark }} institution-logo--light{{ end }}" src="{{ .logo | relURL }}" alt="{{ .name }} logo" width="160" height="64" loading="lazy" decoding="async">
+          {{- with .logo_dark }}
+          <img class="institution-logo institution-logo--dark" src="{{ . | relURL }}" alt="{{ $institution.name }} logo" width="160" height="64" loading="lazy" decoding="async">
+          {{- end }}
+        </span>
+        <span class="institution-name">{{ .name }}</span>
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{ end }}

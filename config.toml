@@ -8,6 +8,10 @@ timeout = 3000
 enableGitInfo = true
 ignoreLogs = ['warning-deprecated-site-allpages', 'warning-goldmark-raw-html']
 
+# blogdown generates trusted HTML pages in content/; Hugo 0.162+ requires opt-in.
+[security]
+allowContent = ['! ^text/org$']
+
 [markup.tableOfContents]
 startLevel = 1
 endLevel = 4
@@ -37,25 +41,64 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
     weight = 5
 
 [params]
-  subtitle= "PhD"
+  subtitle= "Assistant Professor in Statistics"
   image = "image.png"
   publications_note = "* indicates students or postdocs."
-  interests = """I possess a wide range of interests, but for now, my research 
-  is centred around: 
+  interests = """My research interests include:
+
   1. Functional data analysis.
   2. Statistical machine learning and high-dimensional statistical inference.
   3. Dependence modeling.
-  4. Optimal design of experiment.
-  5. Applications include drug development, toxicology, neuroscience, cosmic ray, to only name a few.
+  4. Optimal design of experiments.
+  5. Large language model (LLM) alignment.
+  6. Retrieval-augmented generation (RAG) with uncertainty quantification.
+
+  Applications include drug discovery and development, toxicology, neuroscience, and cosmic ray studies.
   """
-  cv_name= "CV_YCK_Jun30_26.pdf"
+  cv_name= "CV_YCK_Sep19_2026.pdf"
   # blog="https://uwaterloo.ca/scholar/c26yeh/home"
   # site="https://uwaterloo.ca/scholar/c26yeh/home"
 
 [[params.affilation]]
   name = "Georgia State University"
-  position = "Assistant Professor"
+  url = "https://www.gsu.edu/"
+  position = "Assistant Professor in Statistics"
+  position_url = "https://cas.gsu.edu/profile/chi-kuang-yeh/"
+  secondary_position = "Brains & Behavior (B&B) Faculty, Neuroscience Institute"
+  secondary_url = "https://neuroscience.gsu.edu/brains-behavior/"
+  additional_position = "Affiliated Faculty, Center for Cosmic Ray Studies"
+  additional_url = "https://cosmic.gsu.edu/"
   contact = "cyeh@gsu.edu, chi-kuang.yeh@mail.mcgill.ca, chi-kuang.yeh@uwaterloo.ca"
+
+[[params.institutions]]
+  name = "University of Victoria"
+  logo = "images/institutions/uvic-crest.svg"
+  logo_dark = "images/institutions/uvic-crest-dark.svg"
+  url = "https://www.uvic.ca/"
+
+[[params.institutions]]
+  name = "University of Waterloo"
+  logo = "images/institutions/waterloo.svg"
+  logo_dark = "images/institutions/waterloo-dark.svg"
+  url = "https://uwaterloo.ca/"
+
+[[params.institutions]]
+  name = "McGill University"
+  logo = "images/institutions/mcgill.svg"
+  logo_dark = "images/institutions/mcgill-dark.svg"
+  url = "https://www.mcgill.ca/"
+
+[[params.institutions]]
+  name = "Mila – Quebec AI Institute"
+  logo = "images/institutions/mila.svg"
+  logo_dark = "images/institutions/mila-dark.svg"
+  url = "https://mila.quebec/en"
+
+[[params.institutions]]
+  name = "Georgia State University"
+  logo = "images/institutions/georgia-state-stacked.svg"
+  logo_dark = "images/institutions/georgia-state-stacked-dark.svg"
+  url = "https://www.gsu.edu/"
 
 [[params.social]]
   name = "GitHub"
@@ -82,12 +125,14 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
   url = "https://x.com/chikuang_y"
 
 [[params.introduction.paragraph]]
-  text = """Hello/你好! I am an Assistant Professor in Statsitics at [Georgia State University](https://www.gsu.edu/). I was a postdoctoral scholar at 
+  text = """Hello/你好! I am an Assistant Professor in Statistics at [Georgia State University](https://www.gsu.edu/). I am also a faculty member of [Brains & Behavior (B&B)](https://neuroscience.gsu.edu/brains-behavior/) in its Neuroscience Institute and affiliated with the [Center for Cosmic Ray Studies](https://cosmic.gsu.edu/).
+
+  I was a postdoctoral scholar at
   [McGill University](https://www.mcgill.ca/) jointly with the [University of Waterloo](https://uwaterloo.ca), kindly sponsored by the [Canadian Statistical Sciences Institute](https://canssi.ca/) (CANSSI). I am also affiliated with [Mila - Quebec AI Institute](https://mila.quebec/en/directory/chi-kuang-yeh) and UW's [Health Data Science Lab](https://uwaterloo.ca/health-data-science-lab/).
   
   My office is: Room 1407, [25 Park Place](https://en.wikipedia.org/wiki/25_Park_Place).
   
-  I am currently served as an associate editor of [Statistics and Computing](https://link.springer.com/journal/11222).
+  I currently serve as an associate editor of [Statistics and Computing](https://link.springer.com/journal/11222).
 """
 
 [[params.introduction.paragraph]]
@@ -104,14 +149,20 @@ text= """
 [[params.publications]]
 year = "Preprint"
 [[params.publications.paper]]
-name = """AURA: Adaptive Uncertainty-aware Refinement for LLM-as-a-Judge Auditing: """
+name = """Patients-like-me: A Variational LM--GNN Framework for Explainable Clinical Prediction """
+authors = "Xinyu Wang, Yixuan Li, Hanwei Wu, Qincheng Lu, **Chi-Kuang Yeh**, Xiao-Wen Chang, Ziyang Song"
+dest = "Preprint"
+arxiv_link = "https://arxiv.org/abs/2608.04193"
+
+[[params.publications.paper]]
+name = """AURA: Adaptive Uncertainty-aware Refinement for LLM-as-a-Judge Auditing"""
 authors  = "*Zilong Zhang, Yi-Ting Hung, Weiyi He, Junxi Zhang, Lei Ding, **Chi-Kuang Yeh**"
 dest  = "Preprint"
 code_link = ""
 arxiv_link = "https://arxiv.org/abs/2606.19714"
 [[params.publications.paper]]
-name = """Quantifying and Auditing LLM Evaluation via Positive--Unlabeled Learning """
-authors  = "*Zilong Zhang, Yi-Ting Hung, Weiyi He, Junxi Zhang, Lei Ding, **Chi-Kuang Yeh**"
+name = """Quantifying and Auditing LLM Evaluation via Positive--Unlabeled Learning"""
+authors  = "*Zilong Zhang, Yi-Ting Hung, Lei Ding, **Chi-Kuang Yeh**"
 dest  = "Preprint"
 code_link = ""
 arxiv_link = "https://arxiv.org/abs/2606.19057"
@@ -316,7 +367,12 @@ name = "Statistical Inference"
 link = "https://chikuang.github.io/teaching/stat_inference"
 
 [[params.teaching]]
-year = "2026 Fall (Tentative)"
+year = "2027 Spring (Tentative)"
+[[params.teaching.course]]
+name = "STAT 8310 Bayesian Data Analysis"
+
+[[params.teaching]]
+year = "2026 Fall"
 [[params.teaching.course]]
 name = "STAT 8561 Linear Statistical Analysis I"
 link = "https://chikuang.github.io/teaching/2026F_stat8561"
@@ -342,7 +398,7 @@ name = "STAT 8670 Computational Methods in Statistics"
 link = "https://chikuang.github.io/teaching/2025F_stat8670"
 
 [[params.teaching]]
-year = "2024"
+year = "2024 Winter"
 [[params.teaching.course]]
 name = "STAT 230 Introduction to Probability"
 link = "https://chikuang.github.io/teaching/2024W_stat230"
@@ -381,6 +437,12 @@ description = "Aimal is working on Retrieval-Augmented Generation (RAG) problems
 link = "https://www.linkedin.com/in/aimalrehman/"
 github_link = "https://github.com/aimalrehman92/"
 
+[[params.group.member]]
+name = "Seoyoung Kim"
+position = "Applied Statistics"
+description = "Seoyoung is working on human annotation and retrieval-augmented generation (RAG) problems."
+link = "https://www.linkedin.com/in/seoyoung-kim-1711ba409/"
+
 
 [[params.group]]
 year = "Extenal Student Collaborator"
@@ -397,7 +459,8 @@ link = ""
 
 
 [[params.group]]
-year = "Past Member"
+year = "Past Members"
+collapsible = true
 
 [[params.group.member]]
 name = "Zhili Lu  (2026)"
