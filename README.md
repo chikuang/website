@@ -43,6 +43,9 @@ the tabs; browser back and forward restore the selected panel.
 Section templates live in `layouts/partials/sections/`; shared typography and
 spacing live in `static/css/sections.css`. Publication and Software use the
 same contributor note from `params.publications_note` in `config.toml`.
+Optional `award` and `award_link` fields on a publication add a linked award
+label below its authors, with a gold trophy and McGill red text (`#ED1B2F`).
+Neutral backgrounds and borders adapt to the light and dark themes.
 
 Member lists are sorted within each category using the explicit `last_name`
 field in `config.toml`. Optional `scholar_link` values add a Google Scholar

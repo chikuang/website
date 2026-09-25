@@ -149,26 +149,26 @@ text= """
 [[params.publications]]
 year = "Preprint"
 [[params.publications.paper]]
-name = """Patients-like-me: A Variational LM--GNN Framework for Explainable Clinical Prediction """
+name = """Patients-like-me: a variational LM--GNN framework for explainable clinical prediction"""
 authors = "Xinyu Wang, Yixuan Li, Hanwei Wu, Qincheng Lu, **Chi-Kuang Yeh**, Xiao-Wen Chang, Ziyang Song"
 dest = "Preprint"
 arxiv_link = "https://arxiv.org/abs/2608.04193"
 
 [[params.publications.paper]]
-name = """AURA: Adaptive Uncertainty-aware Refinement for LLM-as-a-Judge Auditing"""
+name = """AURA: adaptive uncertainty-aware refinement for LLM-as-a-judge auditing"""
 authors  = "*Zilong Zhang, Yi-Ting Hung, Weiyi He, Junxi Zhang, Lei Ding, **Chi-Kuang Yeh**"
 dest  = "Preprint"
 code_link = ""
 arxiv_link = "https://arxiv.org/abs/2606.19714"
 [[params.publications.paper]]
-name = """Quantifying and Auditing LLM Evaluation via Positive--Unlabeled Learning"""
+name = """Quantifying and auditing LLM evaluation via positive--unlabeled learning"""
 authors  = "*Zilong Zhang, Yi-Ting Hung, Lei Ding, **Chi-Kuang Yeh**"
 dest  = "Preprint"
 code_link = ""
 arxiv_link = "https://arxiv.org/abs/2606.19057"
 
 [[params.publications.paper]]
-name = """ragR: Retrieval-Augmented Generation and RAG Assessment in R"""
+name = """ragR: retrieval-augmented generation and RAG assessment in R"""
 authors  = "*Muhammad Aimal Rehman, *Zhili Lu & **Chi-Kuang Yeh**"
 dest  = "Preprint"
 code_link = "https://github.com/aimalrehman92/ragR"
@@ -180,9 +180,11 @@ authors  = "**Chi-Kuang Yeh**, Weng Kee Wong & Julie Zhou"
 dest  = "Preprint"
 arxiv_link = "https://arxiv.org/abs/2508.08445"
 code_link = "https://github.com/chikuang/gtDesign"
+award = "2026 NISS New Researcher Award"
+award_link = "https://www.niss.org/news/niss-new-researcher-awardees-present-invited-talks-2026-spring-research-conference"
 
 [[params.publications.paper]]
-name = """FTSgof: White noise and goodness-of-fit tests for functional time series in R"""
+name = """FTSgof: white noise and goodness-of-fit tests for functional time series in R"""
 authors  = "Mihyun Kim, Gregory Rice, Yuqian Zhao & **Chi-Kuang Yeh**"
 dest  = "Preprint"
 link = ""
@@ -203,6 +205,13 @@ package_link = ""
 RG_link = "https://www.researchgate.net/publication/380295508_CVXSADes_a_stochastic_algorithm_for_constructing_optimal_exact_regression_designs_with_single_or_multiple_objectives"
 
 [[params.publications]]
+year = "2026"
+[[params.publications.paper]]
+name = "Severity-controlled prediction sets for medication recommendation"
+authors = "Yu Gu, Zijun Yu, **Chi-Kuang Yeh**, Xinyu Wang & Ziyang Song"
+dest = "NeurIPS 2026"
+
+[[params.publications]]
 year = "2025"
 [[params.publications.paper]]
 name = """Positive and unlabeled data: model, estimation, 
@@ -219,9 +228,11 @@ package_link = ""
 [[params.publications.paper]]
 name = """Variable selection in multivariate functional linear regression"""
 authors  = "**Chi-Kuang Yeh** & Peijun Sang"
-dest  = "Statistics in Bioscience, 17, 17-34"
+dest  = "Statistics in Biosciences, 17, 17-34"
 just_link = "https://link.springer.com/article/10.1007/s12561-023-09373-x"
 code_link = ""
+award = "2025 Statistics in Biosciences Best Paper Award"
+award_link = "https://symposium2026.icsa.org/icsa-symposium-awards/"
 
 [[params.publications]]
 year = "2023"

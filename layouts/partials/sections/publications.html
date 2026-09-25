@@ -23,6 +23,14 @@
 				<div class="entry-meta publication-authors">
 					<span class="collaborators">{{ $publication.authors | markdownify }}</span>
 				</div>
+{{ with $publication.award }}
+				<div class="publication-award">
+					<a class="award-link" href="{{ $publication.award_link }}">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 3h8v7a4 4 0 0 1-8 0V3Z"/><path d="M8 5H4v3a4 4 0 0 0 4 4m8-7h4v3a4 4 0 0 1-4 4m-4 2v5m-4 2h8m-6-2h4"/></svg>
+						<span>{{ . }}</span>
+					</a>
+				</div>
+{{ end }}
 			</li>
 {{ end }}
 		</ul>
