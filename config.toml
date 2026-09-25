@@ -150,19 +150,19 @@ text= """
 year = "Preprint"
 [[params.publications.paper]]
 name = """Patients-like-me: a variational LM--GNN framework for explainable clinical prediction"""
-authors = "Xinyu Wang, Yixuan Li, Hanwei Wu, Qincheng Lu, **Chi-Kuang Yeh**, Xiao-Wen Chang, Ziyang Song"
+authors = "Xinyu Wang, Yixuan Li, Hanwei Wu, Qincheng Lu, **Chi-Kuang Yeh**, Xiao-Wen Chang & Ziyang Song"
 dest = "Preprint"
 arxiv_link = "https://arxiv.org/abs/2608.04193"
 
 [[params.publications.paper]]
 name = """AURA: adaptive uncertainty-aware refinement for LLM-as-a-judge auditing"""
-authors  = "*Zilong Zhang, Yi-Ting Hung, Weiyi He, Junxi Zhang, Lei Ding, **Chi-Kuang Yeh**"
+authors  = "*Zilong Zhang, Yi-Ting Hung, Weiyi He, Junxi Zhang, Lei Ding & **Chi-Kuang Yeh**"
 dest  = "Preprint"
 code_link = ""
 arxiv_link = "https://arxiv.org/abs/2606.19714"
 [[params.publications.paper]]
 name = """Quantifying and auditing LLM evaluation via positive--unlabeled learning"""
-authors  = "*Zilong Zhang, Yi-Ting Hung, Lei Ding, **Chi-Kuang Yeh**"
+authors  = "*Zilong Zhang, Yi-Ting Hung, Lei Ding & **Chi-Kuang Yeh**"
 dest  = "Preprint"
 code_link = ""
 arxiv_link = "https://arxiv.org/abs/2606.19057"
@@ -460,23 +460,6 @@ last_name = "Kim"
 position = "Applied Statistics"
 description = "Seoyoung is working on human annotation and retrieval-augmented generation (RAG) problems."
 link = "https://www.linkedin.com/in/seoyoung-kim-1711ba409/"
-
-
-[[params.group]]
-year = "External Student Collaborator"
-[[params.group.member]]
-name = "Chang Qu"
-last_name = "Qu"
-position = "Ph.D. Candidate at the University of Ottawa"
-description = "Chang is working on Privacy-Awared Optimal Design Problem"
-link = ""
-
-
-[[params.group.member]]
-name = "Yixing Zhao"
-last_name = "Zhao"
-position = "PhD Candidate at the University of Waterloo"
-link = "https://hg-kaibai.github.io/"
 
 
 [[params.group]]
