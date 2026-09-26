@@ -16,6 +16,10 @@
 				<div class="entry-meta">
 {{- if ne $publications.year "Preprint" -}}
 					<em>{{ $publication.dest }}{{ with $publication.institution }}, <span class="thesis-institution">{{ with $publication.institution_logo }}<img class="inline-institution-logo" src="{{ . | relURL }}" alt="" aria-hidden="true" width="17" height="20" decoding="async">&#160;{{ end }}{{ . }}</span>{{ end }}</em>{{ with $publication.year }}, {{ . }}{{ end }}
+{{ if ne $publications.year "Thesis" }}
+				</div>
+				<div class="entry-meta">
+{{ end }}
 {{- end -}}
 {{- if or ($publication.code_link) ($publication.arxiv_link) ($publication.pdf_link) ($publication.RG_link) ($publication.just_link) ($publication.software_link) -}}
 					<span class="entry-links">{{ with $publication.code_link }}{{ partial "icon-link.html" (dict "url" . "kind" "code" "label" "Code" "context" $publication.name) }}{{ end }}{{ with $publication.pdf_link }}{{ partial "icon-link.html" (dict "url" . "kind" "pdf" "label" "PDF" "context" $publication.name) }}{{ end }}{{ with $publication.software_link }}{{ partial "icon-link.html" (dict "url" . "kind" "software" "label" "Software" "context" $publication.name) }}{{ end }}{{ with $publication.just_link }}{{ partial "icon-link.html" (dict "url" . "kind" "website" "label" "Paper website" "context" $publication.name) }}{{ end }}{{ with $publication.arxiv_link }}{{ partial "icon-link.html" (dict "url" . "kind" "arxiv" "label" "arXiv" "context" $publication.name) }}{{ end }}{{ with $publication.RG_link }}{{ partial "icon-link.html" (dict "url" . "kind" "researchgate" "label" "ResearchGate" "context" $publication.name) }}{{ end }}</span>
@@ -28,15 +32,10 @@
 					</a>
 				</span>
 {{ end }}
-{{ if eq $publications.year "Preprint" }}
-					<span class="collaborators publication-authors preprint-authors">{{ $publication.authors | markdownify }}</span>
+{{ with $publication.authors }}
+					<span class="collaborators publication-authors">{{ . | markdownify }}</span>
 {{ end }}
 				</div>
-{{ if and (ne $publications.year "Preprint") $publication.authors }}
-				<div class="entry-meta publication-authors">
-					<span class="collaborators">{{ $publication.authors | markdownify }}</span>
-				</div>
-{{ end }}
 
 			</li>
 {{ end }}
