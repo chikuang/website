@@ -31,7 +31,10 @@
 		{{- if gt (len $pg) 0 -}}
 		<h2 class="section-category">{{ $cat }}</h2>
 		<ul class="entry-list resource-list-by-category">
-			{{- range $pg -}}
+			{{- range where $pg "Params.list_collapsed" "ne" true -}}
+				{{ partial "resource-list-item.html" . }}
+			{{- end -}}
+			{{- range where $pg "Params.list_collapsed" true -}}
 				{{ partial "resource-list-item.html" . }}
 			{{- end -}}
 		</ul>

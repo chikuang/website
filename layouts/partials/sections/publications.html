@@ -6,12 +6,13 @@
 
 		<ul class="entry-list">
 {{ range $elem_index, $publication := $publications.paper }}
-			<li>
+			<li{{ if eq $publications.year "Thesis" }} class="thesis-entry"{{ end }}>
 {{ if $publication.link }}
 					<a href="{{ $publication.link }}" class="publications">{{ $publication.name | replaceRE `[[:space:]]+` " " }}</a>
 {{ else }}
 					<span class="publications">{{ $publication.name | replaceRE `[[:space:]]+` " " }}</span>
 {{ end }}
+				{{ if eq $publications.year "Thesis" }} — {{ end }}
 				<div class="entry-meta">
 {{- if ne $publications.year "Preprint" -}}
 					<em>{{ $publication.dest }}{{ with $publication.institution }}, <span class="thesis-institution">{{ with $publication.institution_logo }}<img class="inline-institution-logo" src="{{ . | relURL }}" alt="" aria-hidden="true" width="17" height="20" decoding="async">&#160;{{ end }}{{ . }}</span>{{ end }}</em>{{ with $publication.year }}, {{ . }}{{ end }}
@@ -27,10 +28,15 @@
 					</a>
 				</span>
 {{ end }}
+{{ if eq $publications.year "Preprint" }}
+					<span class="collaborators publication-authors preprint-authors">{{ $publication.authors | markdownify }}</span>
+{{ end }}
 				</div>
+{{ if and (ne $publications.year "Preprint") $publication.authors }}
 				<div class="entry-meta publication-authors">
 					<span class="collaborators">{{ $publication.authors | markdownify }}</span>
 				</div>
+{{ end }}
 
 			</li>
 {{ end }}

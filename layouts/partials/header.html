@@ -34,6 +34,10 @@
     <link rel="stylesheet" href="{{ "css/sections.css" | relURL }}?v={{ readFile "static/css/sections.css" | md5 }}">
 {{ if and (eq .Section "resources") .IsPage }}
     <link rel="stylesheet" href="{{ "css/resource-section-indent.css" | relURL }}">
+    {{ if .Params.compact_lists }}
+    <link rel="stylesheet" href="{{ "css/resource-directory.css" | relURL }}?v={{ readFile "static/css/resource-directory.css" | md5 }}">
+    {{ end }}
+    <link rel="stylesheet" href="{{ "css/resource-toc.css" | relURL }}?v={{ readFile "static/css/resource-toc.css" | md5 }}">
 {{ end }}
 
     {{- if and (isset .Site.Params "social") (isset .Site.Params "feathericonscdn") (eq .Site.Params.featherIconsCDN true) -}}

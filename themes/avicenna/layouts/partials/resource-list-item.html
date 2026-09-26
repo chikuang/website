@@ -1,4 +1,13 @@
 <li class="resource-list-item">
+	{{ if .Params.list_collapsed }}
+	<details class="resource-list-fold">
+		<summary>{{ .Title }}{{ with .Date }} <span class="resource-list-date">{{ .Format "2006-01-02" }}</span>{{ end }}</summary>
+		<div class="entry-description">
+			{{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+			<a href="{{ .RelPermalink }}">View past events →</a>
+		</div>
+	</details>
+	{{ else }}
 	<div>
 		<a href="{{ .RelPermalink }}">{{ .Title }}</a>
 		{{ with .Date }}<span class="resource-list-date">{{ .Format "2006-01-02" }}</span>{{ end }}
@@ -6,4 +15,5 @@
 	<div class="entry-description">
 		{{ with .Params.description }}{{ . }}{{ end }}
 	</div>
+	{{ end }}
 </li>

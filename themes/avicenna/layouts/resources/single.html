@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}">
 {{ partial "header.html" . }}
-<body>
-<div class="container wrapper site-shell">
+<body class="resource-page">
+<div class="container wrapper site-shell resource-shell">
   {{ partial "head.html" . }}
   {{ partial "site-navigation.html" (dict "page" . "active" "resources") }}
   <main class="site-content">
     <a class="resource-back" href="{{ .Site.Home.RelPermalink }}#resources">← All resources</a>
 	<div class="introduction resource-article" id="resources">
-		{{- $showToc := default true .Params.show_toc -}}
+		{{- $showToc := not (eq .Params.show_toc false) -}}
 		<article class="resource-post">
 			<div class="post-content resource-post-content">
 				<h1 class="resource-page-title">{{ .Title }}</h1>
@@ -18,17 +18,6 @@
 				{{ with .Date }}
 				<div class="resource-meta-date">{{ .Format "2006-01-02" }}</div>
 				{{ end }}
-
-				{{- if $showToc -}}
-				<div class="resource-toc resource-toc--top" role="navigation" aria-label="Table of contents">
-					<details class="resource-toc__box" {{- if not (eq .Params.toc_collapsed true) }} open{{- end -}}>
-						<summary class="resource-toc__summary">Table of Contents</summary>
-						<div class="resource-toc__inner">
-							{{ with .TableOfContents }}{{ . }}{{ end }}
-						</div>
-					</details>
-				</div>
-				{{- end -}}
 
 				<style>
 					pre {
@@ -66,73 +55,31 @@
 						font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
 					}
 				</style>
-				<div id="resource-body" class="resource-body">
-					{{ .Content }}
+				<div class="resource-reading-layout">
+					{{ if $showToc }}
+					<aside class="resource-toc" id="resource-toc" aria-label="Article navigation">
+						<details class="resource-toc__box" {{ if not (eq .Params.toc_collapsed true) }}open{{ end }}>
+							<summary class="resource-toc__summary">Table of Contents</summary>
+							<div class="resource-toc__controls" hidden>
+								<label for="resource-toc-mode">Display</label>
+								<select id="resource-toc-mode">
+									<option value="sidebar">Sidebar</option>
+									<option value="floating">Floating</option>
+								</select>
+							</div>
+							<div class="resource-toc__inner">
+								{{ with .TableOfContents }}{{ . }}{{ end }}
+							</div>
+						</details>
+					</aside>
+					{{ end }}
+					<div id="resource-body" class="resource-body">
+						{{ .Content }}
+					</div>
 				</div>
-
-				{{- if $showToc -}}
-				<script>
-				(function () {
-					function slugify(s) {
-						var t = String(s).trim().toLowerCase().replace(/\s+/g, '-');
-						try {
-							t = t.replace(/[^\p{L}\p{N}_-]+/gu, '');
-						} catch (e) {
-							t = t.replace(/[^a-z0-9\u4e00-\u9fff_-]/gi, '');
-						}
-						return t.replace(/^-+|-+$/g, '') || 'section';
-					}
-					function ensureId(h, idx) {
-						if (h.id) return h.id;
-						var sec = h.closest('[id]');
-						if (sec && sec.id) return sec.id;
-						var base = slugify(h.textContent || '');
-						if (base === 'section') base = 'section-' + idx;
-						var id = base;
-						var n = 2;
-						while (document.getElementById(id)) id = base + '-' + n++;
-						h.id = id;
-						return id;
-					}
-					function buildFallbackToc() {
-						var inner = document.querySelector('.resource-toc__inner');
-						if (!inner) return;
-						if (inner.querySelector('nav#TableOfContents, #TableOfContents')) return;
-						var body = document.getElementById('resource-body');
-						if (!body) return;
-						var heads = body.querySelectorAll('h1, h2, h3, h4');
-						if (!heads.length) {
-							var top = document.querySelector('.resource-toc--top');
-							if (top) top.style.display = 'none';
-							return;
-						}
-						var nav = document.createElement('nav');
-						nav.id = 'TableOfContents';
-						var ul = document.createElement('ul');
-						for (var i = 0; i < heads.length; i++) {
-							var h = heads[i];
-							var lvl = parseInt(h.tagName.slice(1), 10);
-							if (lvl < 1 || lvl > 4) continue;
-							var id = ensureId(h, i);
-							var li = document.createElement('li');
-							li.className = 'resource-toc-entry resource-toc-entry--depth-' + lvl;
-							var a = document.createElement('a');
-							a.href = '#' + id;
-							a.textContent = (h.textContent || '').trim();
-							li.appendChild(a);
-							ul.appendChild(li);
-						}
-						nav.appendChild(ul);
-						inner.appendChild(nav);
-					}
-					if (document.readyState === 'loading') {
-						document.addEventListener('DOMContentLoaded', buildFallbackToc);
-					} else {
-						buildFallbackToc();
-					}
-				})();
-				</script>
-				{{- end -}}
+				{{ if $showToc }}
+				<script defer src="{{ "js/resource-toc.js" | relURL }}?v={{ readFile "static/js/resource-toc.js" | md5 }}"></script>
+				{{ end }}
 			</div>
 		</article>
 	</div>
