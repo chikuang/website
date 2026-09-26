@@ -14,23 +14,24 @@
 {{ end }}
 				<div class="entry-meta">
 {{- if ne $publications.year "Preprint" -}}
-					<em>{{ $publication.dest }}</em>{{ with $publication.year }}, {{ . }}{{ end }}
+					<em>{{ $publication.dest }}{{ with $publication.institution }}, <span class="thesis-institution">{{ with $publication.institution_logo }}<img class="inline-institution-logo" src="{{ . | relURL }}" alt="" aria-hidden="true" width="17" height="20" decoding="async">&#160;{{ end }}{{ . }}</span>{{ end }}</em>{{ with $publication.year }}, {{ . }}{{ end }}
 {{- end -}}
 {{- if or ($publication.code_link) ($publication.arxiv_link) ($publication.pdf_link) ($publication.RG_link) ($publication.just_link) ($publication.software_link) -}}
 					<span class="entry-links">{{ with $publication.code_link }}{{ partial "icon-link.html" (dict "url" . "kind" "code" "label" "Code" "context" $publication.name) }}{{ end }}{{ with $publication.pdf_link }}{{ partial "icon-link.html" (dict "url" . "kind" "pdf" "label" "PDF" "context" $publication.name) }}{{ end }}{{ with $publication.software_link }}{{ partial "icon-link.html" (dict "url" . "kind" "software" "label" "Software" "context" $publication.name) }}{{ end }}{{ with $publication.just_link }}{{ partial "icon-link.html" (dict "url" . "kind" "website" "label" "Paper website" "context" $publication.name) }}{{ end }}{{ with $publication.arxiv_link }}{{ partial "icon-link.html" (dict "url" . "kind" "arxiv" "label" "arXiv" "context" $publication.name) }}{{ end }}{{ with $publication.RG_link }}{{ partial "icon-link.html" (dict "url" . "kind" "researchgate" "label" "ResearchGate" "context" $publication.name) }}{{ end }}</span>
 {{- end -}}
-				</div>
-				<div class="entry-meta publication-authors">
-					<span class="collaborators">{{ $publication.authors | markdownify }}</span>
-				</div>
 {{ with $publication.award }}
-				<div class="publication-award">
+				<span class="publication-award">
 					<a class="award-link" href="{{ $publication.award_link }}">
 						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 3h8v7a4 4 0 0 1-8 0V3Z"/><path d="M8 5H4v3a4 4 0 0 0 4 4m8-7h4v3a4 4 0 0 1-4 4m-4 2v5m-4 2h8m-6-2h4"/></svg>
 						<span>{{ . }}</span>
 					</a>
-				</div>
+				</span>
 {{ end }}
+				</div>
+				<div class="entry-meta publication-authors">
+					<span class="collaborators">{{ $publication.authors | markdownify }}</span>
+				</div>
+
 			</li>
 {{ end }}
 		</ul>

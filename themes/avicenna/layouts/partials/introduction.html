@@ -3,9 +3,10 @@
 	<div class="intro-block">
 		{{ partial "institution-text.html" (dict "page" $ "text" $key.text) }}
 	</div>
+	{{- if $key.show_interests }}
+	<div class="intro-block research-interests">
+		{{ $.RenderString (dict "display" "block") $.Site.Params.interests }}
+	</div>
+	{{- end }}
 	{{- end -}}
-	<section class="research-interests" aria-labelledby="research-interests-title">
-		<h2 class="section-category" id="research-interests-title">Research Interests</h2>
-		{{ .RenderString (dict "display" "block") .Site.Params.interests }}
-	</section>
 </div>

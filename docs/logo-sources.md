@@ -40,3 +40,7 @@ than claiming to be separate program logos. Original destination links remain.
 The adjacent text supplies the accessible name, so inline images are decorative.
 Mappings are in `data/inline_institutions.json`; paragraph rendering is handled
 by `layouts/partials/institution-text.html` without client-side JavaScript.
+
+Thesis entries use the Waterloo shield and a compact `uvic-mark.svg` extracted
+from the existing legacy UVic artwork. The UVic shield retains its original
+vector paths and blue, red, and gold colors; the wordmark is omitted at inline size.

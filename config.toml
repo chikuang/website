@@ -1,7 +1,7 @@
 baseurl = "https://chikuang.github.io/"
 publishDir = "../chikuang.github.io"
 languageCode = "en-us"
-title = "Chi-Kuang Yeh/葉啓光"
+title = "Chi-Kuang Yeh 葉啓光"
 theme = "avicenna"
 googleAnalytics = "UA-1234-6"
 timeout = 3000
@@ -44,7 +44,7 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
   subtitle= "Assistant Professor in Statistics"
   image = "image.png"
   publications_note = "* indicates students or postdocs."
-  interests = """My research interests include:
+  interests = """My research interests include, but are not limited to:
 
   1. Functional data analysis.
   2. Statistical machine learning and high-dimensional statistical inference.
@@ -53,7 +53,7 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
   5. Large language model (LLM) alignment.
   6. Retrieval-augmented generation (RAG) with uncertainty quantification.
 
-  Applications include drug discovery and development, toxicology, neuroscience, and cosmic ray studies.
+  Applications include 💊 drug discovery and development, 🧪 toxicology, 🧠 neuroscience, 🌌 cosmic ray studies, and 🏀 sports.
   """
   cv_name= "CV_YCK_Sep19_2026.pdf"
   # blog="https://uwaterloo.ca/scholar/c26yeh/home"
@@ -64,7 +64,7 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
   url = "https://www.gsu.edu/"
   position = "Assistant Professor in Statistics"
   position_url = "https://cas.gsu.edu/profile/chi-kuang-yeh/"
-  secondary_position = "Brains & Behavior (B&B) Faculty, Neuroscience Institute"
+  secondary_position = "Brains & Behavior Faculty, Neuroscience Institute"
   secondary_url = "https://neuroscience.gsu.edu/brains-behavior/"
   additional_position = "Affiliated Faculty, Center for Cosmic Ray Studies"
   additional_url = "https://cosmic.gsu.edu/"
@@ -125,7 +125,7 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
   url = "https://x.com/chikuang_y"
 
 [[params.introduction.paragraph]]
-  text = """Hello/你好! I am an Assistant Professor in Statistics at [Georgia State University](https://www.gsu.edu/). I am also a faculty member of [Brains & Behavior (B&B)](https://neuroscience.gsu.edu/brains-behavior/) in its [Neuroscience Institute](https://neuroscience.gsu.edu/) and affiliated with the [Center for Cosmic Ray Studies](https://cosmic.gsu.edu/).
+  text = """Hello/你好! I am an Assistant Professor in Statistics at [Georgia State University](https://www.gsu.edu/). I am also a faculty member of [Brains & Behavior](https://neuroscience.gsu.edu/brains-behavior/) in its [Neuroscience Institute](https://neuroscience.gsu.edu/) and affiliated with the [Center for Cosmic Ray Studies](https://cosmic.gsu.edu/).
 
   I was a postdoctoral scholar at
   [McGill University](https://www.mcgill.ca/) jointly with the [University of Waterloo](https://uwaterloo.ca), kindly sponsored by the [Canadian Statistical Sciences Institute](https://canssi.ca/) (CANSSI). I am also affiliated with [Mila - Quebec AI Institute](https://mila.quebec/en/directory/chi-kuang-yeh) and UW's [Health Data Science Lab](https://uwaterloo.ca/health-data-science-lab/).
@@ -134,6 +134,7 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
   
   I currently serve as an associate editor of [Statistics and Computing](https://link.springer.com/journal/11222).
 """
+show_interests = true
 
 [[params.introduction.paragraph]]
 text="""**Note:** For reference letter, please do not contact me unless (1) you get at least an **A/95%** or (2) I know you well personally. If so, please use the subject line "Reference Letter Request - Your Full Name" in your email."""
@@ -271,13 +272,17 @@ code_link = "https://github.com/chikuang/OptimalDesigns-SLSE"
 year = "Thesis"
 [[params.publications.paper]]
 name = "Methods in functional data analysis: forecast evaluation, robust serial dependence measures, and a spatial factor copula model"
-dest = "Ph.D. Thesis, University of Waterloo"
+dest = "Ph.D. Thesis"
+institution = "University of Waterloo"
+institution_logo = "images/institutions/waterloo-mark.svg"
 just_link = "https://uwspace.uwaterloo.ca/handle/10012/19839"
 code_link = ""
 
 [[params.publications.paper]]
 name = "Optimal regression design under second-order least squares estimator: theory, algorithm and applications"
-dest = "Master's Thesis, University of Victoria"
+dest = "Master's Thesis"
+institution = "University of Victoria"
+institution_logo = "images/institutions/uvic-mark.svg"
 just_link = "https://dspace.library.uvic.ca/handle/1828/9765"
 code_link = ""
 
@@ -421,7 +426,9 @@ year = "PhD Student"
 name = "Wenpu Ma"
 last_name = "Ma"
 position = "Biostatistics"
-description = "Wenpu is working on cost-effectiveness analysis related problems and is co-supervised with Professor [Gengsheng Qin](https://cas.gsu.edu/profile/gengsheng-qin/)"
+description = "Wenpu is working on cost-effectiveness analysis related problems."
+co_supervisor = "Gengsheng Qin"
+co_supervisor_link = "https://cas.gsu.edu/profile/gengsheng-qin/"
 email = ""
 link = "https://www.linkedin.com/in/wenpu-ma"
 github_link = "https://github.com/wenpu1222"
