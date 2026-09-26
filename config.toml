@@ -170,12 +170,14 @@ authors  = "*Zilong Zhang, Yi-Ting Hung, Weiyi He, Junxi Zhang, Lei Ding & **Chi
 dest  = "Preprint"
 code_link = ""
 arxiv_link = "https://arxiv.org/abs/2606.19714"
+RG_link = "https://www.researchgate.net/publication/407287506_AURA_Adaptive_Uncertainty-aware_Refinement_for_LLM-as-a-Judge_Auditing"
 [[params.publications.paper]]
 name = """Quantifying and auditing LLM evaluation via positive--unlabeled learning"""
 authors  = "*Zilong Zhang, Yi-Ting Hung, Lei Ding & **Chi-Kuang Yeh**"
 dest  = "Preprint"
 code_link = ""
 arxiv_link = "https://arxiv.org/abs/2606.19057"
+RG_link = "https://www.researchgate.net/publication/407240775_Quantifying_and_Auditing_LLM_Evaluation_via_Positive--Unlabeled_Learning"
 
 [[params.publications.paper]]
 name = """ragR: retrieval-augmented generation and RAG assessment in R"""
@@ -189,6 +191,7 @@ name = """Single and multi-objective optimal designs for group testing experimen
 authors  = "**Chi-Kuang Yeh**, Weng Kee Wong & Julie Zhou"
 dest  = "Preprint"
 arxiv_link = "https://arxiv.org/abs/2508.08445"
+RG_link = "https://www.researchgate.net/publication/394457556_Single_and_multi-objective_optimal_designs_for_group_testing_experiments_with_a_focus_on_screening_for_an_infectious_disease"
 code_link = "https://github.com/chikuang/gtDesign"
 award = "2026 NISS New Researcher Award"
 award_link = "https://www.niss.org/news/niss-new-researcher-awardees-present-invited-talks-2026-spring-research-conference"
@@ -240,6 +243,7 @@ name = """Variable selection in multivariate functional linear regression"""
 authors  = "**Chi-Kuang Yeh** & Peijun Sang"
 dest  = "Statistics in Biosciences, 17, 17-34"
 just_link = "https://link.springer.com/article/10.1007/s12561-023-09373-x"
+RG_link = "https://www.researchgate.net/publication/371276730_Variable_Selection_in_Multivariate_Functional_Linear_Regression"
 code_link = ""
 award = "2025 Statistics in Biosciences Best Paper Award"
 award_link = "https://symposium2026.icsa.org/icsa-symposium-awards/"
@@ -275,6 +279,7 @@ name = "Properties of optimal regression designs under the second-order least sq
 authors = "**Chi-Kuang Yeh** & Julie Zhou"
 dest  = "Statistical Papers, 62, 75-92"
 just_link = "https://link.springer.com/article/10.1007%2Fs00362-018-01076-6"
+RG_link = "https://www.researchgate.net/publication/330246294_Properties_of_optimal_regression_designs_under_the_second-order_least_squares_estimator"
 code_link = "https://github.com/chikuang/OptimalDesigns-SLSE"
 	
 [[params.publications]]
