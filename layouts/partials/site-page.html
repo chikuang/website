@@ -15,7 +15,6 @@
                aria-labelledby="tab-{{ .key }}"{{ if ne $active .key }} hidden{{ end }}>
 {{- if eq .key "home" }}
 {{ partial "introduction.html" $page }}
-{{ partial "institutions.html" $page }}
 {{- else }}
 {{- if in (slice "publications" "softwares") .key }}
 {{ partial "contributor-note.html" $page }}

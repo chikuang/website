@@ -1,23 +1,23 @@
-<div class="footer wrapper">
-  <nav class="nav">
+<footer class="footer wrapper">
     <div class="footer-content">
+      {{ partial "visitor-map.html" . }}
       <div class="footer-content__lines">
         {{- $lastModified := partialCached "source-lastmod.html" (slice "config.toml" "content" "layouts" "assets" "data" "static" "themes/avicenna/layouts" "themes/avicenna/static") -}}
-        Last modified: <time datetime="{{ $lastModified.Format "2006-01-02" }}">{{ $lastModified.Format "2006-01-02" }}</time>
-        <div>
-          <a href="https://chikuang.github.io/">Chi-Kuang Yeh 2016-{{ now.Format "06" }}</a> |
-          Avicenna Theme {{ partial "icon-link.html" (dict "url" "https://github.com/hadisinaee/avicenna" "kind" "github" "label" "Avicenna theme source on GitHub") }} |
-          Built with <a href="https://gohugo.io">Hugo</a>
+        <div class="footer-updated">Last modified: <time datetime="{{ $lastModified.Format "2006-01-02" }}">{{ $lastModified.Format "2006-01-02" }}</time></div>
+        <div class="footer-credits">
+          <span><a href="https://chikuang.github.io/">Chi-Kuang Yeh 2016-{{ now.Format "06" }}</a></span>
+          <span>Avicenna Theme {{ partial "icon-link.html" (dict "url" "https://github.com/hadisinaee/avicenna" "kind" "github" "label" "Avicenna theme source on GitHub") }}</span>
+          <span>Built with <a href="https://gohugo.io">Hugo</a></span>
         </div>
+{{ partial "institutions.html" . }}
 {{ partial "visitor-counter.html" . }}
       </div>
-      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Theme">
+      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Theme" title="Switch color theme">
         <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">☾</span>
         <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀</span>
       </button>
     </div>
-  </nav>
-</div>
+</footer>
 
 {{- with .Site.Params.Social -}}
 <script>

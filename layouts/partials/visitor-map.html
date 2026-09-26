@@ -1,0 +1,13 @@
+<div class="visitor-map" id="site-visitor-map">
+  {{ readFile "assets/maps/world.svg" | safeHTML }}
+  <div class="visitor-map-status" id="visitor-map-status">Loading visitor locations…</div>
+  <details class="visitor-map-details">
+    <summary>View locations</summary>
+    <p id="visitor-map-period">Location counts begin with this map; earlier views have no location history.</p>
+    <ul id="visitor-map-countries"></ul>
+    <p>Approximate IP-based locations, grouped into broad regions. VPNs may affect the location. No IP addresses are stored.</p>
+    <p>Map: <a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a>.</p>
+  </details>
+  <noscript>Enable JavaScript to see recorded visitor locations.</noscript>
+</div>
+<script defer src="{{ "js/visitor-map.js" | relURL }}?v={{ readFile "static/js/visitor-map.js" | md5 }}"></script>

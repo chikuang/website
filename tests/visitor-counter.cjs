@@ -7,22 +7,29 @@ const root = path.resolve(__dirname, '..');
 const source = fs.readFileSync(path.join(__dirname, '../static/js/visitor-counter.js'), 'utf8');
 const flush = async () => { for (let i = 0; i < 12; i++) await Promise.resolve(); };
 
-function harness({ preview = false } = {}) {
+function harness({ preview = false, store = new Map(), storageDenied = false, storageWriteDenied = false, referrer = "", navType = "navigate" } = {}) {
   const requests = [], timers = new Map(), intervals = [], events = {}, pageEvents = {};
   let timerId = 0;
   const attrs = { 'data-counter-host': 'chikuang.github.io', 'data-counter-endpoint': 'https://counter.example/views' };
   const counter = { title: '', getAttribute: key => attrs[key] };
   const value = { textContent: '42' }, status = { textContent: ' (saved 2026-09-19)' };
   const window = {
-    location: { hostname: preview ? '127.0.0.1' : 'chikuang.github.io', port: preview ? '4321' : '' },
+    location: { hostname: preview ? '127.0.0.1' : 'chikuang.github.io', port: preview ? '4321' : '', origin: preview ? 'http://127.0.0.1:4321' : 'https://chikuang.github.io' },
+    performance: { getEntriesByType: () => [{type: navType}] },
     crypto: webcrypto,
     setTimeout(f, ms) { timers.set(++timerId, { f, ms }); return timerId; },
     clearTimeout(id) { timers.delete(id); }, setInterval(f, ms) { intervals.push({ f, ms }); },
     addEventListener(name, f) { pageEvents[name] = f; }
   };
-  // Counter operation must not depend on browser storage or third-party cookies.
+  Object.defineProperty(window, 'sessionStorage', { get() {
+    if (storageDenied) throw new Error('Storage denied');
+    return { getItem: key => store.get(key) || null, setItem(key, value) {
+      if (storageWriteDenied) throw new Error('Quota exceeded'); store.set(key, value);
+    } };
+  } });
+  // Persistent browser storage and third-party cookies are never used.
   Object.defineProperty(window, 'localStorage', { get() { throw new Error('Storage denied'); } });
-  const document = { hidden: false,
+  const document = { hidden: false, referrer,
     getElementById: id => ({ 'site-visitor-count': counter, 'site-view-count': value, 'site-view-status': status })[id],
     addEventListener(name, f) { events[name] = f; }
   };
@@ -30,7 +37,7 @@ function harness({ preview = false } = {}) {
     requests.push({ url, options, resolve, reject });
     options.signal.addEventListener('abort', () => reject(new Error('Aborted')));
   });
-  vm.runInNewContext(source, { window, document, fetch, AbortController });
+  vm.runInNewContext(source, { window, document, fetch, AbortController, URL });
   const reply = async (index, data) => {
     requests[index].resolve({ ok: true, json: async () => data }); await flush();
   };
@@ -39,7 +46,7 @@ function harness({ preview = false } = {}) {
     const entry = [...timers].find(([, t]) => t.ms === ms);
     assert.ok(entry, `Expected timer ${ms}`); timers.delete(entry[0]); entry[1].f(); await flush();
   };
-  return { window, document, counter, value, status, requests, intervals, events, pageEvents, reply, fail, timer };
+  return { store, window, document, counter, value, status, requests, intervals, events, pageEvents, reply, fail, timer };
 }
 
 (async () => {
@@ -64,11 +71,33 @@ function harness({ preview = false } = {}) {
   h.document.hidden = false; h.events.visibilitychange(); await flush();
   assert.equal(h.requests[2].options.method, 'GET'); await h.reply(2, { total: 45 });
   h.events['site:pageview'](); await flush();
-  assert.equal(h.requests[3].options.method, 'POST');
-  assert.notEqual(JSON.parse(h.requests[3].options.body).eventId, firstId);
+  assert.equal(h.requests[3].options.method, 'GET', 'Changing embedded sections only reads the total');
+  assert.equal(h.requests[3].options.body, undefined);
   await h.reply(3, { total: 46 });
   h.pageEvents.pageshow({ persisted: false }); assert.equal(h.requests.length, 4);
-  h.pageEvents.pageshow({ persisted: true }); await flush(); await h.reply(4, { total: 47 });
+  h.pageEvents.pageshow({ persisted: true }); await flush();
+  assert.equal(h.requests[4].options.method, 'GET', 'Back/forward restoration never increments');
+  await h.reply(4, { total: 47 });
+  for (const navType of ['navigate', 'reload', 'back_forward']) {
+    const next = harness({ store: h.store, referrer: 'https://chikuang.github.io/resources/', navType });
+    assert.equal(JSON.parse(next.requests[0].options.body).eventId, firstId, 'Full-page navigation reuses the visit ID');
+    assert.equal(JSON.parse(next.requests[0].options.body).visitorMap, true);
+  }
+  const newTab = harness();
+  assert.notEqual(JSON.parse(newTab.requests[0].options.body).eventId, firstId, 'A new tab without an inherited session creates a new visit');
+  const pending = harness();
+  const nextBeforeReply = harness({store: pending.store});
+  assert.equal(nextBeforeReply.requests[0].options.body, pending.requests[0].options.body, 'Navigation before acknowledgement keeps the same ID');
+  for (const storageOptions of [{storageDenied:true}, {storageWriteDenied:true}]) {
+    for (const navType of ['reload','back_forward']) {
+      const denied = harness({...storageOptions, navType});
+      assert.equal(denied.requests[0].options.method, 'GET', 'Storage failure must not count reloads or history navigation');
+    }
+    const internal = harness({...storageOptions, referrer:'https://chikuang.github.io/resources/rag_system/'});
+    assert.equal(internal.requests[0].options.method, 'GET', 'Storage failure must not count internal article navigation');
+    const external = harness({...storageOptions, referrer:'https://example.org/'});
+    assert.equal(external.requests[0].options.method, 'POST', 'A fresh external arrival works with storage blocked');
+  }
 
   h = harness();
   await h.timer(15000);
@@ -91,7 +120,9 @@ function harness({ preview = false } = {}) {
   await h.reply(0, { total: 60 });
   assert.match(h.status.textContent, /preview/);
   h.events['site:pageview'](); h.pageEvents.pageshow({ persisted: true }); await flush();
-  assert.equal(h.requests.length, 1, 'Preview visits never count');
+  assert.equal(h.requests.length, 2, 'Preview navigation only reads');
+  assert.ok(h.requests.every(r => r.options.method === 'GET'));
+  await h.reply(1, {total:60});
   for (const data of [{ total: '100' }, { total: -1 }, { total: 60.5 }, { total: 10 }, {}]) {
     h.intervals[0].f(); await flush(); await h.reply(h.requests.length - 1, data);
     assert.equal(h.value.textContent, '60'); assert.match(h.status.textContent, /offline/);
@@ -122,5 +153,5 @@ function harness({ preview = false } = {}) {
   window.location.hash = '#publications'; listeners.popstate(); assert.equal(emitted.length, 3);
   listeners.hashchange(); assert.equal(emitted.length, 3, 'Duplicate browser events must not double count');
 
-  console.log('Passed: real totals, read-only polling, preview isolation, denied storage, per-view IDs, safe bounded retries, background tabs, navigation, offline recovery and invalid responses.');
+  console.log('Passed: real totals, read-only polling, preview isolation, denied storage, per-tab visit IDs, storage-denied fallbacks, safe bounded retries, background tabs, navigation, offline recovery and invalid responses.');
 })().catch(error => { console.error(error); process.exitCode = 1; });

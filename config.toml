@@ -68,36 +68,38 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
   secondary_url = "https://neuroscience.gsu.edu/brains-behavior/"
   additional_position = "Affiliated Faculty, Center for Cosmic Ray Studies"
   additional_url = "https://cosmic.gsu.edu/"
-  contact = "cyeh@gsu.edu, chi-kuang.yeh@mail.mcgill.ca, chi-kuang.yeh@uwaterloo.ca"
+  contact = "cyeh@gsu.edu"
 
 [[params.institutions]]
   name = "University of Victoria"
-  logo = "images/institutions/uvic-crest.svg"
-  logo_dark = "images/institutions/uvic-crest-dark.svg"
+  logo = "images/institutions/uvic-mark.svg"
   url = "https://www.uvic.ca/"
 
 [[params.institutions]]
   name = "University of Waterloo"
-  logo = "images/institutions/waterloo.svg"
-  logo_dark = "images/institutions/waterloo-dark.svg"
+  logo = "images/institutions/waterloo-mark.svg"
   url = "https://uwaterloo.ca/"
 
 [[params.institutions]]
   name = "McGill University"
-  logo = "images/institutions/mcgill.svg"
-  logo_dark = "images/institutions/mcgill-dark.svg"
+  logo = "images/institutions/mcgill-mark.svg"
   url = "https://www.mcgill.ca/"
 
 [[params.institutions]]
   name = "Mila – Quebec AI Institute"
-  logo = "images/institutions/mila.svg"
-  logo_dark = "images/institutions/mila-dark.svg"
+  logo = "images/institutions/mila-mark.svg"
+  logo_dark = "images/institutions/mila-mark-dark.svg"
   url = "https://mila.quebec/en"
 
 [[params.institutions]]
+  name = "CANSSI – Canadian Statistical Sciences Institute"
+  logo = "images/institutions/canssi.svg"
+  url = "https://canssi.ca/"
+
+[[params.institutions]]
   name = "Georgia State University"
-  logo = "images/institutions/georgia-state-stacked.svg"
-  logo_dark = "images/institutions/georgia-state-stacked-dark.svg"
+  logo = "images/institutions/georgia-state-mark.svg"
+  logo_dark = "images/institutions/georgia-state-mark-dark.svg"
   url = "https://www.gsu.edu/"
 
 [[params.social]]
@@ -137,15 +139,22 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
 show_interests = true
 
 [[params.introduction.paragraph]]
-text="""**Note:** For reference letter, please do not contact me unless (1) you get at least an **A/95%** or (2) I know you well personally. If so, please use the subject line "Reference Letter Request - Your Full Name" in your email."""
- 
+welcome = true
+text = "😸 Inquiries about supervision and collaboration are always welcome!"
+
 [[params.introduction.paragraph]]
+fold_title = "☢️ Reference letter"
+text="""Please do not contact me unless (1) you get at least an **A/95%** or (2) I know you well personally. 📧 If so, please use the subject line "Reference Letter Request - Your Full Name" in your email."""
+
+[[params.introduction.news]]
+title = "😈 North America Taiwanese Statistics Map"
 text= """
-  **North America Taiwanese Statistician Map**: I create a [Taiwanese @ NA researcher map](https://chikuang.shinyapps.io/TW_Statistician_NA_Map/) to visualize the Taiwanese researcher in the field of statistics in North America.""" 
+  I created a [Taiwanese @ NA researcher map](https://chikuang.shinyapps.io/TW_Statistician_NA_Map/) to visualize the locations of Taiwanese researchers in statistics across North America."""
  
-[[params.introduction.paragraph]]
+[[params.introduction.news]]
+title = "😈 UWaterloo Researcher Maps"
 text= """
-  **UWaterloo Researcher Map**: I create a [researcher map](https://chikuang.shinyapps.io/UWaterloo_SAS_Researcher_Map/) to visualize the researcher's location from the Department of Statistics and Actuarial Science at the [University of Waterloo](https://uwaterloo.ca/)."""
+  I created a [researcher map](https://chikuang.shinyapps.io/UWaterloo_SAS_Researcher_Map/) to visualize the locations of researchers from the Department of Statistics and Actuarial Science at the [University of Waterloo](https://uwaterloo.ca/)."""
 
 [[params.publications]]
 year = "Preprint"
@@ -470,7 +479,7 @@ link = "https://www.linkedin.com/in/seoyoung-kim-1711ba409/"
 
 
 [[params.group]]
-year = "Past Members"
+year = "Past Member"
 collapsible = true
 
 [[params.group.member]]

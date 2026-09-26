@@ -1,6 +1,6 @@
 # Institution logos
 
-Local assets live in `static/images/institutions/`. All five marks are
+Local assets live in `static/images/institutions/`. All six marks are
 transparent SVGs displayed proportionally, with no background panels.
 
 | Institution | Original artwork |
@@ -9,6 +9,7 @@ transparent SVGs displayed proportionally, with no background panels.
 | University of Waterloo | [Official horizontal vector](https://uwaterloo.ca/profiles/uw_base_profile/modules/custom/uw_wcms_ohana/dist/images/uwaterloo-logo.svg) |
 | McGill University | [Official red logo](https://www.mcgill.ca/visual-identity/sites/all/themes/moriarty/images/logo-red.svg) and [reverse logo](https://www.mcgill.ca/sites/all/themes/coltrane19/dist/mcgill-logo-red-reverse.db74b099.svg) |
 | Mila | [Official vector](https://mila.quebec/sites/default/themes/mila_v1/logo.svg) |
+| CANSSI | [Official green symbol](https://canssi.ca/wp-content/uploads/Primary-Logo.svg), also used inline in the introduction |
 | Georgia State University | [Stacked vector sourced from a GSU brochure](https://commons.wikimedia.org/wiki/File:Georgia_State_University_Logo.svg); [official color and reverse-logo guidance](https://commkit.gsu.edu/university-logos/) |
 
 Retrieved September 19, 2026. Vector paths and proportions are preserved.

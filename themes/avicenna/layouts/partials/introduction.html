@@ -1,7 +1,20 @@
 <div class="introduction home-intro">
 	{{- range $index, $key := .Site.Params.Introduction.paragraph -}}
 	<div class="intro-block">
+		{{- if $key.welcome }}
+		<div class="intro-welcome">
+			{{ partial "institution-text.html" (dict "page" $ "text" $key.text) }}
+		</div>
+		{{- else if $key.fold_title }}
+		<details class="intro-note">
+			<summary>{{ $key.fold_title }}</summary>
+			<div class="intro-note__body">
+				{{ partial "institution-text.html" (dict "page" $ "text" $key.text) }}
+			</div>
+		</details>
+		{{- else }}
 		{{ partial "institution-text.html" (dict "page" $ "text" $key.text) }}
+		{{- end }}
 	</div>
 	{{- if $key.show_interests }}
 	<div class="intro-block research-interests">
@@ -9,4 +22,17 @@
 	</div>
 	{{- end }}
 	{{- end -}}
+	{{- with .Site.Params.Introduction.news }}
+	<section class="intro-block intro-news" aria-labelledby="home-news-title">
+		<h2 id="home-news-title">Fun things</h2>
+		{{- range . }}
+		<details class="intro-note intro-note--news">
+			<summary>{{ .title }}</summary>
+			<div class="intro-note__body">
+				{{ partial "institution-text.html" (dict "page" $ "text" .text) }}
+			</div>
+		</details>
+		{{- end }}
+	</section>
+	{{- end }}
 </div>

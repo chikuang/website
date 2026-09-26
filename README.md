@@ -70,10 +70,12 @@ A SQLite Durable Object stores one shared, persistent cumulative total. Every
 page and embedded section uses the endpoint in `data/view_count.json`. See the
 [counter service guide](services/view-counter/README.md) for deployment and tests.
 
-A page load, embedded-section change, or back/forward cache restoration makes
-one `POST /views` request with a random per-view event ID. Selecting the current
-section does not count again. `GET /views` reads the total every 30 seconds while the page is
-visible, on returning to the tab, and when the connection returns. These reads
+Each browser-tab session uses one random ID in first-party `sessionStorage`.
+Full-page navigation and reloads reuse it, so the server records at most one
+visit for that ID. Embedded-section changes and back/forward cache restores
+only read. With storage blocked, same-site referrers and navigation timing
+provide a conservative fallback. `GET /views` reads the total every 30 seconds
+while visible, on returning to the tab, and when the connection returns. These reads
 never increase the total. Preview hostnames/ports only read and never record.
 
 The verified 42 views from Busuanzi at `2026-09-19T13:21:22Z` seeded production
@@ -89,6 +91,14 @@ visit as `offline`. Reads resume automatically. Failed increments are retried
 at most twice with the same event ID; the backend counts each ID once, even
 after a restart or a lost response.
 Requests omit cookies and referrers and load no third-party scripts.
+
+A compact world map sits to the left of the footer text, stacking above it on
+small screens. It uses locally bundled Natural Earth outlines and aggregate
+visitor locations from the same Worker. Coordinates are rounded into broad
+5-degree regions; IP addresses and precise locations are never stored. The
+map starts from its own recorded start date and does not invent locations for
+historical views. Hover/focus a dot for its country and visit count, or expand
+**Countries & regions** for totals. These are visits, not unique people.
 
 The service was checked using a separate staging Worker in Firefox (with the
 existing uBlock Origin configuration), Safari and Chromium. Future blocker rules,
