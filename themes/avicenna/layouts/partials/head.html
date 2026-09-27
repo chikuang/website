@@ -30,7 +30,6 @@
 				</a>
 {{- end -}}
 {{ if or (.Site.Params.blog) (.Site.Params.site) (.Site.Params.cv_name) }}
-				<span class="social-separator" aria-hidden="true">|</span>
 {{- with .Site.Params.blog -}}
 				<a href="{{ . }}" class="blog_cv">[waterloo]</a>
 {{- end -}}
