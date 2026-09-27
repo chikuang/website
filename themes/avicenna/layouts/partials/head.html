@@ -8,13 +8,12 @@
 				<li class="position">{{ with $key.position_url }}<a href="{{ . }}">{{ $key.position }}</a>{{ else }}{{ $key.position }}{{ end }}, {{ with $key.url }}<a href="{{ . }}">{{ $key.name }}</a>{{ else }}{{ $key.name }}{{ end }}</li>
 {{ with $key.secondary_position }}<li class="secondary-position"><a href="{{ $key.secondary_url }}">{{ . }}</a></li>{{ end }}
 {{ with $key.additional_position }}<li class="secondary-position"><a href="{{ $key.additional_url }}">{{ . }}</a></li>{{ end }}
-				<li class="email">{{ $key.contact}}</li>
 			</ul>
 {{- end -}}
 		</div>
 
-		<nav class="nav social">
-			<ul class="flat">
+		<nav class="nav social" aria-label="Profiles and contact">
+			<div class="social-links">
 {{- range $index, $key := .Site.Params.Social -}}
 				<a href="{{ $key.url }}" title="{{ $key.name }}">
 {{- if or (eq (lower $key.name) "researchgate") (eq (lower $key.icon) "researchgate") -}}
@@ -31,7 +30,7 @@
 				</a>
 {{- end -}}
 {{ if or (.Site.Params.blog) (.Site.Params.site) (.Site.Params.cv_name) }}
-				|
+				<span class="social-separator" aria-hidden="true">|</span>
 {{- with .Site.Params.blog -}}
 				<a href="{{ . }}" class="blog_cv">[waterloo]</a>
 {{- end -}}
@@ -41,10 +40,20 @@
 {{- end -}}
 
 {{ with .Site.Params.cv_name }}
-				<a href="{{ . | relURL }}" class="blog_cv">[cv]</a>
+				<a href="{{ . | relURL }}" class="header-cv" title="Curriculum vitae (CV)" aria-label="Curriculum vitae (CV)">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+						<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/>
+						<path d="M14 2v6h6M8 13h8M8 17h8M8 9h2"/>
+					</svg>
+				</a>
 {{ end }}
 {{ end }}
-			</ul>
+{{ range .Site.Params.affilation }}
+{{ with .contact }}
+				<a href="mailto:{{ . }}" class="header-email">{{ . }}</a>
+{{ end }}
+{{ end }}
+			</div>
 		</nav>
 	</div>
 
