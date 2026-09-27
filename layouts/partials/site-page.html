@@ -18,6 +18,8 @@
 {{- else }}
 {{- if in (slice "publications" "softwares") .key }}
 {{ partial "contributor-note.html" $page }}
+{{- else if eq .key "resources" }}
+{{ partial "resource-note.html" $page }}
 {{- end }}
 {{- if eq .key "resources" }}
 {{- with $page.Site.GetPage "/resources" }}{{ partial "resource-list-body.html" . }}{{ end }}

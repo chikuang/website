@@ -7,6 +7,7 @@
   {{ partial "site-navigation.html" (dict "page" . "active" "resources") }}
   <main class="site-content">
     <a class="resource-back" href="{{ .Site.Home.RelPermalink }}#resources">← All resources</a>
+    {{ partial "resource-note.html" . }}
 	<div class="introduction resource-article" id="resources">
 		{{- $showToc := not (eq .Params.show_toc false) -}}
 		<article class="resource-post">

@@ -44,14 +44,15 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
   subtitle= "Assistant Professor in Statistics"
   image = "image.png"
   publications_note = "* indicates students or postdocs."
+  resources_note = "⚠️ Disclaimer: The views and opinions expressed in these resources are my own and do not represent the official views or positions of any university, institution, or for-profit organization."
   interests = """My research interests include, but are not limited to:
 
-  1. Functional data analysis.
-  2. Statistical machine learning and high-dimensional statistical inference.
-  3. Dependence modeling.
-  4. Optimal design of experiments.
-  5. Large language model (LLM) alignment.
-  6. Retrieval-augmented generation (RAG) with uncertainty quantification.
+  - Functional data analysis.
+  - Statistical machine learning and high-dimensional statistical inference.
+  - Dependence modeling.
+  - Optimal design of experiments.
+  - Large language model (LLM) alignment.
+  - Retrieval-augmented generation (RAG) with uncertainty quantification.
 
   Applications include 💊 drug discovery and development, 🧪 toxicology, 🧠 neuroscience, 🌌 cosmic ray studies, and 🏀 sports.
   """
@@ -130,7 +131,7 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
   text = """Hello/你好! I am an Assistant Professor in Statistics at [Georgia State University](https://www.gsu.edu/). I am also a faculty member of [Brains & Behavior](https://neuroscience.gsu.edu/brains-behavior/) in its [Neuroscience Institute](https://neuroscience.gsu.edu/) and affiliated with the [Center for Cosmic Ray Studies](https://cosmic.gsu.edu/).
 
   I was a postdoctoral scholar at
-  [McGill University](https://www.mcgill.ca/) jointly with the [University of Waterloo](https://uwaterloo.ca), kindly sponsored by the [Canadian Statistical Sciences Institute](https://canssi.ca/) (CANSSI). I am also affiliated with [Mila - Quebec AI Institute](https://mila.quebec/en/directory/chi-kuang-yeh) and UW's [Health Data Science Lab](https://uwaterloo.ca/health-data-science-lab/).
+  [McGill University](https://www.mcgill.ca/) jointly with the [University of Waterloo](https://uwaterloo.ca), kindly sponsored by the [Canadian Statistical Sciences Institute](https://canssi.ca/) (CANSSI). I am also affiliated with [Mila - Quebec AI Institute](https://mila.quebec/en/directory/chi-kuang-yeh) and the [Health Data Science Lab](https://uwaterloo.ca/health-data-science-lab/).
   
   My office is: Room 1407, [25 Park Place](https://en.wikipedia.org/wiki/25_Park_Place).
   
@@ -140,7 +141,9 @@ show_interests = true
 
 [[params.introduction.paragraph]]
 welcome = true
-text = "😸 Inquiries about supervision and collaboration are always welcome!"
+text = """😸 Inquiries about supervision and collaboration are always welcome!
+
+Interested in studying or doing research at GSU? Explore 🎓 [Why GSU](/resources/why_gsu/), 👩‍🏫 [GSU faculty in statistics and related fields](/resources/gsu_statistics_faculty/), and 📅 [Academic events](/resources/conferences_seminars/)."""
 
 [[params.introduction.paragraph]]
 fold_title = "☢️ Reference letter"
@@ -152,7 +155,7 @@ text= """
   I created a [Taiwanese @ NA researcher map](https://chikuang.shinyapps.io/TW_Statistician_NA_Map/) to visualize the locations of Taiwanese researchers in statistics across North America."""
  
 [[params.introduction.news]]
-title = "😈 UWaterloo Researcher Maps"
+title = "😈 UWaterloo Researcher Map"
 text= """
   I created a [researcher map](https://chikuang.shinyapps.io/UWaterloo_SAS_Researcher_Map/) to visualize the locations of researchers from the Department of Statistics and Actuarial Science at the [University of Waterloo](https://uwaterloo.ca/)."""
 
@@ -388,6 +391,7 @@ software_category = "Personal"
 
 [[params.teaching]]
 year = "Direct Study"
+status = "past"
 [[params.teaching.course]]
 name = "Introduction to Cross-Validation"
 link = "https://chikuang.github.io/teaching/directstudy"
@@ -398,11 +402,13 @@ link = "https://chikuang.github.io/teaching/stat_inference"
 
 [[params.teaching]]
 year = "2027 Spring (Tentative)"
+status = "upcoming"
 [[params.teaching.course]]
 name = "STAT 8310 Bayesian Data Analysis"
 
 [[params.teaching]]
 year = "2026 Fall"
+status = "current"
 [[params.teaching.course]]
 name = "STAT 8561 Linear Statistical Analysis I"
 link = "https://chikuang.github.io/teaching/2026F_stat8561"
@@ -413,6 +419,7 @@ link = "https://chikuang.github.io/teaching/2026F_stat8670"
 
 [[params.teaching]]
 year = "2026 Spring"
+status = "past"
 [[params.teaching.course]]
 name = "STAT 8310 Bayesian Data Analysis"
 link = "https://chikuang.github.io/teaching/2026S_stat8310"
@@ -423,12 +430,14 @@ link = "https://chikuang.github.io/teaching/2026S_stat8678"
 
 [[params.teaching]]
 year = "2025 Fall"
+status = "past"
 [[params.teaching.course]]
 name = "STAT 8670 Computational Methods in Statistics"
 link = "https://chikuang.github.io/teaching/2025F_stat8670"
 
 [[params.teaching]]
 year = "2024 Winter"
+status = "past"
 [[params.teaching.course]]
 name = "STAT 230 Introduction to Probability"
 link = "https://chikuang.github.io/teaching/2024W_stat230"
@@ -458,7 +467,7 @@ github_link = "https://github.com/zilong7832"
 
 
 [[params.group]]
-year = "Research Master Student"
+year = "Master Student"
 [[params.group.member]]
 name = "Kalen Jinnah"
 last_name = "Jinnah"

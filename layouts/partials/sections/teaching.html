@@ -1,21 +1,17 @@
 <div class="section-body" id="teaching">
-{{ with .Site.Params.teaching }}
-{{- range $index, $teaching := . -}}
-        <h2 class="section-category">{{ $teaching.year }}</h2>
-        <ul class="entry-list">
-{{- range $i, $course := $teaching.course -}}
-          <li>
-            <p class="teaching-course">{{ $course.name }}</p>
-{{ $course.description | markdownify }}
-{{ if or ($course.link) ($course.syllabus) ($course.materials) }}<span class="entry-links">
-{{ with $course.link }}{{ partial "icon-link.html" (dict "url" . "kind" "website" "label" "Course website" "context" $course.name) }}{{ end }}
-{{ with $course.syllabus }}{{ partial "icon-link.html" (dict "url" . "kind" "pdf" "label" "Syllabus" "context" $course.name) }}{{ end }}
-{{ with $course.materials }}{{ partial "icon-link.html" (dict "url" . "kind" "materials" "label" "Course materials" "context" $course.name) }}{{ end }}
-            </span>
-{{ end }}
-          </li>
+{{- with $terms := .Site.Params.teaching }}
+{{- range where $terms "status" "current" }}
+  {{ partial "teaching-term.html" . }}
 {{- end }}
-        </ul>
+{{- range $group := slice (dict "status" "upcoming" "label" "Upcoming") (dict "status" "past" "label" "Past") }}
+{{- with where $terms "status" $group.status }}
+  <details class="teaching-fold">
+    <summary class="section-category"><span class="teaching-fold-arrow" aria-hidden="true"></span>{{ $group.label }}</summary>
+{{- range . }}
+    {{ partial "teaching-term.html" . }}
 {{- end }}
-{{ end }}
-  </div>
+  </details>
+{{- end }}
+{{- end }}
+{{- end }}
+</div>

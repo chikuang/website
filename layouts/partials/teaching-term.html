@@ -1,0 +1,16 @@
+<h2 class="section-category">{{ .year }}</h2>
+<ul class="entry-list">
+{{- range $course := .course }}
+  <li>
+    <p class="teaching-course">{{ .name }}</p>
+    {{ .description | markdownify }}
+{{- if or .link .syllabus .materials }}
+    <span class="entry-links">
+      {{- with .link }}{{ partial "icon-link.html" (dict "url" . "kind" "website" "label" "Course website" "context" $course.name) }}{{ end }}
+      {{- with .syllabus }}{{ partial "icon-link.html" (dict "url" . "kind" "pdf" "label" "Syllabus" "context" $course.name) }}{{ end }}
+      {{- with .materials }}{{ partial "icon-link.html" (dict "url" . "kind" "materials" "label" "Course materials" "context" $course.name) }}{{ end }}
+    </span>
+{{- end }}
+  </li>
+{{- end }}
+</ul>
