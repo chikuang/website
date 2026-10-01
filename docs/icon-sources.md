@@ -17,7 +17,8 @@ The R icon identifies CRAN links; the globe identifies external web pages.
 No icon CDN request is needed to display these links.
 
 Group software links use `static/images/software-coder.svg`, an original vector
-illustration made for this site from the owner's cute programmer reference.
-The hooded programmer and laptop code symbol use a transparent background and
-fixed colors for both themes. The image has `Software` alternative text inside
+illustration made for this site. Its simplified design uses geometric blue-gray
+short hair, a face, and a mint laptop with a code symbol, without a hood or
+background decorations. The transparent image uses fixed colors for both themes
+and has `Software` alternative text inside
 the bracketed S1 link, whose hover label remains `Software 1`.
