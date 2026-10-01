@@ -22,3 +22,8 @@ short hair, a face, and a mint laptop with a code symbol, without a hood or
 background decorations. The transparent image uses fixed colors for both themes
 and has `Software` alternative text inside
 the bracketed S1 link, whose hover label remains `Software 1`.
+
+Group paper links use `static/images/paper-note.svg`, an original smiling-paper
+illustration with a cream page, mint folded corner, and simple navy face.
+It matches the software illustration's outline and compact size, with `Paper`
+alternative text and the existing numbered link labels.
