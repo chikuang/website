@@ -61,11 +61,17 @@ for (const button of page.buttons) {
 }
 
 for (const stored of [null, 'unknown', 'toString']) {
-  assert.equal(load({ stored, prefersDark: true }).attrs['data-theme'], 'dark');
-  assert.equal(load({ stored }).attrs['data-theme'], 'light');
+  for (const prefersDark of [false, true]) {
+    const fresh = load({ stored, prefersDark });
+    assert.equal(fresh.firstPaint, 'milk-tea', 'Default is milk tea regardless of system appearance');
+    assert.equal(fresh.attrs['data-theme'], 'milk-tea');
+    assert.equal(fresh.meta.content, colors['milk-tea']);
+  }
 }
 const blocked = load({ denied: true });
-blocked.buttons[2].click();
-assert.equal(blocked.attrs['data-theme'], 'milk-tea', 'Selection works even without storage');
-assert.equal(blocked.buttons[2].attrs['aria-pressed'], 'true');
+assert.equal(blocked.firstPaint, 'milk-tea', 'Blocked storage uses the default at first paint');
+assert.equal(blocked.attrs['data-theme'], 'milk-tea');
+blocked.buttons[1].click();
+assert.equal(blocked.attrs['data-theme'], 'dark', 'Selection works even without storage');
+assert.equal(blocked.buttons[1].attrs['aria-pressed'], 'true');
 console.log('Theme selection, persistence, first paint and blocked-storage checks passed.');
