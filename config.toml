@@ -162,6 +162,13 @@ text= """
 [[params.publications]]
 year = "Preprint"
 [[params.publications.paper]]
+name = "Conformal factuality control for multi-hop retrieval-augmented generation"
+authors = "*Muhammad Aimal Rehman & **Chi-Kuang Yeh**"
+dest = "Preprint"
+code_link = "https://github.com/aimalrehman92/conformal-rag"
+arxiv_link = "https://arxiv.org/abs/2609.38222"
+
+[[params.publications.paper]]
 name = """Patients-like-me: a variational LM--GNN framework for explainable clinical prediction"""
 authors = "Xinyu Wang, Yixuan Li, Hanwei Wu, Qincheng Lu, **Chi-Kuang Yeh**, Xiao-Wen Chang & Ziyang Song"
 dest = "Preprint"
