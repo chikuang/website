@@ -50,11 +50,11 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
   - Functional data analysis.
   - Statistical machine learning and high-dimensional statistical inference.
   - Dependence modeling.
-  - 🎯 [Optimal design of experiments](/resources/opt_design/).
+  - 🎯 Optimal design of experiments ([🔗 Link](/resources/opt_design/ "Optimal regression design: an introduction")).
   - Large language model (LLM) alignment.
-  - 📚 [Retrieval-augmented generation (RAG) with uncertainty quantification](/resources/rag_system/).
+  - 📚 Retrieval-augmented generation (RAG) with uncertainty quantification ([🔗 Link](/resources/rag_system/ "RAG systems: evidence, evaluation, and uncertainty")).
 
-  Applications include 💊 [drug discovery and development](/resources/drug_discovery/), 🧪 toxicology, 🧠 neuroscience, 🌌 cosmic ray studies, and 🏀 sports.
+  Applications include 💊 drug discovery and development ([🔗 Link](/resources/drug_discovery/ "Drug discovery: statistics and AI agents")), 🧪 toxicology, 🧠 neuroscience, 🌌 cosmic ray studies, and 🏀 sports.
   """
   cv_name= "CV.pdf"
   office = "Room 1407, [25 Park Place](https://en.wikipedia.org/wiki/25_Park_Place)"
