@@ -487,7 +487,7 @@ name = "Muhammad Aimal Rehman"
 scholar_link = "https://scholar.google.com/citations?hl=en&user=dCnZvNkAAAAJ"
 last_name = "Rehman"
 position = "Applied Statistics"
-description = "Aimal is working on Retrieval-Augmented Generation (RAG), including conformal factuality control for multi-hop RAG, see [[📄 P1]](https://arxiv.org/abs/2604.23515 \"Paper 1\"), [[📄 P2]](https://arxiv.org/abs/2609.38222 \"Paper 2\"), [[🧩 S1]](https://cran.r-project.org/web/packages/ragR/index.html \"Software 1\")"
+description = "Aimal is working on Retrieval-Augmented Generation (RAG), including conformal factuality control for multi-hop RAG, see [[📄 P1]](https://arxiv.org/abs/2604.23515 \"Paper 1\"), [[📄 P2]](https://arxiv.org/abs/2609.38222 \"Paper 2\"), [[![Software](/images/software-coder.svg) S1]](https://cran.r-project.org/web/packages/ragR/index.html \"Software 1\")"
 link = "https://www.linkedin.com/in/aimalrehman/"
 github_link = "https://github.com/aimalrehman92/"
 
@@ -507,7 +507,7 @@ collapsible = true
 name = "Zhili Lu  (2026)"
 last_name = "Lu"
 position = "Applied Statistics"
-description = "Zhili worked on Retrieval-Augmented Generation (RAG) problems, see [[📄 P1]](https://arxiv.org/abs/2604.23515 \"Paper 1\"), [[🧩 S1]](https://cran.r-project.org/web/packages/ragR/index.html \"Software 1\")"
+description = "Zhili worked on Retrieval-Augmented Generation (RAG) problems, see [[📄 P1]](https://arxiv.org/abs/2604.23515 \"Paper 1\"), [[![Software](/images/software-coder.svg) S1]](https://cran.r-project.org/web/packages/ragR/index.html \"Software 1\")"
 link = "https://www.linkedin.com/in/zhili-lu-233a98351/"
 
 [[params.group.member]]
