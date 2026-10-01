@@ -7,8 +7,7 @@
         <div class="footer-updated">Last modified: <time datetime="{{ $lastModified.Format "2006-01-02" }}">{{ $lastModified.Format "2006-01-02" }}</time></div>
         <div class="footer-credits">
           <span><a href="https://chikuang.github.io/">Chi-Kuang Yeh 2016-{{ now.Format "06" }}</a></span>
-          <span>Avicenna Theme {{ partial "icon-link.html" (dict "url" "https://github.com/hadisinaee/avicenna" "kind" "github" "label" "Avicenna theme source on GitHub") }}</span>
-          <span>Built with <a href="https://gohugo.io">Hugo</a></span>
+          <span>Built with <a href="https://gohugo.io">Hugo</a> &amp; GPT</span>
         </div>
 {{ partial "institutions.html" . }}
 {{ partial "visitor-counter.html" . }}
