@@ -2,6 +2,7 @@
     <div class="footer-content">
       {{ partial "visitor-map.html" . }}
       <div class="footer-content__lines">
+        {{ with .Site.Params.office }}<div class="footer-office">Office: {{ . | markdownify }}</div>{{ end }}
         {{- $lastModified := partialCached "source-lastmod.html" (slice "config.toml" "content" "layouts" "assets" "data" "static" "themes/avicenna/layouts" "themes/avicenna/static") -}}
         <div class="footer-updated">Last modified: <time datetime="{{ $lastModified.Format "2006-01-02" }}">{{ $lastModified.Format "2006-01-02" }}</time></div>
         <div class="footer-credits">
@@ -12,10 +13,11 @@
 {{ partial "institutions.html" . }}
 {{ partial "visitor-counter.html" . }}
       </div>
-      <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Theme" title="Switch color theme">
-        <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">☾</span>
-        <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀</span>
-      </button>
+      <div class="theme-picker" role="group" aria-label="Color theme">
+        <button type="button" class="theme-toggle" data-color-theme="light" aria-label="Light theme" aria-pressed="false" title="Light theme"><span aria-hidden="true">☀</span></button>
+        <button type="button" class="theme-toggle" data-color-theme="dark" aria-label="Dark theme" aria-pressed="false" title="Dark theme"><span aria-hidden="true">☾</span></button>
+        <button type="button" class="theme-toggle" data-color-theme="milk-tea" aria-label="Bubble milk tea theme" aria-pressed="false" title="Bubble milk tea theme"><span aria-hidden="true">🧋</span></button>
+      </div>
     </div>
 </footer>
 

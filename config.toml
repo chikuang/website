@@ -57,6 +57,7 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
   Applications include 💊 drug discovery and development, 🧪 toxicology, 🧠 neuroscience, 🌌 cosmic ray studies, and 🏀 sports.
   """
   cv_name= "CV.pdf"
+  office = "Room 1407, [25 Park Place](https://en.wikipedia.org/wiki/25_Park_Place)"
   # blog="https://uwaterloo.ca/scholar/c26yeh/home"
   # site="https://uwaterloo.ca/scholar/c26yeh/home"
 
@@ -132,8 +133,6 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
 
   I was a postdoctoral scholar at
   [McGill University](https://www.mcgill.ca/) jointly with the [University of Waterloo](https://uwaterloo.ca), kindly sponsored by the [Canadian Statistical Sciences Institute](https://canssi.ca/) (CANSSI). I am also affiliated with [Mila - Quebec AI Institute](https://mila.quebec/en/directory/chi-kuang-yeh) and the [Health Data Science Lab](https://uwaterloo.ca/health-data-science-lab/).
-  
-  My office is: Room 1407, [25 Park Place](https://en.wikipedia.org/wiki/25_Park_Place).
   
   I currently serve as an associate editor of [Statistics and Computing](https://link.springer.com/journal/11222).
 """
