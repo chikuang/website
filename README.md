@@ -17,6 +17,13 @@ Alternatively, run `hugo` from this folder. Output goes to the separate
 files there when publishing. Avoid `hugo --cleanDestinationDir`: the output
 repository also contains course materials and CVs maintained separately.
 
+When cleaning published output, compare it with a fresh Hugo build in a temporary
+directory first. Preserve `course/`, semester-specific `teaching/` material and
+the old CV URL. Resource `.Rmd` downloads support the reproducible examples;
+their corresponding source and generated `.html` files are both needed.
+Only remove unused static assets after checking templates, configuration,
+styles and published pages; delete their copies from both repositories.
+
 ## Source files
 
 - `config.toml`: profile, affiliations, introduction, research interests,
