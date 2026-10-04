@@ -1,0 +1,43 @@
+{{- $data := hugo.Data.grant_deadlines -}}
+{{- $now := time.Now -}}
+{{- $count := 0 -}}
+{{- $next := dict -}}
+{{- range sort $data.deadlines "expires_at" -}}
+  {{- if and (not $next) (gt (time.AsTime .expires_at) $now) -}}{{- $next = . -}}{{- end -}}
+{{- end -}}
+<link rel="stylesheet" href="{{ "css/grant-deadlines.css" | relURL }}?v={{ readFile "static/css/grant-deadlines.css" | md5 }}">
+<details class="grant-deadlines" id="grant-deadlines" data-grant-deadlines aria-labelledby="grant-radar-summary-title">
+  <summary class="grant-deadlines__summary">
+    <img class="grant-deadlines__mascot" src="{{ "images/grant-radar-kawaii.png" | relURL }}" alt="" width="48" height="48" decoding="async">
+    <span class="grant-deadlines__summary-copy"><strong id="grant-radar-summary-title">Grant Radar</strong><span data-grant-summary>{{ with $next }}Next: {{ .agency }} · {{ (time.AsTime .date).Format "Jan 2, 2006" }}{{ else }}No confirmed upcoming dates{{ end }}</span></span>
+    <span class="grant-deadlines__chevron" aria-hidden="true"></span>
+  </summary>
+  <div class="grant-deadlines__body">
+  <div class="grant-deadlines__header">
+    <div>
+      <h2 id="grant-deadlines-title">Upcoming grant deadlines</h2>
+    </div>
+    <a class="grant-deadlines__open" href="{{ $data.app_url }}" target="_blank" rel="noopener noreferrer">Open app <span aria-hidden="true">↗</span><span class="grant-deadlines__sr"> (new tab)</span></a>
+  </div>
+  <p class="grant-deadlines__intro">Next three faculty funding deadlines · statistics &amp; machine learning</p>
+  <ol class="grant-deadlines__list">
+  {{- range sort $data.deadlines "expires_at" }}
+    {{- $upcoming := gt (time.AsTime .expires_at) $now -}}
+    {{- $visible := and $upcoming (lt $count 3) -}}
+    {{- if $visible }}{{ $count = add $count 1 }}{{ end -}}
+    <li class="grant-deadlines__item" data-grant-id="{{ .id }}" data-agency="{{ .agency }}" data-expires-at="{{ .expires_at }}" data-date="{{ .date }}" data-timezone="{{ .timezone }}"{{ if not $visible }} hidden{{ end }}>
+      <a class="grant-deadlines__main" href="{{ $data.app_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .title }} — open Grant Radar in a new tab">
+        <span class="grant-deadlines__date"><time datetime="{{ .date }}"><span>{{ (time.AsTime .date).Format "Jan" }}</span><strong>{{ (time.AsTime .date).Format "02" }}</strong><span>{{ (time.AsTime .date).Format "2006" }}</span></time></span>
+        <span class="grant-deadlines__content"><strong>{{ .title }}</strong><span>{{ .timing }}</span></span>
+        <span class="grant-deadlines__countdown" data-grant-countdown>Upcoming</span>
+      </a>
+      <p class="grant-deadlines__note">{{ .note }} <span class="grant-deadlines__sources">{{ range $i, $source := .sources }}{{ if $i }} · {{ end }}<a href="{{ $source.url }}" target="_blank" rel="noopener noreferrer">{{ $source.label }}<span class="grant-deadlines__sr"> (official source, new tab)</span></a>{{ end }}</span></p>
+    </li>
+  {{- end }}
+  </ol>
+  <p class="grant-deadlines__empty" data-grant-empty{{ if $count }} hidden{{ end }}>No upcoming dates remain in this reviewed list. <a href="{{ $data.app_url }}" target="_blank" rel="noopener noreferrer">Open Grant Radar for more opportunities ↗</a></p>
+  <p class="grant-deadlines__footer">Public funding dates · sources reviewed {{ (time.AsTime $data.reviewed).Format "Jan 2, 2006" }}. Personal reminders are in the app.</p>
+  <noscript><p class="grant-deadlines__footer">Dates shown as of the latest website build. Open the app to check upcoming opportunities.</p></noscript>
+  </div>
+</details>
+<script defer src="{{ "js/grant-deadlines.js" | relURL }}?v={{ readFile "static/js/grant-deadlines.js" | md5 }}"></script>
