@@ -7,7 +7,8 @@ toggles the native control without JavaScript.
 
 The Home panel displays the next three public faculty funding deadlines, ordered
 by their cutoff. Every title and the Open app link opens the existing private
-Grant Radar workspace; its usual sign-in and access rules still apply. The widget
+Grant Radar workspace through `https://chikuang.github.io/grant-radar/`;
+its usual sign-in and access rules still apply. The widget
 never requests profile data, proposal notes, tracked items, or private reminders.
 It is a public opportunity list, not a synchronized view of saved proposals.
 
@@ -45,3 +46,17 @@ Publish relevant generated pages plus `css/grant-deadlines.css` and
 
 The original transparent mascot was generated with the built-in image generation
 tool. Its optimized 160px PNG is `static/images/grant-radar-kawaii.png`.
+
+## Short entry URL
+
+`static/grant-radar/index.html` publishes the stable entry address
+`https://chikuang.github.io/grant-radar/`. It forwards to the existing private
+Sites app with `location.replace`, and includes an HTML refresh and a normal
+link as fallbacks. The browser address changes to the app's hosting address.
+The redirect target is fixed; query strings and fragments cannot override it.
+
+This is an entry link, not a migration of the application or its database.
+GitHub Pages serves the public website; the existing backend continues to
+provide sign-in, saved profiles and proposals, search, reminders, and calendars.
+When publishing this change, include the generated `grant-radar/index.html`
+alongside the six pages containing the homepage widget.

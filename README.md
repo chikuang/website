@@ -136,3 +136,5 @@ and redundant `public/` output are ignored by Git.
 The Home panel includes the next three reviewed faculty grant deadlines with
 countdowns and a link to the private Grant Radar app. Public dates are maintained
 in `data/grant_deadlines.json`; see [widget maintenance](docs/grant-deadlines.md).
+
+Grant Radar short link: [chikuang.github.io/grant-radar/](https://chikuang.github.io/grant-radar/). It forwards to the existing private app and preserves its login and stored data.

@@ -16,7 +16,7 @@ assert.equal(daysUntil(items[1],new Date('2026-10-31T23:00:00Z')), 4); // DST fa
 assert.equal(daysUntil(items[0],new Date('2026-10-16T03:30:00Z')), 1); // Atlanta is still Oct 15
 assert.deepEqual(selectUpcoming([...items].reverse(),new Date('2026-10-04T20:00:00Z')),items.slice(0,3));
 assert.equal(new Set(items.map(d => d.grantId)).size, items.length);
-assert.equal(new URL(data.app_url).hostname,'grant-radar-chikuang.chi-kuang-yeh.chatgpt.site');
+assert.equal(data.app_url,'https://chikuang.github.io/grant-radar/');
 for (const d of data.deadlines) {
   assert(d.sources.length && d.timing && d.note);
   for (const source of d.sources) assert.equal(new URL(source.url).protocol,'https:');
