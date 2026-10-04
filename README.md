@@ -54,6 +54,8 @@ Optional `award` and `award_link` fields on a publication add a linked award
 label after its link icons, with a gold trophy and McGill red text (`#ED1B2F`).
 Neutral backgrounds and borders adapt to the light, dark and bubble milk tea themes.
 Bubble milk tea is the default when no valid saved preference exists.
+All three palettes share the same font weights from `static/css/sections.css`;
+switching themes changes colors without changing text weight.
 The footer's ☀, ☾ and 🧋 buttons select a palette and remember the choice across
 pages and reloads. The milk tea palette lives in `static/css/milk-tea.css`.
 Office information is configured with `params.office` and displayed in the footer.
