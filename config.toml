@@ -43,7 +43,7 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
 [params]
   subtitle= "Assistant Professor in Statistics"
   image = "image.png"
-  publications_note = "* indicates students or postdocs."
+  publications_note = "* indicates students."
   resources_note = "⚠️ Disclaimer: The views and opinions expressed in these resources are my own and do not represent the official views or positions of any university, institution, or for-profit organization."
   interests = """My research interests include, but are not limited to:
 
