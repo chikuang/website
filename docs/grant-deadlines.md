@@ -47,16 +47,22 @@ Publish relevant generated pages plus `css/grant-deadlines.css` and
 The original transparent mascot was generated with the built-in image generation
 tool. Its optimized 160px PNG is `static/images/grant-radar-kawaii.png`.
 
-## Short entry URL
+## App address
 
-`static/grant-radar/index.html` publishes the stable entry address
-`https://chikuang.github.io/grant-radar/`. It forwards to the existing private
-Sites app with `location.replace`, and includes an HTML refresh and a normal
-link as fallbacks. The browser address changes to the app's hosting address.
-The redirect target is fixed; query strings and fragments cannot override it.
+`static/grant-radar/` contains the production interface at
+`https://chikuang.github.io/grant-radar/`. It does not redirect. The same app
+interface handles discovery, student resources, proposal editing, reminders,
+and calendar downloads at the GitHub address.
 
-This is an entry link, not a migration of the application or its database.
-GitHub Pages serves the public website; the existing backend continues to
-provide sign-in, saved profiles and proposals, search, reminders, and calendars.
-When publishing this change, include the generated `grant-radar/index.html`
-alongside the six pages containing the homepage widget.
+Select Connect account to open the existing private Site's account window.
+Leave this window open for loading and saving. The connection accepts only the
+exact GitHub origin and its opener. Database access, sign-in, and ownership
+checks stay in the existing private service. Account data is kept in browser
+memory after loading; private profile defaults and saved proposals are not
+included in the public build.
+
+The private Grant Radar source owns `github-portal/`. Build it with its
+`vite.github.config.ts`, publish the private account connection first, and copy
+only `github-portal-dist/` here and to the Pages repository. Preserve the
+private app's source and database. If account sign-in clears the window
+connection, select Connect account again once signed in.
