@@ -75,7 +75,7 @@
 					</aside>
 					{{ end }}
 					<div id="resource-body" class="resource-body">
-						{{ .Content }}
+						{{ if .Params.event_directory }}{{ partial "academic-events.html" . }}{{ end }}{{ .Content }}
 					</div>
 				</div>
 				{{ if $showToc }}

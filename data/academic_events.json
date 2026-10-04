@@ -1,0 +1,555 @@
+{
+  "timezone": "America/New_York",
+  "last_reviewed": "2026-10-04",
+  "categories": [
+    {
+      "id": "research",
+      "title": "Research conferences and workshops"
+    },
+    {
+      "id": "seminar",
+      "title": "Dated statistics seminars"
+    },
+    {
+      "id": "student",
+      "title": "Student research and regional networking"
+    },
+    {
+      "id": "industry",
+      "title": "Industry and practitioner conferences"
+    },
+    {
+      "id": "elsewhere",
+      "title": "Other conferences of interest"
+    }
+  ],
+  "events": [
+    {
+      "id": "mlsp-2026",
+      "title": "IEEE International Workshop on Machine Learning for Signal Processing (MLSP)",
+      "url": "https://mlsp26.ieeesps.org/",
+      "start": "2026-09-28",
+      "end": "2026-10-01",
+      "location": "Georgia State University, Atlanta",
+      "category": "research",
+      "description": "Statistical learning and signal processing, including generative models, multimodal learning, and biomedical applications. [Venue: Centennial Hall](https://mlsp26.ieeesps.org/getting-to-the-conference/).",
+      "verified": "2026-10-04"
+    },
+    {
+      "id": "georgia-statistics-day-2026",
+      "title": "Georgia Statistics Day",
+      "url": "https://www.isye.gatech.edu/events/calendar/day/2026/10/05/13379",
+      "start": "2026-10-05",
+      "end": "2026-10-05",
+      "location": "Georgia Tech, George Tower, Atlanta",
+      "category": "research",
+      "description": "Research talks and student posters connecting the regional statistics community; 8 a.m.–5:30 p.m. Keynote speaker: Jianqing Fan.",
+      "verified": "2026-10-04"
+    },
+    {
+      "id": "emory-ai-health-2026",
+      "title": "Emory AI for Health Symposium",
+      "url": "https://aihealth.emory.edu/",
+      "start": "2026-12-04",
+      "end": "2026-12-05",
+      "location": "Emory University, Atlanta",
+      "category": "research",
+      "description": "The fourth symposium on AI in medicine and health, at 1760 Haygood Drive NE.",
+      "verified": "2026-10-04"
+    },
+    {
+      "id": "neurips-atlanta-2026",
+      "title": "NeurIPS 2026 — Atlanta satellite",
+      "url": "https://neurips.cc/Conferences/2026/Dates",
+      "start": "2026-12-09",
+      "end": "2026-12-13",
+      "location": "Georgia World Congress Center, Atlanta",
+      "category": "research",
+      "description": "Main-conference sessions and tutorials run December 9–11; workshops follow December 12–13. See the [venue information](https://neurips.cc/Conferences/2026/VenueInformation) and the [official list of 26 Atlanta workshops](https://blog.neurips.cc/2026/08/10/announcing-the-neurips-2026-workshops/). Topics include uncertainty-aware decisions, evaluation of agents, reliable clinical simulation, and biomolecular design. Sydney hosts the main meeting December 6–12, while Atlanta and Paris have their own local programs.",
+      "verified": "2026-10-04"
+    },
+    {
+      "id": "wmhs-2026",
+      "title": "World Models for High-Stakes Health",
+      "url": "https://wmhs-neurips.github.io/WMHS/",
+      "start": "2026-12-12",
+      "end": "2026-12-12",
+      "location": "Georgia World Congress Center, Atlanta",
+      "category": "research",
+      "description": "NeurIPS Atlanta workshop. Clinical-trial simulation, treatment-effect estimation, causal inference, and uncertainty quantification using longitudinal patient data; rooms C208–C209.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "aim-neurips-2026",
+      "title": "Agentic Intelligence for Medical Imaging and Multimodal Clinical Data (AIM-NeurIPS)",
+      "url": "https://aim-neurips26.github.io/",
+      "start": "2026-12-12",
+      "end": "2026-12-12",
+      "location": "Georgia World Congress Center, Atlanta",
+      "category": "research",
+      "description": "NeurIPS Atlanta workshop. AI agents that combine medical images, clinical records, and analysis tools, with an emphasis on evaluation, reliability, and human oversight.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "gem-2026",
+      "title": "Generative and Experimental Perspectives for Biomolecular Design (GEM)",
+      "url": "https://www.gembio.ai/",
+      "start": "2026-12-13",
+      "end": "2026-12-13",
+      "location": "Georgia World Congress Center, Atlanta",
+      "category": "research",
+      "description": "NeurIPS Atlanta workshop. Generative models, active learning, and experimental validation for proteins, molecules, and nucleic acids; relevant to computational biology and drug discovery.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "ml-physical-sciences-2026",
+      "title": "Machine Learning & the Physical Sciences",
+      "url": "https://ml4physicalsciences.github.io/2026/",
+      "start": "2026-12-11",
+      "end": "2026-12-11",
+      "location": "Georgia Tech, Atlanta",
+      "category": "research",
+      "description": "Hosted by the AI4Science Center, this independent workshop connects machine learning with physical-science research. It is near the NeurIPS venue but is not an official NeurIPS workshop in 2026.",
+      "verified": "2026-10-04"
+    },
+    {
+      "id": "suddath-2027",
+      "title": "Suddath Symposium",
+      "url": "https://www.s4.petitinstitute.ibb.gatech.edu/news/events/suddath-symposium",
+      "start": "2027-03-03",
+      "end": "2027-03-04",
+      "location": "Georgia Tech, Atlanta",
+      "category": "research",
+      "description": "Experimental, computational, and AI approaches to predictive biomedical models, drug development, and toxicity assessment. Venue: Petit Biotechnology Building, Suddath Seminar Room 1128.",
+      "verified": "2026-10-04"
+    },
+    {
+      "id": "aphl-2027",
+      "title": "APHL ID Lab Con",
+      "url": "https://aphl.org/events-communities/event-calendar/event-detail/aphl-2027-id-lab-con",
+      "start": "2027-03-15",
+      "end": "2027-03-18",
+      "location": "Hyatt Regency Atlanta",
+      "category": "research",
+      "description": "An applied public-health laboratory conference with tracks on pathogen genomics, infectious-disease outbreaks, and surveillance. The March 15 Advanced Molecular Detection workshop covers metagenomic sequencing, bioinformatics workflows, and genomic epidemiology.",
+      "verified": "2026-10-04",
+      "deadlines": [
+        {
+          "label": "Abstracts (extended)",
+          "date": "2026-10-09"
+        },
+        {
+          "label": "Travel scholarship applications",
+          "date": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "siam-ds-2027",
+      "title": "SIAM Conference on Applications of Dynamical Systems (DS27)",
+      "url": "https://www.siam.org/conferences-events/siam-conferences/ds27/",
+      "start": "2027-05-23",
+      "end": "2027-05-27",
+      "location": "Hilton Atlanta",
+      "category": "research",
+      "description": "Includes data-driven and AI-informed dynamical systems, stochastic dynamics, and scientific applications.",
+      "verified": "2026-10-04",
+      "deadlines": [
+        {
+          "label": "Minisymposium proposals",
+          "date": "2026-10-26"
+        },
+        {
+          "label": "Contributed abstracts",
+          "date": "2026-11-23"
+        }
+      ]
+    },
+    {
+      "id": "fcrc-2027",
+      "title": "ACM Federated Computing Research Conference (FCRC)",
+      "url": "https://fcrc.acm.org/",
+      "start": "2027-06-05",
+      "end": "2027-06-11",
+      "location": "Hyatt Regency Atlanta",
+      "category": "research",
+      "description": "Co-located computing conferences connect statistical modeling, learning theory, simulation, and computing systems. See STOC, SIGMETRICS, and SIGSIM-PADS below. [SPAA](https://spaa.acm.org/) and [PLDI](https://conf.researchr.org/home/pldi-2027/) also participate in FCRC week; check their programs for individual dates.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "stoc-2027",
+      "title": "STOC 2027",
+      "url": "https://acm-stoc.org/stoc2027/",
+      "start": "2027-06-06",
+      "end": "2027-06-11",
+      "location": "Hyatt Regency Atlanta",
+      "category": "research",
+      "description": "Part of FCRC. Theory of computation, including a day on theoretical computer science and AI.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "sigmetrics-2027",
+      "title": "SIGMETRICS 2027",
+      "url": "https://www.sigmetrics.org/sigmetrics2027/",
+      "start": "2027-06-07",
+      "end": "2027-06-11",
+      "location": "Hyatt Regency Atlanta",
+      "category": "research",
+      "description": "Part of FCRC. Measurement, statistical modeling, and performance analysis of computing systems.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "pads-2027",
+      "title": "SIGSIM-PADS 2027",
+      "url": "https://sigsim.acm.org/conf/pads/2027/",
+      "start": "2027-06-09",
+      "end": "2027-06-11",
+      "location": "Hyatt Regency Atlanta",
+      "category": "research",
+      "description": "Part of FCRC. Simulation methods and systems for modeling complex processes.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "uga-industry-2026",
+      "title": "UGA Statistics Industry Day",
+      "url": "https://www.stat.uga.edu/events/all",
+      "start": "2026-11-11",
+      "end": "2026-11-11",
+      "location": "University of Georgia, Athens",
+      "category": "student",
+      "description": "Statistics and industry connections, featuring Shan Ba; Caldwell Hall, Room 204.",
+      "verified": "2026-10-04"
+    },
+    {
+      "id": "gsu-graduate-2026",
+      "title": "Georgia State Graduate Conference for Research, Scholarship and Creative Activity",
+      "url": "https://graduate.gsu.edu/graduateconference/",
+      "start": "2026-11-18",
+      "end": "2026-11-18",
+      "location": "Student Center East, Atlanta",
+      "category": "student",
+      "description": "Graduate research from all disciplines, with presentations and opportunities to connect across departments. Abstract submission for this edition has closed.",
+      "verified": "2026-10-04"
+    },
+    {
+      "id": "ksu-analytics-2026",
+      "title": "Kennesaw State Fall Analytics Day",
+      "url": "https://calendar.kennesaw.edu/event/fall-2026-analytics-day",
+      "start": "2026-12-04",
+      "end": "2026-12-04",
+      "location": "KSU Center Atrium, Kennesaw",
+      "category": "student",
+      "description": "Student analytics projects and conversations with regional industry practitioners; 8:30 a.m.–12:30 p.m.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "ern-2027",
+      "title": "Emerging Researchers National Conference in STEM (ERN)",
+      "url": "https://emerging-researchers.org/student-abstract-submission-process-2025/",
+      "start": "2027-03-04",
+      "end": "2027-03-06",
+      "location": "Hyatt Regency Atlanta",
+      "category": "student",
+      "description": "A broad student research conference. The organizer has announced the 2027 dates; submission requirements for that edition are still being updated.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "uga-datafest-2027",
+      "title": "ASA DataFest at UGA",
+      "url": "https://www.stat.uga.edu/events/all",
+      "start": "2027-04-09",
+      "end": "2027-04-11",
+      "location": "University of Georgia, Athens",
+      "category": "student",
+      "description": "A student data-analysis competition; consult the departmental calendar for participation and venue details.",
+      "verified": "2026-10-04"
+    },
+    {
+      "id": "atlanta-ai-week-2027",
+      "title": "Atlanta AI Week",
+      "url": "https://www.joinaiweek.com/atlanta",
+      "start": "",
+      "end": "",
+      "location": "Atlanta; venue to be announced",
+      "category": "industry",
+      "description": "Sessions and workshops on implementing AI, enterprise applications, and the local startup community.",
+      "verified": "2026-09-26",
+      "date_note": "April 2027; exact dates to be announced"
+    },
+    {
+      "id": "ai-connect-2027",
+      "title": "AI Connect Expo",
+      "url": "https://aiconnectexpo.com/",
+      "start": "2027-09-08",
+      "end": "2027-09-09",
+      "location": "Georgia World Congress Center, Atlanta",
+      "category": "industry",
+      "description": "An industry exhibition and conference focused on AI applications and technology providers; the organizer's [event information](https://aiconnectexpo.com/sitemap) lists the dates and venue.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "slds-2026",
+      "title": "SLDS 2026: Inference and Intelligence",
+      "url": "https://asa-slds.github.io/slds2026/",
+      "start": "2026-11-01",
+      "end": "2026-11-03",
+      "location": "Marriott at the Brooklyn Bridge, New York",
+      "category": "elsewhere",
+      "description": "Statistical learning and data science. This meeting is outside the Atlanta region; abstract submission has closed.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "atlanta-data-bootcamp-2026",
+      "title": "Atlanta Mathematics of Data Science Bootcamp",
+      "url": "https://wliao60.math.gatech.edu/bootcamp2026/",
+      "start": "2026-09-19",
+      "end": "2026-09-20",
+      "location": "Georgia Tech, Atlanta",
+      "category": "research",
+      "description": "Tutorials and projects on the mathematical foundations of data science and ML, for undergraduate and high-school students.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "acm-ai-leadership-2026",
+      "title": "ACM AI Leadership Summit",
+      "url": "https://aisummit26.acm.org/registration/",
+      "start": "2026-08-31",
+      "end": "2026-09-02",
+      "location": "Hyatt Regency Atlanta",
+      "category": "industry",
+      "description": "AI research, agentic systems, governance, and applications across academia and industry.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "sti-2026",
+      "title": "STI Prevention Conference",
+      "url": "https://stipreventionconference.org/",
+      "start": "2026-08-31",
+      "end": "2026-09-02",
+      "location": "InterContinental Buckhead Atlanta",
+      "category": "research",
+      "description": "Applied public-health research on sexually transmitted infections, prevention strategies, and service delivery, connecting researchers with clinical and community partners.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "fopam-2026",
+      "title": "FOPAM 2026",
+      "url": "https://fopam.cache.org/",
+      "start": "2026-07-26",
+      "end": "2026-07-30",
+      "location": "Courtyard by Marriott Atlanta Decatur Downtown/Emory, Decatur",
+      "category": "research",
+      "description": "Process and product analytics and machine learning. The [July 26–27 pre-conference workshop](https://dais.chbe.ubc.ca/fopam2026/) connected experimental design and regression with deep learning, LLMs, and AI agents.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "sismid-2026",
+      "title": "Summer Institute in Statistics and Modeling in Infectious Diseases (SISMID)",
+      "url": "https://sismid.sph.emory.edu/",
+      "start": "2026-07-13",
+      "end": "2026-07-24",
+      "location": "Emory University, Atlanta",
+      "category": "research",
+      "description": "In-person short courses in statistical and infectious-disease modeling, including ML, MCMC, and simulation-based inference; online modules ran June 22–26.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "atlanta-cloud-ai-2026",
+      "title": "Atlanta Cloud + AI Conference",
+      "url": "https://atlcloudconf.com/",
+      "start": "2026-05-30",
+      "end": "2026-05-30",
+      "location": "FCS Innovation Academy, Alpharetta",
+      "category": "industry",
+      "description": "Practitioner sessions on cloud infrastructure, AI applications, RAG, and model deployment. See the organizer's [2026 event packet](https://atlcloudconf.com/assets/pdfs/ATLCloud%2BAIConf2026-SponsorshipPacket.pdf).",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "statgen-2026",
+      "title": "STATGEN 2026",
+      "url": "https://statgen26.emory.edu/",
+      "start": "2026-05-18",
+      "end": "2026-05-20",
+      "location": "Emory University, Atlanta",
+      "category": "research",
+      "description": "The ASA Section on Statistics in Genomics and Genetics conference, co-organized by Emory's Department of Biostatistics and Bioinformatics, on statistical methodology for genomic and genetic data.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "gsu-biostatistics-2026",
+      "title": "11th Workshop on Biostatistics and Bioinformatics",
+      "url": "https://math.gsu.edu/yichuan/2026Workshop/",
+      "start": "2026-05-08",
+      "end": "2026-05-10",
+      "location": "Georgia State University, Atlanta",
+      "category": "research",
+      "description": "Organized by Yichuan Zhao, with research talks and student posters. Yong Chen's May 8 short course covered federated learning for collaborative health research using PDA and the MOSAiC framework.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "cdc-eis-2026",
+      "title": "CDC Epidemic Intelligence Service (EIS) Conference",
+      "url": "https://www.cdc.gov/eis/php/conference/",
+      "start": "2026-04-21",
+      "end": "2026-04-24",
+      "location": "Atlanta",
+      "category": "research",
+      "description": "Applied epidemiology, disease investigations, and public-health data analysis. The organizer links to the 2026 agenda, presentation abstracts, and recorded sessions.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "atlanta-ai-week-2026",
+      "title": "Atlanta AI Week 2026",
+      "url": "https://www.joinaiweek.com/atlanta",
+      "start": "2026-04-20",
+      "end": "2026-04-22",
+      "location": "Atlanta Tech Village, Buckhead",
+      "category": "industry",
+      "description": "Enterprise AI, practical workshops, and startup networking.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "gsurc-2026",
+      "title": "Georgia State Undergraduate Research Conference (GSURC)",
+      "url": "https://curci.gsu.edu/gsurc/",
+      "start": "2026-04-06",
+      "end": "2026-04-06",
+      "location": "Student Center East, Atlanta",
+      "category": "student",
+      "description": "Undergraduate research, scholarship, and creative projects across disciplines.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "informs-2026",
+      "title": "INFORMS Optimization Society Conference",
+      "url": "https://ios2026.isye.gatech.edu/",
+      "start": "2026-03-20",
+      "end": "2026-03-22",
+      "location": "The Ritz-Carlton, Atlanta",
+      "category": "research",
+      "description": "Optimization for data science, decisions under uncertainty, and computational methods.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "coco-2026",
+      "title": "Computational Cognition Conference (CoCo Con)",
+      "url": "https://sciences.gatech.edu/news/computational-cognition-conference-showcases-georgia-techs-advancements-research-related-mind",
+      "start": "2026-03-13",
+      "end": "2026-03-13",
+      "location": "Georgia Tech, Atlanta",
+      "category": "research",
+      "description": "Computational approaches to cognition and their connections with AI.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "southeast-ctsa-2026",
+      "title": "Southeast Regional Clinical & Translational Science Conference",
+      "url": "https://georgiactsa.org/news-events/news/2026/discovery/se-conf-network/index.html",
+      "start": "2026-03-11",
+      "end": "2026-03-13",
+      "location": "Callaway Resort and Gardens, Pine Mountain, Georgia",
+      "category": "research",
+      "description": "Georgia CTSA's regional meeting connected clinical and translational researchers. The [2026 program](https://georgiactsa.org/_includes/documents/sections/research/cmdts/2026-conf-agenda-final.pdf) included medical AI implementation, clinical prediction, imaging, and LLM applications.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "berd-2026",
+      "title": "Georgia CTSA BERD Research Forum",
+      "url": "https://georgiactsa.org/research/berd/research-forum/2026-forum.html",
+      "start": "2026-01-30",
+      "end": "2026-01-30",
+      "location": "Georgia Tech, Atlanta",
+      "category": "research",
+      "description": "The Biostatistics, Epidemiology, and Research Design forum focused on artificial intelligence in medical and health care systems, with research presentations and graduate-student posters.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "src-2026",
+      "title": "ASA/IMS Spring Research Conference",
+      "url": "https://sites.google.com/view/src2026",
+      "start": "2026-05-26",
+      "end": "2026-05-28",
+      "location": "Clemson University, South Carolina",
+      "category": "elsewhere",
+      "description": "A regional option beyond Georgia for research in statistics and its applications.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "dae-2026",
+      "title": "Design and Analysis of Experiments",
+      "url": "https://statistics.rutgers.edu/news-events/conferences/design-and-analysis-of-experiments-2026",
+      "start": "2026-05-19",
+      "end": "2026-05-21",
+      "location": "Rutgers University, New Jersey",
+      "category": "elsewhere",
+      "description": "Research on experimental design and analysis.",
+      "verified": "2026-09-26"
+    },
+    {
+      "id": "uga-yu-wang-2026",
+      "title": "UGA Statistics: Yu Wang",
+      "url": "https://www.stat.uga.edu/events/content/2026/colloquium-series-yu-wang",
+      "start": "2026-10-15",
+      "end": "2026-10-15",
+      "location": "University of Georgia, Athens",
+      "category": "seminar",
+      "description": "4:30–5:30 p.m. Statistics departmental research talk. Consult the [department calendar](https://www.stat.uga.edu/events/all) for the latest room and talk details.",
+      "verified": "2026-10-04"
+    },
+    {
+      "id": "uga-ruoxuan-xiong-2026",
+      "title": "UGA Statistics: Ruoxuan Xiong",
+      "url": "https://www.stat.uga.edu/events/content/2026/colloquium-series-ruoxuan-xiong",
+      "start": "2026-10-22",
+      "end": "2026-10-22",
+      "location": "University of Georgia, Athens",
+      "category": "seminar",
+      "description": "4:30–5:30 p.m. Statistics departmental research talk. Consult the [department calendar](https://www.stat.uga.edu/events/all) for the latest room and talk details.",
+      "verified": "2026-10-04"
+    },
+    {
+      "id": "uga-yuke-andrew-wang-2026",
+      "title": "UGA Statistics: Yuke (Andrew) Wang",
+      "url": "https://www.stat.uga.edu/events/content/2026/colloquium-series-yuke-andrew-wang",
+      "start": "2026-10-29",
+      "end": "2026-10-29",
+      "location": "University of Georgia, Athens",
+      "category": "seminar",
+      "description": "4:30–5:30 p.m. Statistics departmental research talk. Consult the [department calendar](https://www.stat.uga.edu/events/all) for the latest room and talk details.",
+      "verified": "2026-10-04"
+    },
+    {
+      "id": "uga-qin-lu-2026",
+      "title": "UGA Statistics: Qin Lu",
+      "url": "https://www.stat.uga.edu/events/content/2026/colloquium-series-qin-lu",
+      "start": "2026-11-05",
+      "end": "2026-11-05",
+      "location": "University of Georgia, Athens",
+      "category": "seminar",
+      "description": "4:30–5:30 p.m. Statistics departmental research talk. Consult the [department calendar](https://www.stat.uga.edu/events/all) for the latest room and talk details.",
+      "verified": "2026-10-04"
+    },
+    {
+      "id": "uga-inkoo-lee-2026",
+      "title": "UGA Statistics: Inkoo Lee",
+      "url": "https://www.stat.uga.edu/events/content/2026/colloquium-series-inkoo-lee",
+      "start": "2026-11-19",
+      "end": "2026-11-19",
+      "location": "University of Georgia, Athens",
+      "category": "seminar",
+      "description": "4:30–5:30 p.m. Statistics departmental research talk. Consult the [department calendar](https://www.stat.uga.edu/events/all) for the latest room and talk details.",
+      "verified": "2026-10-04"
+    },
+    {
+      "id": "uga-jeffrey-rosenthal-2027",
+      "title": "UGA Statistics: Jeffrey Rosenthal",
+      "url": "https://www.stat.uga.edu/events/content/2026/jeffrey-rosenthal",
+      "start": "2027-04-02",
+      "end": "2027-04-02",
+      "location": "University of Georgia, Athens; Brooks Hall, Room 145",
+      "category": "seminar",
+      "description": "4–5 p.m. Statistics departmental research talk. Consult the [department calendar](https://www.stat.uga.edu/events/all) for the latest room and talk details.",
+      "verified": "2026-10-04"
+    }
+  ]
+}

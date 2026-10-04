@@ -1,0 +1,43 @@
+{{- $data := hugo.Data.academic_events -}}
+{{- $today := (time.Now | time.In $data.timezone).Format "2006-01-02" -}}
+{{- $archivePage := eq .Params.event_directory "past" -}}
+{{- $past := slice -}}
+{{- $upcoming := slice -}}
+{{- $pending := slice -}}
+{{- range $data.events -}}
+  {{- if not .end -}}{{- $pending = $pending | append . -}}
+  {{- else if lt .end $today -}}{{- $past = $past | append . -}}
+  {{- else -}}{{- $upcoming = $upcoming | append . -}}{{- end -}}
+{{- end -}}
+<link rel="stylesheet" href="{{ "css/academic-events.css" | relURL }}?v={{ readFile "static/css/academic-events.css" | md5 }}">
+<div class="academic-events" data-event-directory data-mode="{{ .Params.event_directory }}" data-timezone="{{ $data.timezone }}">
+  <p class="event-status">📅 <span data-event-date-label>As of {{ $today }} (Atlanta time)</span> · Latest source review: {{ $data.last_reviewed }}.</p>
+{{- if $archivePage }}
+  <p>Completed events, most recent first. See <a href="{{ "resources/conferences_seminars/" | relURL }}">Statistics, ML &amp; AI events</a> for upcoming meetings and recurring seminars.</p>
+{{- else }}
+  <p>Places to share research and meet collaborators in statistics, biostatistics, bioinformatics, ML, and AI. Each section is ordered by date; completed events automatically move to <a href="#past-events">Past events</a>.</p>
+{{- end }}
+  <div data-current-events {{ if $archivePage }}hidden{{ end }}>
+{{- range $data.categories }}
+{{- $events := where $upcoming "category" .id }}
+      <section class="event-group">
+        <h2 id="events-{{ .id }}">{{ .title }}</h2>
+        <p class="event-empty" data-empty-for="{{ .id }}" {{ if $events }}hidden{{ end }}>No announced upcoming events in this category.</p>
+        <ul data-event-list="{{ .id }}">{{ range sort $events "start" }}{{ partial "academic-event.html" . }}{{ end }}</ul>
+      </section>
+{{- end }}
+    <section class="event-group">
+      <h2 id="events-pending">Dates to be announced</h2>
+      <p class="event-empty" data-empty-for="pending" {{ if $pending }}hidden{{ end }}>No events awaiting dates.</p>
+      <ul data-event-list="pending">{{ range sort $pending "title" }}{{ partial "academic-event.html" . }}{{ end }}</ul>
+    </section>
+  </div>
+  <details id="past-events" class="resource-archive event-archive" {{ if $archivePage }}open{{ end }}>
+    <summary>Past events <span data-past-count>({{ len $past }})</span></summary>
+{{- if not $archivePage }}<p><a href="{{ "resources/past_conference/" | relURL }}">Open the Past Conference archive →</a></p>{{ end }}
+    <p class="event-empty" data-empty-for="past" {{ if $past }}hidden{{ end }}>No completed events yet.</p>
+    <ul data-event-list="past">{{ range sort $past "start" "desc" }}{{ partial "academic-event.html" . }}{{ end }}</ul>
+  </details>
+  <noscript><p>JavaScript is disabled: the groups reflect the latest website build. The dates and official links remain available.</p></noscript>
+</div>
+<script defer src="{{ "js/academic-events.js" | relURL }}?v={{ readFile "static/js/academic-events.js" | md5 }}"></script>

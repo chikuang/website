@@ -1,0 +1,9 @@
+{{- $today := (time.Now | time.In "America/New_York").Format "2006-01-02" -}}
+<li class="academic-event" data-event-id="{{ .id }}" data-start="{{ .start }}" data-end="{{ .end }}" data-category="{{ .category }}">
+  <a href="{{ .url }}">{{ .title }}</a>
+  <span class="event-when"> — {{ if .start }}<time datetime="{{ .start }}">{{ time.Format "Jan 2, 2006" .start }}</time>{{ if ne .start .end }}–<time datetime="{{ .end }}">{{ time.Format "Jan 2, 2006" .end }}</time>{{ end }}{{ else }}{{ .date_note }}{{ end }} · {{ .location }}.</span>
+  <span class="event-description">{{ .description | markdownify }}</span>
+{{- range .deadlines }}
+    <span class="event-deadline" data-deadline="{{ .date }}" {{ if lt .date $today }}hidden{{ end }}>{{ .label }}: {{ time.Format "Jan 2, 2006" .date }}.</span>
+{{- end }}
+</li>

@@ -49,12 +49,35 @@ starts closed.
 
 ## Event directory and compact lists
 
-The **Conference & Seminar** category has two posts:
+The **Conference & Seminar** category has two posts backed by one dataset:
 
-- `content/resources/Conferences_seminars.Rmd` lists upcoming events and ongoing seminar series. Keep dated events in chronological order and link each entry to its organizer.
-- `content/resources/Past_conference.Rmd` contains completed events. Move entries here after they finish, grouped by year and location. Its `list_collapsed: true` front matter makes the archive entry collapsed by default on the Resource list; expanding it reveals the description and article link. Archive entries appear after regular posts within their category.
+- `content/resources/Conferences_seminars.Rmd` (`event_directory: upcoming`) combines dated events with recurring seminar/calendar links.
+- `content/resources/Past_conference.Rmd` (`event_directory: past`) shows completed events. Its `list_collapsed: true` keeps its Resource-list entry folded.
+- `data/academic_events.json` is the only source for dated events on both pages. **Do not manually move or duplicate entries between posts.** Preserve historical records even when the organizer reuses a URL for a new edition.
 
-Each post's Notes section records its verification date. Misc links to the current event directory instead of duplicating the list.
+Each event has a stable `id`, `title`, official `url`, `category`, `location`, Markdown `description`, and an individual `verified` date. `start` and `end` are ISO `YYYY-MM-DD` dates, with the end date inclusive. An event without confirmed dates uses empty `start`/`end` and a `date_note`; it stays under Dates to be announced. Optional `deadlines` contain `label` and `date`. Keep mutable deadlines here rather than in prose so expired calls disappear automatically. Distinguish NeurIPS/FCRC workshops from their parent meetings and use their own dates.
+
+Hugo's `academic-events.html` and `academic-event.html` partials provide a complete static fallback. `static/js/academic-events.js` regroup the existing entries using **America/New_York** dates when a page loads, returns from the background, or remains open past midnight. A multi-day event remains upcoming through its final day. Past events are folded on the main directory and are also available on the separate archive page. No external script, account, visitor data, or network request is needed for date-based archiving. With JavaScript disabled, groups reflect the latest build and all dates/links remain readable.
+
+A Codex heartbeat, **Update academic events**, checks official organizer and university pages each Monday at 08:00 America/New_York. It discovers new events and checks date/venue/deadline changes; the website itself does not scrape event sites. This local scheduled review requires the computer to be on and Codex running. Date-based archiving in visitors' browsers works independently. Update `verified` only for records actually checked; `last_reviewed` records the latest published substantive review, not today's browser date. Stay quiet and avoid commits when there are no meaningful changes. Source or network failures must never erase existing entries or fabricate dates.
+
+Before publishing:
+
+```sh
+node tests/academic-events.cjs
+hugo
+```
+
+If the article prose changes, regenerate its HTML companion first:
+
+```r
+blogdown::build_site(build_rmd = c(
+  "content/resources/Conferences_seminars.Rmd",
+  "content/resources/Past_conference.Rmd"
+), run_hugo = FALSE)
+```
+
+Inspect the source/output diffs, preserve other tasks' edits and independent course assets, and commit only this update before pushing both repositories. Never use `--cleanDestinationDir`. The tests validate the data, inclusive boundaries, DST, year rollover, ordering, archive movement on both pages, and duplicate-free refreshes. Notes remain at the bottom of each post; Misc links to the directory instead of duplicating it.
 
 Set `compact_lists: true` for resource directories. This loads
 `static/css/resource-directory.css` for tighter heading, list, and archive spacing
