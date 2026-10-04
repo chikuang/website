@@ -58,8 +58,11 @@ The footer's ☀, ☾ and 🧋 buttons select a palette and remember the choice 
 pages and reloads. The milk tea palette lives in `static/css/milk-tea.css`.
 Office information is configured with `params.office` and displayed in the footer.
 
+Preprints are sorted alphabetically by title, ignoring case and extra whitespace.
+Other publication subsections retain their configured order.
 Member lists are sorted within each category using the explicit `last_name`
-field in `config.toml`. Optional `scholar_link` values add a Google Scholar
+field in `config.toml`, ignoring case and using the full name to break ties.
+Optional `scholar_link` values add a Google Scholar
 icon. Shared link icons are rendered by `layouts/partials/icon-link.html`
 from local SVGs in `assets/icons/`; they work without JavaScript and include
 accessible names and hover labels. See [icon sources](docs/icon-sources.md).
