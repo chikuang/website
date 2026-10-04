@@ -10,7 +10,6 @@
   <summary class="grant-deadlines__summary">
     <img class="grant-deadlines__mascot" src="{{ "images/grant-radar-kawaii.png" | relURL }}" alt="" width="48" height="48" decoding="async">
     <span class="grant-deadlines__summary-copy"><strong id="grant-radar-summary-title">Grant Radar</strong><span data-grant-summary>{{ with $next }}Next: {{ .agency }} · {{ (time.AsTime .date).Format "Jan 2, 2006" }}{{ else }}No confirmed upcoming dates{{ end }}</span></span>
-    <span class="grant-deadlines__chevron" aria-hidden="true"></span>
   </summary>
   <div class="grant-deadlines__body">
   <div class="grant-deadlines__header">

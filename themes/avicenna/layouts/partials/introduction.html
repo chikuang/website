@@ -8,7 +8,7 @@
 		</div>
 		{{- else if $key.fold_title }}
 		<details class="intro-note">
-			<summary>{{ with $key.fold_icon }}<img class="home-kawaii-emoji" src="{{ . | relURL }}" alt="" width="36" height="36" decoding="async">{{ end }}{{ $key.fold_title }}</summary>
+			<summary>{{ with $key.fold_icon }}<img class="home-kawaii-emoji" src="{{ . | relURL }}" alt="" width="48" height="48" decoding="async">{{ end }}<span class="home-fold-title">{{ $key.fold_title }}</span></summary>
 			<div class="intro-note__body">
 				{{ partial "institution-text.html" (dict "page" $ "text" $key.text) }}
 			</div>
@@ -29,7 +29,7 @@
 		<h2 id="home-news-title">Fun things</h2>
 		{{- range . }}
 		<details class="intro-note intro-note--news">
-			<summary>{{ with .icon }}<img class="home-kawaii-emoji" src="{{ . | relURL }}" alt="" width="36" height="36" decoding="async">{{ end }}{{ .title }}</summary>
+			<summary>{{ with .icon }}<img class="home-kawaii-emoji" src="{{ . | relURL }}" alt="" width="48" height="48" decoding="async">{{ end }}<span class="home-fold-title">{{ .title }}</span></summary>
 			<div class="intro-note__body">
 				{{ partial "institution-text.html" (dict "page" $ "text" .text) }}
 			</div>
