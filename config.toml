@@ -145,16 +145,19 @@ text = """😸 Inquiries about supervision and collaboration are always welcome!
 Interested in studying or doing research at GSU? Explore 🎓 [Why GSU](/resources/why_gsu/), 👩‍🏫 [GSU faculty in statistics and related fields](/resources/gsu_statistics_faculty/), and 📅 [Academic events](/resources/conferences_seminars/)."""
 
 [[params.introduction.paragraph]]
-fold_title = "☢️ Reference letter"
+fold_title = "Reference letter"
+fold_icon = "/images/reference-letter-kawaii.png"
 text="""Please do not contact me unless (1) you get at least an **A/95%** or (2) I know you well personally. 📧 If so, please use the subject line "Reference Letter Request - Your Full Name" in your email."""
 
 [[params.introduction.news]]
-title = "😈 North America Taiwanese Statistics Map"
+title = "North America Taiwanese Statistics Map"
+icon = "/images/taiwan-research-map-kawaii.png"
 text= """
   I created a [Taiwanese @ NA researcher map](https://chikuang.shinyapps.io/TW_Statistician_NA_Map/) to visualize the locations of Taiwanese researchers in statistics across North America."""
  
 [[params.introduction.news]]
-title = "😈 UWaterloo Researcher Map"
+title = "UWaterloo Researcher Map"
+icon = "/images/waterloo-research-map-kawaii.png"
 text= """
   I created a [researcher map](https://chikuang.shinyapps.io/UWaterloo_SAS_Researcher_Map/) to visualize the locations of researchers from the Department of Statistics and Actuarial Science at the [University of Waterloo](https://uwaterloo.ca/)."""
 

@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="{{ "css/home-kawaii.css" | relURL }}?v={{ readFile "static/css/home-kawaii.css" | md5 }}">
 <div class="introduction home-intro">
 	{{- range $index, $key := .Site.Params.Introduction.paragraph -}}
 	<div class="intro-block">
@@ -7,7 +8,7 @@
 		</div>
 		{{- else if $key.fold_title }}
 		<details class="intro-note">
-			<summary>{{ $key.fold_title }}</summary>
+			<summary>{{ with $key.fold_icon }}<img class="home-kawaii-emoji" src="{{ . | relURL }}" alt="" width="36" height="36" decoding="async">{{ end }}{{ $key.fold_title }}</summary>
 			<div class="intro-note__body">
 				{{ partial "institution-text.html" (dict "page" $ "text" $key.text) }}
 			</div>
@@ -28,7 +29,7 @@
 		<h2 id="home-news-title">Fun things</h2>
 		{{- range . }}
 		<details class="intro-note intro-note--news">
-			<summary>{{ .title }}</summary>
+			<summary>{{ with .icon }}<img class="home-kawaii-emoji" src="{{ . | relURL }}" alt="" width="36" height="36" decoding="async">{{ end }}{{ .title }}</summary>
 			<div class="intro-note__body">
 				{{ partial "institution-text.html" (dict "page" $ "text" .text) }}
 			</div>

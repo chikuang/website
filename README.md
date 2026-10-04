@@ -138,3 +138,9 @@ countdowns and a link to the private Grant Radar app. Public dates are maintaine
 in `data/grant_deadlines.json`; see [widget maintenance](docs/grant-deadlines.md).
 
 Grant Radar short link: [chikuang.github.io/grant-radar/](https://chikuang.github.io/grant-radar/). It forwards to the existing private app and preserves its login and stored data.
+
+Reference Letter and the two Fun Things map menus use original kawaii PNG icons
+matching the Grant Radar mascot. Configure `fold_icon` on introduction paragraphs
+and `icon` on news items in `config.toml`; assets live in `static/images/` and
+menu sizing in `static/css/home-kawaii.css`. Decorative images have empty alt
+text so the folding controls retain their clear text labels.
