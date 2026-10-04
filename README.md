@@ -137,7 +137,7 @@ The Home panel includes the next three reviewed faculty grant deadlines with
 countdowns and a link to the private Grant Radar app. Public dates are maintained
 in `data/grant_deadlines.json`; see [widget maintenance](docs/grant-deadlines.md).
 
-Grant Radar: [chikuang.github.io/grant-radar/](https://chikuang.github.io/grant-radar/). The app interface stays at this address. A separate signed-in account window connects to the existing private data service.
+Grant Radar: [chikuang.github.io/grant-radar/](https://chikuang.github.io/grant-radar/). The app interface stays at this address. Normal ChatGPT sign-in returns to the GitHub app; authenticated requests sync with the owner-protected cloud data service.
 
 Reference Letter and the two Fun Things map menus use original kawaii PNG icons
 matching the Grant Radar mascot. Configure `fold_icon` on introduction paragraphs

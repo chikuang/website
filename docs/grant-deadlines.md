@@ -54,15 +54,16 @@ tool. Its optimized 160px PNG is `static/images/grant-radar-kawaii.png`.
 interface handles discovery, student resources, proposal editing, reminders,
 and calendar downloads at the GitHub address.
 
-Select Connect account to open the existing private Site's account window.
-Leave this window open for loading and saving. The connection accepts only the
-exact GitHub origin and its opener. Database access, sign-in, and ownership
-checks stay in the existing private service. Account data is kept in browser
-memory after loading; private profile defaults and saved proposals are not
-included in the public build.
+Select Sign in with ChatGPT. Sign-in uses the same tab and returns to the fixed
+GitHub app address. Single-use PKCE codes become revocable, time-limited sessions;
+the interface does not open a persistent connection window. Profiles and
+proposals remain in the existing cloud database, and every data endpoint
+restricts access to the configured owner. GitHub receives only the interface
+bundle, never private defaults, records, or backend credentials.
 
 The private Grant Radar source owns `github-portal/`. Build it with its
-`vite.github.config.ts`, publish the private account connection first, and copy
-only `github-portal-dist/` here and to the Pages repository. Preserve the
-private app's source and database. If account sign-in clears the window
-connection, select Connect account again once signed in.
+`vite.github.config.ts` and copy only `github-portal-dist/` here and to the Pages
+repository. The authenticated API requires a public Sites gateway; the separate
+application owner restriction remains mandatory. Do not change the Sites access
+setting without the user's explicit approval. Deploy the owner-protected
+backend before publishing this interface.
