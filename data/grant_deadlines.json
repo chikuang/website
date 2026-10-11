@@ -1,5 +1,5 @@
 {
-  "reviewed": "2026-10-04",
+  "reviewed": "2026-10-11",
   "app_url": "https://chikuang.github.io/grant-radar/",
   "deadlines": [
     {
@@ -11,7 +11,28 @@
       "expires_at": "2026-10-16T21:00:00Z",
       "timing": "5 pm Eastern · new applications",
       "note": "Biomedical research; participating institute required.",
-      "sources": [{"label": "NIH call", "url": "https://grants.nih.gov/grants/guide/pa-files/PA-25-304.html"}]
+      "sources": [
+        {
+          "label": "NIH call",
+          "url": "https://grants.nih.gov/grants/guide/pa-files/PA-25-304.html"
+        }
+      ]
+    },
+    {
+      "id": "anton3-2026",
+      "title": "Anton 3 Biomolecular Simulation Allocations",
+      "agency": "PSC Anton 3",
+      "date": "2026-10-23",
+      "timezone": "America/New_York",
+      "expires_at": "2026-10-24T03:59:00Z",
+      "timing": "11:59 pm Eastern · molecular dynamics",
+      "note": "Prepared biomolecular project required. Create PSC account by October 21; one PI application.",
+      "sources": [
+        {
+          "label": "2026 call",
+          "url": "https://www.psc.edu/wp-content/uploads/2026/08/Anton_3_RFP.pdf"
+        }
+      ]
     },
     {
       "id": "amazon-fall-2026",
@@ -23,8 +44,14 @@
       "timing": "11:59 pm Pacific · Fall 2026",
       "note": "Agentic AI or multilingual AI evaluation. Choose one track per PI.",
       "sources": [
-        {"label": "Agentic AI", "url": "https://www.amazon.science/research-awards/call-for-proposals/aws-agentic-ai-call-for-proposals-fall-2026"},
-        {"label": "AI evaluation", "url": "https://www.amazon.science/research-awards/call-for-proposals/multilingual-and-contextual-ai-evaluation-call-for-proposals-fall-2026"}
+        {
+          "label": "Agentic AI",
+          "url": "https://www.amazon.science/research-awards/call-for-proposals/aws-agentic-ai-call-for-proposals-fall-2026"
+        },
+        {
+          "label": "AI evaluation",
+          "url": "https://www.amazon.science/research-awards/call-for-proposals/multilingual-and-contextual-ai-evaluation-call-for-proposals-fall-2026"
+        }
       ]
     },
     {
@@ -37,7 +64,12 @@
       "date_only": true,
       "timing": "Cycle 2 · confirm cutoff in InfoReady",
       "note": "GSU faculty research support; check the relevant funding level.",
-      "sources": [{"label": "GSU call", "url": "https://ursa.research.gsu.edu/research-development/internal-grants-program/"}]
+      "sources": [
+        {
+          "label": "GSU call",
+          "url": "https://ursa.research.gsu.edu/research-development/internal-grants-program/"
+        }
+      ]
     },
     {
       "id": "nsf-career",
@@ -48,7 +80,12 @@
       "expires_at": "2027-07-28T21:00:00Z",
       "timing": "5 pm Eastern · GSU local time",
       "note": "Confirm tenure-track eligibility, prior awards, and submission limits.",
-      "sources": [{"label": "NSF call", "url": "https://www.nsf.gov/funding/opportunities/career-faculty-early-career-development-program"}]
+      "sources": [
+        {
+          "label": "NSF call",
+          "url": "https://www.nsf.gov/funding/opportunities/career-faculty-early-career-development-program"
+        }
+      ]
     }
   ]
 }
