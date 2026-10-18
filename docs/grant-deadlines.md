@@ -23,6 +23,12 @@ cycles, student-only awards, and calls requiring an unmet earlier application
 stage are excluded. Amazon's two Fall 2026 tracks are grouped because a PI can
 submit one proposal per call period. Eligibility still depends on each call.
 
+The October 18 review excludes the Quine fellowship until faculty participation
+terms are confirmed, and the AI Infrastructure Hubs call until institutional
+selection and consortium arrangements are confirmed. Both remain in the catalog
+as conditional routes. The closed October R21 round remains in the catalog; its
+separate February 2027 entry uses the date explicitly published by NIH.
+
 For each record:
 
 - `date` is the official calendar day in `timezone` (an IANA time zone).
