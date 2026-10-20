@@ -39,8 +39,12 @@
 {{- end -}}
 {{ with $publication.award }}
 				<span class="publication-award">
-					<a class="award-link" href="{{ $publication.award_link }}">
+					<a class="award-link" href="{{ $publication.award_link }}"{{ with $publication.award_recipient }} title="Awarded to {{ . }} for a student poster presentation" aria-label="{{ $publication.award }} — awarded to {{ . }}"{{ end }}>
+{{ if eq $publication.award_type "student-poster" }}
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="5"/><path d="m8.5 11.6-2 10.4 5.5-3 5.5 3-2-10.4"/></svg>
+{{ else }}
 						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 3h8v7a4 4 0 0 1-8 0V3Z"/><path d="M8 5H4v3a4 4 0 0 0 4 4m8-7h4v3a4 4 0 0 1-4 4m-4 2v5m-4 2h8m-6-2h4"/></svg>
+{{ end }}
 						<span>{{ . }}</span>
 					</a>
 				</span>

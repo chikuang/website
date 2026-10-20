@@ -169,6 +169,10 @@ authors = "*Muhammad Aimal Rehman & **Chi-Kuang Yeh**"
 dest = "Preprint"
 code_link = "https://github.com/aimalrehman92/conformal-rag"
 arxiv_link = "https://arxiv.org/abs/2609.38222"
+award = "Student Poster Honourable Mention — Georgia Statistics Day 2026"
+award_link = "https://www.isye.gatech.edu/events/calendar/day/2026/10/05/13379"
+award_type = "student-poster"
+award_recipient = "Muhammad Aimal Rehman"
 
 [[params.publications.paper]]
 name = """Patients-like-me: a variational LM--GNN framework for explainable clinical prediction"""
