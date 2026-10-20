@@ -2,11 +2,11 @@
 <ul class="entry-list">
 {{- range $course := .course }}
   <li>
-    <p class="teaching-course">{{ .name }}</p>
+    <p class="teaching-course">{{ if and .link_title .link }}<a href="{{ .link }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</p>
     {{ .description | markdownify }}
-{{- if or .link .syllabus .materials }}
+{{- if or (and .link (not .link_title)) .syllabus .materials }}
     <span class="entry-links">
-      {{- with .link }}{{ partial "icon-link.html" (dict "url" . "kind" "website" "label" "Course website" "context" $course.name) }}{{ end }}
+      {{- if not .link_title }}{{ with .link }}{{ partial "icon-link.html" (dict "url" . "kind" "website" "label" "Course website" "context" $course.name) }}{{ end }}{{ end }}
       {{- with .syllabus }}{{ partial "icon-link.html" (dict "url" . "kind" "pdf" "label" "Syllabus" "context" $course.name) }}{{ end }}
       {{- with .materials }}{{ partial "icon-link.html" (dict "url" . "kind" "materials" "label" "Course materials" "context" $course.name) }}{{ end }}
     </span>
