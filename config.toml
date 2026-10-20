@@ -410,6 +410,15 @@ name = "Statistical Inference"
 link = "https://chikuang.github.io/teaching/stat_inference"
 
 [[params.teaching]]
+year = "Topic Course"
+status = "topic"
+[[params.teaching.course]]
+name = "Teaching-GenAI"
+description = "Generative AI through the lens of statisticians. A self-paced course on attention, transformers, generative models, and agents, with Python examples."
+link = "https://chikuang.github.io/teaching/genai/"
+materials = "https://github.com/chikuang/Teaching-GenAI"
+
+[[params.teaching]]
 year = "2027 Spring (Tentative)"
 status = "upcoming"
 [[params.teaching.course]]

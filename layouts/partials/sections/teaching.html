@@ -3,6 +3,9 @@
 {{- range where $terms "status" "current" }}
   {{ partial "teaching-term.html" . }}
 {{- end }}
+{{- range where $terms "status" "topic" }}
+  {{ partial "teaching-term.html" . }}
+{{- end }}
 {{- range $group := slice (dict "status" "upcoming" "label" "Upcoming") (dict "status" "past" "label" "Past") }}
 {{- with where $terms "status" $group.status }}
   <details class="teaching-fold">
