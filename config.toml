@@ -420,6 +420,10 @@ status = "topic"
 name = "STAT XXXX Generative AI"
 link = "https://chikuang.github.io/teaching/genai/"
 
+[[params.teaching.course]]
+name = "Topics of Statistical Learning"
+link = "https://chikuang.github.io/teaching/statistical-learning/"
+
 [[params.teaching]]
 year = "2027 Spring (Tentative)"
 status = "upcoming"
