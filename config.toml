@@ -419,7 +419,6 @@ status = "topic"
 [[params.teaching.course]]
 name = "STAT XXXX Generative AI"
 link = "https://chikuang.github.io/teaching/genai/"
-link_title = true
 
 [[params.teaching]]
 year = "2027 Spring (Tentative)"
