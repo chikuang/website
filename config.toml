@@ -417,7 +417,7 @@ link = "https://chikuang.github.io/teaching/stat_inference"
 year = "Topic Course"
 status = "topic"
 [[params.teaching.course]]
-name = "STAT XXXX Generate AI"
+name = "STAT XXXX Generative AI"
 link = "https://chikuang.github.io/teaching/genai/"
 link_title = true
 
