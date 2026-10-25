@@ -16,7 +16,7 @@ const neurips = data.events.find(e => e.id === 'neurips-atlanta-2026');
 assert.equal(bucketFor(neurips, '2026-12-09'), 'research');
 assert.equal(bucketFor(neurips, '2026-12-13'), 'research');
 assert.equal(bucketFor(neurips, '2026-12-14'), 'past');
-const pending = data.events.find(e => !e.end);
+const pending = { id: 'test-unannounced', title: 'Unannounced test event', start: '', end: '', category: 'research' };
 assert.equal(bucketFor(pending, '2030-01-01'), 'pending');
 assert.equal(bucketFor(data.events.find(e => e.id === 'mlsp-2026'), '2026-10-04'), 'past');
 
@@ -44,8 +44,8 @@ assert(ordered.every((e, i) => !i || ordered[i - 1].start <= e.start));
 
 // Exercise the actual DOM updater through midnight, including the archive page's
 // hidden upcoming pool, deadline expiry, and idempotency (nodes must never duplicate).
-function directory(mode) {
-  const nodes = data.events.map(e => ({ dataset: { ...e }, querySelector: () => ({ textContent: e.title }) }));
+function directory(mode, events) {
+  const nodes = events.map(e => ({ dataset: { ...e }, querySelector: () => ({ textContent: e.title }) }));
   const lists = new Map([...categories, 'pending', 'past'].map(key => [key, {
     dataset: { eventList: key }, children: [],
     appendChild(node) {
@@ -70,18 +70,20 @@ function directory(mode) {
   };
 }
 for (const mode of ['upcoming', 'past']) {
-  const page = directory(mode);
-  refresh(page, new Date('2026-10-06T03:59:59Z'));
-  const event = page.nodes.find(n => n.dataset.id === 'georgia-statistics-day-2026');
-  assert.equal(event.parent.dataset.eventList, 'research');
-  refresh(page, new Date('2026-10-06T04:00:00Z'));
-  assert.equal(event.parent.dataset.eventList, 'past');
-  refresh(page, new Date('2026-10-06T04:01:00Z'));
-  assert.equal([...page.lists.values()].reduce((n, l) => n + l.children.length, 0), data.events.length);
-  refresh(page, new Date('2026-10-10T04:00:00Z'));
-  assert.equal(page.deadlines[0].hidden, true);
-  refresh(page, new Date('2028-01-01T12:00:00Z'));
-  assert.equal(page.lists.get('pending').children.length, 1);
-  assert.equal(page.lists.get('past').children.length, data.events.length - 1);
+  for (const events of [data.events, [...data.events, pending]]) {
+    const page = directory(mode, events);
+    refresh(page, new Date('2026-10-06T03:59:59Z'));
+    const event = page.nodes.find(n => n.dataset.id === 'georgia-statistics-day-2026');
+    assert.equal(event.parent.dataset.eventList, 'research');
+    refresh(page, new Date('2026-10-06T04:00:00Z'));
+    assert.equal(event.parent.dataset.eventList, 'past');
+    refresh(page, new Date('2026-10-06T04:01:00Z'));
+    assert.equal([...page.lists.values()].reduce((n, l) => n + l.children.length, 0), events.length);
+    refresh(page, new Date('2026-10-10T04:00:00Z'));
+    assert.equal(page.deadlines[0].hidden, true);
+    refresh(page, new Date('2028-01-01T12:00:00Z'));
+    assert.equal(page.lists.get('pending').children.length, events.filter(e => !e.end).length);
+    assert.equal(page.lists.get('past').children.length, events.filter(e => e.end && e.end < '2028-01-01').length);
+  }
 }
 console.log(`Validated ${data.events.length} events; date boundaries, DST, archive transfers, sorting, deadlines and repeat refresh passed.`);
