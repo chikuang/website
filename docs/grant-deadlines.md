@@ -20,14 +20,19 @@ for new calls or automatically import catalog changes from the private app.
 
 Only announced faculty deadlines are included. Rolling programs, unannounced
 cycles, student-only awards, and calls requiring an unmet earlier application
-stage are excluded. Amazon's two Fall 2026 tracks are grouped because a PI can
+stage are excluded. Amazon's Fall 2026 tracks are grouped because a PI can
 submit one proposal per call period. Eligibility still depends on each call.
 
-The October 18 review excludes the Quine fellowship until faculty participation
+The October 25 review excludes the Quine fellowship until faculty participation
 terms are confirmed, and the AI Infrastructure Hubs call until institutional
 selection and consortium arrangements are confirmed. Both remain in the catalog
 as conditional routes. The closed October R21 round remains in the catalog; its
 separate February 2027 entry uses the date explicitly published by NIH.
+
+The October 23 Anton 3 round is closed and has been removed from this widget,
+while its catalog record retains the original date. The next three faculty dates
+are Amazon (November 4), GSU (January 13) and NIH R21 (February 16).
+The Canadian master’s scholarship is student-only and is excluded.
 
 For each record:
 
