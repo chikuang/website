@@ -164,6 +164,13 @@ text= """
 [[params.publications]]
 year = "Preprint"
 [[params.publications.paper]]
+name = "Adaptive retrieval, selective answers: evaluating conformal factuality in agentic RAG"
+authors = "*Muhammad Aimal Rehman & **Chi-Kuang Yeh**"
+dest = "Preprint"
+code_link = "https://github.com/aimalrehman92/conformal-rag-agentic"
+arxiv_link = "https://arxiv.org/abs/2610.34872"
+
+[[params.publications.paper]]
 name = "Conformal factuality control for multi-hop retrieval-augmented generation"
 authors = "*Muhammad Aimal Rehman & **Chi-Kuang Yeh**"
 dest = "Preprint"
@@ -504,7 +511,7 @@ name = "Muhammad Aimal Rehman"
 scholar_link = "https://scholar.google.com/citations?hl=en&user=dCnZvNkAAAAJ"
 last_name = "Rehman"
 position = "Applied Statistics"
-description = "Aimal is working on Retrieval-Augmented Generation (RAG), including conformal factuality control for multi-hop RAG, see [[![Paper](/images/paper-note.svg) P1]](https://arxiv.org/abs/2604.23515 \"Paper 1\"), [[![Paper](/images/paper-note.svg) P2]](https://arxiv.org/abs/2609.38222 \"Paper 2\"), [[![Software](/images/software-coder.svg?v=2) S1]](https://cran.r-project.org/web/packages/ragR/index.html \"Software 1\")"
+description = "Aimal is working on Retrieval-Augmented Generation (RAG), including conformal factuality control for multi-hop and agentic RAG, see [[![Paper](/images/paper-note.svg) P1]](https://arxiv.org/abs/2604.23515 \"Paper 1\"), [[![Paper](/images/paper-note.svg) P2]](https://arxiv.org/abs/2609.38222 \"Paper 2\"), [[![Paper](/images/paper-note.svg) P3]](https://arxiv.org/abs/2610.34872 \"Paper 3\"), [[![Software](/images/software-coder.svg?v=2) S1]](https://cran.r-project.org/web/packages/ragR/index.html \"Software 1\")"
 link = "https://www.linkedin.com/in/aimalrehman/"
 github_link = "https://github.com/aimalrehman92/"
 
