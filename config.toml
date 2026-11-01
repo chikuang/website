@@ -437,6 +437,7 @@ year = "2027 Spring (Tentative)"
 status = "upcoming"
 [[params.teaching.course]]
 name = "STAT 8310 Bayesian Data Analysis"
+link = "https://chikuang.github.io/teaching/2027S_stat8310/"
 
 [[params.teaching]]
 year = "2026 Fall"
