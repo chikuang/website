@@ -426,6 +426,7 @@ status = "topic"
 [[params.teaching.course]]
 name = "Generative AI"
 link = "https://chikuang.github.io/teaching/genai/"
+link_title = false
 
 [[params.teaching.course]]
 name = "Topics of Statistical Learning"
@@ -519,7 +520,7 @@ github_link = "https://github.com/aimalrehman92/"
 name = "Seoyoung Kim"
 last_name = "Kim"
 position = "Applied Statistics"
-description = "Seoyoung is working on human annotation and retrieval-augmented generation (RAG) problems."
+description = "Seoyoung is working on human annotation and retrieval-augmented generation (RAG). She is developing ragR with Muhammad Aimal Rehman, Zhili Lu, and Chi-Kuang Yeh, see [[![Software](/images/software-coder.svg?v=2) S1]](https://cran.r-project.org/web/packages/ragR/index.html \"ragR software\")"
 link = "https://www.linkedin.com/in/seoyoung-kim-1711ba409/"
 
 
