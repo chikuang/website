@@ -1,6 +1,6 @@
 {
   "timezone": "America/New_York",
-  "last_reviewed": "2026-10-25",
+  "last_reviewed": "2026-11-01",
   "categories": [
     {
       "id": "research",
@@ -55,7 +55,7 @@
       "location": "Emory University, Atlanta",
       "category": "research",
       "description": "The fourth symposium on AI in medicine and health, at 1760 Haygood Drive NE.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "neurips-atlanta-2026",
@@ -66,7 +66,7 @@
       "location": "Georgia World Congress Center, Atlanta",
       "category": "research",
       "description": "Main-conference sessions and tutorials run December 9–11; workshops follow December 12–13. See the [venue information](https://neurips.cc/Conferences/2026/VenueInformation) and the [official list of 26 Atlanta workshops](https://blog.neurips.cc/2026/08/10/announcing-the-neurips-2026-workshops/). Topics include uncertainty-aware decisions, evaluation of agents, reliable clinical simulation, and biomolecular design. Sydney hosts the main meeting December 6–12, while Atlanta and Paris have their own local programs.",
-      "verified": "2026-10-25",
+      "verified": "2026-11-01",
       "deadlines": [
         {
           "label": "Early registration (AoE)",
@@ -87,7 +87,7 @@
       "location": "Georgia World Congress Center, Atlanta",
       "category": "research",
       "description": "NeurIPS Atlanta workshop. Clinical-trial simulation, treatment-effect estimation, causal inference, and uncertainty quantification using longitudinal patient data; rooms C208–C209.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "aim-neurips-2026",
@@ -98,7 +98,7 @@
       "location": "Georgia World Congress Center, Atlanta",
       "category": "research",
       "description": "NeurIPS Atlanta workshop. AI agents that combine medical images, clinical records, and analysis tools, with an emphasis on evaluation, reliability, and human oversight.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "gem-2026",
@@ -109,7 +109,7 @@
       "location": "Georgia World Congress Center, Atlanta",
       "category": "research",
       "description": "NeurIPS Atlanta workshop. Generative models, active learning, and experimental validation for proteins, molecules, and nucleic acids; relevant to computational biology and drug discovery.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "ml-physical-sciences-2026",
@@ -120,7 +120,7 @@
       "location": "Georgia Tech, Atlanta",
       "category": "research",
       "description": "Hosted by the AI4Science Center, this independent workshop connects machine learning with physical-science research. It is near the NeurIPS venue but is not an official NeurIPS workshop in 2026. Virtual participation is available; NeurIPS registration is not required.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "suddath-2027",
@@ -131,7 +131,7 @@
       "location": "Georgia Tech, Atlanta",
       "category": "research",
       "description": "Experimental, computational, and AI approaches to predictive biomedical models, drug development, and toxicity assessment. Venue: Petit Biotechnology Building, Suddath Seminar Room 1128.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "aphl-2027",
@@ -142,7 +142,7 @@
       "location": "Hyatt Regency Atlanta",
       "category": "research",
       "description": "An applied public-health laboratory conference with tracks on pathogen genomics, infectious-disease outbreaks, and surveillance. The March 15 Advanced Molecular Detection workshop covers metagenomic sequencing, bioinformatics workflows, and genomic epidemiology.",
-      "verified": "2026-10-18",
+      "verified": "2026-11-01",
       "deadlines": [
         {
           "label": "Abstracts (extended)",
@@ -151,6 +151,14 @@
         {
           "label": "Travel scholarship applications",
           "date": "2026-11-01"
+        },
+        {
+          "label": "Early registration",
+          "date": "2027-02-19"
+        },
+        {
+          "label": "Hotel room block (or until full)",
+          "date": "2027-02-19"
         }
       ]
     },
@@ -163,7 +171,7 @@
       "location": "Hilton Atlanta",
       "category": "research",
       "description": "Includes data-driven and AI-informed dynamical systems, stochastic dynamics, and scientific applications. The travel-support deadline follows SIAM’s [dedicated travel-award page](https://www.siam.org/conferences-events/conference-support/travel-and-registration-support/).",
-      "verified": "2026-10-25",
+      "verified": "2026-11-01",
       "deadlines": [
         {
           "label": "Minisymposium proposals",
@@ -203,7 +211,7 @@
       "location": "Hyatt Regency Atlanta",
       "category": "research",
       "description": "Part of FCRC. Theory of computation, including a day on theoretical computer science and AI.",
-      "verified": "2026-10-25",
+      "verified": "2026-11-01",
       "deadlines": [
         {
           "label": "Paper submissions (11:59 p.m. AoE)",
@@ -228,7 +236,7 @@
       "location": "Hyatt Regency Atlanta",
       "category": "research",
       "description": "Part of FCRC. Measurement, statistical modeling, and performance analysis of computing systems.",
-      "verified": "2026-10-25",
+      "verified": "2026-11-01",
       "deadlines": [
         {
           "label": "Workshop proposals (11:59 p.m. AoE)",
@@ -257,11 +265,11 @@
       "location": "Hyatt Regency Atlanta",
       "category": "research",
       "description": "Part of FCRC. Simulation methods and systems for modeling complex processes.",
-      "verified": "2026-10-25",
+      "verified": "2026-11-01",
       "deadlines": [
         {
-          "label": "First-call paper submissions (AoE)",
-          "date": "2026-10-30"
+          "label": "First-call paper submissions (extended from October 30; AoE)",
+          "date": "2026-11-13"
         },
         {
           "label": "Second-call paper submissions (AoE)",
@@ -278,7 +286,7 @@
       "location": "University of Georgia, Athens",
       "category": "student",
       "description": "Statistics and industry connections, featuring Shan Ba; Caldwell Hall, Room 204.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "gsu-graduate-2026",
@@ -288,8 +296,8 @@
       "end": "2026-11-18",
       "location": "Student Center East, Atlanta",
       "category": "student",
-      "description": "Graduate research from all disciplines, with presentations and opportunities to connect across departments. Abstract submission for this edition has closed.",
-      "verified": "2026-10-25"
+      "description": "Graduate research from all disciplines, with presentations and opportunities to connect across departments. Presentations begin at 9 a.m.; the awards ceremony starts at 4:30 p.m. Abstract submission for this edition has closed; [attendee registration](https://gsugraduateconf2026fall.dryfta.com/) is available through the conference platform.",
+      "verified": "2026-11-01"
     },
     {
       "id": "ksu-analytics-2026",
@@ -300,7 +308,7 @@
       "location": "KSU Center Atrium, Kennesaw",
       "category": "student",
       "description": "Student analytics projects and conversations with regional industry practitioners; 8:30 a.m.–12:30 p.m. Free and open to the public.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "ern-2027",
@@ -311,7 +319,7 @@
       "location": "Hyatt Regency Atlanta",
       "category": "student",
       "description": "A broad student research conference. The organizer has announced the 2027 dates; submission requirements for that edition are still being updated.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "uga-datafest-2027",
@@ -322,7 +330,7 @@
       "location": "University of Georgia, Athens",
       "category": "student",
       "description": "A student data-analysis competition; consult the departmental calendar for participation and venue details.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "atlanta-ai-week-2027",
@@ -333,7 +341,7 @@
       "location": "Atlanta; venue to be announced",
       "category": "industry",
       "description": "Sessions and workshops on implementing AI, enterprise applications, and the local startup community.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "ai-connect-2027",
@@ -344,7 +352,7 @@
       "location": "Georgia World Congress Center, Atlanta",
       "category": "industry",
       "description": "An industry exhibition and conference focused on AI applications and technology providers; the organizer's [event information](https://aiconnectexpo.com/sitemap) lists the dates and venue.",
-      "verified": "2026-09-26"
+      "verified": "2026-11-01"
     },
     {
       "id": "slds-2026",
@@ -355,7 +363,7 @@
       "location": "Marriott at the Brooklyn Bridge, New York",
       "category": "elsewhere",
       "description": "Statistical learning and data science. This meeting is outside the Atlanta region. Registration closed early on October 12 because the meeting reached capacity; abstract submission has also closed.",
-      "verified": "2026-10-25",
+      "verified": "2026-11-01",
       "deadlines": [
         {
           "label": "Housing and registration cancellation deadline",
@@ -596,7 +604,7 @@
       "location": "University of Georgia, Athens",
       "category": "seminar",
       "description": "4:30–5:30 p.m. Statistics departmental research talk. Consult the [department calendar](https://www.stat.uga.edu/events/all) for the latest room and talk details.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "uga-inkoo-lee-2026",
@@ -607,7 +615,7 @@
       "location": "University of Georgia, Athens",
       "category": "seminar",
       "description": "4:30–5:30 p.m. Statistics departmental research talk. Consult the [department calendar](https://www.stat.uga.edu/events/all) for the latest room and talk details.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "uga-jeffrey-rosenthal-2027",
@@ -618,7 +626,7 @@
       "location": "University of Georgia, Athens; Brooks Hall, Room 145",
       "category": "seminar",
       "description": "4–5 p.m. Statistics departmental research talk. Consult the [department calendar](https://www.stat.uga.edu/events/all) for the latest room and talk details.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "gatech-ravishankar-imaging-2026",
@@ -673,7 +681,7 @@
       "location": "Emory School of Medicine; check the organizer’s page for attendance details",
       "category": "seminar",
       "description": "Noon–1 p.m. Jon D. Duke presents a professional-development lecture on generative AI in scholarly work. The series is aimed at faculty but welcomes other interested participants; the organizer requests an RSVP.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "ksu-data-science-oct-2026",
@@ -692,10 +700,10 @@
       "url": "https://calendar.kennesaw.edu/event/data-science-colloquium-and-seminar-series",
       "start": "2026-11-06",
       "end": "2026-11-06",
-      "location": "KSU Marietta Campus; Atrium Building, Room J1050",
+      "location": "KSU Marietta Campus; Atrium Building, Room J1220",
       "category": "seminar",
       "description": "11 a.m.–noon. A research seminar with discussion on data science and related methods. Open to the university community and the public; consult the organizer’s page for the speaker and talk announcement.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "gatech-ml-session-vi-2026",
@@ -706,7 +714,7 @@
       "location": "Georgia Tech, Atlanta; CODA 9th-floor Atrium and online",
       "category": "seminar",
       "description": "Noon–1 p.m. Hal Daumé III (University of Maryland), whose research includes language, fairness, and trustworthy AI. The talk title and abstract are to be announced. Visitors should arrange CODA access with the organizer at least two business days ahead.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "emory-core-day-2026",
@@ -717,7 +725,7 @@
       "location": "Emory University, Atlanta; Convocation Hall, 505 Kilgo Circle",
       "category": "research",
       "description": "Research presentations and networking with shared research facilities across Georgia. The [program](https://www.cores.emory.edu/eicf/core-day/core-day-2026-schedule.html) includes computational brain imaging, AI-related health research, and biostatistics core services. Attendance is free, but advance registration was required by October 23; check with the organizer about any remaining availability. The agenda remains subject to change.",
-      "verified": "2026-10-25",
+      "verified": "2026-11-01",
       "deadlines": [
         {
           "label": "Advance registration",
@@ -734,7 +742,7 @@
       "location": "Georgia Tech, Atlanta; CODA 9th-floor Atrium and online",
       "category": "seminar",
       "description": "Noon–1 p.m. Enric Boix-Adsera (Wharton) studies how AI models learn, with an emphasis on efficiency and reliability. The talk title and abstract are to be announced. Visitors should arrange CODA access with the organizer at least two business days ahead.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "gatech-ai-agent-safety-2026",
@@ -767,7 +775,7 @@
       "location": "Emory Living Health series; see the organizer’s page for attendance details",
       "category": "seminar",
       "description": "6–7 p.m. An author Q&A with biostatistician and clinical trialist Barry R. Davis about prevention, public health, and translating evidence into action. Hosted by Emory’s Center for the Study of Human Health with the Georgia Center for the Book; RSVP information is on the event page.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "gsu-david-patterson-ai-2026",
@@ -778,7 +786,7 @@
       "location": "Georgia State University, Atlanta; Student Center East, Speaker’s Auditorium",
       "category": "seminar",
       "description": "5:30–7 p.m. David A. Patterson (UC Berkeley) discusses supporting academic AI research for public benefit and lessons from his career in computing. The K.N. King and Susan A. Cole Distinguished Lecture is hosted by GSU Computer Science; no admission charge is listed.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "gsu-john-conlon-ai-sycophancy-2026",
@@ -789,7 +797,7 @@
       "location": "Georgia State University, Atlanta; 55 Park Place, Room 604",
       "category": "seminar",
       "description": "3–4:30 p.m. John Conlon presents research on AI sycophancy and decision-making. Hosted by the Experimental Economics Center; the announcement lists students and faculty/staff as its audience.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "gsu-ai-enhanced-decisions-2026",
@@ -800,7 +808,7 @@
       "location": "Georgia State University, Buckhead Center; 3348 Peachtree Road, Atlanta",
       "category": "seminar",
       "description": "9–11:30 a.m. The first session in the Center for Engaged Business Research’s two-part series examines human judgment, decision quality, and trustworthy AI decision support. The announcement welcomes the public and university community and links to attendance information.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
     },
     {
       "id": "uga-mary-akinde-power-bi-2026",
@@ -811,7 +819,94 @@
       "location": "University of Georgia Statistical Consulting Center; online via Zoom",
       "category": "seminar",
       "description": "Noon–1 p.m. Mary Akinde introduces data preparation, modeling, calculated measures, and interactive dashboards in Power BI, with examples from applied analytics. The organizer provides the Zoom link and seminar flyer.",
-      "verified": "2026-10-25"
+      "verified": "2026-11-01"
+    },
+    {
+      "id": "emory-gh-bios-hot-topics-2026",
+      "title": "Emory GH × BIOS: Hot Topics in Public Health",
+      "url": "https://thehub.emory.edu/rsga/rsvp_boot?id=396512",
+      "start": "2026-11-02",
+      "end": "2026-11-02",
+      "location": "Emory University, Atlanta; Rollins School of Public Health, RRR100",
+      "category": "seminar",
+      "description": "Noon–1 p.m. A joint Global Health and Biostatistics & Bioinformatics panel with Natalie Dean, Robert Bednarczyk, Rodrigo Carrillo Larco, and Emily Peterson. Discussion includes AI, vaccines, and other current public-health questions. Hosted by the Rollins Student Government Association; see the event page for RSVP details.",
+      "verified": "2026-11-01"
+    },
+    {
+      "id": "gatech-irim-bhattacharjee-2026",
+      "title": "Georgia Tech IRIM: Tapomayukh “Tapo” Bhattacharjee",
+      "url": "https://ml.gatech.edu/events/2026/11/04/irim-fall-2026-seminar-series-vi",
+      "start": "2026-11-04",
+      "end": "2026-11-04",
+      "location": "Georgia Tech, Atlanta; CODA 9th-floor Atrium",
+      "category": "seminar",
+      "description": "12:15–1:15 p.m. A robotics research seminar with Cornell’s Tapomayukh Bhattacharjee, whose work concerns robotic caregiving and physical interaction with people. The organizer has not yet posted a talk title or abstract.",
+      "verified": "2026-11-01"
+    },
+    {
+      "id": "gatech-ai-academic-research-2026",
+      "title": "Georgia Tech: AI and Academic Research — The Future of Discovery",
+      "url": "https://calendar.gatech.edu/event/2026/11/04/ai-and-academic-research-future-discovery",
+      "start": "2026-11-04",
+      "end": "2026-11-04",
+      "location": "Georgia Tech Hotel & Conference Center, Atlanta; Grand Ballrooms",
+      "category": "seminar",
+      "description": "6:30–9 p.m. A panel in the Ivan Allen College AI & Society Series on AI-assisted discovery, changing research methods, and the ethical and practical questions arising from AI in scholarship.",
+      "verified": "2026-11-01"
+    },
+    {
+      "id": "gsu-xiaoyu-he-ai-risks-2026",
+      "title": "GSU Mathematics & Statistics: AI Risks and What Mathematicians Can Do about Them",
+      "url": "https://calendar.gsu.edu/event/colloquium-ai-risks-and-what-mathematicians-can-do-about-them",
+      "start": "2026-11-06",
+      "end": "2026-11-06",
+      "location": "Georgia State University, Atlanta; 25 Park Place, Room 1441",
+      "category": "seminar",
+      "description": "2–3 p.m. Xiaoyu He (Georgia Tech) surveys AI progress and scaling, discusses risks from increasingly capable systems, and considers research directions in alignment and safety. Hosted by GSU Mathematics and Statistics.",
+      "verified": "2026-11-01"
+    },
+    {
+      "id": "gatech-ghassan-alregib-2026",
+      "title": "Georgia Tech IBB Breakfast Club: Ghassan AlRegib",
+      "url": "https://calendar.gatech.edu/event/2026/11/10/breakfast-club-seminar",
+      "start": "2026-11-10",
+      "end": "2026-11-10",
+      "location": "Georgia Tech, Atlanta; Petit Biotechnology Building, Suddath Seminar Room 1128",
+      "category": "seminar",
+      "description": "8:30–9:30 a.m. Ghassan AlRegib’s research includes interpretable and robust machine learning, uncertainty, and human feedback, with applications in medical imaging and autonomous systems. The seminar is open to the bioscience community.",
+      "verified": "2026-11-01"
+    },
+    {
+      "id": "gatech-irim-jeremy-brown-2026",
+      "title": "Georgia Tech IRIM: Jeremy D. Brown",
+      "url": "https://ml.gatech.edu/events/2026/11/18/irim-fall-2026-seminar-series-vii",
+      "start": "2026-11-18",
+      "end": "2026-11-18",
+      "location": "Georgia Tech, Atlanta; Klaus Building, Room 1116 E&W",
+      "category": "seminar",
+      "description": "12:15–1:15 p.m. A seminar with Jeremy D. Brown on his research at the human–robot interface, including medical robotics and touch feedback. The organizer has not yet posted a specific talk title or abstract.",
+      "verified": "2026-11-01"
+    },
+    {
+      "id": "gatech-microscopy-ml-hackathon-2026",
+      "title": "Machine Learning for Microscopy Hackathon 3 — Georgia Tech site",
+      "url": "https://kaliningroup.github.io/mic_hackathon_3/",
+      "start": "2026-12-15",
+      "end": "2026-12-17",
+      "location": "Georgia Tech, Atlanta; local opening session in Pettit 102A&B; hybrid participation",
+      "category": "research",
+      "description": "A three-day international hackathon on AI for microscopy, imaging, spectroscopy, and experimental automation. The [Georgia Tech announcement](https://calendar.gatech.edu/event/2026/12/15/machine-learning-microscopy-3) lists its December 15 local session from 8 a.m.–3 p.m.; consult the local host for the remaining on-site schedule. The global program runs through December 17. Participation is free and open to students, researchers, and industry participants.",
+      "verified": "2026-11-01",
+      "deadlines": [
+        {
+          "label": "In-person registration",
+          "date": "2026-12-06"
+        },
+        {
+          "label": "Online registration",
+          "date": "2026-12-13"
+        }
+      ]
     }
   ]
 }
