@@ -1,0 +1,13 @@
+{{- $data := hugo.Data.faculty_scout -}}
+<details class="grant-deadlines faculty-scout" id="faculty-scout" aria-labelledby="faculty-scout-title">
+  <summary class="grant-deadlines__summary">
+    <img class="home-kawaii-emoji" src="{{ "images/faculty-scout-kawaii.png" | relURL }}" alt="" width="48" height="48" decoding="async">
+    <span class="grant-deadlines__summary-copy"><strong id="faculty-scout-title">Faculty Scout</strong><span>Academic jobs · Statistics &amp; Biostatistics</span></span>
+  </summary>
+  <div class="grant-deadlines__body">
+    <div class="grant-deadlines__header"><h2>Find your next academic role</h2><a class="grant-deadlines__open" href="{{ $data.app_url }}">Open directory <span aria-hidden="true">↗</span></a></div>
+    <p class="grant-deadlines__intro">Assistant Professor · Open Rank · Teaching · Postdoc</p>
+    <p class="grant-deadlines__intro">Search and filter openings, save bookmarks in your browser, and export a shortlist. Priority review dates and firm deadlines are shown separately.</p>
+    <p class="grant-deadlines__footer">Public access · No sign-in required · <a href="{{ $data.sheet_url }}" target="_blank" rel="noopener noreferrer">View the public job data<span class="grant-deadlines__sr"> (new tab)</span></a></p>
+  </div>
+</details>
