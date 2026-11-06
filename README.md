@@ -50,6 +50,8 @@ the tabs; browser back and forward restore the selected panel.
 Section templates live in `layouts/partials/sections/`; shared typography and
 spacing live in `static/css/sections.css`. Publication and Software use the
 same contributor note from `params.publications_note` in `config.toml`.
+Group uses `params.group_note`; all three notes share the same template,
+placement, typography, theme color, and spacing above the first category.
 Optional `award` and `award_link` fields on a publication add a linked award
 label after its link icons, with a gold trophy and McGill red text (`#ED1B2F`).
 Neutral backgrounds and borders adapt to the light, dark and bubble milk tea themes.
@@ -68,6 +70,12 @@ Optional `scholar_link` values add a Google Scholar
 icon. Shared link icons are rendered by `layouts/partials/icon-link.html`
 from local SVGs in `assets/icons/`; they work without JavaScript and include
 accessible names and hover labels. See [icon sources](docs/icon-sources.md).
+
+The Group legend defines S (Software), P (Project), T (Talk, including posters),
+and A (Award). Member `activity` entries add numbered talk and award links with
+short event descriptions; their full titles appear in accessible names and hover
+labels. Keep poster presentations and financial-assistance awards explicitly
+identified. Verification sources are recorded in [student activities](docs/group-activities.md).
 
 Institution logos use transparent SVGs with light and dark variants. A group
 with `collapsible = true` starts collapsed; its member count is automatic.

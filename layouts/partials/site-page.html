@@ -17,7 +17,9 @@
 {{ partial "introduction.html" $page }}
 {{- else }}
 {{- if in (slice "publications" "softwares") .key }}
-{{ partial "contributor-note.html" $page }}
+{{ partial "contributor-note.html" $page.Site.Params.publications_note }}
+{{- else if eq .key "group" }}
+{{ partial "contributor-note.html" $page.Site.Params.group_note }}
 {{- else if eq .key "resources" }}
 {{ partial "resource-note.html" $page }}
 {{- end }}

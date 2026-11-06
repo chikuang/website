@@ -21,6 +21,13 @@
 {{- if $member.description }}
             <div class="group-member-description">
 {{ $member.description | markdownify }}
+{{- range $member.activity }}
+{{- $kind := cond (eq .kind "A") "Award" "Talk" -}}
+{{- $icon := cond (eq .kind "A") "images/award-medal.svg" "images/talk-microphone.svg" -}}
+{{- $label := printf "%s%d" .kind .number -}}
+{{- $context := printf "%s — %s %d: %s — %s" $member.name $kind .number .title .detail -}}
+              <div class="group-member-activity"><a href="{{ .url }}" title="{{ $context }}" aria-label="{{ $context }}">[<img src="{{ $icon | relURL }}" alt="" aria-hidden="true" width="16" height="16">&#160;{{ $label }}]</a> {{ .detail }}</div>
+{{- end }}
             </div>
 {{- end }}
           </li>

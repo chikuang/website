@@ -25,5 +25,13 @@ the bracketed S1 link, whose hover label remains `Software 1`.
 
 Group paper links use `static/images/paper-note.svg`, an original smiling-paper
 illustration with a cream page, mint folded corner, and simple navy face.
-It matches the software illustration's outline and compact size, with `Paper`
-alternative text and the existing numbered link labels.
+It matches the software illustration's outline and compact size, with `Project`
+alternative text and the existing numbered link labels. The Group legend defines
+P as Project; these links include research papers.
+
+Group talk and award links use `static/images/talk-microphone.svg` and
+`static/images/award-medal.svg`, original smiling mint-microphone and gold-medal
+illustrations made for this site. They share the paper/software icons' navy
+outlines, pastel accents, transparent backgrounds, and 1em inline sizing. The
+decorative images have empty alternative text; the bracketed T/A links have
+descriptive accessible names including the student, title, and event.
