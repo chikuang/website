@@ -246,6 +246,7 @@ year = "2026"
 name = "Severity-controlled prediction sets for medication recommendation"
 authors = "Yu Gu, Zijun Yu, **Chi-Kuang Yeh**, Xinyu Wang & Ziyang Song"
 dest = "NeurIPS 2026"
+just_link = "https://neurips.cc/virtual/2026/loc/atlanta/poster/148292"
 
 [[params.publications]]
 year = "2025"
