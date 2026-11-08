@@ -23,21 +23,23 @@ cycles, student-only awards, and calls requiring an unmet earlier application
 stage are excluded. Amazon's Fall 2026 tracks are grouped because a PI can
 submit one proposal per call period. Eligibility still depends on each call.
 
-The November 1 review excludes the Quine fellowship until faculty participation
-terms are confirmed, and the AI Infrastructure Hubs call until institutional
-selection and consortium arrangements are confirmed. Both remain in the catalog
-as conditional routes. The closed October R21 round remains in the catalog; its
-separate February 2027 entry uses the date explicitly published by NIH.
+The November 8 review preserves the closed Quine, NSERC Discovery, Alliance RAC,
+AI Datasets and AI Infrastructure Hubs rounds in the catalogs with their original
+dates. Expired dates are excluded from this widget. The separate February 2027
+R21 entry uses the date explicitly published by NIH.
 
-The October 23 Anton 3 round is closed and has been removed from this widget,
-while its catalog record retains the original date. The next three faculty dates
-are NSF AI Datasets (November 4, 5 pm Eastern), Amazon (extended to November 11,
-11:59 pm Pacific) and Microsoft AIEI (November 30, 6 pm Pacific).
-AI Datasets has no LOI, preliminary proposal or institutional/PI proposal limit;
-GSU internal routing still needs immediate confirmation. Microsoft requires a
-policy-relevant AI/work project and workshop commitments.
-GSU (January 13), NIH R21 (February 16) and CAREER remain queued after these dates.
-The Canadian master’s scholarship is student-only and is excluded.
+The next three faculty dates are Amazon (November 11, 11:59 pm Pacific),
+Microsoft AIEI (November 30, 6 pm Pacific) and GSU (January 13; cutoff time
+unpublished). All four Amazon tracks share one programwide proposal limit.
+Microsoft requires a policy-relevant AI/work project and workshop commitments.
+NIH R21 (February 16) and CAREER remain queued after these dates.
+
+Simons Travel Support is excluded until the mathematics-department, tenure and
+other-funding restrictions are confirmed. Simons Empire AI needs a consortium
+lead; Math+AI funding needs an eligible established institute. Swiss AI needs a
+qualifying Swiss partner and is rolling. Mitacs mobility and Simons/Canadian
+student awards are excluded from the faculty widget. None of these conditional
+or student routes substitutes for a confirmed actionable faculty deadline.
 
 For each record:
 

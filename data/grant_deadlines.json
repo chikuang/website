@@ -1,23 +1,7 @@
 {
-  "reviewed": "2026-11-01",
+  "reviewed": "2026-11-08",
   "app_url": "https://chikuang.github.io/grant-radar/",
   "deadlines": [
-    {
-      "id": "nsf-ai-datasets-2026",
-      "title": "NSF AI Datasets",
-      "agency": "NSF",
-      "date": "2026-11-04",
-      "timezone": "America/New_York",
-      "expires_at": "2026-11-04T22:00:00Z",
-      "timing": "5 pm Eastern \u00b7 GSU local time",
-      "note": "Enhance existing scientific datasets. No LOI or proposal-count limit; confirm GSU routing immediately.",
-      "sources": [
-        {
-          "label": "NSF solicitation",
-          "url": "https://www.nsf.gov/funding/opportunities/ai-datasets-unlocking-dataset-value-ai-enabled-scientific-discovery/nsf26-512/solicitation"
-        }
-      ]
-    },
     {
       "id": "amazon-fall-2026",
       "title": "Amazon Research Awards",
@@ -25,8 +9,8 @@
       "date": "2026-11-11",
       "timezone": "America/Los_Angeles",
       "expires_at": "2026-11-12T07:59:00Z",
-      "timing": "11:59 pm Pacific \u00b7 extended from November 4",
-      "note": "Choose Agentic AI, multilingual evaluation or AI for information security. One proposal per PI across the entire call period.",
+      "timing": "11:59 pm Pacific · extended from November 4",
+      "note": "Choose one track: Agentic AI, evaluation, information security or synthetic multimodal data. One proposal per PI across the entire call period.",
       "sources": [
         {
           "label": "Agentic AI",
@@ -39,6 +23,10 @@
         {
           "label": "AI information security",
           "url": "https://www.amazon.science/research-awards/call-for-proposals/ai-for-information-security-call-for-proposals-fall-2026"
+        },
+        {
+          "label": "Synthetic multimodal data",
+          "url": "https://www.amazon.science/research-awards/call-for-proposals/synthetic-data-generation-for-multimodal-perception-call-for-proposals-fall-2026"
         }
       ]
     },
@@ -49,7 +37,7 @@
       "date": "2026-11-30",
       "timezone": "America/Los_Angeles",
       "expires_at": "2026-12-01T02:00:00Z",
-      "timing": "6 pm Pacific \u00b7 Cohort 4",
+      "timing": "6 pm Pacific · Cohort 4",
       "note": "AI and work with policy relevance; up to two PhD-qualified PIs share one award. Confirm workshop commitments.",
       "sources": [
         {
@@ -66,7 +54,7 @@
       "timezone": "America/New_York",
       "expires_at": "2027-01-14T05:00:00Z",
       "date_only": true,
-      "timing": "Cycle 2 \u00b7 confirm cutoff in InfoReady",
+      "timing": "Cycle 2 · confirm cutoff in InfoReady",
       "note": "GSU faculty research support; check the relevant funding level.",
       "sources": [
         {
@@ -82,7 +70,7 @@
       "date": "2027-02-16",
       "timezone": "America/New_York",
       "expires_at": "2027-02-16T22:00:00Z",
-      "timing": "5 pm Eastern \u00b7 new applications",
+      "timing": "5 pm Eastern · new applications",
       "note": "Biomedical research; participating institute and GSU internal routing required.",
       "sources": [
         {
@@ -98,7 +86,7 @@
       "date": "2027-07-28",
       "timezone": "America/New_York",
       "expires_at": "2027-07-28T21:00:00Z",
-      "timing": "5 pm Eastern \u00b7 GSU local time",
+      "timing": "5 pm Eastern · GSU local time",
       "note": "Confirm tenure-track eligibility, prior awards, and submission limits.",
       "sources": [
         {
