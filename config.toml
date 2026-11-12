@@ -205,7 +205,7 @@ RG_link = "https://www.researchgate.net/publication/407240775_Quantifying_and_Au
 
 [[params.publications.paper]]
 name = """ragR: retrieval-augmented generation and RAG assessment in R"""
-authors  = "*Muhammad Aimal Rehman, *Zhili Lu & **Chi-Kuang Yeh**"
+authors  = "*Muhammad Aimal Rehman, *Zhili Lu, *Seoyoung Kim & **Chi-Kuang Yeh**"
 dest  = "Preprint"
 code_link = "https://github.com/aimalrehman92/ragR"
 arxiv_link = "https://arxiv.org/abs/2604.23515"
@@ -388,7 +388,7 @@ software_category = "Functional Data Analysis"
 software_category = "AI and Machine Learning" 
 [[params.softwares.software]]
     name = "ragR"
-    authors = "*Muhammad Aimal Rehman, *Zhili Lu & **Chi-Kuang Yeh**"
+    authors = "*Muhammad Aimal Rehman, *Zhili Lu, *Seoyoung Kim & **Chi-Kuang Yeh**"
     desc  = "A R package for Retrieval-Augmented Generation and RAG Assessment"
     link = ""
     github_link = "https://github.com/aimalrehman92/ragR"
@@ -554,7 +554,7 @@ url = "https://mathstat.gsu.edu/2026/10/23/ms-thesis-student-muhammad-aimal-rehm
 name = "Seoyoung Kim"
 last_name = "Kim"
 position = "Applied Statistics"
-description = "Seoyoung is working on human annotation and retrieval-augmented generation (RAG), see [[![Software](/images/software-coder.svg?v=2) S1]](https://cran.r-project.org/web/packages/ragR/index.html \"ragR software\")"
+description = "Seoyoung is working on human annotation and retrieval-augmented generation (RAG), see [[![Project](/images/paper-note.svg) P1]](https://arxiv.org/abs/2604.23515 \"ragR preprint\"), [[![Software](/images/software-coder.svg?v=2) S1]](https://cran.r-project.org/web/packages/ragR/index.html \"ragR software\")"
 link = "https://www.linkedin.com/in/seoyoung-kim-1711ba409/"
 
 
