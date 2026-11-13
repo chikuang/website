@@ -559,6 +559,19 @@ link = "https://www.linkedin.com/in/seoyoung-kim-1711ba409/"
 
 
 [[params.group]]
+year = "Undergraduate Student"
+[[params.group.member]]
+name = "Devarsh Bandla"
+last_name = "Bandla"
+position = "Georgia State University"
+
+[[params.group.member]]
+name = "Sanjay Lakshminarayanan"
+last_name = "Lakshminarayanan"
+position = "Georgia State University"
+
+
+[[params.group]]
 year = "Past Member"
 collapsible = true
 
