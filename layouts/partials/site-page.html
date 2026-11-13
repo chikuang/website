@@ -16,14 +16,14 @@
 {{- if eq .key "home" }}
 {{ partial "introduction.html" $page }}
 {{- else }}
-{{- if in (slice "publications" "softwares") .key }}
+{{- if in (slice "publication" "software") .key }}
 {{ partial "contributor-note.html" $page.Site.Params.publications_note }}
 {{- else if eq .key "group" }}
 {{ partial "contributor-note.html" $page.Site.Params.group_note }}
-{{- else if eq .key "resources" }}
+{{- else if eq .key "resource" }}
 {{ partial "resource-note.html" $page }}
 {{- end }}
-{{- if eq .key "resources" }}
+{{- if eq .key "resource" }}
 {{- with $page.Site.GetPage "/resources" }}{{ partial "resource-list-body.html" . }}{{ end }}
 {{- else }}
 {{ partial (printf "sections/%s.html" .key) $page }}

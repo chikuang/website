@@ -133,15 +133,15 @@ function harness({ preview = false, store = new Map(), storageDenied = false, st
   assert.equal(h.status.textContent, '');
   const mainSource = fs.readFileSync(path.join(root, 'themes/avicenna/static/js/main.js'), 'utf8');
   const emitted = [], listeners = {}, domEvents = {};
-  const keys = ['home','publications','softwares','teaching','group','resources'];
+  const keys = ['home','publication','software','teaching','group','resource'];
   const tabs = keys.map(key => ({href: '', events: {}, getAttribute: () => key, setAttribute() {}, removeAttribute() {},
     classList: {toggle() {}}, addEventListener(k,f) {this.events[k]=f;}, focus() {}}));
   const panels = keys.map(key => ({getAttribute: name => name === 'data-panel-key' ? key : key, setAttribute() {}}));
   const content = {querySelectorAll: () => panels, getAttribute: name => ({'data-default-panel':'home','data-home-url':'/','data-site-title':'Profile','data-home-title':'Home'})[name]};
   const tablist = {querySelectorAll: () => tabs, setAttribute() {}};
-  const window = {location: {hash: ''}, history: {pushState(a,b,url) {window.location.hash = '#' + url.split('#')[1];}}, addEventListener: (k,f) => listeners[k]=f};
+  const window = {location: {hash: ''}, history: {pushState(a,b,url) {window.location.hash = '#' + url.split('#')[1];}, replaceState(a,b,url) {window.location.hash = '#' + url.split('#')[1];}}, addEventListener: (k,f) => listeners[k]=f};
   const document = {readyState:'loading', querySelector: selector => selector === '[data-site-panels]' ? content : selector === '[data-site-tabs]' ? tablist : null,
-    getElementById: () => null, addEventListener: (k,f) => domEvents[k]=f, dispatchEvent: e => emitted.push(e.type), documentElement: {getAttribute: () => 'light', setAttribute() {}}};
+    querySelectorAll: () => [], getElementById: () => null, addEventListener: (k,f) => domEvents[k]=f, dispatchEvent: e => emitted.push(e.type), documentElement: {getAttribute: () => 'light', setAttribute() {}}};
   vm.runInNewContext(mainSource, {window, document, localStorage:{getItem:()=>null,setItem(){}}, Event:class {constructor(type){this.type=type;}}});
   domEvents.DOMContentLoaded();
   assert.equal(emitted.length, 0, 'Initial section must not double count initial page load');
@@ -152,6 +152,14 @@ function harness({ preview = false, store = new Map(), storageDenied = false, st
   click(2); assert.equal(emitted.length, 2);
   window.location.hash = '#publications'; listeners.popstate(); assert.equal(emitted.length, 3);
   listeners.hashchange(); assert.equal(emitted.length, 3, 'Duplicate browser events must not double count');
+
+  assert.equal(window.location.hash, '#publication', 'Legacy hash is normalized');
+  for (const [oldKey, key] of [['publications','publication'], ['softwares','software'], ['resources','resource']]) {
+    window.location.hash = '#' + oldKey; listeners.hashchange();
+    assert.equal(window.location.hash, '#' + key);
+    assert.equal(panels.find(panel => !panel.hidden).getAttribute('data-panel-key'), key);
+    assert.equal(tabs[keys.indexOf(key)].href, '/#' + key);
+  }
 
   console.log('Passed: real totals, read-only polling, preview isolation, denied storage, per-tab visit IDs, storage-denied fallbacks, safe bounded retries, background tabs, navigation, offline recovery and invalid responses.');
 })().catch(error => { console.error(error); process.exitCode = 1; });

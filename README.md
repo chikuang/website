@@ -42,8 +42,10 @@ styles and published pages; delete their copies from both repositories.
 
 Home, Publication, Software, Teaching, Group, and Resource share one page frame.
 The navigation switches embedded content panels without reloading the page;
-links such as `/#publications` can be bookmarked. Existing section URLs still
-work, including without JavaScript. Resource articles retain their own URLs
+links such as `/#publication`, `/#software`, and `/#resource` can be bookmarked.
+The corresponding section pages use `/publication/`, `/software/`, and `/resource/`,
+including without JavaScript. Previous plural hashes and section URLs redirect
+to the singular names. Resource articles retain their own URLs
 and use the same profile and navigation. Arrow keys, Home, and End navigate
 the tabs; browser back and forward restore the selected panel.
 

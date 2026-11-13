@@ -4,9 +4,9 @@
 <body class="resource-page">
 <div class="container wrapper site-shell resource-shell">
   {{ partial "head.html" . }}
-  {{ partial "site-navigation.html" (dict "page" . "active" "resources") }}
+  {{ partial "site-navigation.html" (dict "page" . "active" "resource") }}
   <main class="site-content">
-    <a class="resource-back" href="{{ .Site.Home.RelPermalink }}#resources">← All resources</a>
+    <a class="resource-back" href="{{ .Site.Home.RelPermalink }}#resource">← All resources</a>
     {{ partial "resource-note.html" . }}
 	<div class="introduction resource-article" id="resources">
 		{{- $showToc := not (eq .Params.show_toc false) -}}

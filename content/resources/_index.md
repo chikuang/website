@@ -1,3 +1,5 @@
 ---
-title: "Resources"
+title: "Resource"
+url: "/resource/"
+aliases: ["/resources/"]
 ---
