@@ -563,14 +563,14 @@ year = "Undergraduate Student"
 [[params.group.member]]
 name = "Devarsh Bandla"
 last_name = "Bandla"
-position = "Honors College, Georgia State University"
+position = "Honors College"
 description = "Devarsh is working on sports analytics, with a focus on basketball."
 link = "https://www.linkedin.com/in/devarsh-bandla/"
 
 [[params.group.member]]
 name = "Sanjay Lakshminarayanan"
 last_name = "Lakshminarayanan"
-position = "Computer Science and Mathematics, Georgia State University"
+position = "Computer Science and Mathematics"
 description = "Sanjay is working on time series forecasting problems through the [RIMMES Program](https://mathstat.gsu.edu/rimmes/)."
 link = "https://www.linkedin.com/in/sanjay-lakshminarayanan-582a49233/"
 
