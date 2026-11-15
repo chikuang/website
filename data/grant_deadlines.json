@@ -1,48 +1,20 @@
 {
-  "reviewed": "2026-11-08",
+  "reviewed": "2026-11-15",
   "app_url": "https://chikuang.github.io/grant-radar/",
   "deadlines": [
-    {
-      "id": "amazon-fall-2026",
-      "title": "Amazon Research Awards",
-      "agency": "Amazon",
-      "date": "2026-11-11",
-      "timezone": "America/Los_Angeles",
-      "expires_at": "2026-11-12T07:59:00Z",
-      "timing": "11:59 pm Pacific · extended from November 4",
-      "note": "Choose one track: Agentic AI, evaluation, information security or synthetic multimodal data. One proposal per PI across the entire call period.",
-      "sources": [
-        {
-          "label": "Agentic AI",
-          "url": "https://www.amazon.science/research-awards/call-for-proposals/aws-agentic-ai-call-for-proposals-fall-2026"
-        },
-        {
-          "label": "AI evaluation",
-          "url": "https://www.amazon.science/research-awards/call-for-proposals/multilingual-and-contextual-ai-evaluation-call-for-proposals-fall-2026"
-        },
-        {
-          "label": "AI information security",
-          "url": "https://www.amazon.science/research-awards/call-for-proposals/ai-for-information-security-call-for-proposals-fall-2026"
-        },
-        {
-          "label": "Synthetic multimodal data",
-          "url": "https://www.amazon.science/research-awards/call-for-proposals/synthetic-data-generation-for-multimodal-perception-call-for-proposals-fall-2026"
-        }
-      ]
-    },
     {
       "id": "microsoft-aiei-cohort4",
       "title": "Microsoft AI Economy Institute",
       "agency": "Microsoft Research",
-      "date": "2026-11-30",
+      "date": "2026-12-31",
       "timezone": "America/Los_Angeles",
-      "expires_at": "2026-12-01T02:00:00Z",
-      "timing": "6 pm Pacific · Cohort 4",
+      "expires_at": "2027-01-01T02:00:00Z",
+      "timing": "6 pm Pacific \u00b7 extended from November 30",
       "note": "AI and work with policy relevance; up to two PhD-qualified PIs share one award. Confirm workshop commitments.",
       "sources": [
         {
           "label": "Microsoft call",
-          "url": "https://www.microsoft.com/en-us/research/group/aiei/aiei-open-call-4/?lang=fr-ca"
+          "url": "https://www.microsoft.com/en-us/research/group/aiei/aiei-open-call-4/"
         }
       ]
     },
@@ -54,12 +26,28 @@
       "timezone": "America/New_York",
       "expires_at": "2027-01-14T05:00:00Z",
       "date_only": true,
-      "timing": "Cycle 2 · confirm cutoff in InfoReady",
+      "timing": "Cycle 2 \u00b7 confirm cutoff in InfoReady",
       "note": "GSU faculty research support; check the relevant funding level.",
       "sources": [
         {
           "label": "GSU call",
           "url": "https://ursa.research.gsu.edu/research-development/internal-grants-program/"
+        }
+      ]
+    },
+    {
+      "id": "nsf-mri-2027",
+      "title": "NSF Major Research Instrumentation",
+      "agency": "NSF MRI",
+      "date": "2027-01-29",
+      "timezone": "America/New_York",
+      "expires_at": "2027-01-29T22:00:00Z",
+      "timing": "5 pm Eastern \u00b7 window opens January 4",
+      "note": "Shared instrument and GSU operating commitment required. No NSF proposal-count limit or earlier LOI; confirm internal routing.",
+      "sources": [
+        {
+          "label": "NSF 27-500",
+          "url": "https://www.nsf.gov/funding/opportunities/mri-major-research-instrumentation-program/nsf27-500/solicitation"
         }
       ]
     },
@@ -70,7 +58,7 @@
       "date": "2027-02-16",
       "timezone": "America/New_York",
       "expires_at": "2027-02-16T22:00:00Z",
-      "timing": "5 pm Eastern · new applications",
+      "timing": "5 pm Eastern \u00b7 new applications",
       "note": "Biomedical research; participating institute and GSU internal routing required.",
       "sources": [
         {
@@ -86,7 +74,7 @@
       "date": "2027-07-28",
       "timezone": "America/New_York",
       "expires_at": "2027-07-28T21:00:00Z",
-      "timing": "5 pm Eastern · GSU local time",
+      "timing": "5 pm Eastern \u00b7 GSU local time",
       "note": "Confirm tenure-track eligibility, prior awards, and submission limits.",
       "sources": [
         {

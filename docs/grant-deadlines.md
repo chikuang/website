@@ -23,23 +23,30 @@ cycles, student-only awards, and calls requiring an unmet earlier application
 stage are excluded. Amazon's Fall 2026 tracks are grouped because a PI can
 submit one proposal per call period. Eligibility still depends on each call.
 
-The November 8 review preserves the closed Quine, NSERC Discovery, Alliance RAC,
-AI Datasets and AI Infrastructure Hubs rounds in the catalogs with their original
-dates. Expired dates are excluded from this widget. The separate February 2027
-R21 entry uses the date explicitly published by NIH.
+The November 15 review preserves all four closed Amazon Fall 2026 tracks and
+previously closed rounds in the catalogues with their original dates. Microsoft
+AIEI extended its deadline from November 30 to December 31 at 6 pm Pacific.
+Expired dates are excluded from this widget, and saved proposal dates in either
+app are never changed by a catalogue refresh.
 
-The next three faculty dates are Amazon (November 11, 11:59 pm Pacific),
-Microsoft AIEI (November 30, 6 pm Pacific) and GSU (January 13; cutoff time
-unpublished). All four Amazon tracks share one programwide proposal limit.
-Microsoft requires a policy-relevant AI/work project and workshop commitments.
-NIH R21 (February 16) and CAREER remain queued after these dates.
+The next three faculty dates are Microsoft AIEI (December 31, 6 pm Pacific),
+GSU (January 13; cutoff time unpublished) and NSF MRI (January 29, 5 pm Eastern).
+MRI's January 4–29 window is explicitly announced in NSF 27-500, which removes
+organisational proposal limits and requires neither an LOI nor a preliminary
+proposal. A shared instrument, institutional operating commitment and GSU routing
+are still required; general-purpose equipment is not eligible. Microsoft needs
+a policy-relevant AI/work project and workshop commitments. NIH R21 (February 16,
+new applications) and CAREER remain queued after these dates.
 
 Simons Travel Support is excluded until the mathematics-department, tenure and
 other-funding restrictions are confirmed. Simons Empire AI needs a consortium
-lead; Math+AI funding needs an eligible established institute. Swiss AI needs a
-qualifying Swiss partner and is rolling. Mitacs mobility and Simons/Canadian
-student awards are excluded from the faculty widget. None of these conditional
-or student routes substitutes for a confirmed actionable faculty deadline.
+lead; Math+AI funding needs an eligible established institute. GADRC's November
+30 LOI is catalogued separately but GSU participation remains unconfirmed; its
+January 10 invited full application cannot replace the required LOI stage.
+NSTC recruitment requires a Taiwan host and a substantial approved leave
+arrangement. Swiss AI needs a qualifying Swiss partner and is rolling. Student
+awards, OLCF/Neocortex rolling compute and monthly/quarterly review batches are
+excluded from this faculty widget.
 
 For each record:
 
