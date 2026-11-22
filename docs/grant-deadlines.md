@@ -23,7 +23,7 @@ cycles, student-only awards, and calls requiring an unmet earlier application
 stage are excluded. Amazon's Fall 2026 tracks are grouped because a PI can
 submit one proposal per call period. Eligibility still depends on each call.
 
-The November 15 review preserves all four closed Amazon Fall 2026 tracks and
+The November 22 review preserves all four closed Amazon Fall 2026 tracks and
 previously closed rounds in the catalogues with their original dates. Microsoft
 AIEI extended its deadline from November 30 to December 31 at 6 pm Pacific.
 Expired dates are excluded from this widget, and saved proposal dates in either
@@ -46,7 +46,10 @@ January 10 invited full application cannot replace the required LOI stage.
 NSTC recruitment requires a Taiwan host and a substantial approved leave
 arrangement. Swiss AI needs a qualifying Swiss partner and is rolling. Student
 awards, OLCF/Neocortex rolling compute and monthly/quarterly review batches are
-excluded from this faculty widget.
+excluded from this faculty widget. NSF Future CoRe uses review targets rather than
+hard deadlines. CloudBank ACCESS and NIH Cloud Lab are ongoing services;
+Nebius PhD fellowship has conflicting official dates, and NSTC–DAAD summer
+research is student-only. These additions are also excluded.
 
 For each record:
 
