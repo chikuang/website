@@ -41,6 +41,9 @@ lastmod = [':git', 'lastmod', 'date', 'publishDate']
     weight = 5
 
 [params]
+  # Render confirmed submission details from the private local data file.
+  # Keep false for the public website; see README.md for the CV's separate switch.
+  show_submission_venues = false
   subtitle= "Assistant Professor in Statistics"
   image = "image.png"
   publications_note = "* indicates students."
@@ -177,6 +180,7 @@ authors = "*Muhammad Aimal Rehman & **Chi-Kuang Yeh**"
 dest = "Preprint"
 code_link = "https://github.com/aimalrehman92/conformal-rag"
 arxiv_link = "https://arxiv.org/abs/2609.38222"
+submission_key = "aimal:multi-hop-rag"
 award = "Student Poster Honourable Mention — Georgia Statistics Day 2026"
 award_link = "https://www.isye.gatech.edu/events/calendar/day/2026/10/05/13379"
 award_type = "student-poster"
@@ -187,6 +191,7 @@ name = """Patients-like-me: a variational LM--GNN framework for explainable clin
 authors = "Xinyu Wang, Yixuan Li, Hanwei Wu, Qincheng Lu, **Chi-Kuang Yeh**, Xiao-Wen Chang & Ziyang Song"
 dest = "Preprint"
 arxiv_link = "https://arxiv.org/abs/2608.04193"
+submission_key = "wang2026patients-like-me"
 
 [[params.publications.paper]]
 name = """AURA: adaptive uncertainty-aware refinement for LLM-as-a-judge auditing"""
@@ -194,6 +199,7 @@ authors  = "*Zilong Zhang, Yi-Ting Hung, Weiyi He, Junxi Zhang, Lei Ding & **Chi
 dest  = "Preprint"
 code_link = ""
 arxiv_link = "https://arxiv.org/abs/2606.19714"
+submission_key = "zhang2026aura"
 RG_link = "https://www.researchgate.net/publication/407287506_AURA_Adaptive_Uncertainty-aware_Refinement_for_LLM-as-a-Judge_Auditing"
 [[params.publications.paper]]
 name = """Quantifying and auditing LLM evaluation via positive--unlabeled learning"""
@@ -201,6 +207,7 @@ authors  = "*Zilong Zhang, Yi-Ting Hung, Lei Ding & **Chi-Kuang Yeh**"
 dest  = "Preprint"
 code_link = ""
 arxiv_link = "https://arxiv.org/abs/2606.19057"
+submission_key = "zhang2026puaudit"
 RG_link = "https://www.researchgate.net/publication/407240775_Quantifying_and_Auditing_LLM_Evaluation_via_Positive--Unlabeled_Learning"
 
 [[params.publications.paper]]
@@ -209,12 +216,14 @@ authors  = "*Muhammad Aimal Rehman, *Zhili Lu, *Seoyoung Kim & **Chi-Kuang Yeh**
 dest  = "Preprint"
 code_link = "https://github.com/aimalrehman92/ragR"
 arxiv_link = "https://arxiv.org/abs/2604.23515"
+submission_key = "aimal:rag"
 
 [[params.publications.paper]]
 name = """Single and multi-objective optimal designs for group testing experiments with a focus on screening for an infectious disease"""
 authors  = "**Chi-Kuang Yeh**, Weng Kee Wong & Julie Zhou"
 dest  = "Preprint"
 arxiv_link = "https://arxiv.org/abs/2508.08445"
+submission_key = "yeh2025group"
 RG_link = "https://www.researchgate.net/publication/394457556_Single_and_multi-objective_optimal_designs_for_group_testing_experiments_with_a_focus_on_screening_for_an_infectious_disease"
 code_link = "https://github.com/chikuang/gtDesign"
 award = "2026 NISS New Researcher Award"

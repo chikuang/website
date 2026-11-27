@@ -52,7 +52,11 @@
 {{ with $publication.authors }}
 					<span class="collaborators publication-authors">{{ . | markdownify }}</span>
 {{ end }}
-				</div>
+				</div>{{ if and (eq $publications.year "Preprint") $.Site.Params.show_submission_venues $publication.submission_key }}
+  {{- with index (hugo.Data.submission_venues_private | default dict) $publication.submission_key }}
+				<div class="entry-meta publication-submission">{{ .status }} <em>{{ .venue }}</em>.</div>
+  {{- end -}}
+{{- end }}
 
 			</li>
 {{ end }}

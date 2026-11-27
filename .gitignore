@@ -7,3 +7,4 @@
 /public/
 /.quarto/
 /.hugo_build.lock
+/data/submission_venues_private.json

@@ -64,6 +64,26 @@ The footer's ☀, ☾ and 🧋 buttons select a palette and remember the choice 
 pages and reloads. The milk tea palette lives in `static/css/milk-tea.css`.
 Office information is configured with `params.office` and displayed in the footer.
 
+Submission venues and review statuses are optional. Set
+`params.show_submission_venues = true` in `config.toml` to include them when
+building; the public default is `false`. Each affected paper has a
+`submission_key` matching its BibLaTeX key in the canonical Overleaf CV.
+The records live in the ignored, local-only `data/submission_venues_private.json`:
+
+```json
+{
+  "paper-key": {"venue": "Journal or conference", "status": "Under review at"}
+}
+```
+
+Keep this file out of `static/` and Git. A false setting omits the details from
+the generated HTML entirely. New checkouts need a private copy of the records;
+the Overleaf bibliography retains the authoritative venue (`usera`) and status
+(`userb`). The downloadable PDF has its own setting in `Long/Long_CV.tex`:
+`\showsubmissionvenuestrue` includes these fields and
+`\showsubmissionvenuesfalse` hides them. Recompile and replace `static/CV.pdf`
+when changing the PDF setting; rebuilding Hugo does not change PDF contents.
+
 Preprints are sorted alphabetically by title, ignoring case and extra whitespace.
 Other publication subsections retain their configured order.
 Member lists are sorted within each category using the explicit `last_name`
